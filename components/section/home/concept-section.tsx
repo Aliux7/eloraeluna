@@ -13,12 +13,12 @@ const ConceptSection = () => {
         <Image
           src={illustration_2}
           alt=""
-          className="absolute top-7 -left-28 rotate-19"
+          className="absolute top-7 -left-62 sm:-left-40 lg:-left-28 rotate-19"
         />
         <Image
           src={illustration_2}
           alt=""
-          className="absolute top-20 -right-12"
+          className="absolute top-96 sm:top-72 -right-40 sm:-right-20 lg:top-20 lg:-right-12"
         />
         <Image
           src={illustration_2}
