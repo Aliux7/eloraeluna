@@ -23,11 +23,10 @@ const DesignSection = () => {
               text="SPACES CRAFTED"
               className="text-3xl sm:text-5xl lg:text-6xl font-extralight text-[#F3F0E8] tracking-widest"
             />
-            <FadeSlide
-              direction="left"
-              className="text-3xl sm:text-5xl lg:text-6xl font-medium text-[#F3F0E8] tracking-widest text-nowrap ml-20 lg:ml-40 xl:ml-60"
-            >
-              <span className="font-thin">FOR</span> REFINE
+            <FadeSlide direction="left">
+              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-medium text-[#F3F0E8] tracking-widest text-nowrap ml-20 lg:ml-40 xl:ml-60">
+                <span className="font-thin">FOR</span> REFINE
+              </h2>
             </FadeSlide>
             <WordsPullUp
               text="LIVING"

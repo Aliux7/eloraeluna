@@ -84,7 +84,7 @@ const DiscoverSection = () => {
           </FadeSlide>
         </div>
         <div className="flex flex-col lg:flex-row justify-between items-center h-full gap-10 md:gap-16 mt-10 md:mt-16">
-          <FadeSlide className="w-full">
+          <FadeSlide className="w-full aspect-4/3">
             <Image
               src={content_2}
               alt=""
@@ -93,7 +93,7 @@ const DiscoverSection = () => {
               height={1000}
             />
           </FadeSlide>
-          <FadeSlide className="w-full">
+          <FadeSlide className="w-full aspect-4/3">
             <Image
               src={content_3}
               alt=""

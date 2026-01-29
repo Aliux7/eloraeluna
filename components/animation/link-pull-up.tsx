@@ -12,7 +12,7 @@ type LinkPullUpProps = {
   className?: string;
   direction?: Direction;
   delay?: number;
-};
+} & React.ComponentPropsWithoutRef<"a">;
 
 export function LinkPullUp({
   href,
@@ -20,6 +20,8 @@ export function LinkPullUp({
   className = "",
   direction = "up",
   delay = 0,
+  onClick,
+  ...rest
 }: LinkPullUpProps) {
   const ref = React.useRef<HTMLDivElement | null>(null);
   const isInView = useInView(ref, { once: true });
@@ -41,7 +43,7 @@ export function LinkPullUp({
         }}
         className="inline-block w-full"
       >
-        <Link href={href} className={cn(className)}>
+        <Link href={href} className={cn(className)} onClick={onClick}>
           {children}
         </Link>
       </motion.div>
