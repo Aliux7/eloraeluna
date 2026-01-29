@@ -9,7 +9,7 @@ const DiscoverSection = () => {
   return (
     <section
       id="discover-section"
-      className="relative bg-[#464948] min-h-screen px-5 sm:px-10 xl:p-40 pt-28 pb-32"
+      className="relative bg-[#464948] min-h-screen px-5 sm:px-10 xl:p-48 pt-28 pb-32"
     >
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Image

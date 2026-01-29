@@ -4,7 +4,7 @@ import Image from "next/image";
 const DesignSection = () => {
   return (
     <section id="design-section" className="relative bg-[#464948] min-h-screen">
-      <div className="xl:absolute inset-0 z-10 pt-32 px-5 sm:px-10 py-16 xl:p-40 flex flex-col gap-60 xl:gap-0 justify-between items-start">
+      <div className="xl:absolute inset-0 z-10 pt-32 px-5 sm:px-10 py-16 xl:p-48 flex flex-col gap-60 xl:gap-0 justify-between items-start">
         <h3 className="font-bold tracking-widest text-2xl xl:text-3xl text-[#F3F0E8]">
           THE DESIGN
         </h3>

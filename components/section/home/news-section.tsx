@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const NewsSection = () => {
   return (
-    <section className="relative bg-[#F3F0E8] py-36 px-5 sm:px-10 xl:px-40 flex flex-col gap-10">
+    <section className="relative bg-[#F3F0E8] py-36 px-5 sm:px-10 xl:px-48 flex flex-col gap-10">
       <div className="flex justify-between items-center gap-10">
         <h1 className="text-[#464948] text-4xl md:text-5xl font-normal tracking-widest">
           NEWS & EVENTS

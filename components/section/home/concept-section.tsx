@@ -26,7 +26,7 @@ const ConceptSection = () => {
           className="absolute bottom-12 left-96"
         />
       </div>
-      <div className="relative z-10 p-32 px-5 sm:px-10 xl:p-40 gap-16 flex flex-col justify-between items-start">
+      <div className="relative z-10 p-32 px-5 sm:px-10 xl:p-48 gap-16 flex flex-col justify-between items-start">
         <h3 className="font-bold tracking-widest text-2xl sm:text-3xl text-[#F3F0E8]">
           THE CONCEPT
         </h3>

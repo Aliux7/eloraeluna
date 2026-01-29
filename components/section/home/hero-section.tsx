@@ -16,7 +16,7 @@ const HeroSection = () => {
           priority
         />
       </div>
-      <div className="relative z-10 px-5 sm:px-10 xl:px-40 w-full min-h-screen pb-10 lg:pb-16 flex flex-col justify-end items-start">
+      <div className="relative z-10 px-5 sm:px-10 xl:px-48 w-full min-h-screen pb-10 lg:pb-16 flex flex-col justify-end items-start">
         <div className="h-7 absolute right-5 sm:right-10 md:right-16 xl:right-40 top-32 lg:top-36 ">
           <Image
             src={eluna_logo}
