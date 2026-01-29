@@ -15,7 +15,7 @@ const DiscoverSection = () => {
         <Image
           src={illustration}
           alt=""
-          className="absolute top-20 xl:top-52.5 -right-28 xl:left-32.5 w-96 md:w-120"
+          className="absolute top-20 xl:top-52.5 -right-28 xl:-left-20 w-96 md:w-130"
         />
         <Image
           src={illustration_bottom}
