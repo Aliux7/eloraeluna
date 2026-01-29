@@ -1,4 +1,5 @@
 import { X, ArrowRight } from "lucide-react";
+import { LinkPullUp } from "../animation/link-pull-up";
 
 interface FullMenuProps {
   open: boolean;
@@ -20,23 +21,24 @@ const FullMenu: React.FC<FullMenuProps> = ({ open }) => {
   if (!open) return null;
 
   return (
-    <div className="fixed top-18 sm:top-20 px-5 sm:px-10 xl:px-38 inset-0 z-40 bg-[#9D7958]/95 text-white overflow-y-auto no-scrollbar backdrop-blur-xs "> 
+    <div className="fixed top-18 sm:top-20 px-5 sm:px-10 xl:px-38 inset-0 z-40 bg-[#9D7958]/95 text-white overflow-y-auto no-scrollbar backdrop-blur-xs ">
       <div className="py-5">
         <ul className="space-y-2">
           {MENU.map((item: string, i: number) => (
-            <li
+            <LinkPullUp
+              href="#"
               key={i}
-              className="flex items-center justify-between group cursor-pointer p-5 xl:px-20 hover:bg-[#614429] bg-transparent transition-all duration-300 ease-in-out"
+              direction="left"
+              delay={i * 0.08}
+              className="w-full flex items-center justify-between group cursor-pointer p-5 xl:px-20 hover:bg-[#614429] bg-transparent transition-all duration-300 ease-in-out"
             >
-              <span className="text-lg md:text-xl tracking-wide">
-                {item}
-              </span>
+              <span className="text-lg md:text-xl tracking-wide">{item}</span>
 
               <ArrowRight
                 size={22}
                 className="opacity-70 group-hover:translate-x-1 transition-transform"
               />
-            </li>
+            </LinkPullUp>
           ))}
         </ul>
       </div>

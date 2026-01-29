@@ -4,32 +4,44 @@ import Link from "next/link";
 import { motion, useInView } from "framer-motion";
 import { cn } from "@/lib/utils";
 
+type Direction = "up" | "left";
+
 type LinkPullUpProps = {
   href: string;
   children: React.ReactNode;
   className?: string;
+  direction?: Direction;
+  delay?: number;
 };
 
 export function LinkPullUp({
   href,
   children,
   className = "",
+  direction = "up",
+  delay = 0,
 }: LinkPullUpProps) {
   const ref = React.useRef<HTMLDivElement | null>(null);
   const isInView = useInView(ref, { once: true });
 
+  const initialPosition =
+    direction === "left"
+      ? { x: "-20%", opacity: 0 }
+      : { y: "200%", opacity: 0 };
+
   return (
     <div ref={ref} className="overflow-hidden">
       <motion.div
-        initial={{ y: "200%" }}
-        animate={isInView ? { y: "0%" } : {}}
+        initial={initialPosition}
+        animate={isInView ? { x: "0%", y: "0%", opacity: 1 } : {}}
         transition={{
-          duration: 1,
+          duration: 0.8,
+          delay,
           ease: [0.22, 1, 0.36, 1],
         }}
-        className="inline-block"
+        className="inline-block w-full"
       >
-        <Link href={href} passHref className={cn(className)}>
+        <Link href={href} className={cn(className)}>
           {children}
         </Link>
       </motion.div>
