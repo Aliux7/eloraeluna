@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/layout/header";
 import { League_Spartan } from "next/font/google";
 import FloatingContact from "@/components/layout/floating-contact";
+import Footer from "@/components/layout/footer";
 
 const leagueSpartan = League_Spartan({
   subsets: ["latin"],
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={leagueSpartan.className}>
         <Header />
         {children}
+        <Footer />
         <FloatingContact />
       </body>
     </html>
