@@ -14,7 +14,7 @@ const FacilitiesSection = () => {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="relative z-10 pt-32 p-5 pb-10 sm:p-10 xl:p-16 gap-16 flex flex-col justify-end items-start min-h-screen">
+      <div className="relative z-10 pt-32 p-5 pb-10 xl:pb-16 sm:px-10 xl:px-40 gap-16 flex flex-col justify-end items-start min-h-screen">
         <div className="flex justify-between w-full items-center">
           <div className="flex flex-col gap-2 sm:gap-4">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extralight text-[#F3F0E8] tracking-widest">

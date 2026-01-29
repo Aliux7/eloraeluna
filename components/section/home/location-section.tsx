@@ -13,7 +13,7 @@ const LocationSection = () => {
         />
       </div>
 
-      <div className="relative z-10 p-32 px-5 sm:px-10 xl:px-16 gap-16 flex flex-col lg:flex-row justify-between items-start">
+      <div className="relative z-10 p-32 px-5 sm:px-10 xl:px-40 gap-16 flex flex-col lg:flex-row justify-between items-start">
         <h3 className="font-bold tracking-widest text-2xl sm:text-3xl text-[#F3F0E8]">
           OUR LOCATION
         </h3>

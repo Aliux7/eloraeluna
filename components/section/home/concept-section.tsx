@@ -26,11 +26,11 @@ const ConceptSection = () => {
           className="absolute bottom-12 left-96"
         />
       </div>
-      <div className="relative z-10 p-32 px-5 sm:px-10 xl:p-16 gap-16 flex flex-col justify-between items-start">
+      <div className="relative z-10 p-32 px-5 sm:px-10 xl:p-40 gap-16 flex flex-col justify-between items-start">
         <h3 className="font-bold tracking-widest text-2xl sm:text-3xl text-[#F3F0E8]">
           THE CONCEPT
         </h3>
-        <div className="flex flex-col lg:flex-row justify-between w-full items-start lg:items-center gap-20 lg:gap-0 min-h-162.5">
+        <div className="flex flex-col lg:flex-row justify-between w-full items-start lg:items-center gap-20 lg:gap-0 min-h-162.5 xl:h-162.5">
           <div className="flex flex-col gap-2 sm:gap-4">
             <h2 className="text-4xl sm:text-5xl xl:text-6xl font-extralight text-[#F3F0E8] tracking-widest">
               THE BIRTH OF
@@ -49,8 +49,8 @@ const ConceptSection = () => {
               UNCOVER OUR CONCEPT
             </button>
           </div>
-          <div className="w-full xl:w-1/2 flex flex-col sm:flex-row justify-end items-center gap-10 sm:gap-2 xl:gap-7 h-full">
-            <div className="w-full sm:h-3/5 xl:h-4/5 sm:mb-[20%] xl:mb-auto">
+          <div className="w-full xl:w-1/2 flex flex-col sm:flex-row justify-end items-center gap-10 sm:gap-2 xl:gap-5 h-full xl:py-10">
+            <div className="w-full sm:h-3/5 xl:h-[70%] sm:mb-[20%] xl:mb-auto">
               <Image
                 src={concept_1}
                 alt=""
@@ -58,7 +58,7 @@ const ConceptSection = () => {
                 className="object-cover w-full h-full"
               />
             </div>
-            <div className="w-full sm:h-3/5 xl:h-4/5 sm:mt-[20%] xl:mt-auto">
+            <div className="w-full sm:h-3/5 xl:h-[70%] sm:mt-[20%] xl:mt-auto">
               <Image
                 src={concept_2}
                 alt=""

@@ -4,19 +4,19 @@ import Image from "next/image";
 const DesignSection = () => {
   return (
     <section id="design-section" className="relative bg-[#464948] min-h-screen">
-      <div className="xl:absolute inset-0 z-10 pt-32 px-5 sm:px-10 py-16 xl:p-16 flex flex-col gap-60 xl:gap-0 justify-between items-start">
+      <div className="xl:absolute inset-0 z-10 pt-32 px-5 sm:px-10 py-16 xl:p-40 flex flex-col gap-60 xl:gap-0 justify-between items-start">
         <h3 className="font-bold tracking-widest text-2xl xl:text-3xl text-[#F3F0E8]">
           THE DESIGN
         </h3>
-        <div className="flex flex-col xl:flex-row justify-between xl:items-center">
+        <div className="flex flex-col xl:flex-row justify-between xl:items-center gap-10">
           <div className="flex flex-col gap-4">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-medium text-[#F3F0E8] tracking-widest">
+            <h2 className="text-4xl sm:text-5xl font-medium text-[#F3F0E8] tracking-widest">
               <span className="font-extralight">A</span> LEGACY
             </h2>
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-medium text-[#F3F0E8] tracking-widest md:ml-20">
+            <h2 className="text-4xl sm:text-5xl font-medium text-[#F3F0E8] tracking-widest md:ml-20">
               <span className="font-thin">OF</span> URBAN
             </h2>
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-medium text-[#F3F0E8] tracking-widest md:ml-40">
+            <h2 className="text-4xl sm:text-5xl font-medium text-[#F3F0E8] tracking-widest md:ml-40">
               EXCELLENCE
             </h2>
 
