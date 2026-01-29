@@ -19,10 +19,10 @@ const LocationSection = () => {
         </h3>
         <div className="w-1/2 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-20 lg:gap-0">
           <div className="flex flex-col gap-2 sm:gap-4">
-            <h2 className="text-4xl sm:text-5xl xl:text-6xl font-extralight text-[#F3F0E8] tracking-widest">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extralight text-[#F3F0E8] tracking-widest">
               INFINITE
             </h2>
-            <h2 className="text-4xl sm:text-5xl xl:text-6xl font-medium text-[#F3F0E8] tracking-widest sm:ml-20 mb-6 sm:mb-10">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-medium text-[#F3F0E8] tracking-widest ml-16 sm:ml-20 mb-6 sm:mb-10">
               CONNECTIVITY
             </h2>
 
@@ -43,7 +43,7 @@ const LocationSection = () => {
       <Image
         src={location}
         alt=""
-        className="relative w-full h-full object-cover z-10"
+        className="relative w-full h-80 sm:h-full object-cover z-10"
       />
     </section>
   );

@@ -35,7 +35,7 @@ const ConceptSection = () => {
             <h2 className="text-4xl sm:text-5xl xl:text-6xl font-extralight text-[#F3F0E8] tracking-widest">
               THE BIRTH OF
             </h2>
-            <h2 className="text-4xl sm:text-5xl xl:text-6xl font-normal text-[#F3F0E8] tracking-widest sm:ml-20 mb-6 sm:mb-10">
+            <h2 className="text-4xl sm:text-5xl xl:text-6xl font-normal text-[#F3F0E8] tracking-widest ml-14 sm:ml-20 mb-6 sm:mb-10">
               THE UNIVERSE
             </h2>
 

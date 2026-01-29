@@ -9,7 +9,7 @@ const NewsSection = () => {
   return (
     <section className="relative bg-[#F3F0E8] py-36 px-5 sm:px-10 xl:px-48 flex flex-col gap-10">
       <div className="flex justify-between items-center gap-10">
-        <h1 className="text-[#464948] text-4xl md:text-5xl font-normal tracking-widest">
+        <h1 className="text-[#464948] text-4xl sm:text-5xl lg:text-6xl font-normal tracking-widest">
           NEWS & EVENTS
         </h1>
         <button className="w-32.5 h-10 md:h-11.5 border border-[#9D7958] text-[#9D7958] hover:bg-[#9D7958] hover:text-white cursor-pointer transition-all duration-200 ease-in-out flex justify-center items-center text-lg">
