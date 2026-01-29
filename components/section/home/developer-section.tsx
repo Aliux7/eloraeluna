@@ -5,12 +5,12 @@ import Image from "next/image";
 
 const DeveloperSection = () => {
   return (
-    <section className="relative bg-[#2B3036] min-h-screen flex flex-col xl:flex-row">
+    <section className="relative bg-[#464948] min-h-screen flex flex-col xl:flex-row">
       <div className="relative w-full xl:w-1/2 min-h-screen z-10">
         <Image src={developer_ornament} alt="" fill className="object-cover" />
 
         <div className="absolute inset-0 z-10 flex flex-col justify-center py-16 px-5 sm:px-10 xl:px-16">
-          <h3 className="font-bold tracking-widest text-2xl sm:text-3xl text-[#F3F0E8] mb-32">
+          <h3 className="font-bold tracking-widest text-lg sm:text-2xl xl:text-3xl text-[#F3F0E8] mb-32">
             THE DEVELOPER
           </h3>
           <div className="relative w-72 sm:w-80 lg:w-100 mb-16">

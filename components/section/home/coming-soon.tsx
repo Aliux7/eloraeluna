@@ -5,7 +5,7 @@ import illustration_1 from "@/app/assets/home/illustration_cs_1.png"
 import illustration_2 from "@/app/assets/home/illustration_cs_2.png"
 const CommingSoon = () => {
   return (
-    <section className="relative bg-[#F3F0E8] p-5 sm:p-10 xl:p-20 flex flex-col gap-10">
+    <section className="relative bg-[#F3F0E8] p-5 sm:p-10 xl:py-20 xl:px-48 flex flex-col gap-10">
       <div className="relative bg-[#9D7958] w-full h-full p-5 md:p-10 xl:p-20 grid xl:grid-cols-2">
         <Image src={illustration_2} alt="" className="w-40 sm:w-60 md:w-80 lg:w-90 xl:w-140 absolute top-0 right-0"/>
         <Image src={illustration_1} alt="" className="w-30 sm:w-40 md:w-50 lg:w-70 xl:w-80 absolute bottom-0 left-0"/>

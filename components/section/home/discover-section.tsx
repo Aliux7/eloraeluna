@@ -24,7 +24,7 @@ const DiscoverSection = () => {
         />
       </div>
       <div className="relative z-10">
-        <div className="flex flex-col xl:flex-row gap-20 xl:gap-0 justify-between items-start mb-32">
+        <div className="flex flex-col xl:flex-row gap-20 xl:gap-0 justify-between items-start mb-8 sm:mb-32">
           <h3 className="text-xl sm:text-2xl font-medium text-[#F3F0E8] tracking-widest">
             KOTA KASABLANKA <br /> PHASE IV
           </h3>

@@ -5,13 +5,13 @@ import full_the_design from "@/app/assets/home/full_the_design.png";
 
 const DesignSection = () => {
   return (
-    <section id="design-section" className="relative bg-[#464948] min-h-200 lg:min-h-screen max-h-300 lg:max-h-350 xl:max-h-400 flex items-end justify-end">
+    <section id="design-section" className="relative bg-[#464948] min-h-200 lg:min-h-screen max-h-300 lg:max-h-400 flex items-end justify-end">
       <div className="absolute inset-0 z-10 pt-32 px-5 sm:px-10 py-16 xl:p-48 flex flex-col gap-60 xl:gap-0 justify-between items-start">
         <h3 className="font-bold tracking-widest text-lg sm:text-2xl xl:text-3xl text-[#F3F0E8]">
           THE DESIGN
         </h3>
         <div className="flex flex-col xl:flex-row justify-between xl:items-center gap-10">
-          <div className="w-full flex flex-col gap-4">
+          <div className="w-full flex flex-col gap-2 sm:gap-4">
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-medium text-[#F3F0E8] tracking-widest">
               <span className="font-extralight">SPACES CRAFTED</span>
             </h2>
@@ -41,7 +41,7 @@ const DesignSection = () => {
       <Image
         src={full_the_design}
         alt=""
-        className="block inset-0 z-0 relative h-full xl:w-full object-cover object-top"
+        className="block inset-0 z-0 relative h-full xl:h-350 xl:w-full object-cover object-top"
       /> 
     </section>
   );

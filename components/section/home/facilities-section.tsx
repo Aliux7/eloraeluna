@@ -6,7 +6,7 @@ const FacilitiesSection = () => {
   return (
     <section
       id="facilities-section"
-      className="relative bg-[#2B3036] min-h-screen"
+      className="relative bg-[#464948] min-h-screen flex flex-col"
     >
       <div className="relative sm:absolute inset-0 z-0 pointer-events-none after:content-[''] after:absolute after:inset-0 after:bg-black/15">
         <Image
@@ -24,10 +24,10 @@ const FacilitiesSection = () => {
         </div>
         <div className="flex justify-between w-full items-center z-10">
           <div className="flex flex-col gap-2 sm:gap-4">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extralight text-[#F3F0E8] tracking-widest">
+            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-extralight text-[#F3F0E8] tracking-widest">
               OUR
             </h2>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-medium text-[#F3F0E8] tracking-widest ml-14 sm:ml-20 mb-6 lg:mb-10">
+            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-medium text-[#F3F0E8] tracking-widest ml-14 sm:ml-20 mb-6 lg:mb-10">
               FACILITIES
             </h2>
 

@@ -27,19 +27,19 @@ const ConceptSection = () => {
         />
       </div>
       <div className="relative z-10 p-32 px-5 sm:px-10 xl:p-48 gap-16 flex flex-col justify-between items-start">
-        <h3 className="font-bold tracking-widest text-2xl sm:text-3xl text-[#F3F0E8]">
+        <h3 className="font-bold tracking-widest text-lg sm:text-2xl xl:text-3xl text-[#F3F0E8]">
           THE CONCEPT
         </h3>
         <div className="flex flex-col lg:flex-row justify-between w-full items-start lg:items-center gap-20 lg:gap-0 min-h-162.5 xl:h-162.5">
           <div className="flex flex-col gap-2 sm:gap-4">
-            <h2 className="text-4xl sm:text-5xl xl:text-6xl font-extralight text-[#F3F0E8] tracking-widest">
+            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-extralight text-[#F3F0E8] tracking-widest">
               THE BIRTH OF
             </h2>
-            <h2 className="text-4xl sm:text-5xl xl:text-6xl font-normal text-[#F3F0E8] tracking-widest ml-14 sm:ml-20 mb-6 sm:mb-10">
+            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-normal text-[#F3F0E8] tracking-widest ml-14 sm:ml-20 mb-6 sm:mb-10">
               THE UNIVERSE
             </h2>
 
-            <p className="text-[#F3F0E8] font-normal text-xl sm:w-122 mb-14 lg:mb-20">
+            <p className="text-[#F3F0E8] font-normal text-lg sm:text-xl sm:w-122 mb-14 lg:mb-20">
               Elora and Eluna, inspired by the sun and moon, offer a harmonious
               blend of vibrance and tranqulity in South Jakarta's premier
               lifestyle hub.
