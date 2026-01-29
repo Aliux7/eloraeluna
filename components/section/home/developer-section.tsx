@@ -13,7 +13,7 @@ const DeveloperSection = () => {
           <h3 className="font-bold tracking-widest text-2xl sm:text-3xl text-[#F3F0E8] mb-32">
             THE DEVELOPER
           </h3>
-          <div className="relative w-72 sm:w-100 lg:w-130 mb-16">
+          <div className="relative w-72 sm:w-80 lg:w-100 mb-16">
             <Image src={developer_logo} alt="" width={1000} height={1000} />
           </div>
 
