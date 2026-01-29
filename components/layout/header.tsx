@@ -3,7 +3,10 @@ import Image from "next/image";
 import eloraeluna_logo from "@/app/assets/eloraeluna_logo.png";
 import pakuwon_logo from "@/app/assets/pakuwon_logo.png";
 import pakuwon_mini_logo from "@/app/assets/pakuwon_mini_logo.png";
-import { useEffect, useState } from "react";
+import and from "@/app/assets/and.svg";
+import elora from "@/app/assets/elora.svg";
+import eluna from "@/app/assets/eluna.svg";
+import { useState } from "react";
 import FullMenu from "./full-menu";
 
 const Header = () => {
@@ -25,14 +28,28 @@ const Header = () => {
           className={` h-0.5 bg-white rounded-full transition-all duration-300 ease-in-out ${open ? "-rotate-45 origin-left w-8 translate-y-1" : "w-6"} `}
         />
       </div>
-      <div className="w-48 lg:w-56 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+      <div className="flex justify-center items-center gap-5 h-7 lg:h-8 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
         <Image
-          src={eloraeluna_logo}
+          src={elora}
+          alt=""
+          width={1000}
+          height={1000}
+          className="w-full h-4.5"
+        />
+        <Image
+          src={and}
           alt=""
           width={1000}
           height={1000}
           className="w-full h-full"
         />
+        <Image
+          src={eluna}
+          alt=""
+          width={1000}
+          height={1000}
+          className="w-full h-4.5"
+        /> 
       </div>
       <div className="lg:w-60 hidden lg:block">
         <Image src={pakuwon_logo} alt="" width={1000} height={1000} />

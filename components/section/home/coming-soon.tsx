@@ -1,6 +1,8 @@
 import Image from "next/image";
 import eluna_white from "@/app/assets/home/eluna_white.png";
-import eloraeluna from "@/app/assets/eloraeluna_logo.png";
+import and from "@/app/assets/and.svg";
+import elora from "@/app/assets/elora.svg";
+import eluna from "@/app/assets/eluna.svg";
 import illustration_1 from "@/app/assets/home/illustration_cs_1.png";
 import illustration_2 from "@/app/assets/home/illustration_cs_2.png";
 import { FadeSlide } from "@/components/animation/fade-slide";
@@ -58,13 +60,27 @@ const CommingSoon = () => {
             className="text-[#F3F0E8] text-2xl md:text-3xl lg:text-4xl font-extralight"
           />
         </div>
-        <FadeSlide className="absolute bottom-5 sm:bottom-10 left-1/2 -translate-x-1/2">
+        <FadeSlide className="absolute bottom-5 sm:bottom-10 left-1/2 -translate-x-1/2 flex justify-center items-center gap-5 h-7 lg:h-8">
           <Image
-            src={eloraeluna}
+            src={elora}
             alt=""
             width={1000}
             height={1000}
-            className=" h-6.5 sm:h-8 lg:h-9 w-fit object-cover"
+            className="w-full h-4.5"
+          />
+          <Image
+            src={and}
+            alt=""
+            width={1000}
+            height={1000}
+            className="w-full h-full"
+          />
+          <Image
+            src={eluna}
+            alt=""
+            width={1000}
+            height={1000}
+            className="w-full h-4.5"
           />
         </FadeSlide>
       </div>

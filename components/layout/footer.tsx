@@ -6,7 +6,9 @@ import facebook from "@/app/assets/home/facebook.png";
 import instagram from "@/app/assets/home/instagram.png";
 import twitter from "@/app/assets/home/twitter.png";
 import linkedin from "@/app/assets/home/linkedin.png";
-import Link from "next/link";
+import and from "@/app/assets/and.svg";
+import elora from "@/app/assets/elora.svg";
+import eluna from "@/app/assets/eluna.svg";
 import { FadeSlide } from "../animation/fade-slide";
 import { WordsPullUp } from "../animation/word-pull-up";
 import { LinkPullUp } from "../animation/link-pull-up";
@@ -19,19 +21,34 @@ const Footer = () => {
           <div className="space-y-10">
             <div className="space-y-8">
               <FadeSlide
-                direction="left"
-                className="relative sm:w-fit h-full flex flex-col justify-center items-center gap-2"
+                direction="up"
+                className="relative sm:w-fit h-full flex justify-center items-center gap-5"
               >
                 <Image
-                  src={eloraeluna}
+                  src={elora}
                   alt=""
-                  className="object-cover w-[80%] sm:w-100"
+                  width={1000}
+                  height={1000}
+                  className="w-full h-8"
                 />
-                <Image src={kota} alt="" className="object-cover" />
-              </FadeSlide>
+                <Image
+                  src={and}
+                  alt=""
+                  width={1000}
+                  height={1000}
+                  className="w-full h-8"
+                />
+                <Image
+                  src={eluna}
+                  alt=""
+                  width={1000}
+                  height={1000}
+                  className="w-full h-8"
+                />
+              </FadeSlide> 
 
               <FadeSlide
-                direction="left"
+                direction="up"
                 className="flex items-center gap-3 w-52"
               >
                 <Image src={pakuwon_logo} alt="" className="object-cover" />
@@ -98,9 +115,9 @@ const Footer = () => {
             </LinkPullUp>
           </div>
         </div>
- 
+
         <div className="border-t border-white my-8" />
- 
+
         <div className="flex flex-col md:flex-row justify-between items-center text-lg gap-6">
           <WordsPullUp text="Disclaimer | Terms and Conditions" />
           <WordsPullUp
