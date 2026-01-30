@@ -116,8 +116,8 @@ const PremiumSection = () => {
           />
         </FadeSlide>
 
-        <div className="grid grid-cols-3 h-full gap-10 md:gap-16 mt-10 md:mt-16">
-          <FadeSlide className="w-full aspect-2/1 col-span-2">
+        <div className="grid lg:grid-cols-3 h-full gap-10 md:gap-16 mt-10 md:mt-16">
+          <FadeSlide className="w-full aspect-square lg:aspect-2/1 lg:col-span-2">
             <Image
               src={content_2}
               alt=""
@@ -144,7 +144,7 @@ const PremiumSection = () => {
               height={1000}
             />
           </FadeSlide>
-          <FadeSlide className="w-full aspect-2/1 col-span-2">
+          <FadeSlide className="w-full aspect-square lg:aspect-2/1 lg:col-span-2">
             <Image
               src={content_2}
               alt=""
@@ -153,7 +153,7 @@ const PremiumSection = () => {
               height={1000}
             />
           </FadeSlide>
-          <FadeSlide className="w-full aspect-2/1 col-span-2">
+          <FadeSlide className="w-full aspect-square lg:aspect-2/1 lg:col-span-2">
             <Image
               src={content_2}
               alt=""
