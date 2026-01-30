@@ -2,7 +2,7 @@ import HeroSection from "@/components/section/kota-kasablangka/hero-section";
 import DiscoverSection from "@/components/section/kota-kasablangka/discover-section";
 import PremiumSection from "@/components/section/kota-kasablangka/premium-section"; 
 
-export default function KotaKasablangka() {
+const page = () => {
   return (
     <main className="overflow-x-hidden bg-[#464948]">
       <HeroSection />
@@ -11,3 +11,5 @@ export default function KotaKasablangka() {
     </main>
   );
 }
+
+export default page;

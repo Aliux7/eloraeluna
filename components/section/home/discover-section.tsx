@@ -55,7 +55,7 @@ const DiscoverSection = () => {
         </div>
         <div className="relative flex justify-start xl:justify-center items-end lg:items-center">
           <FadeSlide
-            className="absolute xl:relative sm:ml-5 sm:mb-5 lg:mb-0 xl:ml-0"
+            className="absolute xl:relative sm:ml-5 sm:mb-5 lg:mb-0 xl:ml-0 z-10"
             direction="right"
           >
             <div className="hidden xl:block absolute w-115.5 xl:h-131.5 bg-[#9D7958]/40 top-2.5 left-4 z-0"></div>
