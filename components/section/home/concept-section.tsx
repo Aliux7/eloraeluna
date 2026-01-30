@@ -60,7 +60,7 @@ const ConceptSection = () => {
           <div className="w-full xl:w-1/2 flex flex-col sm:flex-row justify-end items-center gap-10 sm:gap-2 xl:gap-5 h-full xl:py-10">
             <FadeSlide
               direction="up"
-              className="w-full sm:h-3/5 xl:h-[70%] sm:mb-[20%] xl:mb-auto"
+              className="w-full sm:h-3/5 xl:h-[80%] sm:mb-[20%] xl:mb-auto"
             >
               <Image
                 src={concept_1}
@@ -71,7 +71,7 @@ const ConceptSection = () => {
             </FadeSlide>
             <FadeSlide
               direction="down"
-              className="w-full sm:h-3/5 xl:h-[70%] sm:mt-[20%] xl:mt-auto"
+              className="w-full sm:h-3/5 xl:h-[80%] sm:mt-[20%] xl:mt-auto"
             >
               <Image
                 src={concept_2}

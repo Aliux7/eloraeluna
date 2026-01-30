@@ -12,7 +12,7 @@ const LocationSection = () => {
         <Image
           src={location_shutter}
           alt=""
-          className="w-full h-1/2 sm:h-full object-cover"
+          className="w-full h-1/2 sm:h-full object-cover  opacity-70"
         />
       </div>
 

@@ -58,7 +58,7 @@ const DesignSection = () => {
       <Image
         src={full_the_design}
         alt=""
-        className="block inset-0 z-0 relative h-full xl:h-350 xl:w-full object-cover object-top opacity-80"
+        className="block inset-0 z-0 relative h-full xl:h-350 xl:w-full object-cover object-top opacity-70"
       />
     </section>
   );
