@@ -31,7 +31,7 @@ const DeveloperSection = () => {
             href="#"
             className="flex justify-center items-center cursor-pointer font-medium capitalize text-xl pt-px w-56 h-11.25 border border-[#9D7958] hover:bg-[#9D7958]/90 text-[#F3F0E8] transition-all duration-200 ease-in-out"
           >
-            LOCATION MAP
+            MEET THE DEVELOPER
           </LinkPullUp>
         </div>
       </div>
