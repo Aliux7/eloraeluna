@@ -13,7 +13,7 @@ type MenuItem = {
 
 const MENU: MenuItem[] = [
   { title: "HOME", link: "" },
-  { title: "KOTA KASABLANGKA", link: "kota-kasablangka" },
+  { title: "KOTA KASABLANKA", link: "kota-kasablanka" },
   { title: "THE DESIGN", link: "the-design" },
   { title: "THE CONCEPT", link: "the-concept" },
   { title: "FACILITIES", link: "facilities" },

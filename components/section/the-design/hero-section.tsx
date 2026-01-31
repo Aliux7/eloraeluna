@@ -19,7 +19,7 @@ const HeroSection = () => {
       <div className="relative z-10 px-5 sm:px-10 xl:px-48 w-full sm:min-h-screen sm:pb-10 lg:pb-16 flex flex-col justify-end items-start">
         <div className="py-8 sm:py-0">
           <WordsPullUp
-            text="A MSTERPLAN OF"
+            text="A MASTERPLAN OF"
             className="text-3xl sm:text-5xl lg:text-6xl font-light text-[#9D7958] sm:text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
           />
           <WordsPullUp

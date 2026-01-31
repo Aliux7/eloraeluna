@@ -22,28 +22,28 @@ const Footer = () => {
             <div className="space-y-8">
               <FadeSlide
                 direction="up"
-                className="relative sm:w-fit h-full flex justify-center items-center gap-5"
+                className="relative sm:w-fit h-full flex justify-start sm:justify-center items-center gap-5"
               >
                 <Image
                   src={elora}
                   alt=""
                   width={1000}
                   height={1000}
-                  className="w-full h-8"
+                  className="w-fit sm:w-full h-6 sm:h-8"
                 />
                 <Image
                   src={and}
                   alt=""
                   width={1000}
                   height={1000}
-                  className="w-full h-8"
+                  className="w-fit sm:w-full h-6 sm:h-8"
                 />
                 <Image
                   src={eluna}
                   alt=""
                   width={1000}
                   height={1000}
-                  className="w-full h-8"
+                  className="w-fit sm:w-full h-6 sm:h-8"
                 />
               </FadeSlide> 
 
