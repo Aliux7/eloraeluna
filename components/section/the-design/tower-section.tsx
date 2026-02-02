@@ -9,7 +9,7 @@ const TowerSection = () => {
   return (
     <section
       id="design-section"
-      className="relative bg-linear-to-b from-[#333333] to-[#575757]  min-h-screen px-5 sm:px-10 xl:px-48 py-32"
+      className="relative bg-linear-to-b from-[#333333] to-[#464948]  min-h-screen px-5 sm:px-10 xl:px-48 py-32"
     >
       <FadeSlide className="absolute top-10 sm:top-40 lg:top-64 -right-10 lg:left-10 xl:left-16 scale-x-[-1] w-60 lg:w-72 xl:w-96">
         <Image src={illustration_2} alt="" />
@@ -53,10 +53,16 @@ const TowerSection = () => {
             </div>
           </div>
           <div className="sm:text-xs lg:text-base relative sm:absolute sm:-left-[30%] xl:-left-[45%] sm:top-[39%] w-full">
-            <WordsPullUp
-              text="ELUNA SOCIAL DECK"
-              className="text-[#F3F0E8] font-bold tracking-widest"
-            />
+            <div className="flex justify-start items-center gap-2">
+              <WordsPullUp
+                text="ELUNA SOCIAL DECK"
+                className="text-[#F3F0E8] font-bold tracking-widest"
+              />
+              <WordsPullUp
+                text="1"
+                className="bg-[#9D7958] text-[#F3F0E8] w-fit pt-0.5 size-5.5 rounded-full text-xs scale-100 flex sm:hidden justify-center items-center"
+              />
+            </div>
             <WordsPullUp
               text="20TH FLOOR"
               className="text-[#9D7958] font-bold tracking-widest"
@@ -79,10 +85,16 @@ const TowerSection = () => {
             </div>
           </div>
           <div className="sm:text-xs lg:text-base relative sm:absolute sm:-left-[30%] xl:-left-[45%] sm:top-[66%] w-full">
-            <WordsPullUp
-              text="ELUNA PET PARK"
-              className="text-[#F3F0E8] font-bold tracking-widest"
-            />
+            <div className="flex justify-start items-center gap-2">
+              <WordsPullUp
+                text="ELUNA PET PARK"
+                className="text-[#F3F0E8] font-bold tracking-widest"
+              />
+              <WordsPullUp
+                text="2"
+                className="bg-[#9D7958] text-[#F3F0E8] w-fit pt-0.5 size-5.5 rounded-full text-xs scale-100 flex sm:hidden justify-center items-center"
+              />
+            </div>
             <WordsPullUp
               text="P12"
               className="text-[#9D7958] font-bold tracking-widest"
@@ -101,10 +113,16 @@ const TowerSection = () => {
             </div>
           </div>
           <div className="sm:text-xs lg:text-base relative sm:absolute sm:-left-[30%] xl:-left-[45%] sm:-bottom-[1%] w-full">
-            <WordsPullUp
-              text="ELUNA LOBBY"
-              className="text-[#F3F0E8] font-bold tracking-widest"
-            />
+            <div className="flex justify-start items-center gap-2">
+              <WordsPullUp
+                text="ELUNA LOBBY"
+                className="text-[#F3F0E8] font-bold tracking-widest"
+              />
+              <WordsPullUp
+                text="3"
+                className="bg-[#9D7958] text-[#F3F0E8] w-fit pt-0.5 size-5.5 rounded-full text-xs scale-100 flex sm:hidden justify-center items-center"
+              />
+            </div>
             <WordsPullUp
               text="GROUND FLOOR"
               className="text-[#9D7958] font-bold tracking-widest"
@@ -127,10 +145,17 @@ const TowerSection = () => {
             </div>
           </div>
           <div className="sm:text-xs lg:text-base relative sm:absolute sm:-right-[30%] xl:-right-[50%] sm:top-[24%] w-fit sm:text-end flex flex-col sm:items-end">
-            <WordsPullUp
-              text="FACILITY FLOOR"
-              className="text-[#F3F0E8] font-bold tracking-widest"
-            />
+            <div className="flex justify-start items-center gap-2">
+              <WordsPullUp
+                text="FACILITY FLOOR"
+                className="text-[#F3F0E8] font-bold tracking-widest"
+              />
+              <WordsPullUp
+                text="4"
+                className="bg-[#9D7958] text-[#F3F0E8] w-fit pt-0.5 size-5.5 rounded-full text-xs scale-100 flex sm:hidden justify-center items-center"
+              />
+            </div>
+
             <WordsPullUp
               text="1ST FLOOR"
               className="text-[#9D7958] font-bold tracking-widest"
