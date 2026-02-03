@@ -43,7 +43,7 @@ const DesignSection = () => {
             </FadeSlide>
             <LinkPullUp
               href="#"
-              className="flex justify-center items-center cursor-pointer font-medium capitalize text-xl mt-10 sm:mt-20 pt-px w-64 h-11.25 text-[#9D7958] bg-[#F3F0E8] border border-[#9D7958] hover:bg-[#9D7958]/80 hover:text-[#F3F0E8] transition-all duration-200 ease-in-out"
+              className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg mt-10 sm:mt-20 pt-px w-64 h-11.25 text-[#F3F0E8] border border-[#9D7958] hover:bg-[#F3F0E8]/90 hover:text-[#9D7958] transition-all duration-200 ease-in-out"
             >
               UNCOVER OUR DESIGN
             </LinkPullUp>

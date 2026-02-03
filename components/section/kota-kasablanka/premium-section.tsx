@@ -8,8 +8,7 @@ import { FadeSlide } from "@/components/animation/fade-slide";
 import content_1 from "@/app/assets/kota-kasablanka/premium_content_1.jpg";
 import content_2 from "@/app/assets/kota-kasablanka/premium_content_2.png";
 import content_3 from "@/app/assets/kota-kasablanka/premium_content_3.jpg";
-import content_4 from "@/app/assets/kota-kasablanka/premium_content_4.jpg";
-import { LinkPullUp } from "@/components/animation/link-pull-up";
+import content_4 from "@/app/assets/kota-kasablanka/premium_content_4.jpg"; 
 
 const PremiumSection = () => {
   return (

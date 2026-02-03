@@ -55,7 +55,7 @@ const DiscoverSection = () => {
 
           <LinkPullUp
             href=""
-            className="flex justify-center items-center cursor-pointer font-medium capitalize text-lg lg:text-xl pt-px w-40 h-11.25 text-[#9D7958] border border-[#9D7958] hover:text-[#F3F0E8] hover:bg-[#9D7958] transition-all duration-200 ease-in-out"
+            className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg pt-px w-40 h-11.25 text-[#9D7958] border border-[#9D7958] hover:text-[#F3F0E8] hover:bg-[#9D7958] transition-all duration-200 ease-in-out"
           >
             VISIT KOKAS
           </LinkPullUp>

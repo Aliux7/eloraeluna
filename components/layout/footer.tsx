@@ -1,5 +1,3 @@
-import eloraeluna from "@/app/assets/eloraeluna_logo.png";
-import kota from "@/app/assets/kota.png";
 import pakuwon_logo from "@/app/assets/pakuwon_logo.png";
 import Image from "next/image";
 import facebook from "@/app/assets/home/facebook.png";
@@ -18,7 +16,7 @@ const Footer = () => {
     <footer className="bg-[#9D7958] text-white">
       <div className="px-5 sm:px-10 xl:px-48 py-20">
         <div className="flex flex-col lg:flex-row justify-between lg:items-end md:gap-16">
-          <div className="space-y-10">
+          <div className="space-y-5">
             <div className="space-y-8">
               <FadeSlide
                 direction="up"
@@ -29,34 +27,34 @@ const Footer = () => {
                   alt=""
                   width={1000}
                   height={1000}
-                  className="w-fit sm:w-full h-6 sm:h-8"
+                  className="w-fit sm:w-full h-6"
                 />
                 <Image
                   src={and}
                   alt=""
                   width={1000}
                   height={1000}
-                  className="w-fit sm:w-full h-6 sm:h-8"
+                  className="w-fit sm:w-full h-6"
                 />
                 <Image
                   src={eluna}
                   alt=""
                   width={1000}
                   height={1000}
-                  className="w-fit sm:w-full h-6 sm:h-8"
+                  className="w-fit sm:w-full h-6"
                 />
               </FadeSlide> 
 
               <FadeSlide
                 direction="up"
-                className="flex items-center gap-3 w-52"
+                className="flex items-center gap-3 w-48"
               >
                 <Image src={pakuwon_logo} alt="" className="object-cover" />
               </FadeSlide>
 
               <WordsPullUp
                 text="PT Elite Prima Hutama"
-                className="uppercase tracking-wider text-xl font-bold"
+                className="uppercase tracking-wider text-lg font-bold"
               />
             </div>
             <div className="flex flex-col md:flex-row md:justify-start md:items-end gap-4">
@@ -65,14 +63,14 @@ const Footer = () => {
                   text="Head Marketing Office"
                   className="font-medium text-lg"
                 />
-                <FadeSlide className="text-balance text-lg font-light">
+                <FadeSlide className="text-balance text-base font-light">
                   Eightyeight@Kasablanka Tower B Lt. 20, Jl. Casablanca Raya Kav
                   88, Menteng Dalam, Tebet, Jakarta Selatan, DKI Jakarta 12870
                 </FadeSlide>
               </div>
 
               <div className="flex flex-col justify-between">
-                <div className="space-y-1 text-xl font-light">
+                <div className="space-y-0 text-lg font-light">
                   <FadeSlide>
                     <span className="font-medium mr-3 pr-1">P</span>{" "}
                     081189996968
@@ -91,25 +89,25 @@ const Footer = () => {
           <div className="flex gap-6 mt-10 md:mt-0 text-lg">
             <LinkPullUp
               href="#"
-              className="size-7 flex justify-center items-center cursor-pointer"
+              className="size-6 flex justify-center items-center cursor-pointer"
             >
               <Image src={facebook} alt="" className="object-cover" />
             </LinkPullUp>
             <LinkPullUp
               href="#"
-              className="size-7 flex justify-center items-center cursor-pointer"
+              className="size-6 flex justify-center items-center cursor-pointer"
             >
               <Image src={instagram} alt="" className="object-cover" />
             </LinkPullUp>
             <LinkPullUp
               href="#"
-              className="size-7 flex justify-center items-center cursor-pointer"
+              className="size-6 flex justify-center items-center cursor-pointer"
             >
               <Image src={twitter} alt="" className="object-cover" />
             </LinkPullUp>
             <LinkPullUp
               href="#"
-              className="size-7 flex justify-center items-center cursor-pointer"
+              className="size-6 flex justify-center items-center cursor-pointer"
             >
               <Image src={linkedin} alt="" className="object-cover" />
             </LinkPullUp>
@@ -118,7 +116,7 @@ const Footer = () => {
 
         <div className="border-t border-white my-8" />
 
-        <div className="flex flex-col md:flex-row justify-between items-center text-lg gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <WordsPullUp text="Disclaimer | Terms and Conditions" />
           <WordsPullUp
             text="Copyright © Elora & Eluna | 2025 | All Rights Reserved"

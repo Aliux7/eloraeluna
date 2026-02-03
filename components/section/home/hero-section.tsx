@@ -29,14 +29,30 @@ const HeroSection = () => {
           className="block sm:hidden xl:block absolute top-1/2 -translate-y-1/2 right-5 sm:right-10 xl:right-16 rotate-180 cursor-pointer scale-70 sm:scale-100"
         />
       </div>
+      <FadeSlide
+        direction="right"
+        className="block sm:hidden h-6 absolute right-5 sm:right-10 md:right-16 xl:right-40 top-32 lg:top-36 "
+      >
+        <Image
+          src={eluna_logo}
+          alt=""
+          width={1000}
+          height={1000}
+          className="w-full h-full object-contain"
+          priority
+        />
+      </FadeSlide>
       <div className="relative z-10 px-5 sm:px-10 xl:px-48 w-full sm:min-h-screen pb-10 lg:pb-16 flex flex-col justify-end items-start">
-        <FadeSlide direction="right" className="hidden sm:block h-7 absolute right-5 sm:right-10 md:right-16 xl:right-40 top-32 lg:top-36 ">
+        <FadeSlide
+          direction="right"
+          className="hidden sm:block h-7 absolute right-5 sm:right-10 md:right-16 xl:right-40 top-32 lg:top-36 "
+        >
           <Image
             src={eluna_logo}
             alt=""
             width={1000}
             height={1000}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
             priority
           />
         </FadeSlide>
@@ -64,7 +80,7 @@ const HeroSection = () => {
 
           <LinkPullUp
             href="#"
-            className="flex justify-center items-center cursor-pointer font-medium capitalize text-lg lg:text-xl pt-px w-47.5 h-11.25 text-[#F3F0E8] border border-[#9D7958] hover:bg-[#F3F0E8]/90 hover:text-[#9D7958] transition-all duration-200 ease-in-out"
+            className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg pt-px w-47.5 h-11.25 text-[#F3F0E8] border border-[#9D7958] hover:bg-[#F3F0E8]/90 hover:text-[#9D7958] transition-all duration-200 ease-in-out"
           >
             EXPLORE NOW
           </LinkPullUp>

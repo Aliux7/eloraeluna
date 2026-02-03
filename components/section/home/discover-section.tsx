@@ -47,7 +47,7 @@ const DiscoverSection = () => {
 
             <LinkPullUp
               href="#"
-              className="flex justify-center items-center cursor-pointer font-medium capitalize text-xl pt-px w-51.5 h-11.25 text-[#F3F0E8] border border-[#9D7958] hover:bg-[#F3F0E8]/90 hover:text-[#9D7958] transition-all duration-200 ease-in-out"
+              className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg pt-px w-51.5 h-11.25 text-[#F3F0E8] border border-[#9D7958] hover:text-[#9D7958] hover:bg-[#F3F0E8]/90 transition-all duration-200 ease-in-out"
             >
               DISCOVER MORE
             </LinkPullUp>
