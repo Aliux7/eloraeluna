@@ -15,7 +15,7 @@ const FacilitiesSection = () => {
         <Image
           src={facilities_background}
           alt=""
-          className="w-full h-130 sm:h-full object-cover"
+          className="w-full h-96 sm:h-full object-cover"
         />
       </div>
       <div className="relative z-10 mt-10 sm:pt-32 p-5 pb-10 xl:pb-16 sm:px-10 xl:px-48 gap-16 flex flex-col justify-end items-start sm:min-h-screen">

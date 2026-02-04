@@ -1,4 +1,5 @@
-import pakuwon_logo from "@/app/assets/pakuwon_logo.png";
+import pakuwon_logo from "@/app/assets/pakuwon_logo.svg";
+import kota from "@/app/assets/kota.svg";
 import Image from "next/image";
 import facebook from "@/app/assets/home/facebook.png";
 import instagram from "@/app/assets/home/instagram.png";
@@ -17,7 +18,7 @@ const Footer = () => {
       <div className="px-5 sm:px-10 xl:px-48 py-20">
         <div className="flex flex-col lg:flex-row justify-between lg:items-end md:gap-16">
           <div className="space-y-5">
-            <div className="space-y-8">
+            <div className="w-fit">
               <FadeSlide
                 direction="up"
                 className="relative sm:w-fit h-full flex justify-start sm:justify-center items-center gap-5"
@@ -34,7 +35,7 @@ const Footer = () => {
                   alt=""
                   width={1000}
                   height={1000}
-                  className="w-fit sm:w-full h-6"
+                  className="w-fit sm:w-full h-8"
                 />
                 <Image
                   src={eluna}
@@ -47,9 +48,16 @@ const Footer = () => {
 
               <FadeSlide
                 direction="up"
-                className="flex items-center gap-3 w-48"
+                className="flex justify-start items-start gap-3 h-3 w-full mt-3 mb-8"
               >
-                <Image src={pakuwon_logo} alt="" className="object-cover" />
+                <Image src={kota} alt="" className="object-contain w-full h-full" />
+              </FadeSlide>
+
+              <FadeSlide
+                direction="up"
+                className="flex justify-start items-start gap-3 h-9 w-fit mb-8"
+              >
+                <Image src={pakuwon_logo} alt="" className="object-contain w-full h-full" />
               </FadeSlide>
 
               <WordsPullUp

@@ -9,7 +9,7 @@ import { FadeSlide } from "@/components/animation/fade-slide";
 const HeroSection = () => {
   return (
     <section id="hero-section" className="relative min-h-screen bg-[#464948]">
-      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-18 sm:pt-0 h-150 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-black/0">
+      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-18 sm:pt-0 h-96 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-black/0">
         <Image
           src={hero_background}
           alt=""
@@ -21,17 +21,17 @@ const HeroSection = () => {
         <Image
           src={arrow}
           alt=""
-          className="block sm:hidden xl:block absolute top-1/2 -translate-y-1/2 left-5 sm:left-10 xl:left-16 cursor-pointer scale-70 sm:scale-100"
+          className="block sm:hidden xl:block absolute top-[60%] sm:top-1/2 -translate-y-1/2 left-5 sm:left-10 xl:left-16 cursor-pointer scale-70 sm:scale-100"
         />
         <Image
           src={arrow}
           alt=""
-          className="block sm:hidden xl:block absolute top-1/2 -translate-y-1/2 right-5 sm:right-10 xl:right-16 rotate-180 cursor-pointer scale-70 sm:scale-100"
+          className="block sm:hidden xl:block absolute top-[60%] sm:top-1/2 -translate-y-1/2 right-5 sm:right-10 xl:right-16 rotate-180 cursor-pointer scale-70 sm:scale-100"
         />
       </div>
       <FadeSlide
         direction="right"
-        className="block sm:hidden h-6 absolute right-5 sm:right-10 md:right-16 xl:right-40 top-32 lg:top-36 "
+        className="block sm:hidden h-5 absolute right-5 sm:right-10 md:right-16 xl:right-40 top-30 sm:top-32 lg:top-36 "
       >
         <Image
           src={eluna_logo}
@@ -45,7 +45,7 @@ const HeroSection = () => {
       <div className="relative z-10 px-5 sm:px-10 xl:px-48 w-full sm:min-h-screen pb-10 lg:pb-16 flex flex-col justify-end items-start">
         <FadeSlide
           direction="right"
-          className="hidden sm:block h-7 absolute right-5 sm:right-10 md:right-16 xl:right-40 top-32 lg:top-36 "
+          className="hidden sm:block h-7 xl:h-8 absolute right-5 sm:right-10 md:right-16 xl:right-[max(10rem,18vw)] top-32 lg:top-36 xl:top-[max(10rem,13vw)]"
         >
           <Image
             src={eluna_logo}

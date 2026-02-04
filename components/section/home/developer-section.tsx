@@ -1,6 +1,6 @@
 import developer_ornament from "@/app/assets/home/developer_ornament.png";
 import developer_background from "@/app/assets/home/developer_background.png";
-import developer_logo from "@/app/assets/pakuwon_logo.png";
+import developer_logo from "@/app/assets/pakuwon_logo.svg";
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
@@ -22,8 +22,8 @@ const DeveloperSection = () => {
             text="THE DEVELOPER"
             className="font-bold tracking-widest text-lg sm:text-2xl xl:text-3xl text-[#F3F0E8] mb-32"
           />
-          <FadeSlide className="relative w-72 sm:w-80 lg:w-100 mb-16">
-            <Image src={developer_logo} alt="" width={1000} height={1000} />
+          <FadeSlide className="relative h-12 sm:h-14 lg:h-17 w-fit mb-16">
+            <Image src={developer_logo} alt="" width={1000} height={1000} className="w-full h-full"/>
           </FadeSlide>
 
           <FadeSlide className="text-[#F3F0E8] font-normal text-lg sm:text-xl md:text-2xl mb-14 lg:mb-16 max-w-140 sm:pr-10 text-balance">

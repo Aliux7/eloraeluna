@@ -60,9 +60,9 @@ const PremiumSection = () => {
             className="absolute xl:relative sm:ml-5 sm:mb-5 lg:mb-0 xl:ml-0 z-10"
             direction="right"
           >
-            <div className="hidden xl:block absolute w-110 xl:h-131.5 bg-[#9D7958]/40 top-2.5 left-4 z-0"></div>
-            <div className="-ml-5 -mb-15 sm:mb-0 sm:ml-0 relative w-80 sm:w-96 lg:w-110 xl:h-131.5 bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-8 flex flex-col justify-center gap-5 xl:gap-0 items-center">
-              <h3 className="sm:text-lg tracking-widest text-[#F3F0E8]">
+            <div className="hidden xl:block absolute w-110 xl:h-full bg-[#9D7958]/40 top-2.5 left-4 z-0"></div>
+            <div className="-ml-5 -mb-15 sm:mb-0 sm:ml-0 relative w-80 sm:w-96 lg:w-110 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-8 flex flex-col justify-center gap-5 xl:gap-0 items-center">
+              <p className="sm:text-lg tracking-widest text-[#F3F0E8]">
                 Long recognized as one of Jakarta's most dynamic lifestyle
                 destinations, Kota Kasablanka has established itself as a
                 benchmark for integrated urban living—where upscale residences,
@@ -72,7 +72,7 @@ const PremiumSection = () => {
                 prestige, and seamless connection to the city's finest
                 offerings, Elora & Eluna are not just residences—they are the
                 future of elevated urban life within the iconic Kota Kasablanka.
-              </h3>
+              </p>
             </div>
           </FadeSlide>
           <FadeSlide className="w-full h-full lg:h-[80vh]">

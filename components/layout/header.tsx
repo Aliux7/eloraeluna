@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import eloraeluna_logo from "@/app/assets/eloraeluna_logo.png";
-import pakuwon_logo from "@/app/assets/pakuwon_logo.png";
+import pakuwon_logo from "@/app/assets/pakuwon_logo.svg";
 import pakuwon_mini_logo from "@/app/assets/pakuwon_mini_logo.png";
 import and from "@/app/assets/and.svg";
 import elora from "@/app/assets/elora.svg";
@@ -49,13 +49,25 @@ const Header = () => {
           width={1000}
           height={1000}
           className="w-full h-4.5"
-        /> 
+        />
       </div>
-      <div className="lg:w-60 hidden lg:block">
-        <Image src={pakuwon_logo} alt="" width={1000} height={1000} />
+      <div className="lg:h-10 w-auto hidden lg:block">
+        <Image
+          src={pakuwon_logo}
+          alt=""
+          width={1000}
+          height={1000}
+          className="h-full w-full"
+        />
       </div>
-      <div className="w-9 block lg:hidden">
-        <Image src={pakuwon_mini_logo} alt="" width={1000} height={1000} />
+      <div className="h-9 w-auto block lg:hidden">
+        <Image
+          src={pakuwon_mini_logo}
+          alt=""
+          width={1000}
+          height={1000}
+          className="h-full w-full"
+        />
       </div>
       <FullMenu open={open} onClose={() => setOpen(false)} />
     </nav>

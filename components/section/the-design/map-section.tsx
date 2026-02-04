@@ -65,7 +65,7 @@ const MapSection = () => {
               className="mb-10 font-semibold text-2xl md:text-3xl tracking-widest text-[#F3F0E8]"
             />
             <div className="relative flex flex-col lg:flex-row justify-between w-full h-full gap-16 xl:gap-32">
-              <div className="w-100">
+              <div className="sm:w-100">
                 <div className="py-3">
                   <FadeSlide>
                     <button
@@ -160,7 +160,7 @@ const MapSection = () => {
                   </FadeSlide>
                 </div>
               </div>
-              <FadeSlide className="relative flex-1 w-full h-fit bg-[#333434] p-10 xl:p-20 flex flex-col gap-10">
+              <FadeSlide className="relative flex-1 w-full h-fit border-x-2 border-[#AA7A56] p-10 xl:px-20 flex flex-col gap-10">
                 <div className="flex justify-between items-start">
                   <div className="flex flex-col">
                     <h1 className="text-2xl xl:text-3xl tracking-widest text-[#AA7A56] font-medium">

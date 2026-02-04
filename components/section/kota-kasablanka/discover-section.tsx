@@ -74,8 +74,8 @@ const DiscoverSection = () => {
             className="absolute xl:relative sm:mr-5 sm:mb-5 lg:mb-0 xl:mr-0 right-0"
             direction="left"
           >
-            <div className="hidden xl:block absolute w-110 xl:h-131.5 bg-[#9D7958]/40 top-2.5 right-4 z-0"></div>
-            <div className="-mr-5 -mb-15 sm:mb-0 sm:mr-0 relative w-80 sm:w-96 lg:w-110 xl:h-131.5 bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-8 flex flex-col justify-between gap-5 xl:gap-0 items-center">
+            <div className="hidden xl:block absolute w-105 xl:h-full bg-[#9D7958]/40 top-2.5 right-4 z-0"></div>
+            <div className="-mr-5 -mb-15 sm:mb-0 sm:mr-0 relative w-80 sm:w-96 lg:w-105 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-8 flex flex-col justify-between gap-5 xl:gap-8 items-center">
               <h3 className="font-medium sm:text-lg lg:text-xl tracking-widest text-[#F3F0E8]">
                 Since 2012, Kota Kasablanka has become one of Jakarta's most
                 vibrant lifestyle destinations. Just steps from Elora and

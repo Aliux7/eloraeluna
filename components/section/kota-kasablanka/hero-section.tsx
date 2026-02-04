@@ -6,7 +6,7 @@ import { FadeSlide } from "@/components/animation/fade-slide";
 const HeroSection = () => {
   return (
     <section id="hero-section" className="relative min-h-screen bg-[#F3F0E8]">
-      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-18 sm:pt-0 h-150 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-black/30">
+      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-18 sm:pt-0 h-96 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-black/30">
         <Image
           src={hero_background}
           alt=""
