@@ -1,6 +1,5 @@
 "use client";
-import Image from "next/image";
-import eloraeluna_logo from "@/app/assets/eloraeluna_logo.png";
+import Image from "next/image"; 
 import pakuwon_logo from "@/app/assets/pakuwon_logo.svg";
 import pakuwon_mini_logo from "@/app/assets/pakuwon_mini_logo.png";
 import and from "@/app/assets/and.svg";

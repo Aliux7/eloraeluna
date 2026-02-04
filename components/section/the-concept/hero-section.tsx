@@ -2,6 +2,7 @@ import the_concept_background from "@/app/assets/the-concept/the_concept_backgro
 import Image from "next/image";
 import eluna from "@/app/assets/eluna.svg";
 import elora from "@/app/assets/elora.svg";
+import and from "@/app/assets/and.svg";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
 import content_1 from "@/app/assets/the-concept/content_concept_1.jpg";
@@ -19,21 +20,21 @@ const HeroSection = () => {
         priority
       />
 
-      <div className="relative px-5 sm:px-10 xl:px-48 py-40 space-y-16">
-        <FadeSlide className="flex justify-between items-start gap-20">
+      <div className="relative px-5 sm:px-10 xl:px-48 py-36 sm:py-40 space-y-16">
+        <FadeSlide className="flex flex-wrap lg:flex-nowrap justify-between items-start gap-10 lg:gap-20">
           <Image
             src={eluna}
             alt=""
             width={1000}
             height={1000}
-            className="w-fit h-9"
+            className="w-fit h-7 sm:h-9"
           />
-          <div className="border-t border-white w-full mt-4.5" />
-          <div className="flex flex-col justify-start xl:items-end">
+          <div className="border-t border-white flex-1 lg:w-full mt-4.5" />
+          <div className="w-full lg:w-fit flex flex-col justify-start items-end">
             <WordsPullUp
               direction="left"
               text="THE SHIMMER"
-              className="text-[#FFFFFF] font-light text-3xl sm:text-5xl xl:text-6xl tracking-[0.5rem] xl:mr-28 text-nowrap"
+              className="text-[#FFFFFF] font-light text-3xl sm:text-5xl xl:text-6xl tracking-[0.5rem] mr-16 sm:mr-24 lg:mr-28 text-nowrap"
             />
             <div className="flex justify-center items-center gap-4">
               <WordsPullUp
@@ -55,8 +56,8 @@ const HeroSection = () => {
             className="absolute xl:relative sm:ml-5 sm:mb-5 lg:mb-0 xl:ml-0 z-10"
             direction="right"
           >
-            <div className="hidden xl:block absolute w-105 xl:h-131.5 bg-[#9D7958]/40 top-2.5 left-4 z-0"></div>
-            <div className="-ml-5 -mb-15 sm:mb-0 sm:ml-0 relative w-80 sm:w-96 lg:w-105 xl:h-131.5 bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-9 lg:pt-15.5 lg:pr-9 pb-10.25 flex flex-col justify-between gap-5 xl:gap-0 items-center">
+            <div className="hidden xl:block absolute w-80 xl:h-full bg-[#9D7958]/40 top-2.5 left-4 z-0"></div>
+            <div className="-ml-5 -mb-15 sm:mb-0 sm:ml-0 relative w-80 sm:w-80 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-9 flex flex-col justify-between gap-5 xl:gap-0 items-center">
               <p className="sm:text-lg font-normal text-[#F3F0E8] flex justify-center items-center h-full">
                 Eluna reflects the luminous allure of the moon, offering a
                 lifestyle of elegance, rhythm, and refined luxury. It is a home
@@ -99,12 +100,12 @@ const HeroSection = () => {
           </FadeSlide>
         </div>
 
-        <div className="flex justify-between items-start gap-20">
+        <div className="flex flex-wrap lg:flex-nowrap flex-row justify-between items-start gap-8 lg:gap-20">
           <div className="flex flex-col justify-start xl:items-end">
             <WordsPullUp
               direction="left"
               text="THE ENERGY"
-              className="text-[#FFFFFF] font-light text-3xl sm:text-5xl xl:text-6xl tracking-[0.5rem] xl:mr-28 text-nowrap"
+              className="text-[#FFFFFF] font-light text-3xl sm:text-5xl xl:text-6xl tracking-[0.5rem] mr-28 text-nowrap"
             />
             <div className="flex justify-center items-center gap-4">
               <WordsPullUp
@@ -119,14 +120,14 @@ const HeroSection = () => {
               />
             </div>
           </div>
-          <FadeSlide className="flex justify-between items-center w-full gap-11">
-            <div className="border-t border-white w-full" />
+          <FadeSlide className="flex sm:flex-wrap lg:flex-nowrap justify-center sm:justify-between items-center w-full gap-11">
+            <div className="border-t border-white flex-1 hidden sm:block lg:w-full lg:hidden xl:block" />
             <Image
               src={elora}
               alt=""
               width={1000}
               height={1000}
-              className="w-fit h-9"
+              className="w-fit h-7 sm:h-9"
             />
             <div className="flex flex-col justify-center items-start gap-0">
               <WordsPullUp
@@ -144,7 +145,7 @@ const HeroSection = () => {
         </div>
 
         <div>
-          <FadeSlide className="text-[#FFFFFF] max-w-lg text-xl">
+          <FadeSlide className="text-[#FFFFFF] max-w-lg sm:text-xl">
             Elora radiates the vitality of the sun, bringing warmth, light, and
             inspiration to those who call it home. It is a place where life
             thrives, filled with dynamic energy and opportunities to shine.
@@ -153,63 +154,110 @@ const HeroSection = () => {
           </FadeSlide>
         </div>
 
-        <div className="mt-64 space-y-16">
-          <div className="flex flex-col justify-start items-start">
+        <div className="mt-32 sm:mt-64 space-y-16">
+          <div className="hidden sm:flex flex-col justify-start items-start">
             <div className="flex justify-start items-center gap-4">
               <WordsPullUp
                 direction="left"
                 text="WHERE"
-                className="text-[#FFFFFF] font-light text-3xl sm:text-5xl xl:text-6xl tracking-[0.5rem] text-nowrap"
+                className="text-[#FFFFFF] font-light text-3xl sm:text-4xl md:text-5xl xl:text-6xl tracking-[0.5rem] text-nowrap"
               />{" "}
               <WordsPullUp
                 direction="left"
                 text="VIBRANCE"
-                className="text-[#FFFFFF] font-medium text-3xl sm:text-5xl xl:text-6xl tracking-[0.5rem] text-nowrap"
+                className="text-[#FFFFFF] font-medium text-3xl sm:text-4xl md:text-5xl xl:text-6xl tracking-[0.5rem] text-nowrap"
               />
             </div>
-            <div className="flex justify-start items-center gap-4 ml-28">
+            <div className="flex justify-start items-center gap-4 sm:ml-14 lg:ml-28">
               <WordsPullUp
                 direction="left"
                 text="MEETS"
-                className="text-[#FFFFFF] font-light text-3xl sm:text-5xl xl:text-6xl tracking-[0.5rem] text-nowrap"
+                className="text-[#FFFFFF] font-light text-3xl sm:text-4xl md:text-5xl xl:text-6xl tracking-[0.5rem] text-nowrap"
               />{" "}
               <WordsPullUp
                 direction="left"
                 text="TRANQUILITY"
-                className="text-[#FFFFFF] font-medium text-3xl sm:text-5xl xl:text-6xl tracking-[0.5rem] text-nowrap"
+                className="text-[#FFFFFF] font-medium text-3xl sm:text-4xl md:text-5xl xl:text-6xl tracking-[0.5rem] text-nowrap"
               />
             </div>
           </div>
 
-          <div className="relative flex justify-start xl:justify-center items-end lg:items-center">
+          <div className="relative flex flex-col sm:flex-row justify-start xl:justify-center items-end lg:items-center">
             <FadeSlide className="w-full h-full lg:h-[80vh]">
               <Image
                 src={content_4}
                 alt=""
-                className="w-full h-140 sm:h-200 lg:h-full object-cover xl:min-h-145"
+                className="w-full h-96 sm:h-200 lg:h-full object-cover xl:min-h-145 object-right sm:object-center"
                 width={2000}
                 height={2000}
               />
             </FadeSlide>
             <FadeSlide
-              className="absolute xl:relative sm:mr-5 sm:mb-5 lg:mb-0 xl:mr-0 right-0"
+              className="relative sm:absolute xl:relative sm:mr-5 sm:mb-5 lg:mb-0 xl:mr-0 right-0"
               direction="left"
             >
-              <div className="hidden xl:block absolute w-110 xl:h-131.5 bg-[#9D7958]/40 top-2.5 right-4 z-0"></div>
-              <div className="-mr-5 -mb-15 sm:mb-0 sm:mr-0 relative w-80 sm:w-96 lg:w-110 xl:h-131.5 bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-8 flex flex-col justify-between gap-5 xl:gap-0 items-center">
-                <h3 className="font-medium sm:text-lg lg:text-xl tracking-widest text-[#F3F0E8]">
-                  Since 2012, Kota Kasablanka has become one of Jakarta's most
-                  vibrant lifestyle destinations. Just steps from Elora and
-                  Eluna,it offers a curated blend of global fashion, beauty,
-                  dining, and entertainment—including family friendly zones, a
-                  rooftop pool, and the new Little Tokyo culinary hub.
-                </h3>
-                <p className="sm:text-lg lg:text-xl font-normal text-[#F3F0E8]">
-                  With complete amenities like a taxi lounge, nursery, function
-                  hall, and award-winning mosque, Kota Kasablanka is more than a
-                  shopping center—it's a dynamic lifestyle ecosystem seamlessly
-                  connected to your home.
+              <div className="hidden xl:block absolute w-105 xl:h-full bg-[#9D7958]/40 top-2.5 right-4 z-0"></div>
+              <div className="-mb-15 sm:mb-0 sm:mr-0 relative w-full sm:w-96 lg:w-105 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-8 flex flex-col justify-between gap-5 sm:gap-8 items-center">
+                <div className="sm:hidden flex flex-col justify-start items-start">
+                  <div className="flex justify-start items-center gap-2 sm:gap-4">
+                    <WordsPullUp
+                      direction="left"
+                      text="WHERE"
+                      className="text-[#FFFFFF] font-light text-2xl sm:text-4xl md:text-5xl xl:text-6xl tracking-[0.5rem] text-nowrap"
+                    />{" "}
+                    <WordsPullUp
+                      direction="left"
+                      text="VIBRANCE"
+                      className="text-[#FFFFFF] font-medium text-2xl sm:text-4xl md:text-5xl xl:text-6xl tracking-[0.5rem] text-nowrap"
+                    />
+                  </div>
+                  <div className="flex justify-start items-center gap-2 sm:gap-4 sm:ml-14 lg:ml-28">
+                    <WordsPullUp
+                      direction="left"
+                      text="MEETS"
+                      className="text-[#FFFFFF] font-light text-2xl sm:text-4xl md:text-5xl xl:text-6xl tracking-[0.5rem] text-nowrap"
+                    />{" "}
+                    <WordsPullUp
+                      direction="left"
+                      text="TRANQUILITY"
+                      className="text-[#FFFFFF] font-medium text-2xl sm:text-4xl md:text-5xl xl:text-6xl tracking-[0.5rem] text-nowrap"
+                    />
+                  </div>
+                </div>
+                <p className="text-sm sm:text-lg font-normal text-[#F3F0E8]">
+                  Elora and Eluna embody the essential balance of life, inspired
+                  by the sun and the moon. Elora channels the sun's energy
+                  through bold architecture, luminous interiors, and a vibrant
+                  sky lounge—connecting residents to the dynamic rhythm of the
+                  city. Eluna, like the moon, radiates quiet allure with heated
+                  pools, panoramic views, and an elegant sky lounge designed for
+                  refined living. Together, these two distinct residences
+                  harmonize vibrance and tranquility, creating a luxurious
+                  sanctuary where life moves with purpose and grace.
                 </p>
+                <div className="flex justify-center items-center gap-7 h-8 lg:h-12">
+                  <Image
+                    src={elora}
+                    alt=""
+                    width={1000}
+                    height={1000}
+                    className="w-full h-6"
+                  />
+                  <Image
+                    src={and}
+                    alt=""
+                    width={1000}
+                    height={1000}
+                    className="w-full h-full"
+                  />
+                  <Image
+                    src={eluna}
+                    alt=""
+                    width={1000}
+                    height={1000}
+                    className="w-full h-6"
+                  />
+                </div>
               </div>
             </FadeSlide>
           </div>
