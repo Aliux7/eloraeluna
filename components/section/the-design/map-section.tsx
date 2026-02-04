@@ -160,7 +160,7 @@ const MapSection = () => {
                   </FadeSlide>
                 </div>
               </div>
-              <div className="relative flex-1 w-full h-fit bg-[#333434] p-10 xl:p-20 flex flex-col gap-10">
+              <FadeSlide className="relative flex-1 w-full h-fit bg-[#333434] p-10 xl:p-20 flex flex-col gap-10">
                 <div className="flex justify-between items-start">
                   <div className="flex flex-col">
                     <h1 className="text-2xl xl:text-3xl tracking-widest text-[#AA7A56] font-medium">
@@ -176,7 +176,7 @@ const MapSection = () => {
                   <Image src={mini_map} alt="" className="w-[30%]" />
                 </div>
                 <Image src={room} alt="" className="w-full xl:w-[80%] mx-auto" />
-              </div>
+              </FadeSlide>
             </div>
           </div>
         </div>

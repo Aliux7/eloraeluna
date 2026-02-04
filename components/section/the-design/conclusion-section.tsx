@@ -1,5 +1,6 @@
 import Image from "next/image";
 import conclusion from "@/app/assets/the-design/conclusion.jpg";
+import { FadeSlide } from "@/components/animation/fade-slide";
 
 const ConclusionSection = () => {
   return (
@@ -8,20 +9,20 @@ const ConclusionSection = () => {
         <Image src={conclusion} alt="" className="w-full h-full object-cover" />
       </div>
       <div className="sm:w-1/2 p-10 lg:p-16">
-        <p className="text-[#A4704F] text-base lg:text-xl xl:text-2xl tracking-widest">
+        <FadeSlide className="text-[#A4704F] text-base lg:text-xl xl:text-2xl tracking-widest">
           Eluna's design is a harmonious fusion of serenity and
           sophistication—drawing inspiration from the moon's quiet elegance
           while embracing the expressive energy of modern living. Every
           architectural line and interior detail is crafted to evoke a sense of
           calm confidence, offering a refined sanctuary above the city.
-        </p>
+        </FadeSlide>
         <br />
-        <p className="text-[#A4704F] text-base lg:text-xl xl:text-2xl tracking-widest">
+        <FadeSlide className="text-[#A4704F] text-base lg:text-xl xl:text-2xl tracking-widest">
           With its soft curves, ambient lighting, and curated materials, Eluna
           reimagines premium apartment living through a lens of intuitive
           luxury—perfect for those who seek a life of quiet splendor and
           inspired stillness.
-        </p>
+        </FadeSlide>
       </div>
     </div>
   );
