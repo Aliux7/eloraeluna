@@ -1,0 +1,135 @@
+import Image from "next/image";
+import { WordsPullUp } from "@/components/animation/word-pull-up";
+import { FadeSlide } from "@/components/animation/fade-slide";
+import map from "@/app/assets/facilities/map.svg";
+import elora from "@/app/assets/elora_gold.svg";
+import eluna from "@/app/assets/eluna_gold.svg";
+
+const OverviewSection = () => {
+  return (
+    <section
+      id="overview-section"
+      className="relative bg-[#F3F0E8] min-h-screen px-5 sm:px-10 xl:px-48 py-16 lg:py-32 flex flex-col justify-between items-center gap-24"
+    >
+      <div className="flex justify-between items-start w-full">
+        <div className="flex justify-start items-start">
+          <WordsPullUp
+            text="01"
+            className="text-[260px] leading-[0.9] text-[#464948]"
+          />
+          <WordsPullUp
+            text="ST"
+            className="text-8xl font-light text-[#464948]"
+          />
+        </div>
+        <div className="flex flex-col justify-center items-end">
+          <WordsPullUp
+            direction="left"
+            text="FACILITIES"
+            className="text-[#9D7958] font-medium text-3xl sm:text-5xl xl:text-6xl tracking-wider xl:mr-20"
+          />
+          <WordsPullUp
+            direction="left"
+            text="OVERVIEW"
+            className="text-[#9D7958] font-light text-3xl sm:text-5xl xl:text-6xl tracking-wider"
+          />
+        </div>
+      </div>
+      <FadeSlide
+        direction="left"
+        className="relative mt-8 w-fit max-w-[80vw] flex justify-center items-center"
+      >
+        <Image
+          src={eluna}
+          alt=""
+          className="w-fit h-5 object-contain absolute top-20 -left-20"
+        />
+        <Image src={map} alt="" className="w-fit h-182 object-contain border" />
+        <Image
+          src={elora}
+          alt=""
+          className="w-fit h-5 object-contain absolute top-3/5 -right-10"
+        />
+      </FadeSlide>
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16">
+        <div>
+          <h2 className="text-3xl tracking-[0.3em] text-[#9D7958] font-semibold mb-8">
+            ELUNA FACILITIES
+          </h2>
+
+          <div className="grid grid-cols-2 gap-x-12 gap-y-6 text-[#9D7958]">
+            <div className="text-lg border-b border-[#9D7958] pb-2">
+              Function Room
+            </div>
+            <div className="text-lg border-b border-[#9D7958] pb-2">
+              Family Lounge
+            </div>
+
+            <div className="text-lg border-b border-[#9D7958] pb-2">
+              Pre Function
+            </div>
+            <div className="text-lg border-b border-[#9D7958] pb-2">
+              Kids Room
+            </div>
+
+            <div className="text-lg border-b border-[#9D7958] pb-2">Gym</div>
+            <div className="text-lg border-b border-[#9D7958] pb-2">
+              Outside Lounge
+            </div>
+
+            <div className="text-lg border-b border-[#9D7958] pb-2">
+              Gym Class
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 className="text-3xl tracking-[0.3em] text-[#9D7958] font-semibold mb-8">
+            SHARED FACILITIES
+          </h2>
+
+          <div className="grid grid-cols-2 gap-x-12 gap-y-6 text-[#9D7958]">
+            <div className="text-lg border-b border-[#9D7958] pb-2">
+              Lap Pool
+            </div>
+            <div className="text-lg border-b border-[#9D7958] pb-2">
+              Lagoon Pool
+            </div>
+
+            <div className="text-lg border-b border-[#9D7958] pb-2">
+              Sun Bathing Pool Chair
+            </div>
+            <div className="text-lg border-b border-[#9D7958] pb-2">
+              Kids Pool
+            </div>
+
+            <div className="text-lg border-b border-[#9D7958] pb-2">
+              Cabana Deck
+            </div>
+            <div className="text-lg border-b border-[#9D7958] pb-2">
+              Children Play Ground
+            </div>
+
+            <div className="text-lg border-b border-[#9D7958] pb-2">
+              Sunken Seating
+            </div>
+            <div className="text-lg border-b border-[#9D7958] pb-2">
+              BBQ Area
+            </div>
+
+            <div className="text-lg border-b border-[#9D7958] pb-2">
+              Tennis Court
+            </div>
+            <div className="text-lg border-b border-[#9D7958] pb-2">
+              Jogging Track
+            </div>
+
+            <div className="text-lg border-b border-[#9D7958] pb-2">Gazebo</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default OverviewSection;
