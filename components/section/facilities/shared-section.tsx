@@ -11,7 +11,7 @@ const SharedSection = () => {
   return (
     <section
       id="design-section"
-      className="relative bg-[#F3F0E8] min-h-screen py-16 lg:py-32 flex flex-col justify-between items-center gap-24"
+      className="relative bg-[#F3F0E8] min-h-screen py-16 lg:py-32 flex flex-col justify-between items-center gap-14"
     >
       <div className="px-5 sm:px-10 xl:px-48 space-y-8 flex justify-between items-start w-full">
         <div>
@@ -21,7 +21,7 @@ const SharedSection = () => {
           />
           <WordsPullUp
             text="FACILITIES"
-            className="text-3xl sm:text-5xl lg:text-6xl font-normal text-[#9D7958] tracking-widest ml-14 sm:ml-20 mb-6 sm:mb-10"
+            className="text-3xl sm:text-5xl lg:text-6xl font-normal text-[#9D7958] tracking-widest ml-14 sm:ml-20"
           />
         </div>
         <p className="text-2xl max-w-lg text-[#9D7958]">
@@ -46,7 +46,7 @@ const SharedSection = () => {
           className="w-full h-140 object-cover"
         />
       </div>
-      <div className="px-5 sm:px-10 xl:px-48 space-y-16 w-full">
+      <div className="px-5 sm:px-10 xl:px-48 space-y-16 w-full pt-8">
         <div className="flex justify-between items-start w-full">
           <div className="flex flex-col justify-center items-start w-fit">
             <WordsPullUp
