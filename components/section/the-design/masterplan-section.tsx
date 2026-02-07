@@ -7,7 +7,7 @@ const MasterplanSection = () => {
   return (
     <section
       id="discover-section"
-      className="relative bg-[#F3F0E8] min-h-screen px-5 sm:px-10 xl:px-48 py-16 lg:py-32 flex flex-col-reverse xl:flex-row justify-between gap-24"
+      className="relative bg-[#F3F0E8] min-h-screen px-5 sm:px-10 xl:px-48 py-8 lg:py-32 flex flex-col-reverse xl:flex-row justify-between gap-24"
     >
       <div className="">
         <div>
@@ -109,7 +109,7 @@ const MasterplanSection = () => {
         <WordsPullUp
           direction="left"
           text="OVERVIEW"
-          className="text-[#9D7958] font-light text-3xl sm:text-5xl xl:text-6xl tracking-wider"
+          className="text-[#9D7958] font-light text-3xl sm:text-5xl xl:text-6xl tracking-wider ml-20 sm:ml-40 xl:ml-0"
         />
         <FadeSlide direction="left" className="relative aspect-square mt-8">
           <Image

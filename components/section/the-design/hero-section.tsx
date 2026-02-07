@@ -2,10 +2,17 @@ import hero_background from "@/app/assets/the-design/hero_background.jpg";
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
+import illustration_bottom from "@/app/assets/home/illustration_bottom.png";
 
 const HeroSection = () => {
   return (
     <section id="hero-section" className="relative min-h-screen bg-[#F3F0E8]">
+      <FadeSlide className="absolute z-20 top-2/5 -left-40 xl:-right-64 scale-y-[-1] scale-x-[-1] w-72 xl:w-96">
+        <Image src={illustration_bottom} alt="" />
+      </FadeSlide>
+      <FadeSlide className="absolute z-20 bottom-10 -right-32 xl:-right-64 scale-y-[-1] scale-x-[-1] w-72 xl:w-96">
+        <Image src={illustration_bottom} alt="" />
+      </FadeSlide>
       <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-18 sm:pt-0 h-96 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-black/30">
         <Image
           src={hero_background}
@@ -16,34 +23,33 @@ const HeroSection = () => {
           priority
         />
       </div>
-      <div className="relative z-10 px-5 sm:px-10 xl:px-48 w-full sm:min-h-screen sm:pb-10 lg:pb-16 flex flex-col justify-end items-start">
-        <div className="py-8 sm:py-0">
+      <div className="bg-[#464948] sm:bg-transparent relative z-10 sm:z-20 px-5 sm:px-10 xl:px-48 w-full sm:min-h-screen sm:pb-10 lg:pb-16 flex flex-col justify-end items-start">
+        <div className="py-14 sm:py-0">
           <WordsPullUp
             text="A MASTERPLAN OF"
-            className="text-3xl sm:text-5xl lg:text-6xl font-light text-[#9D7958] sm:text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
+            className="text-3xl sm:text-5xl lg:text-6xl font-light text-[#F3F0E8] sm:text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
           />
           <WordsPullUp
             text="INTEGRATED LIVING"
-            className="text-3xl sm:text-5xl lg:text-6xl font-medium sm:font-bold text-[#9D7958] sm:text-[#F3F0E8] tracking-widest ml-10 sm:ml-0 lg:ml-[5vw] mb-6 md:mb-10 xl:mb-8"
+            className="text-3xl sm:text-5xl lg:text-6xl font-medium sm:font-bold text-[#F3F0E8] sm:text-[#F3F0E8] tracking-widest ml-10 sm:ml-0 lg:ml-[5vw] mb-28 sm:mb-16 md:mb-10 xl:mb-8"
           />
 
           <WordsPullUp
-            text="Steps away from world-class fashion, dining, entertainment, and family-"
+            text="The Kota Kasablanka master plan is a meticulously designed urban "
             className="hidden sm:block text-sm sm:text-lg lg:text-xl font-normal text-[#9D7958] sm:text-[#F3F0E8]"
           />
           <WordsPullUp
-            text="friendly experiences. Elora and Eluna offer direct access to the vibrant"
+            text="tapestry, harmonizing luxury, convenience, and connectivity in Jakarta's"
             className="hidden sm:block text-sm sm:text-lg lg:text-xl font-normal text-[#9D7958] sm:text-[#F3F0E8]"
           />
           <WordsPullUp
-            text="energy of Kota Kasablanka—where everything you need is within reach."
+            text="thriving business district."
             className="hidden sm:block text-sm sm:text-lg lg:text-xl font-normal text-[#9D7958] sm:text-[#F3F0E8] mb-16"
           />
-          <FadeSlide className="sm:hidden text-sm sm:text-lg lg:text-xl font-normal text-[#9D7958] sm:text-[#F3F0E8]">
-            Steps away from world-class fashion, dining, entertainment, and
-            family-friendly experiences. Elora and Eluna offer direct access to
-            the vibrant energy of Kota Kasablanka—where everything you need is
-            within reach.
+          <FadeSlide className="sm:hidden text-sm sm:text-lg lg:text-xl font-normal text-[#F3F0E8] sm:text-[#F3F0E8]">
+            The Kota Kasablanka master plan is a meticulously designed urban
+            tapestry, harmonizing luxury, convenience, and connectivity in
+            Jakarta's thriving business district.
           </FadeSlide>
         </div>
       </div>

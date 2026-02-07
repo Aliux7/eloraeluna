@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 type Direction = "left" | "right" | "up" | "down";
 
-type FadeSlideProps = {
+type FadeSlideProps = React.ComponentProps<typeof motion.div> & {
   children: React.ReactNode;
   direction?: Direction;
   className?: string;
@@ -22,6 +22,7 @@ export function FadeSlide({
   children,
   direction = "up",
   className = "",
+  ...props
 }: FadeSlideProps) {
   const ref = React.useRef<HTMLDivElement | null>(null);
   const isInView = useInView(ref, { once: true });
@@ -47,6 +48,7 @@ export function FadeSlide({
         ease: [0.22, 1, 0.36, 1],
       }}
       className={cn(className)}
+      {...props}
     >
       {children}
     </motion.div>
