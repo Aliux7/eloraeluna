@@ -9,7 +9,7 @@ const IntegratedSection = () => {
       <Image
         src={diamond_background}
         alt=""
-        className="w-full h-auto opacity-80 absolute top-120 sm:top-150 lg:top-130 xl:top-50"
+        className="w-full h-auto opacity-80 absolute top-120 sm:top-130 lg:top-120 xl:top-50"
         priority
       />
       <div className="relative px-5 sm:px-10 xl:px-48 py-40 space-y-16">
