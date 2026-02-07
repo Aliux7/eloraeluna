@@ -15,40 +15,40 @@ const OverviewSection = () => {
         <div className="flex justify-start items-start">
           <WordsPullUp
             text="01"
-            className="text-[260px] leading-[0.9] text-[#464948]"
+            className="text-9xl md:text-[170px] lg:text-[200px] xl:text-[260px] leading-[0.9] text-[#464948]"
           />
           <WordsPullUp
             text="ST"
-            className="text-8xl font-light text-[#464948]"
+            className="text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-light text-[#464948]"
           />
         </div>
         <div className="flex flex-col justify-center items-end">
           <WordsPullUp
             direction="left"
             text="FACILITIES"
-            className="text-[#9D7958] font-medium text-3xl sm:text-5xl xl:text-6xl tracking-wider xl:mr-20"
+            className="text-[#9D7958] font-medium text-3xl sm:text-4xl md:text-5xl xl:text-6xl tracking-wider sm:mr-20"
           />
           <WordsPullUp
             direction="left"
             text="OVERVIEW"
-            className="text-[#9D7958] font-light text-3xl sm:text-5xl xl:text-6xl tracking-wider"
+            className="text-[#9D7958] font-light text-3xl sm:text-4xl md:text-5xl xl:text-6xl tracking-wider"
           />
         </div>
       </div>
       <FadeSlide
         direction="left"
-        className="relative mt-8 w-fit max-w-[80vw] flex justify-center items-center"
+        className="relative xl:mt-8 w-fit max-w-[65vw] xl:max-w-[80vw] flex justify-center items-center"
       >
         <Image
           src={eluna}
           alt=""
-          className="w-fit h-5 object-contain absolute top-20 -left-20"
+          className="w-fit h-3.5 sm:h-5 object-contain absolute top-20 -left-15 sm:-left-20"
         />
-        <Image src={map} alt="" className="w-fit h-182 object-contain border" />
+        <Image src={map} alt="" className="w-fit xl:h-182 object-contain" />
         <Image
           src={elora}
           alt=""
-          className="w-fit h-5 object-contain absolute top-3/5 -right-10"
+          className="w-fit h-3.5 sm:h-5 object-contain absolute top-3/5 -right-14 sm:-right-16 lg:-right-10"
         />
       </FadeSlide>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16">

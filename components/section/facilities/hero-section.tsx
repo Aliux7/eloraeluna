@@ -34,6 +34,11 @@ const HeroSection = () => {
             text="leisure, and modern luxury at Eluna."
             className="hidden sm:block text-sm sm:text-lg lg:text-xl font-normal text-[#9D7958] sm:text-[#F3F0E8]"
           />  
+
+          <WordsPullUp
+            text="Discover thoughtfully curated amenities designed to elevate comfort, leisure, and modern luxury at Eluna."
+            className="block sm:hidden text-sm sm:text-lg lg:text-xl font-normal text-[#9D7958] sm:text-[#F3F0E8]"
+          />  
         </div>
       </div>
     </section>
