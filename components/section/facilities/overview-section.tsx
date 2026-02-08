@@ -35,10 +35,7 @@ const OverviewSection = () => {
           />
         </div>
       </div>
-      <FadeSlide
-        direction="left"
-        className="relative xl:mt-8 w-fit max-w-[65vw] xl:max-w-[80vw] flex justify-center items-center"
-      >
+      <FadeSlide className="relative xl:mt-8 w-fit max-w-[65vw] xl:max-w-[80vw] flex justify-center items-center">
         <Image
           src={eluna}
           alt=""
@@ -53,78 +50,102 @@ const OverviewSection = () => {
       </FadeSlide>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16">
         <div>
-          <h2 className="text-3xl tracking-[0.3em] text-[#9D7958] font-semibold mb-8">
-            ELUNA FACILITIES
-          </h2>
+          <WordsPullUp
+            text="ELUNA FACILITIES"
+            className="text-3xl tracking-[0.3em] text-[#9D7958] font-semibold mb-8"
+          />
 
           <div className="grid grid-cols-2 gap-x-12 gap-y-6 text-[#9D7958]">
-            <div className="text-lg border-b border-[#9D7958] pb-2">
-              Function Room
-            </div>
-            <div className="text-lg border-b border-[#9D7958] pb-2">
-              Family Lounge
-            </div>
+            <WordsPullUp
+              text="Function Room"
+              className="text-lg border-b border-[#9D7958] pb-2"
+            />
+            <WordsPullUp
+              text="Family Lounge"
+              className="text-lg border-b border-[#9D7958] pb-2"
+            />
 
-            <div className="text-lg border-b border-[#9D7958] pb-2">
-              Pre Function
-            </div>
-            <div className="text-lg border-b border-[#9D7958] pb-2">
-              Kids Room
-            </div>
+            <WordsPullUp
+              text="Pre Function"
+              className="text-lg border-b border-[#9D7958] pb-2"
+            />
+            <WordsPullUp
+              text="Kids Room"
+              className="text-lg border-b border-[#9D7958] pb-2"
+            />
 
-            <div className="text-lg border-b border-[#9D7958] pb-2">Gym</div>
-            <div className="text-lg border-b border-[#9D7958] pb-2">
-              Outside Lounge
-            </div>
+            <WordsPullUp
+              text="Gym"
+              className="text-lg border-b border-[#9D7958] pb-2"
+            />
+            <WordsPullUp
+              text="Outside Lounge"
+              className="text-lg border-b border-[#9D7958] pb-2"
+            />
 
-            <div className="text-lg border-b border-[#9D7958] pb-2">
-              Gym Class
-            </div>
+            <WordsPullUp
+              text="Gym Class"
+              className="text-lg border-b border-[#9D7958] pb-2"
+            />
           </div>
         </div>
 
         <div>
-          <h2 className="text-3xl tracking-[0.3em] text-[#9D7958] font-semibold mb-8">
-            SHARED FACILITIES
-          </h2>
+          <WordsPullUp
+            text="SHARED FACILITIES"
+            className="text-3xl tracking-[0.3em] text-[#9D7958] font-semibold mb-8"
+          />
 
           <div className="grid grid-cols-2 gap-x-12 gap-y-6 text-[#9D7958]">
-            <div className="text-lg border-b border-[#9D7958] pb-2">
-              Lap Pool
-            </div>
-            <div className="text-lg border-b border-[#9D7958] pb-2">
-              Lagoon Pool
-            </div>
+            <WordsPullUp
+              text="Lap Pool"
+              className="text-lg border-b border-[#9D7958] pb-2"
+            />
+            <WordsPullUp
+              text="Lagoon Pool"
+              className="text-lg border-b border-[#9D7958] pb-2"
+            />
 
-            <div className="text-lg border-b border-[#9D7958] pb-2">
-              Sun Bathing Pool Chair
-            </div>
-            <div className="text-lg border-b border-[#9D7958] pb-2">
-              Kids Pool
-            </div>
+            <WordsPullUp
+              text="Sun Bathing Pool Chair"
+              className="text-lg border-b border-[#9D7958] pb-2"
+            />
+            <WordsPullUp
+              text="Kids Pool"
+              className="text-lg border-b border-[#9D7958] pb-2"
+            />
 
-            <div className="text-lg border-b border-[#9D7958] pb-2">
-              Cabana Deck
-            </div>
-            <div className="text-lg border-b border-[#9D7958] pb-2">
-              Children Play Ground
-            </div>
+            <WordsPullUp
+              text="Cabana Deck"
+              className="text-lg border-b border-[#9D7958] pb-2"
+            />
+            <WordsPullUp
+              text="Children Play Ground"
+              className="text-lg border-b border-[#9D7958] pb-2"
+            />
 
-            <div className="text-lg border-b border-[#9D7958] pb-2">
-              Sunken Seating
-            </div>
-            <div className="text-lg border-b border-[#9D7958] pb-2">
-              BBQ Area
-            </div>
+            <WordsPullUp
+              text="Sunken Seating"
+              className="text-lg border-b border-[#9D7958] pb-2"
+            />
+            <WordsPullUp
+              text="BBQ Area"
+              className="text-lg border-b border-[#9D7958] pb-2"
+            />
 
-            <div className="text-lg border-b border-[#9D7958] pb-2">
-              Tennis Court
-            </div>
-            <div className="text-lg border-b border-[#9D7958] pb-2">
-              Jogging Track
-            </div>
+            <WordsPullUp
+              text="Tennis Court"
+              className="text-lg border-b border-[#9D7958] pb-2"
+            />
+            <WordsPullUp
+              text="Jogging Track"
+              className="text-lg border-b border-[#9D7958] pb-2"
+            />
 
-            <div className="text-lg border-b border-[#9D7958] pb-2">Gazebo</div>
+            <WordsPullUp
+              text="Gazebo"
+              className="text-lg border-b border-[#9D7958] pb-2"
+            />
           </div>
         </div>
       </div>
