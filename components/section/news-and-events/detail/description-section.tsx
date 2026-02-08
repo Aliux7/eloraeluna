@@ -22,7 +22,7 @@ const DescriptionSection = () => {
             A Lifestyle That Matches Your Pace
           </h2>
 
-          <p className="text-[#464948] leading-relaxed text-xl lg:text-2xl">
+          <p className="text-[#464948] leading-relaxed text-base lg:text-2xl">
             Urban living doesn't have to mean chaos. Inside Eluna, you'll find
             spaces thoughtfully designed for both momentum and mindfulness.
             Start your morning at the private gym, work remotely from the
@@ -30,7 +30,7 @@ const DescriptionSection = () => {
             over the skyline.
           </p>
 
-          <p className="text-[#464948] leading-relaxed text-xl lg:text-2xl">
+          <p className="text-[#464948] leading-relaxed text-base lg:text-2xl">
             Every feature, from the lobby to the rooftop, is curated to support
             modern, flexible living — so you can enjoy the rush of the city
             while always having a place to recharge.

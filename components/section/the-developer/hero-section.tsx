@@ -7,7 +7,7 @@ import { LinkPullUp } from "@/components/animation/link-pull-up";
 
 const HeroSection = () => {
   return (
-    <section id="hero-section" className="relative min-h-screen bg-[#F3F0E8]">
+    <section id="hero-section" className="relative min-h-screen bg-[#414242]">
       <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-18 sm:pt-0 h-96 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-black/30">
         <Image
           src={hero_background}
@@ -22,18 +22,18 @@ const HeroSection = () => {
         <div className="py-8 sm:py-0">
           <WordsPullUp
             text="COMMUNITIES THAT"
-            className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#9D7958] sm:text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
+            className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
           />
           <WordsPullUp
             text="REDEFINE"
-            className="text-3xl sm:text-5xl lg:text-6xl font-extralight text-[#9D7958] sm:text-[#F3F0E8] tracking-widest mb-3"
+            className="text-3xl sm:text-5xl lg:text-6xl font-extralight text-[#F3F0E8] tracking-widest mb-3"
           />
           <WordsPullUp
             text="CITY LIVING"
-            className="text-3xl sm:text-5xl lg:text-6xl font-medium text-[#9D7958] sm:text-[#F3F0E8] tracking-widest ml-10 sm:ml-0 lg:ml-[5vw] mb-6 sm:mb-8"
+            className="text-3xl sm:text-5xl lg:text-6xl font-medium text-[#F3F0E8] tracking-widest ml-10 sm:ml-0 lg:ml-[5vw] mb-6 sm:mb-8"
           />
 
-          <FadeSlide className="max-w-2xl text-sm sm:text-lg lg:text-xl font-normal text-[#9D7958] sm:text-[#F3F0E8] mb-8">
+          <FadeSlide className="max-w-2xl text-sm sm:text-lg lg:text-xl font-normal text-[#F3F0E8] mb-8">
             Continuing to shape Indonesia's skyline, Pakuwon Group leads the
             industry with thoughtful design, cutting-edge innovation, and an
             unwavering commitment to excellence. By crafting spaces that inspire
@@ -43,7 +43,7 @@ const HeroSection = () => {
 
           <FadeSlide
             direction="up"
-            className="flex justify-start items-start gap-3 h-13 w-fit mb-12"
+            className="flex justify-start items-start gap-3 h-10 md:h-13 w-fit mb-12"
           >
             <Image
               src={pakuwon_logo}

@@ -9,6 +9,7 @@ type Direction = "up" | "left";
 type LinkPullUpProps = {
   href: string;
   children: React.ReactNode;
+  wfull?: boolean;
   className?: string;
   direction?: Direction;
   delay?: number;
@@ -20,6 +21,7 @@ export function LinkPullUp({
   className = "",
   direction = "up",
   delay = 0,
+  wfull,
   onClick,
   ...rest
 }: LinkPullUpProps) {
@@ -32,7 +34,7 @@ export function LinkPullUp({
       : { y: "200%", opacity: 0 };
 
   return (
-    <div ref={ref} className="overflow-hidden">
+    <div ref={ref} className={`overflow-hidden ${wfull ? "w-full" : ""}`}>
       <motion.div
         initial={initialPosition}
         animate={isInView ? { x: "0%", y: "0%", opacity: 1 } : {}}
