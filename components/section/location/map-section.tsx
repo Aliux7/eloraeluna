@@ -98,7 +98,7 @@ const MapSection = () => {
           className="flex justify-start items-start gap-12 overflow-auto no-scrollbar mt-10 w-full"
         >
           <div className="flex justify-start items-start">
-            <div className="w-72">
+            <FadeSlide className="w-72">
               <div className="flex items-center justify-start gap-4 mb-3">
                 <div className="flex flex-col justify-end items-end gap-1.5">
                   <div className="size-9 bg-[#006174] rounded-full"></div>
@@ -112,9 +112,9 @@ const MapSection = () => {
               <div className="text-lg lg:text-xl text-gray-600 space-y-1 mt-8">
                 <p>Sudirman & Manggarai</p>
               </div>
-            </div>
+            </FadeSlide>
 
-            <div className="w-72">
+            <FadeSlide className="w-72">
               <div className="flex items-center justify-start gap-4 mb-3">
                 <div className="flex flex-col justify-end items-end gap-1.5">
                   <div className="size-9 bg-[#79242D] rounded-full"></div>
@@ -128,9 +128,9 @@ const MapSection = () => {
               <div className="text-lg lg:text-xl text-gray-600 space-y-1 mt-8">
                 <p>BNI City</p>
               </div>
-            </div>
+            </FadeSlide>
 
-            <div className="w-72">
+            <FadeSlide className="w-72">
               <div className="flex items-center justify-start gap-4 mb-3">
                 <div className="flex flex-col justify-end items-end gap-1.5">
                   <div className="size-9 bg-[#304A73] rounded-full"></div>
@@ -144,9 +144,9 @@ const MapSection = () => {
               <div className="text-lg lg:text-xl text-gray-600 space-y-1 mt-8">
                 <p>BNI City</p>
               </div>
-            </div>
+            </FadeSlide>
 
-            <div className="w-72">
+            <FadeSlide className="w-72">
               <div className="flex items-center justify-start gap-4 mb-3">
                 <div className="flex flex-col justify-end items-end gap-1.5">
                   <div className="size-9 bg-[#304A73] rounded-full"></div>
@@ -164,7 +164,7 @@ const MapSection = () => {
                 <p>Al-Azhar</p>
                 <p>Taraknita</p>
               </div>
-            </div>
+            </FadeSlide>
           </div>
         </div>
       </div>
