@@ -15,7 +15,7 @@ import { LinkPullUp } from "../animation/link-pull-up";
 const Footer = () => {
   return (
     <footer className="bg-[#9D7958] text-white">
-      <div className="px-5 sm:px-10 xl:px-48 py-20">
+      <div className="px-5 sm:px-10 xl:px-48 py-16">
         <div className="flex flex-col lg:flex-row justify-between lg:items-end md:gap-16">
           <div className="space-y-5">
             <div className="w-fit">
@@ -62,16 +62,16 @@ const Footer = () => {
 
               <WordsPullUp
                 text="PT Elite Prima Hutama"
-                className="uppercase tracking-wider text-lg font-bold"
+                className="uppercase tracking-widest text-lg font-bold"
               />
             </div>
             <div className="flex flex-col md:flex-row md:justify-start md:items-end gap-4">
               <div className="space-y-3 text-sm leading-relaxed max-w-sm ">
                 <WordsPullUp
                   text="Head Marketing Office"
-                  className="font-medium text-lg"
+                  className="font-medium text-lg tracking-wider"
                 />
-                <FadeSlide className="text-balance text-base font-light">
+                <FadeSlide className="text-balance text-base font-light tracking-wider">
                   Eightyeight@Kasablanka Tower B Lt. 20, Jl. Casablanca Raya Kav
                   88, Menteng Dalam, Tebet, Jakarta Selatan, DKI Jakarta 12870
                 </FadeSlide>
@@ -79,22 +79,22 @@ const Footer = () => {
 
               <div className="flex flex-col justify-between">
                 <div className="space-y-0 text-lg font-light">
-                  <FadeSlide>
+                  <FadeSlide className="tracking-wider">
                     <span className="font-medium mr-3 pr-1">P</span>{" "}
                     081189996968
                   </FadeSlide>
-                  <FadeSlide>
+                  <FadeSlide className="tracking-wider">
                     <span className="font-medium mr-3 pr-1">E</span>{" "}
                     info@elora-eluna.id
                   </FadeSlide>
-                  <FadeSlide>
+                  <FadeSlide className="tracking-wider">
                     <span className="font-medium mr-3">W</span> elora-eluna.id
                   </FadeSlide>
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex gap-6 mt-10 md:mt-0 text-lg">
+          <div className="flex gap-9 mt-10 md:mt-0 text-lg">
             <LinkPullUp
               href="#"
               className="size-6 flex justify-center items-center cursor-pointer"
@@ -125,10 +125,10 @@ const Footer = () => {
         <div className="border-t border-white my-8" />
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-          <WordsPullUp text="Disclaimer | Terms and Conditions" />
+          <WordsPullUp text="Disclaimer | Terms and Conditions" className="tracking-wider"/>
           <WordsPullUp
             text="Copyright © Elora & Eluna | 2025 | All Rights Reserved"
-            className="text-center"
+            className="text-center tracking-wider"
           />
         </div>
       </div>

@@ -96,14 +96,17 @@ const MapSection = () => {
             )}
           </FadeSlide>
         </div>
-        <div className="flex flex-col justify-center items-center gap-8">
+        <div className="w-full flex flex-col justify-center items-center gap-8">
           <div className="relative w-full h-auto mt-10 flex flex-col justify-center items-center gap-8">
-            <Image
-              src={map}
-              alt=""
-              className="w-full h-auto object-contain"
-              priority
-            />
+            <div className="relative w-full h-full flex justify-center items-center mx-auto">
+              <div className="bg-white w-4/5 h-[73%] mt-[5%] flex-1 absolute z-0"></div>
+              <Image
+                src={map}
+                alt=""
+                className="relative w-full h-full object-contain z-10"
+                priority
+              />
+            </div>
             <div className="flex justify-center items-center gap-20">
               <FadeSlide className="flex justify-center items-center gap-2.5">
                 <div className="bg-[#D9D9D9] border border-[#AA7A56] size-6"></div>

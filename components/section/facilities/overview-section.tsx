@@ -41,6 +41,7 @@ const OverviewSection = () => {
           alt=""
           className="w-fit h-3.5 sm:h-5 object-contain absolute top-20 -left-15 sm:-left-20"
         />
+        <div className="right-0 h-full w-[13.5%] absolute bg-[#F3F0E8]"></div>
         <Image src={map} alt="" className="w-fit xl:h-182 object-contain" />
         <Image
           src={elora}

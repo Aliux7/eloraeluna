@@ -35,7 +35,7 @@ const DesignSection = () => {
 
             <FadeSlide
               direction="up"
-              className="block xl:hidden lg:w-1/2 text-[#F3F0E8] font-normal text-lg sm:text-xl md:text-2xl text-balance mt-5 sm:mt-10"
+              className="block xl:hidden lg:w-1/2 text-[#F3F0E8] font-normal text-lg sm:text-xl text-balance mt-5 sm:mt-10"
             >
               An iconic development on 12.9 gectares of prime land, Kota
               Kasablanka redefines what a modern city hub can be bold, vibrant,
@@ -48,7 +48,7 @@ const DesignSection = () => {
               UNCOVER OUR DESIGN
             </LinkPullUp>
           </div>
-          <FadeSlide className="hidden xl:block max-w-1/2 text-[#F3F0E8] font-normal text-2xl text-balance pl-10">
+          <FadeSlide className="hidden xl:block max-w-1/2 text-[#F3F0E8] font-normal text-xl text-balance pl-10">
             An iconic development on 12.9 gectares of prime land, Kota
             Kasablanka redefines what a modern city hub can be bold, vibrant,
             and unforgetable.

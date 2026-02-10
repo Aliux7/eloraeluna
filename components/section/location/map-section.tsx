@@ -22,7 +22,7 @@ const MapSection = () => {
     const firstItem = wrapper.firstElementChild as HTMLElement;
     if (!firstItem) return;
 
-    const gap = 0; 
+    const gap = 0;
     const scrollAmount = firstItem.offsetWidth + gap;
 
     container.scrollBy({
@@ -68,7 +68,11 @@ const MapSection = () => {
         direction="left"
         className="relative w-fit max-w-[90vw] sm:max-w-[80vw] flex justify-center items-center z-10 h-fit"
       >
-        <Image src={map} alt="" className="w-fit h-fit object-contain border" />
+        <Image
+          src={map}
+          alt=""
+          className="w-[85%] h-fit object-contain border"
+        />
       </FadeSlide>
       <LinkPullUp
         href="#"
@@ -95,7 +99,7 @@ const MapSection = () => {
         />
         <div
           ref={scrollRef}
-          className="flex justify-start items-start gap-12 overflow-auto no-scrollbar mt-10 w-full"
+          className="flex justify-start items-start gap-12 overflow-hidden no-scrollbar mt-10 w-full"
         >
           <div className="flex justify-start items-start">
             <FadeSlide className="w-72">
@@ -104,12 +108,12 @@ const MapSection = () => {
                   <div className="size-9 bg-[#006174] rounded-full"></div>
                   <div className="w-14 h-2 bg-[#006174] rounded-full"></div>
                 </div>
-                <span className="text-[#006174] text-lg lg:text-xl font-medium">
+                <span className="text-[#006174] text-lg font-medium">
                   Commuter Line
                 </span>
               </div>
 
-              <div className="text-lg lg:text-xl text-gray-600 space-y-1 mt-8">
+              <div className="text-lg text-gray-600 space-y-1 mt-8">
                 <p>Sudirman & Manggarai</p>
               </div>
             </FadeSlide>
@@ -120,12 +124,10 @@ const MapSection = () => {
                   <div className="size-9 bg-[#79242D] rounded-full"></div>
                   <div className="w-14 h-2 bg-[#79242D] rounded-full"></div>
                 </div>
-                <span className="text-[#79242D] text-lg lg:text-xl font-medium">
-                  LRT
-                </span>
+                <span className="text-[#79242D] text-lg font-medium">LRT</span>
               </div>
 
-              <div className="text-lg lg:text-xl text-gray-600 space-y-1 mt-8">
+              <div className="text-lg text-gray-600 space-y-1 mt-8">
                 <p>BNI City</p>
               </div>
             </FadeSlide>
@@ -136,12 +138,10 @@ const MapSection = () => {
                   <div className="size-9 bg-[#304A73] rounded-full"></div>
                   <div className="w-14 h-2 bg-[#304A73] rounded-full"></div>
                 </div>
-                <span className="text-[#304A73] text-lg lg:text-xl font-medium">
-                  MRT
-                </span>
+                <span className="text-[#304A73] text-lg font-medium">MRT</span>
               </div>
 
-              <div className="text-lg lg:text-xl text-gray-600 space-y-1 mt-8">
+              <div className="text-lg text-gray-600 space-y-1 mt-8">
                 <p>BNI City</p>
               </div>
             </FadeSlide>
@@ -152,12 +152,10 @@ const MapSection = () => {
                   <div className="size-9 bg-[#304A73] rounded-full"></div>
                   <div className="w-14 h-2 bg-[#304A73] rounded-full"></div>
                 </div>
-                <span className="text-[#304A73] text-lg lg:text-xl font-medium">
-                  MRT
-                </span>
+                <span className="text-[#304A73] text-lg font-medium">MRT</span>
               </div>
 
-              <div className="text-lg lg:text-xl text-gray-600 space-y-1 mt-8">
+              <div className="text-lg text-gray-600 space-y-1 mt-8">
                 <p>Kolase Kanisius</p>
                 <p>IISS</p>
                 <p>JIS Pattimura Elementary</p>

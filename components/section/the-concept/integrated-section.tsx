@@ -42,7 +42,7 @@ const IntegratedSection = () => {
                 LUXURY LIVING
               </FadeSlide>
             </div>
-            <FadeSlide className="max-w-md font-normal text-base sm:text-[22px] text-[#F3F0E8]">
+            <FadeSlide className="max-w-md font-normal text-base sm:text-xl text-[#F3F0E8]">
               Connected to W Hotels—Forbes' most innovative brand—and Courtyard
               by Marriott, Elora and Eluna offer bold design, vibrant energy,
               and contemporary living at the heart of Kota Kasablanka.
@@ -61,11 +61,11 @@ const IntegratedSection = () => {
                 className="text-[#9D7958] font-semibold text-3xl sm:text-4xl tracking-[0.5rem] sm:tracking-[1rem]"
               />
             </div>
-            <FadeSlide className="text-[#F3F0E8] text-lg sm:text-xl xl:text-2xl font-light tracking-widest mb-4">
+            <FadeSlide className="text-[#F3F0E8] text-lg sm:text-xl xl:text-[22px] font-light tracking-widest mb-4">
               Courtyard by marriot brings a fresh take on contemporary living to
               kota kasablanka.
             </FadeSlide>
-            <FadeSlide className="text-[#F3F0E8] sm:text-lg xl:text-xl tracking-wider">
+            <FadeSlide className="text-[#F3F0E8] sm:text-lg xl:text-xl font-medium tracking-wider">
               Blending stylish comfort with intuitive spaces, it's designed for
               those who seek balance between momentum and mindfulness. with
               uplifting interiors, seamless service, and easy access to the
@@ -77,11 +77,11 @@ const IntegratedSection = () => {
             <FadeSlide className="text-center h-25  w-fit mb-14">
               <Image src={w_hotel_logo} alt="" className="h-full w-full" />
             </FadeSlide>
-            <FadeSlide className="text-[#F3F0E8] text-lg sm:text-xl xl:text-2xl font-light tracking-widest mb-4">
+            <FadeSlide className="text-[#F3F0E8] text-lg sm:text-xl xl:text-[22px] font-light tracking-widest mb-4">
               NAMED One of the world's most innovative hotel brand by forbes, W
               hotel is where vibrant energy meets visionary design
             </FadeSlide>
-            <FadeSlide className="text-[#F3F0E8] sm:text-lg xl:text-xl tracking-wider">
+            <FadeSlide className="text-[#F3F0E8] sm:text-lg xl:text-xl font-medium tracking-wider">
               From New York to Jakarta, W redefines modern luxury with magnetic
               spaces, standout service, and a signature attitude that celebrates
               bold self-expression. More than a hotel, W is a lifestyle, where
