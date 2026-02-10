@@ -100,12 +100,12 @@ const SharedSection = () => {
             className="absolute top-1/2 -translate-y-1/2 right-0 xl:-right-16 rotate-180 cursor-pointer scale-70 sm:scale-100 z-20 opacity-50 hover:opacity-100"
           />
 
-          <div className="block xl:hidden pointer-events-none absolute -left-1 top-0 h-full w-16 sm:w-24 z-10 bg-linear-to-r from-[#464948] to-transparent" />
-          <div className="block xl:hidden pointer-events-none absolute -right-1 top-0 h-full w-16 sm:w-24 z-10 bg-linear-to-l from-[#464948] to-transparent" />
+          <div className="block xl:hidden pointer-events-none absolute -left-1 top-0 h-full w-16 sm:w-24 z-10 bg-linear-to-r from-[#F3F0E8] to-transparent" />
+          <div className="block xl:hidden pointer-events-none absolute -right-1 top-0 h-full w-16 sm:w-24 z-10 bg-linear-to-l from-[#F3F0E8] to-transparent" />
 
           <div
             ref={scrollRef}
-            className="flex justify-start items-center gap-12 overflow-x-hidden no-scrollbar px-[16vw] sm:px-0 transition-all duration-300 ease-in-out"
+            className="flex justify-start items-center gap-12 overflow-hidden no-scrollbar px-[16vw] sm:px-0 transition-all duration-300 ease-in-out"
           >
             <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 transition-all duration-300 ease-in-out">
               <Image

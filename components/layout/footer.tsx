@@ -15,8 +15,8 @@ import { LinkPullUp } from "../animation/link-pull-up";
 const Footer = () => {
   return (
     <footer className="bg-[#9D7958] text-white">
-      <div className="px-5 sm:px-10 xl:px-48 py-16">
-        <div className="flex flex-col lg:flex-row justify-between lg:items-end md:gap-16">
+      <div className="px-5 sm:px-10 xl:px-48 py-11 sm:py-16">
+        <div className="relative flex flex-row md:flex-col lg:flex-row justify-between items-end md:items-start lg:items-end gap-10 lg:gap-16">
           <div className="space-y-5">
             <div className="w-fit">
               <FadeSlide
@@ -28,107 +28,118 @@ const Footer = () => {
                   alt=""
                   width={1000}
                   height={1000}
-                  className="w-fit sm:w-full h-6"
+                  className="w-fit sm:w-full h-5 sm:h-6"
                 />
                 <Image
                   src={and}
                   alt=""
                   width={1000}
                   height={1000}
-                  className="w-fit sm:w-full h-8"
+                  className="w-fit sm:w-full h-7 sm:h-8"
                 />
                 <Image
                   src={eluna}
                   alt=""
                   width={1000}
                   height={1000}
-                  className="w-fit sm:w-full h-6"
+                  className="w-fit sm:w-full h-5 sm:h-6"
                 />
-              </FadeSlide> 
-
-              <FadeSlide
-                direction="up"
-                className="flex justify-start items-start gap-3 h-3 w-full mt-3 mb-8"
-              >
-                <Image src={kota} alt="" className="object-contain w-full h-full" />
               </FadeSlide>
 
               <FadeSlide
                 direction="up"
-                className="flex justify-start items-start gap-3 h-9 w-fit mb-8"
+                className="flex justify-start items-start gap-3 h-2.5 sm:h-3 w-full mt-3 mb-8"
               >
-                <Image src={pakuwon_logo} alt="" className="object-contain w-full h-full" />
+                <Image
+                  src={kota}
+                  alt=""
+                  className="object-contain w-full h-full"
+                />
+              </FadeSlide>
+
+              <FadeSlide
+                direction="up"
+                className="flex justify-start items-start gap-3 h-8 sm:h-9 w-fit mb-8"
+              >
+                <Image
+                  src={pakuwon_logo}
+                  alt=""
+                  className="object-contain w-full h-full"
+                />
               </FadeSlide>
 
               <WordsPullUp
                 text="PT Elite Prima Hutama"
-                className="uppercase tracking-widest text-lg font-bold"
+                className="uppercase tracking-widest sm:text-lg font-bold"
               />
             </div>
-            <div className="flex flex-col md:flex-row md:justify-start md:items-end gap-4">
+            <div className="flex flex-col md:flex-row md:justify-start md:items-end gap-8 sm:gap-4">
               <div className="space-y-3 text-sm leading-relaxed max-w-sm ">
                 <WordsPullUp
                   text="Head Marketing Office"
-                  className="font-medium text-lg tracking-wider"
+                  className="font-medium sm:text-lg tracking-wider"
                 />
-                <FadeSlide className="text-balance text-base font-light tracking-wider">
+                <FadeSlide className="text-balance text-sm sm:text-base font-light tracking-wider">
                   Eightyeight@Kasablanka Tower B Lt. 20, Jl. Casablanca Raya Kav
                   88, Menteng Dalam, Tebet, Jakarta Selatan, DKI Jakarta 12870
                 </FadeSlide>
               </div>
 
               <div className="flex flex-col justify-between">
-                <div className="space-y-0 text-lg font-light">
-                  <FadeSlide className="tracking-wider">
+                <div className="space-y-1 text-lg font-light">
+                  <FadeSlide className="tracking-wider text-sm sm:text-base">
                     <span className="font-medium mr-3 pr-1">P</span>{" "}
                     081189996968
                   </FadeSlide>
-                  <FadeSlide className="tracking-wider">
+                  <FadeSlide className="tracking-wider text-sm sm:text-base">
                     <span className="font-medium mr-3 pr-1">E</span>{" "}
                     info@elora-eluna.id
                   </FadeSlide>
-                  <FadeSlide className="tracking-wider">
+                  <FadeSlide className="tracking-wider text-sm sm:text-base">
                     <span className="font-medium mr-3">W</span> elora-eluna.id
                   </FadeSlide>
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex gap-9 mt-10 md:mt-0 text-lg">
+          <div className="absolute bottom-0 right-0 sm:relative flex gap-5 sm:gap-6 md:gap-9 mt-10 md:mt-0 text-lg">
             <LinkPullUp
               href="#"
-              className="size-6 flex justify-center items-center cursor-pointer"
+              className="size-5 sm:size-6 flex justify-center items-center cursor-pointer"
             >
               <Image src={facebook} alt="" className="object-cover" />
             </LinkPullUp>
             <LinkPullUp
               href="#"
-              className="size-6 flex justify-center items-center cursor-pointer"
+              className="size-5 sm:size-6 flex justify-center items-center cursor-pointer"
             >
               <Image src={instagram} alt="" className="object-cover" />
             </LinkPullUp>
             <LinkPullUp
               href="#"
-              className="size-6 flex justify-center items-center cursor-pointer"
+              className="size-5 sm:size-6 flex justify-center items-center cursor-pointer"
             >
               <Image src={twitter} alt="" className="object-cover" />
             </LinkPullUp>
             <LinkPullUp
               href="#"
-              className="size-6 flex justify-center items-center cursor-pointer"
+              className="size-5 sm:size-6 flex justify-center items-center cursor-pointer"
             >
               <Image src={linkedin} alt="" className="object-cover" />
             </LinkPullUp>
           </div>
         </div>
 
-        <div className="border-t border-white my-8" />
+        <div className="border-t border-white my-6 md:my-8" />
 
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-          <WordsPullUp text="Disclaimer | Terms and Conditions" className="tracking-wider"/>
+        <div className="flex flex-col md:flex-row justify-between items-end md:items-center gap-3 md:gap-6">
+          <WordsPullUp
+            text="Disclaimer | Terms and Conditions"
+            className="text-xs sm:text-base tracking-wider"
+          />
           <WordsPullUp
             text="Copyright © Elora & Eluna | 2025 | All Rights Reserved"
-            className="text-center tracking-wider"
+            className="text-center tracking-wider text-xs sm:text-base"
           />
         </div>
       </div>

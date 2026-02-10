@@ -13,7 +13,7 @@ const HeroSection = () => {
       <FadeSlide className="absolute z-20 bottom-10 -right-32 xl:-right-64 scale-y-[-1] scale-x-[-1] w-72 xl:w-96">
         <Image src={illustration_bottom} alt="" />
       </FadeSlide>
-      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-18 sm:pt-0 h-96 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-black/30">
+      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-black/30">
         <Image
           src={hero_background}
           alt=""

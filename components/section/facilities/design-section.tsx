@@ -104,7 +104,7 @@ const DesignSection = () => {
 
           <div
             ref={scrollRef}
-            className="flex justify-start items-center gap-12 overflow-x-hidden no-scrollbar px-[16vw] sm:px-0 transition-all duration-300 ease-in-out"
+            className="flex justify-start items-center gap-12 overflow-hidden no-scrollbar px-[16vw] sm:px-0 transition-all duration-300 ease-in-out"
           >
             <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 transition-all duration-300 ease-in-out">
               <Image
