@@ -38,14 +38,14 @@ const SharedSection = () => {
         <div>
           <WordsPullUp
             text="SHARED"
-            className="text-3xl sm:text-5xl lg:text-6xl font-extralight text-[#9D7958] tracking-widest"
+            className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-extralight text-[#9D7958] tracking-widest"
           />
           <WordsPullUp
             text="FACILITIES"
-            className="text-3xl sm:text-5xl lg:text-6xl font-normal text-[#9D7958] tracking-widest ml-14 sm:ml-20"
+            className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-normal text-[#9D7958] tracking-widest ml-14 sm:ml-20"
           />
         </div>
-        <FadeSlide className="text-2xl max-w-lg text-[#9D7958]">
+        <FadeSlide className="text-2xl 3xl:text-3xl max-w-lg text-[#9D7958]">
           WHERE two worlds meet—spaces designed to connect, inspire, and elevate
           the everyday.
         </FadeSlide>
@@ -64,7 +64,7 @@ const SharedSection = () => {
         <Image
           src={facilities_background}
           alt=""
-          className="w-full h-140 object-cover"
+          className="w-full h-140 3xl:h-230 object-cover"
         />
       </div>
       <div className="px-5 sm:px-10 xl:px-48 space-y-8 lg:space-y-16 w-full pt-8">
@@ -73,15 +73,15 @@ const SharedSection = () => {
             <WordsPullUp
               direction="left"
               text="LAGOON"
-              className="text-[#A4704F] font-light text-3xl sm:text-5xl xl:text-6xl tracking-wider"
+              className="text-[#A4704F] font-light text-3xl sm:text-5xl xl:text-6xl 3xl:text-7xl tracking-wider"
             />
             <WordsPullUp
               direction="left"
               text="POOL"
-              className="text-[#A4704F] font-medium text-3xl sm:text-5xl xl:text-6xl tracking-wider xl:mr-20"
+              className="text-[#A4704F] font-medium text-3xl sm:text-5xl xl:text-6xl 3xl:text-7xl tracking-wider xl:mr-20"
             />
           </div>
-          <FadeSlide className="text-[22px] w-fit max-w-2xl text-[#A4704F] font-medium">
+          <FadeSlide className="text-[22px] 3xl:text-3xl w-fit max-w-2xl text-[#A4704F] font-medium">
             A serene pool extension blending tranquil waters with natural
             charm—perfect for peaceful relaxation.
           </FadeSlide>
@@ -107,7 +107,7 @@ const SharedSection = () => {
             ref={scrollRef}
             className="flex justify-start items-center gap-12 overflow-hidden no-scrollbar px-[16vw] sm:px-0 transition-all duration-300 ease-in-out"
           >
-            <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 transition-all duration-300 ease-in-out">
+            <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 3xl:h-80 transition-all duration-300 ease-in-out">
               <Image
                 src={lobby}
                 alt=""
@@ -117,13 +117,13 @@ const SharedSection = () => {
                 Lobby Lounge
               </span>
             </FadeSlide>
-            <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 transition-all duration-300 ease-in-out">
+            <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 3xl:h-80 transition-all duration-300 ease-in-out">
               <Image src={pool} alt="" className="w-full h-full object-cover" />
               <span className="absolute bottom-1 text-[#F3F0E8] text-xl">
                 Pool Lounge
               </span>
             </FadeSlide>
-            <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 transition-all duration-300 ease-in-out">
+            <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 3xl:h-80 transition-all duration-300 ease-in-out">
               <Image
                 src={dining}
                 alt=""
@@ -133,7 +133,7 @@ const SharedSection = () => {
                 Private Dining
               </span>
             </FadeSlide>
-            <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 transition-all duration-300 ease-in-out">
+            <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 3xl:h-80 transition-all duration-300 ease-in-out">
               <Image src={gym} alt="" className="w-full h-full object-cover" />
               <span className="absolute bottom-1 text-[#F3F0E8] text-xl">
                 GYM

@@ -37,21 +37,21 @@ const FacilitiesSection = () => {
           <div className="flex flex-col gap-2 sm:gap-4">
             <WordsPullUp
               text="OUR"
-              className="text-3xl sm:text-5xl lg:text-6xl font-extralight text-[#F3F0E8] tracking-widest"
+              className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-extralight text-[#F3F0E8] tracking-widest"
             />
             <WordsPullUp
               text="FACILITIES"
-              className="text-3xl sm:text-5xl lg:text-6xl font-medium text-[#F3F0E8] tracking-widest ml-14 sm:ml-20 mb-6 lg:mb-10"
+              className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-medium text-[#F3F0E8] tracking-widest ml-14 sm:ml-20 mb-6 lg:mb-10"
             />
 
-            <FadeSlide className="text-[#F3F0E8] font-normal text-lg sm:text-xl lg:text-2xl w-full sm:w-2/3 lg:w-140 mb-10 sm:mb-16 xl:mb-20">
+            <FadeSlide className="text-[#F3F0E8] font-normal text-lg sm:text-xl lg:text-2xl 3xl:text-3xl w-full sm:w-2/3 lg:w-140 3xl:w-200 mb-10 sm:mb-16 xl:mb-20">
               Where two worlds meet—spaces designed to connect, inspire, and
               elevate the everyday.
             </FadeSlide>
 
             <LinkPullUp
               href="#"
-              className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg pt-px w-56 h-11.25 text-[#F3F0E8] border border-[#9D7958] hover:bg-[#F3F0E8]/90 hover:text-[#9D7958] transition-all duration-200 ease-in-out"
+              className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg 3xl:text-2xl pt-px w-56 3xl:w-70 h-11.25 3xl:h-15 text-[#F3F0E8] border border-[#9D7958] hover:bg-[#F3F0E8]/90 hover:text-[#9D7958] transition-all duration-200 ease-in-out"
             >
               SEE ALL FACILITIES
             </LinkPullUp>

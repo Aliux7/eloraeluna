@@ -20,26 +20,26 @@ const HeroSection = () => {
         <div className="py-8 sm:py-0">
           <WordsPullUp
             text="A MASTERPLAN OF"
-            className="text-3xl sm:text-5xl lg:text-6xl font-light text-[#9D7958] sm:text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
+            className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-light text-[#9D7958] sm:text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
           />
           <WordsPullUp
             text="INTEGRATED LIVING"
-            className="text-3xl sm:text-5xl lg:text-6xl font-medium sm:font-bold text-[#9D7958] sm:text-[#F3F0E8] tracking-widest ml-10 sm:ml-0 lg:ml-[5vw] mb-6 md:mb-10 xl:mb-8"
+            className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-medium sm:font-bold text-[#9D7958] sm:text-[#F3F0E8] tracking-widest ml-10 sm:ml-0 lg:ml-[5vw] mb-6 md:mb-10 xl:mb-8"
           />
 
           <WordsPullUp
             text="Steps away from world-class fashion, dining, entertainment, and family-"
-            className="hidden sm:block text-sm sm:text-lg lg:text-xl font-normal text-[#9D7958] sm:text-[#F3F0E8]"
+            className="hidden sm:block text-sm sm:text-lg lg:text-xl 3xl:text-2xl font-normal text-[#9D7958] sm:text-[#F3F0E8]"
           />
           <WordsPullUp
             text="friendly experiences. Elora and Eluna offer direct access to the vibrant"
-            className="hidden sm:block text-sm sm:text-lg lg:text-xl font-normal text-[#9D7958] sm:text-[#F3F0E8]"
+            className="hidden sm:block text-sm sm:text-lg lg:text-xl 3xl:text-2xl font-normal text-[#9D7958] sm:text-[#F3F0E8]"
           />
           <WordsPullUp
             text="energy of Kota Kasablanka—where everything you need is within reach."
-            className="hidden sm:block text-sm sm:text-lg lg:text-xl font-normal text-[#9D7958] sm:text-[#F3F0E8] mb-16"
+            className="hidden sm:block text-sm sm:text-lg lg:text-xl 3xl:text-2xl font-normal text-[#9D7958] sm:text-[#F3F0E8] mb-16"
           />
-          <FadeSlide className="sm:hidden text-sm sm:text-lg lg:text-xl font-normal text-[#9D7958] sm:text-[#F3F0E8]">
+          <FadeSlide className="sm:hidden text-sm sm:text-lg lg:text-xl 3xl:text-2xl font-normal text-[#9D7958] sm:text-[#F3F0E8]">
             Steps away from world-class fashion, dining, entertainment, and
             family-friendly experiences. Elora and Eluna offer direct access to
             the vibrant energy of Kota Kasablanka—where everything you need is

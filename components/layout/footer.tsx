@@ -28,7 +28,7 @@ const Footer = () => {
                   alt=""
                   width={1000}
                   height={1000}
-                  className="w-fit sm:w-full h-5 sm:h-6"
+                  className="w-fit sm:w-full h-5 sm:h-6 3xl:h-8"
                 />
                 <Image
                   src={and}
@@ -42,7 +42,7 @@ const Footer = () => {
                   alt=""
                   width={1000}
                   height={1000}
-                  className="w-fit sm:w-full h-5 sm:h-6"
+                  className="w-fit sm:w-full h-5 sm:h-6 3xl:h-8"
                 />
               </FadeSlide>
 

@@ -9,7 +9,7 @@ const ConclusionSection = () => {
         <Image src={conclusion} alt="" className="w-full h-full object-cover" />
       </div>
       <div className="sm:w-1/2 p-10 lg:p-16">
-        <FadeSlide className="text-[#A4704F] text-base lg:text-xl tracking-widest">
+        <FadeSlide className="text-[#A4704F] text-base lg:text-xl tracking-widest 3xl:max-w-5xl 3xl:text-3xl">
           Eluna's design is a harmonious fusion of serenity and
           sophistication—drawing inspiration from the moon's quiet elegance
           while embracing the expressive energy of modern living. Every
@@ -17,7 +17,7 @@ const ConclusionSection = () => {
           calm confidence, offering a refined sanctuary above the city.
         </FadeSlide>
         <br />
-        <FadeSlide className="text-[#A4704F] text-base lg:text-xl tracking-widest">
+        <FadeSlide className="text-[#A4704F] text-base lg:text-xl tracking-widest 3xl:max-w-5xl 3xl:text-3xl">
           With its soft curves, ambient lighting, and curated materials, Eluna
           reimagines premium apartment living through a lens of intuitive
           luxury—perfect for those who seek a life of quiet splendor and

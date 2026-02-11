@@ -17,16 +17,16 @@ const DeveloperSection = () => {
           className="object-cover opacity-70"
         />
 
-        <div className="absolute inset-0 z-10 flex flex-col justify-center py-16 px-5 sm:px-10 xl:px-16">
+        <div className="absolute inset-0 z-10 flex flex-col justify-center py-16 px-5 sm:px-10 xl:px-16 3xl:px-48">
           <WordsPullUp
             text="THE DEVELOPER"
-            className="font-bold tracking-widest text-lg sm:text-2xl xl:text-3xl text-[#F3F0E8] mb-32"
+            className="font-bold tracking-widest text-lg sm:text-2xl xl:text-3xl 3xl:text-4xl text-[#F3F0E8] mb-32"
           />
-          <FadeSlide className="relative h-12 sm:h-14 lg:h-17 w-fit mb-16">
+          <FadeSlide className="relative h-12 sm:h-14 lg:h-17 3xl:h-20 w-fit mb-16">
             <Image src={developer_logo} alt="" width={1000} height={1000} className="w-full h-full"/>
           </FadeSlide>
 
-          <FadeSlide className="text-[#F3F0E8] font-normal text-lg sm:text-xl md:text-2xl mb-14 lg:mb-16 max-w-140 sm:pr-10 text-balance">
+          <FadeSlide className="text-[#F3F0E8] font-normal text-lg sm:text-xl md:text-2xl 3xl:text-3xl mb-14 lg:mb-16 max-w-140 3xl:max-w-200 sm:pr-10 text-balance">
             Pakuwon Group is a pioneer in Indonesia's property scene, known for
             visionary superblocks that blend luxury living, vibrant retail, and
             world-class hospitality across major cities.
@@ -34,7 +34,7 @@ const DeveloperSection = () => {
 
           <LinkPullUp
             href="#"
-            className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg pt-px w-56 h-11.25 border border-[#9D7958] hover:bg-[#F3F0E8]/90 text-[#F3F0E8] hover:text-[#9D7958] transition-all duration-200 ease-in-out"
+            className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg 3xl:text-2xl pt-px w-56 3xl:w-75 h-11.25 3xl:h-15 border border-[#9D7958] hover:bg-[#F3F0E8]/90 text-[#F3F0E8] hover:text-[#9D7958] transition-all duration-200 ease-in-out"
           >
             MEET THE DEVELOPER
           </LinkPullUp>

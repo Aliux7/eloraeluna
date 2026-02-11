@@ -27,25 +27,25 @@ const HeroSection = () => {
             alt=""
             width={1000}
             height={1000}
-            className="w-fit h-7 sm:h-9"
+            className="w-fit h-7 sm:h-9 3xl:h-14 object-contain"
           />
           <div className="border-t border-white flex-1 lg:w-full mt-4.5" />
           <div className="w-full lg:w-fit flex flex-col justify-start items-end">
             <WordsPullUp
               direction="left"
               text="THE SHIMMER"
-              className="text-[#FFFFFF] font-light text-3xl sm:text-5xl xl:text-6xl tracking-[0.5rem] mr-16 sm:mr-24 lg:mr-28 text-nowrap"
+              className="text-[#FFFFFF] font-light text-3xl sm:text-5xl xl:text-6xl 3xl:text-7xl tracking-[0.5rem] mr-16 sm:mr-24 lg:mr-28 text-nowrap"
             />
             <div className="flex justify-center items-center gap-4">
               <WordsPullUp
                 direction="left"
                 text="OF"
-                className="text-[#FFFFFF] font-light text-3xl sm:text-5xl xl:text-6xl tracking-[0.5rem] text-nowrap"
+                className="text-[#FFFFFF] font-light text-3xl sm:text-5xl xl:text-6xl 3xl:text-7xl tracking-[0.5rem] text-nowrap"
               />{" "}
               <WordsPullUp
                 direction="left"
                 text="THE MOON"
-                className="text-[#FFFFFF] font-medium text-3xl sm:text-5xl xl:text-6xl tracking-[0.5rem] text-nowrap"
+                className="text-[#FFFFFF] font-medium text-3xl sm:text-5xl xl:text-6xl 3xl:text-7xl tracking-[0.5rem] text-nowrap"
               />
             </div>
           </div>
@@ -56,9 +56,9 @@ const HeroSection = () => {
             className="absolute xl:relative sm:ml-5 sm:mb-5 lg:mb-0 xl:ml-0 z-10"
             direction="right"
           >
-            <div className="hidden xl:block absolute w-80 xl:h-full bg-[#9D7958]/40 top-2.5 left-4 z-0"></div>
-            <div className="-ml-5 -mb-15 sm:mb-0 sm:ml-0 relative w-80 sm:w-80 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-9 flex flex-col justify-between gap-5 xl:gap-0 items-center">
-              <p className="sm:text-lg font-normal text-[#F3F0E8] flex justify-center items-center h-full">
+            <div className="hidden xl:block absolute w-80 3xl:w-130 xl:h-full bg-[#9D7958]/40 top-2.5 left-4 z-0"></div>
+            <div className="-ml-5 -mb-15 sm:mb-0 sm:ml-0 relative w-80 sm:w-80 3xl:w-130 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-9 flex flex-col justify-between gap-5 xl:gap-0 items-center">
+              <p className="sm:text-lg 3xl:text-3xl font-normal text-[#F3F0E8] flex justify-center items-center h-full">
                 Eluna reflects the luminous allure of the moon, offering a
                 lifestyle of elegance, rhythm, and refined luxury. It is a home
                 for those who embrace elevated living—where thoughtful design
@@ -105,18 +105,18 @@ const HeroSection = () => {
             <WordsPullUp
               direction="left"
               text="THE ENERGY"
-              className="text-[#FFFFFF] font-light text-3xl sm:text-5xl xl:text-6xl tracking-[0.5rem] mr-28 text-nowrap"
+              className="text-[#FFFFFF] font-light text-3xl sm:text-5xl xl:text-6xl 3xl:text-7xl tracking-[0.5rem] mr-28 text-nowrap"
             />
             <div className="flex justify-center items-center gap-4">
               <WordsPullUp
                 direction="left"
                 text="OF"
-                className="text-[#FFFFFF] font-light text-3xl sm:text-5xl xl:text-6xl tracking-[0.5rem] text-nowrap"
+                className="text-[#FFFFFF] font-light text-3xl sm:text-5xl xl:text-6xl 3xl:text-7xl tracking-[0.5rem] text-nowrap"
               />{" "}
               <WordsPullUp
                 direction="left"
                 text="THE SUN"
-                className="text-[#FFFFFF] font-medium text-3xl sm:text-5xl xl:text-6xl tracking-[0.5rem] text-nowrap"
+                className="text-[#FFFFFF] font-medium text-3xl sm:text-5xl xl:text-6xl 3xl:text-7xl tracking-[0.5rem] text-nowrap"
               />
             </div>
           </div>
@@ -127,25 +127,25 @@ const HeroSection = () => {
               alt=""
               width={1000}
               height={1000}
-              className="w-fit h-7 sm:h-9"
+              className="w-fit h-7 sm:h-9 3xl:h-14 object-contain"
             />
             <div className="flex flex-col justify-center items-start gap-0">
               <WordsPullUp
                 direction="left"
                 text="COMING SOON"
-                className="text-[#F3F0E8] font-light text-xl tracking-widest text-nowrap"
+                className="text-[#F3F0E8] font-light text-xl 3xl:text-3xl tracking-widest text-nowrap"
               />{" "}
               <WordsPullUp
                 direction="left"
                 text="PHASE II"
-                className="text-[#F3F0E8] font-medium text-xl tracking-widest text-nowrap"
+                className="text-[#F3F0E8] font-medium text-xl 3xl:text-3xl tracking-widest text-nowrap"
               />
             </div>
           </FadeSlide>
         </div>
 
         <div>
-          <FadeSlide className="text-[#FFFFFF] max-w-lg sm:text-xl">
+          <FadeSlide className="text-[#FFFFFF] max-w-lg 3xl:max-w-xl sm:text-xl 3xl:text-2xl">
             Elora radiates the vitality of the sun, bringing warmth, light, and
             inspiration to those who call it home. It is a place where life
             thrives, filled with dynamic energy and opportunities to shine.
@@ -160,24 +160,24 @@ const HeroSection = () => {
               <WordsPullUp
                 direction="left"
                 text="WHERE"
-                className="text-[#FFFFFF] font-light text-3xl sm:text-4xl md:text-5xl xl:text-6xl tracking-[0.5rem] text-nowrap"
+                className="text-[#FFFFFF] font-light text-3xl sm:text-4xl md:text-5xl xl:text-6xl 3xl:text-7xl tracking-[0.5rem] text-nowrap"
               />{" "}
               <WordsPullUp
                 direction="left"
                 text="VIBRANCE"
-                className="text-[#FFFFFF] font-medium text-3xl sm:text-4xl md:text-5xl xl:text-6xl tracking-[0.5rem] text-nowrap"
+                className="text-[#FFFFFF] font-medium text-3xl sm:text-4xl md:text-5xl xl:text-6xl 3xl:text-7xl tracking-[0.5rem] text-nowrap"
               />
             </div>
             <div className="flex justify-start items-center gap-4 sm:ml-14 lg:ml-28">
               <WordsPullUp
                 direction="left"
                 text="MEETS"
-                className="text-[#FFFFFF] font-light text-3xl sm:text-4xl md:text-5xl xl:text-6xl tracking-[0.5rem] text-nowrap"
+                className="text-[#FFFFFF] font-light text-3xl sm:text-4xl md:text-5xl xl:text-6xl 3xl:text-7xl tracking-[0.5rem] text-nowrap"
               />{" "}
               <WordsPullUp
                 direction="left"
                 text="TRANQUILITY"
-                className="text-[#FFFFFF] font-medium text-3xl sm:text-4xl md:text-5xl xl:text-6xl tracking-[0.5rem] text-nowrap"
+                className="text-[#FFFFFF] font-medium text-3xl sm:text-4xl md:text-5xl xl:text-6xl 3xl:text-7xl tracking-[0.5rem] text-nowrap"
               />
             </div>
           </div>
@@ -196,35 +196,35 @@ const HeroSection = () => {
               className="relative sm:absolute xl:relative sm:mr-5 sm:mb-5 lg:mb-0 xl:mr-0 right-0"
               direction="left"
             >
-              <div className="hidden xl:block absolute w-105 xl:h-full bg-[#9D7958]/40 top-2.5 right-4 z-0"></div>
-              <div className="-mb-15 sm:mb-0 sm:mr-0 relative w-full sm:w-96 lg:w-105 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-8 flex flex-col justify-between gap-5 sm:gap-8 items-center">
+              <div className="hidden xl:block absolute w-105 3xl:w-130 xl:h-full bg-[#9D7958]/40 top-2.5 right-4 z-0"></div>
+              <div className="-mb-15 sm:mb-0 sm:mr-0 relative w-full sm:w-96 lg:w-105 3xl:w-130 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-8 flex flex-col justify-between gap-5 sm:gap-8 items-center">
                 <div className="sm:hidden flex flex-col justify-start items-start">
                   <div className="flex justify-start items-center gap-2 sm:gap-4">
                     <WordsPullUp
                       direction="left"
                       text="WHERE"
-                      className="text-[#FFFFFF] font-light text-2xl sm:text-4xl md:text-5xl xl:text-6xl tracking-[0.5rem] text-nowrap"
+                      className="text-[#FFFFFF] font-light text-2xl sm:text-4xl md:text-5xl xl:text-6xl 3xl:text-7xl tracking-[0.5rem] text-nowrap"
                     />{" "}
                     <WordsPullUp
                       direction="left"
                       text="VIBRANCE"
-                      className="text-[#FFFFFF] font-medium text-2xl sm:text-4xl md:text-5xl xl:text-6xl tracking-[0.5rem] text-nowrap"
+                      className="text-[#FFFFFF] font-medium text-2xl sm:text-4xl md:text-5xl xl:text-6xl 3xl:text-7xl tracking-[0.5rem] text-nowrap"
                     />
                   </div>
                   <div className="flex justify-start items-center gap-2 sm:gap-4 sm:ml-14 lg:ml-28">
                     <WordsPullUp
                       direction="left"
                       text="MEETS"
-                      className="text-[#FFFFFF] font-light text-2xl sm:text-4xl md:text-5xl xl:text-6xl tracking-[0.5rem] text-nowrap"
+                      className="text-[#FFFFFF] font-light text-2xl sm:text-4xl md:text-5xl xl:text-6xl 3xl:text-7xl tracking-[0.5rem] text-nowrap"
                     />{" "}
                     <WordsPullUp
                       direction="left"
                       text="TRANQUILITY"
-                      className="text-[#FFFFFF] font-medium text-2xl sm:text-4xl md:text-5xl xl:text-6xl tracking-[0.5rem] text-nowrap"
+                      className="text-[#FFFFFF] font-medium text-2xl sm:text-4xl md:text-5xl xl:text-6xl 3xl:text-7xl tracking-[0.5rem] text-nowrap"
                     />
                   </div>
                 </div>
-                <p className="text-sm sm:text-lg font-normal text-[#F3F0E8]">
+                <p className="text-sm sm:text-lg 3xl:text-3xl font-normal text-[#F3F0E8]">
                   Elora and Eluna embody the essential balance of life, inspired
                   by the sun and the moon. Elora channels the sun's energy
                   through bold architecture, luminous interiors, and a vibrant

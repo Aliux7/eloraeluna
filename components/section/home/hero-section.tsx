@@ -45,7 +45,7 @@ const HeroSection = () => {
       <div className="relative z-10 px-5 sm:px-10 xl:px-48 w-full sm:min-h-screen pb-10 lg:pb-16 flex flex-col justify-end items-start">
         <FadeSlide
           direction="right"
-          className="hidden sm:block h-7 xl:h-8 absolute right-5 sm:right-10 md:right-16 xl:right-[max(10rem,18vw)] top-32 lg:top-36 xl:top-[max(10rem,13vw)]"
+          className="hidden sm:block h-7 xl:h-8 3xl:h-15 absolute right-5 sm:right-10 md:right-16 xl:right-[max(10rem,18vw)] top-32 lg:top-36 xl:top-[max(10rem,13vw)] 3xl:top-[max(12rem,15vw)]"
         >
           <Image
             src={eluna_logo}
@@ -59,28 +59,28 @@ const HeroSection = () => {
         <div className="py-8 sm:py-0">
           <WordsPullUp
             text="THE ECHOES"
-            className="text-3xl sm:text-5xl lg:text-6xl font-light text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
+            className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-light text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
           />
           <WordsPullUp
             text="OF SPLENDOR"
-            className="text-3xl sm:text-5xl lg:text-6xl font-medium sm:font-bold text-[#F3F0E8] tracking-widest ml-20 lg:ml-[10vw] xl:ml-64 mb-6 md:mb-10 xl:mb-14"
+            className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-medium sm:font-bold text-[#F3F0E8] tracking-widest ml-20 lg:ml-[10vw] xl:ml-64 mb-6 md:mb-10 xl:mb-14"
           />
           <WordsPullUp
             text="Eluna Is Where Elegance Lingers In Every Detail"
-            className="text-lg sm:text-xl font-normal text-[#F3F0E8]"
+            className="text-lg sm:text-xl 3xl:text-2xl font-normal text-[#F3F0E8]"
           />
           <WordsPullUp
             text="— A Quiet Statement Of Timeless Living For"
-            className="text-lg sm:text-xl font-normal text-[#F3F0E8]"
+            className="text-lg sm:text-xl 3xl:text-2xl font-normal text-[#F3F0E8]"
           />
           <WordsPullUp
             text="Those Who Seek Undersstand Luxury."
-            className="text-lg sm:text-xl font-normal text-[#F3F0E8] mb-16"
+            className="text-lg sm:text-xl 3xl:text-2xl font-normal text-[#F3F0E8] mb-16"
           />
 
           <LinkPullUp
             href="#"
-            className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg pt-px w-47.5 h-11.25 text-[#F3F0E8] border border-[#9D7958] hover:bg-[#F3F0E8]/90 hover:text-[#9D7958] transition-all duration-200 ease-in-out"
+            className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg 3xl:text-2xl pt-px w-47.5 3xl:w-60 h-11.25 3xl:h-15 text-[#F3F0E8] border border-[#9D7958] hover:bg-[#F3F0E8]/90 hover:text-[#9D7958] transition-all duration-200 ease-in-out"
           >
             EXPLORE NOW
           </LinkPullUp>

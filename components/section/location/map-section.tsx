@@ -57,11 +57,11 @@ const MapSection = () => {
       <div className="flex flex-col justify-center items-center">
         <WordsPullUp
           text="SCULPTED FOR"
-          className="text-3xl sm:text-5xl xl:text-6xl font-medium text-[#9D7958]"
+          className="text-3xl sm:text-5xl xl:text-6xl 3xl:text-7xl font-medium text-[#9D7958]"
         />
         <WordsPullUp
           text="THE SOUL"
-          className="text-3xl sm:text-5xl xl:text-6xl font-medium text-[#9D7958]"
+          className="text-3xl sm:text-5xl xl:text-6xl 3xl:text-7xl font-medium text-[#9D7958]"
         />
       </div>
       <FadeSlide
@@ -71,12 +71,12 @@ const MapSection = () => {
         <Image
           src={map}
           alt=""
-          className="w-[85%] h-fit object-contain border"
+          className="w-[85%] 3xl:w-full h-fit object-contain border"
         />
       </FadeSlide>
       <LinkPullUp
         href="#"
-        className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg pt-px w-47.5 h-11.25 text-[#9D7958] border border-[#9D7958] hover:bg-[#9D7958]/10 hover:text-[#9D7958] transition-all duration-200 ease-in-out"
+        className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg 3xl:text-2xl pt-px w-47.5 3xl:w-60 h-11.25 3xl:h-15 text-[#9D7958] border border-[#9D7958] hover:bg-[#9D7958]/10 hover:text-[#9D7958] transition-all duration-200 ease-in-out"
       >
         VIEW IN MAPS
       </LinkPullUp>
@@ -102,65 +102,65 @@ const MapSection = () => {
           className="flex justify-start items-start gap-12 overflow-hidden no-scrollbar mt-10 w-full"
         >
           <div className="flex justify-start items-start">
-            <FadeSlide className="w-72">
+            <FadeSlide className="w-72 3xl:w-96">
               <div className="flex items-center justify-start gap-4 mb-3">
                 <div className="flex flex-col justify-end items-end gap-1.5">
                   <div className="size-9 bg-[#006174] rounded-full"></div>
                   <div className="w-14 h-2 bg-[#006174] rounded-full"></div>
                 </div>
-                <span className="text-[#006174] text-lg font-medium">
+                <span className="text-[#006174] text-lg 3xl:text-2xl font-medium">
                   Commuter Line
                 </span>
               </div>
 
               <div className="text-lg text-gray-600 space-y-1 mt-8">
-                <p>Sudirman & Manggarai</p>
+                <p className="3xl:text-2xl">Sudirman & Manggarai</p>
               </div>
             </FadeSlide>
 
-            <FadeSlide className="w-72">
+            <FadeSlide className="w-72 3xl:w-96">
               <div className="flex items-center justify-start gap-4 mb-3">
                 <div className="flex flex-col justify-end items-end gap-1.5">
                   <div className="size-9 bg-[#79242D] rounded-full"></div>
                   <div className="w-14 h-2 bg-[#79242D] rounded-full"></div>
                 </div>
-                <span className="text-[#79242D] text-lg font-medium">LRT</span>
+                <span className="text-[#79242D] text-lg 3xl:text-2xl font-medium">LRT</span>
               </div>
 
               <div className="text-lg text-gray-600 space-y-1 mt-8">
-                <p>BNI City</p>
+                <p className="3xl:text-2xl">BNI City</p>
               </div>
             </FadeSlide>
 
-            <FadeSlide className="w-72">
+            <FadeSlide className="w-72 3xl:w-96">
               <div className="flex items-center justify-start gap-4 mb-3">
                 <div className="flex flex-col justify-end items-end gap-1.5">
                   <div className="size-9 bg-[#304A73] rounded-full"></div>
                   <div className="w-14 h-2 bg-[#304A73] rounded-full"></div>
                 </div>
-                <span className="text-[#304A73] text-lg font-medium">MRT</span>
+                <span className="text-[#304A73] text-lg 3xl:text-2xl font-medium">MRT</span>
               </div>
 
               <div className="text-lg text-gray-600 space-y-1 mt-8">
-                <p>BNI City</p>
+                <p className="3xl:text-2xl">BNI City</p>
               </div>
             </FadeSlide>
 
-            <FadeSlide className="w-72">
+            <FadeSlide className="w-72 3xl:w-96">
               <div className="flex items-center justify-start gap-4 mb-3">
                 <div className="flex flex-col justify-end items-end gap-1.5">
                   <div className="size-9 bg-[#304A73] rounded-full"></div>
                   <div className="w-14 h-2 bg-[#304A73] rounded-full"></div>
                 </div>
-                <span className="text-[#304A73] text-lg font-medium">MRT</span>
+                <span className="text-[#304A73] text-lg 3xl:text-2xl font-medium">MRT</span>
               </div>
 
               <div className="text-lg text-gray-600 space-y-1 mt-8">
-                <p>Kolase Kanisius</p>
-                <p>IISS</p>
-                <p>JIS Pattimura Elementary</p>
-                <p>Al-Azhar</p>
-                <p>Taraknita</p>
+                <p className="3xl:text-2xl">Kolase Kanisius</p>
+                <p className="3xl:text-2xl">IISS</p>
+                <p className="3xl:text-2xl">JIS Pattimura Elementary</p>
+                <p className="3xl:text-2xl">Al-Azhar</p>
+                <p className="3xl:text-2xl">Taraknita</p>
               </div>
             </FadeSlide>
           </div>

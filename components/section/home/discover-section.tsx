@@ -29,25 +29,25 @@ const DiscoverSection = () => {
       </div>
       <div className="relative z-10">
         <div className="flex flex-col xl:flex-row gap-20 xl:gap-0 justify-between items-start mb-8 sm:mb-32">
-          <FadeSlide direction="up" className="text-xl sm:text-2xl font-medium text-[#F3F0E8] tracking-widest">
+          <FadeSlide direction="up" className="text-xl sm:text-2xl 3xl:text-3xl font-medium text-[#F3F0E8] tracking-widest">
               KOTA KASABLANKA <br /> PHASE IV 
           </FadeSlide>
           <div className="flex flex-col xl:w-1/2 justify-start xl:justify-between gap-20 xl:gap-0 h-96">
             <div className="flex flex-col gap-4">
-              <FadeSlide direction="left" className="text-3xl sm:text-5xl lg:text-6xl font-medium text-[#F3F0E8] tracking-widest">
+              <FadeSlide direction="left" className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-medium text-[#F3F0E8] tracking-widest">
                   <span className="font-extralight">A</span> LEGACY 
               </FadeSlide>
-              <FadeSlide direction="left" className="text-3xl sm:text-5xl lg:text-6xl font-medium text-[#F3F0E8] tracking-widest ml-14 sm:ml-20">
+              <FadeSlide direction="left" className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-medium text-[#F3F0E8] tracking-widest ml-14 sm:ml-20">
                   <span className="font-extralight">OF</span> URBAN 
               </FadeSlide>
-              <FadeSlide direction="left" className="text-3xl sm:text-5xl lg:text-6xl font-medium text-[#F3F0E8] tracking-widest ml-24 sm:ml-40">
+              <FadeSlide direction="left" className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-medium text-[#F3F0E8] tracking-widest ml-24 sm:ml-40">
                   EXCELLENCE 
               </FadeSlide>
             </div>
 
             <LinkPullUp
               href="#"
-              className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg pt-px w-51.5 h-11.25 text-[#F3F0E8] border border-[#9D7958] hover:text-[#9D7958] hover:bg-[#F3F0E8]/90 transition-all duration-200 ease-in-out"
+              className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg 3xl:text-2xl pt-px w-51.5 3xl:w-60 h-11.25 3xl:h-15 text-[#F3F0E8] border border-[#9D7958] hover:text-[#9D7958] hover:bg-[#F3F0E8]/90 transition-all duration-200 ease-in-out"
             >
               DISCOVER MORE
             </LinkPullUp>
@@ -58,13 +58,13 @@ const DiscoverSection = () => {
             className="absolute xl:relative sm:ml-5 sm:mb-5 lg:mb-0 xl:ml-0 z-10"
             direction="right"
           >
-            <div className="hidden xl:block absolute w-105 xl:h-full bg-[#9D7958]/40 top-2.5 left-4 z-0"></div>
-            <div className="-ml-5 -mb-15 sm:mb-0 sm:ml-0 relative w-80 sm:w-96 lg:w-105 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-9 flex flex-col justify-between gap-5 xl:gap-8 items-center">
-              <h3 className="font-medium sm:text-lg tracking-widest text-[#F3F0E8]">
+            <div className="hidden xl:block absolute w-105 3xl:w-130 xl:h-full bg-[#9D7958]/40 top-2.5 left-4 z-0"></div>
+            <div className="-ml-5 -mb-15 sm:mb-0 sm:ml-0 relative w-80 sm:w-96 lg:w-105 3xl:w-130 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-9 flex flex-col justify-between gap-5 xl:gap-8 items-center">
+              <h3 className="font-medium sm:text-lg 3xl:text-3xl tracking-widest text-[#F3F0E8]">
                 POSITIONED AT THE HEART OF JAKARTA'S MOST DYNAMIC DISTRICT, THIS
                 DEVELOPMENT CONNECTS YOU EFFORTLESSLY TO THE CITY'S PULSE.
               </h3>
-              <p className="sm:text-lg font-normal text-[#F3F0E8]">
+              <p className="sm:text-lg 3xl:text-3xl font-normal text-[#F3F0E8]">
                 Surrounded by key business, entertainment, and lifestyle
                 destinations, the location offers unparalleled accessibility and
                 convenience. Whether for work or leisure, residents and visitors

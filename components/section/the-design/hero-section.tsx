@@ -27,26 +27,26 @@ const HeroSection = () => {
         <div className="py-14 sm:py-0">
           <WordsPullUp
             text="A MASTERPLAN OF"
-            className="text-3xl sm:text-5xl lg:text-6xl font-light text-[#F3F0E8] sm:text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
+            className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-light text-[#F3F0E8] sm:text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
           />
           <WordsPullUp
             text="INTEGRATED LIVING"
-            className="text-3xl sm:text-5xl lg:text-6xl font-medium sm:font-bold text-[#F3F0E8] sm:text-[#F3F0E8] tracking-widest ml-10 sm:ml-0 lg:ml-[5vw] mb-28 sm:mb-16 md:mb-10 xl:mb-8"
+            className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-medium sm:font-bold text-[#F3F0E8] sm:text-[#F3F0E8] tracking-widest ml-10 sm:ml-0 lg:ml-[5vw] mb-28 sm:mb-16 md:mb-10 xl:mb-8"
           />
 
           <WordsPullUp
             text="The Kota Kasablanka master plan is a meticulously designed urban "
-            className="hidden sm:block text-sm sm:text-lg lg:text-xl font-normal text-[#9D7958] sm:text-[#F3F0E8]"
+            className="hidden sm:block text-sm sm:text-lg lg:text-xl 3xl:text-2xl font-normal text-[#9D7958] sm:text-[#F3F0E8]"
           />
           <WordsPullUp
             text="tapestry, harmonizing luxury, convenience, and connectivity in Jakarta's"
-            className="hidden sm:block text-sm sm:text-lg lg:text-xl font-normal text-[#9D7958] sm:text-[#F3F0E8]"
+            className="hidden sm:block text-sm sm:text-lg lg:text-xl 3xl:text-2xl font-normal text-[#9D7958] sm:text-[#F3F0E8]"
           />
           <WordsPullUp
             text="thriving business district."
-            className="hidden sm:block text-sm sm:text-lg lg:text-xl font-normal text-[#9D7958] sm:text-[#F3F0E8] mb-16"
+            className="hidden sm:block text-sm sm:text-lg lg:text-xl 3xl:text-2xl font-normal text-[#9D7958] sm:text-[#F3F0E8] mb-16"
           />
-          <FadeSlide className="sm:hidden text-sm sm:text-lg lg:text-xl font-normal text-[#F3F0E8] sm:text-[#F3F0E8]">
+          <FadeSlide className="sm:hidden text-sm sm:text-lg lg:text-xl 3xl:text-2xl font-normal text-[#F3F0E8] sm:text-[#F3F0E8]">
             The Kota Kasablanka master plan is a meticulously designed urban
             tapestry, harmonizing luxury, convenience, and connectivity in
             Jakarta's thriving business district.

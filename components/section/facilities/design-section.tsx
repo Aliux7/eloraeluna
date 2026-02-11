@@ -39,11 +39,11 @@ const DesignSection = () => {
       <div className="px-5 sm:px-10 xl:px-48 space-y-8">
         <WordsPullUp
           text="THE DESIGN"
-          className="font-bold tracking-widest text-lg sm:text-2xl xl:text-3xl text-[#F3F0E8]"
+          className="font-bold tracking-widest text-lg sm:text-2xl xl:text-3xl 3xl:text-4xl text-[#F3F0E8]"
         />
         <FadeSlide className="flex flex-col lg:flex-row justify-between items-start gap-10 lg:gap-32 xl:gap-16">
-          <Image src={eluna} alt="" className="w-fit h-12 lg:h-14 xl:h-16" />
-          <p className="text-xl xl:text-2xl w-full text-[#F3F0E8]">
+          <Image src={eluna} alt="" className="w-fit h-12 lg:h-14 xl:h-16 3xl:h-20" />
+          <p className="text-xl xl:text-2xl 3xl:text-3xl w-full text-[#F3F0E8]">
             WHERE ELEGANCE BECOMES A WAY OF LIFE BLENDING TRANQUILITY, COMFORT,
             AND A REFINED AESTHETIC INTO YOUR DAILY RHYTHM.
           </p>
@@ -63,7 +63,7 @@ const DesignSection = () => {
         <Image
           src={design_content_1}
           alt=""
-          className="w-full h-100 sm:h-140 object-cover"
+          className="w-full h-100 sm:h-140 3xl:h-230 object-cover"
         />
       </div>
       <div className="px-5 sm:px-10 xl:px-48 space-y-16 w-full">
@@ -72,15 +72,15 @@ const DesignSection = () => {
             <WordsPullUp
               direction="left"
               text="PRIVATE"
-              className="text-[#F3F0E8] font-light text-3xl sm:text-5xl xl:text-6xl tracking-wider"
+              className="text-[#F3F0E8] font-light text-3xl sm:text-5xl xl:text-6xl 3xl:text-7xl tracking-widest"
             />
             <WordsPullUp
               direction="left"
               text="DINING"
-              className="text-[#F3F0E8] font-medium text-3xl sm:text-5xl xl:text-6xl tracking-wider xl:mr-20"
+              className="text-[#F3F0E8] font-medium text-3xl sm:text-5xl xl:text-6xl 3xl:text-7xl tracking-widest xl:mr-20"
             />
           </div>
-          <FadeSlide className="text-lg sm:text-xl xl:text-2xl w-fit max-w-2xl text-[#F3F0E8] font-medium">
+          <FadeSlide className="text-lg sm:text-xl xl:text-2xl 3xl:text-3xl w-fit max-w-2xl text-[#F3F0E8] font-medium">
             An elegant setting for intimate dining and grand celebrations, where
             every gathering is enriched by sophistication and seamless service.
           </FadeSlide>
@@ -106,7 +106,7 @@ const DesignSection = () => {
             ref={scrollRef}
             className="flex justify-start items-center gap-12 overflow-hidden no-scrollbar px-[16vw] sm:px-0 transition-all duration-300 ease-in-out"
           >
-            <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 transition-all duration-300 ease-in-out">
+            <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 3xl:h-80 transition-all duration-300 ease-in-out">
               <Image
                 src={lobby}
                 alt=""
@@ -116,13 +116,13 @@ const DesignSection = () => {
                 Lobby Lounge
               </span>
             </FadeSlide>
-            <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 transition-all duration-300 ease-in-out">
+            <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 3xl:h-80 transition-all duration-300 ease-in-out">
               <Image src={pool} alt="" className="w-full h-full object-cover" />
               <span className="absolute bottom-1 text-[#F3F0E8] text-xl">
                 Pool Lounge
               </span>
             </FadeSlide>
-            <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 transition-all duration-300 ease-in-out">
+            <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 3xl:h-80 transition-all duration-300 ease-in-out">
               <Image
                 src={dining}
                 alt=""
@@ -132,7 +132,7 @@ const DesignSection = () => {
                 Private Dining
               </span>
             </FadeSlide>
-            <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 transition-all duration-300 ease-in-out">
+            <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 3xl:h-80 transition-all duration-300 ease-in-out">
               <Image src={gym} alt="" className="w-full h-full object-cover" />
               <span className="absolute bottom-1 text-[#F3F0E8] text-xl">
                 GYM

@@ -26,12 +26,12 @@ const OverviewSection = () => {
           <WordsPullUp
             direction="left"
             text="FACILITIES"
-            className="text-[#9D7958] font-medium text-3xl sm:text-4xl md:text-5xl xl:text-6xl tracking-wider sm:mr-20"
+            className="text-[#9D7958] font-medium text-3xl sm:text-4xl md:text-5xl xl:text-6xl 3xl:text-7xl tracking-wider sm:mr-20"
           />
           <WordsPullUp
             direction="left"
             text="OVERVIEW"
-            className="text-[#9D7958] font-light text-3xl sm:text-4xl md:text-5xl xl:text-6xl tracking-wider"
+            className="text-[#9D7958] font-light text-3xl sm:text-4xl md:text-5xl xl:text-6xl 3xl:text-7xl tracking-wider"
           />
         </div>
       </div>
@@ -39,54 +39,54 @@ const OverviewSection = () => {
         <Image
           src={eluna}
           alt=""
-          className="w-fit h-3.5 sm:h-5 object-contain absolute top-20 -left-15 sm:-left-20"
+          className="w-fit h-3.5 sm:h-5 3xl:h-7 object-contain absolute top-20 -left-15 sm:-left-20 3xl:-left-25"
         />
         <div className="right-0 h-full w-[13.5%] absolute bg-[#F3F0E8]"></div>
-        <Image src={map} alt="" className="w-fit xl:h-182 object-contain" />
+        <Image src={map} alt="" className="w-fit xl:h-182 3xl:h-230 object-contain" />
         <Image
           src={elora}
           alt=""
-          className="w-fit h-3.5 sm:h-5 object-contain absolute top-3/5 -right-14 sm:-right-16 lg:-right-10"
+          className="w-fit h-3.5 sm:h-5 3xl:h-7 object-contain absolute top-3/5 -right-14 sm:-right-16 lg:-right-10 3xl:-right-14"
         />
       </FadeSlide>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16">
         <div>
           <WordsPullUp
             text="ELUNA FACILITIES"
-            className="text-3xl tracking-[0.3em] text-[#9D7958] font-semibold mb-8"
+            className="text-3xl 3xl:text-4xl tracking-[0.3em] text-[#9D7958] font-semibold mb-8"
           />
 
           <div className="grid grid-cols-2 gap-x-12 gap-y-6 text-[#9D7958]">
             <WordsPullUp
               text="Function Room"
-              className="text-lg border-b border-[#9D7958] pb-2"
+              className="text-lg 3xl:text-2xl border-b border-[#9D7958] pb-2"
             />
             <WordsPullUp
               text="Family Lounge"
-              className="text-lg border-b border-[#9D7958] pb-2"
+              className="text-lg 3xl:text-2xl border-b border-[#9D7958] pb-2"
             />
 
             <WordsPullUp
               text="Pre Function"
-              className="text-lg border-b border-[#9D7958] pb-2"
+              className="text-lg 3xl:text-2xl border-b border-[#9D7958] pb-2"
             />
             <WordsPullUp
               text="Kids Room"
-              className="text-lg border-b border-[#9D7958] pb-2"
+              className="text-lg 3xl:text-2xl border-b border-[#9D7958] pb-2"
             />
 
             <WordsPullUp
               text="Gym"
-              className="text-lg border-b border-[#9D7958] pb-2"
+              className="text-lg 3xl:text-2xl border-b border-[#9D7958] pb-2"
             />
             <WordsPullUp
               text="Outside Lounge"
-              className="text-lg border-b border-[#9D7958] pb-2"
+              className="text-lg 3xl:text-2xl border-b border-[#9D7958] pb-2"
             />
 
             <WordsPullUp
               text="Gym Class"
-              className="text-lg border-b border-[#9D7958] pb-2"
+              className="text-lg 3xl:text-2xl border-b border-[#9D7958] pb-2"
             />
           </div>
         </div>
@@ -94,58 +94,58 @@ const OverviewSection = () => {
         <div>
           <WordsPullUp
             text="SHARED FACILITIES"
-            className="text-3xl tracking-[0.3em] text-[#9D7958] font-semibold mb-8"
+            className="text-3xl 3xl:text-4xl tracking-[0.3em] text-[#9D7958] font-semibold mb-8"
           />
 
           <div className="grid grid-cols-2 gap-x-12 gap-y-6 text-[#9D7958]">
             <WordsPullUp
               text="Lap Pool"
-              className="text-lg border-b border-[#9D7958] pb-2"
+              className="text-lg 3xl:text-2xl border-b border-[#9D7958] pb-2"
             />
             <WordsPullUp
               text="Lagoon Pool"
-              className="text-lg border-b border-[#9D7958] pb-2"
+              className="text-lg 3xl:text-2xl border-b border-[#9D7958] pb-2"
             />
 
             <WordsPullUp
               text="Sun Bathing Pool Chair"
-              className="text-lg border-b border-[#9D7958] pb-2"
+              className="text-lg 3xl:text-2xl border-b border-[#9D7958] pb-2"
             />
             <WordsPullUp
               text="Kids Pool"
-              className="text-lg border-b border-[#9D7958] pb-2"
+              className="text-lg 3xl:text-2xl border-b border-[#9D7958] pb-2"
             />
 
             <WordsPullUp
               text="Cabana Deck"
-              className="text-lg border-b border-[#9D7958] pb-2"
+              className="text-lg 3xl:text-2xl border-b border-[#9D7958] pb-2"
             />
             <WordsPullUp
               text="Children Play Ground"
-              className="text-lg border-b border-[#9D7958] pb-2"
+              className="text-lg 3xl:text-2xl border-b border-[#9D7958] pb-2"
             />
 
             <WordsPullUp
               text="Sunken Seating"
-              className="text-lg border-b border-[#9D7958] pb-2"
+              className="text-lg 3xl:text-2xl border-b border-[#9D7958] pb-2"
             />
             <WordsPullUp
               text="BBQ Area"
-              className="text-lg border-b border-[#9D7958] pb-2"
+              className="text-lg 3xl:text-2xl border-b border-[#9D7958] pb-2"
             />
 
             <WordsPullUp
               text="Tennis Court"
-              className="text-lg border-b border-[#9D7958] pb-2"
+              className="text-lg 3xl:text-2xl border-b border-[#9D7958] pb-2"
             />
             <WordsPullUp
               text="Jogging Track"
-              className="text-lg border-b border-[#9D7958] pb-2"
+              className="text-lg 3xl:text-2xl border-b border-[#9D7958] pb-2"
             />
 
             <WordsPullUp
               text="Gazebo"
-              className="text-lg border-b border-[#9D7958] pb-2"
+              className="text-lg 3xl:text-2xl border-b border-[#9D7958] pb-2"
             />
           </div>
         </div>

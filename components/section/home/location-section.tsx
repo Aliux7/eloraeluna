@@ -19,21 +19,21 @@ const LocationSection = () => {
       <div className="relative z-10 p-32 px-5 sm:px-10 xl:px-48 gap-16 flex flex-col lg:flex-row justify-between items-start">
         <WordsPullUp
           text="OUR LOCATION"
-          className="font-bold tracking-widest text-lg sm:text-2xl xl:text-3xl text-[#F3F0E8]"
+          className="font-bold tracking-widest text-lg sm:text-2xl xl:text-3xl 3xl:text-4xl text-[#F3F0E8]"
         />
         <div className="sm:w-1/2 lg:w-3/5 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-20 lg:gap-0">
           <div className="flex flex-col gap-2 sm:gap-4">
             <WordsPullUp
               text="INFINITE"
-              className="text-3xl sm:text-5xl lg:text-6xl font-extralight text-[#F3F0E8] tracking-widest"
+              className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-extralight text-[#F3F0E8] tracking-widest"
             />
 
             <WordsPullUp
               text="CONNECTIVITY"
-              className="text-3xl sm:text-5xl lg:text-6xl font-medium text-[#F3F0E8] tracking-widest ml-16 sm:ml-20 mb-6 sm:mb-10"
+              className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-medium text-[#F3F0E8] tracking-widest ml-16 sm:ml-20 mb-6 sm:mb-10"
             />
 
-            <FadeSlide className="text-[#F3F0E8] font-normal text-lg sm:text-xl mb-14 lg:mb-16">
+            <FadeSlide className="text-[#F3F0E8] font-normal text-lg sm:text-xl 3xl:text-2xl mb-14 lg:mb-16">
               Surrounded by key business, entertainment, and lifestyle
               destinations, the location offers unparalleled accessibility and
               convenience. Whether for work or leisure, residents and visitors
@@ -43,7 +43,7 @@ const LocationSection = () => {
 
             <LinkPullUp
               href="#"
-              className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg pt-px w-56 h-11.25 text-[#F3F0E8] border border-[#9D7958] hover:bg-[#F3F0E8]/90 hover:text-[#9D7958] transition-all duration-200 ease-in-out"
+              className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg 3xl:text-2xl pt-px w-56 3xl:w-70 h-11.25 3xl:h-15 text-[#F3F0E8] border border-[#9D7958] hover:bg-[#F3F0E8]/90 hover:text-[#9D7958] transition-all duration-200 ease-in-out"
             >
               LOCATION MAP
             </LinkPullUp>

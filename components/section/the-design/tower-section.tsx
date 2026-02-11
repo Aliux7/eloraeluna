@@ -42,7 +42,7 @@ const TowerSection = () => {
         </div>
       </div>
       <div className="relative flex justify-center">
-        <div className="relative sm:w-[60vw] max-w-150 min-w-60 space-y-5 sm:space-y-0">
+        <div className="relative sm:w-[60vw] max-w-150 3xl:max-w-200 min-w-60 space-y-5 sm:space-y-0">
           <div className="relative sm:static">
             <Image
               src={tower}
@@ -91,22 +91,22 @@ const TowerSection = () => {
             <div className="flex flex-col justify-start items-start gap-1">
               <WordsPullUp
                 text="ELUNA SOCIAL DECK"
-                className="text-[#F3F0E8] font-bold tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] font-bold tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <WordsPullUp
                 text="20TH FLOOR"
-                className="text-[#9D7958] font-bold tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#9D7958] font-bold tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <FadeSlide>
                 <div className="border-t border-[#F3F0E8] w-36 sm:w-20 lg:w-32 my-1" />
               </FadeSlide>
               <WordsPullUp
                 text="Zen Garden"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <WordsPullUp
                 text="Playing Area"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
             </div>
           </div>
@@ -119,18 +119,18 @@ const TowerSection = () => {
             <div className="flex flex-col justify-start items-start gap-1">
               <WordsPullUp
                 text="ELUNA PET PARK"
-                className="text-[#F3F0E8] font-bold tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] font-bold tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <WordsPullUp
                 text="P12"
-                className="text-[#9D7958] font-bold tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#9D7958] font-bold tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <FadeSlide>
                 <div className="border-t border-[#F3F0E8] w-36 sm:w-20 lg:w-32 my-1" />
               </FadeSlide>
               <WordsPullUp
                 text="Pet Park"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
             </div>
           </div>
@@ -143,22 +143,22 @@ const TowerSection = () => {
             <div className="flex flex-col justify-start items-start gap-1">
               <WordsPullUp
                 text="ELUNA LOBBY"
-                className="text-[#F3F0E8] font-bold tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] font-bold tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <WordsPullUp
                 text="GROUND FLOOR"
-                className="text-[#9D7958] font-bold tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#9D7958] font-bold tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <FadeSlide>
                 <div className="border-t border-[#F3F0E8] w-36 sm:w-20 lg:w-32 my-1" />
               </FadeSlide>
               <WordsPullUp
                 text="Drop Off"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <WordsPullUp
                 text="Main Lobby"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
             </div>
           </div>
@@ -171,86 +171,86 @@ const TowerSection = () => {
             <div className="flex flex-col justify-start sm:items-end gap-1">
               <WordsPullUp
                 text="FACILITY FLOOR"
-                className="text-[#F3F0E8] font-bold tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] font-bold tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <WordsPullUp
                 text="1ST FLOOR"
-                className="text-[#9D7958] font-bold tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#9D7958] font-bold tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <FadeSlide>
                 <div className="border-t border-[#F3F0E8] w-36 sm:w-20 lg:w-32 my-1" />
               </FadeSlide>
               <WordsPullUp
                 text="Function Room (Eluna)"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <WordsPullUp
                 text="Pre Function (Eluna)"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <WordsPullUp
                 text="Gym"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <WordsPullUp
                 text="Gym Class"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <WordsPullUp
                 text="Family Lounge"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <WordsPullUp
                 text="Kids Room"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <WordsPullUp
                 text="Outdoor Lounge"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <WordsPullUp
                 text="Lap Pool"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <WordsPullUp
                 text="Sunken PooI"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <WordsPullUp
                 text="Cabana Deck"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <WordsPullUp
                 text="Sunken Lounge"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <WordsPullUp
                 text="Lagoon Pool"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <WordsPullUp
                 text="Kids Pool"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <WordsPullUp
                 text="Children Play Ground"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <WordsPullUp
                 text="BBQ Area"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <WordsPullUp
                 text="Tennis Court"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <WordsPullUp
                 text="Jogging Track"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
               <WordsPullUp
                 text="Gazebo"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 3xl:text-xl"
               />
             </div>
           </div>

@@ -10,7 +10,7 @@ const ConceptSection = () => {
   return (
     <section
       id="concept-section"
-      className="relative bg-[#2B3036] min-h-screen"
+      className="relative bg-[#2B3036] min-h-screen 3xl:min-h-0"
     >
       <div className="absolute inset-0 z-0 pointer-events-none">
         <FadeSlide
@@ -32,19 +32,19 @@ const ConceptSection = () => {
       <div className="relative z-10 p-32 px-5 sm:px-10 xl:p-48 gap-16 flex flex-col justify-between items-start">
         <WordsPullUp
           text="THE CONCEPT"
-          className="font-bold tracking-widest text-lg sm:text-2xl xl:text-3xl text-[#F3F0E8]"
+          className="font-bold tracking-widest text-lg sm:text-2xl xl:text-3xl 3xl:text-4xl text-[#F3F0E8]"
         />
-        <div className="flex flex-col lg:flex-row justify-between w-full items-start lg:items-center gap-20 lg:gap-0 min-h-162.5 xl:h-162.5">
+        <div className="flex flex-col lg:flex-row justify-between w-full items-start lg:items-center gap-20 lg:gap-0 min-h-162.5 xl:h-162.5 3xl:h-200">
           <div className="flex flex-col gap-2 sm:gap-4">
             <WordsPullUp
               text="THE BIRTH OF"
-              className="text-3xl sm:text-5xl lg:text-6xl font-extralight text-[#F3F0E8] tracking-widest"
+              className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-extralight text-[#F3F0E8] tracking-widest"
             />
             <WordsPullUp
               text="THE UNIVERSE"
-              className="text-3xl sm:text-5xl lg:text-6xl font-normal text-[#F3F0E8] tracking-widest ml-14 sm:ml-20 mb-6 sm:mb-10"
+              className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-normal text-[#F3F0E8] tracking-widest ml-14 sm:ml-20 mb-6 sm:mb-10"
             />
-            <FadeSlide className="text-[#F3F0E8] font-normal text-lg sm:text-xl sm:w-122 mb-14 lg:mb-20">
+            <FadeSlide className="text-[#F3F0E8] font-normal text-lg sm:text-xl 3xl:text-2xl sm:w-122 3xl:w-160 mb-14 lg:mb-20">
               Elora and Eluna, inspired by the sun and moon, offer a harmonious
               blend of vibrance and tranqulity in South Jakarta's premier
               lifestyle hub.
@@ -52,7 +52,7 @@ const ConceptSection = () => {
 
             <LinkPullUp
               href="#"
-              className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg pt-px w-70.5 h-11.25 text-[#F3F0E8] border border-[#9D7958] hover:bg-[#F3F0E8]/90 hover:text-[#9D7958] transition-all duration-200 ease-in-out"
+              className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg 3xl:text-2xl pt-px w-70.5 3xl:w-85 h-11.25 3xl:h-15 text-[#F3F0E8] border border-[#9D7958] hover:bg-[#F3F0E8]/90 hover:text-[#9D7958] transition-all duration-200 ease-in-out"
             >
               UNCOVER OUR CONCEPT
             </LinkPullUp>
@@ -60,7 +60,7 @@ const ConceptSection = () => {
           <div className="w-full xl:w-1/2 flex flex-col sm:flex-row justify-end items-center gap-10 sm:gap-2 xl:gap-5 h-full xl:py-10">
             <FadeSlide
               direction="up"
-              className="w-full sm:h-3/5 xl:h-[80%] sm:mb-[20%] xl:mb-auto"
+              className="w-full sm:h-3/5 xl:h-[80%] 3xl:h-[85%] sm:mb-[20%] xl:mb-auto"
             >
               <Image
                 src={concept_1}
@@ -71,7 +71,7 @@ const ConceptSection = () => {
             </FadeSlide>
             <FadeSlide
               direction="down"
-              className="w-full sm:h-3/5 xl:h-[80%] sm:mt-[20%] xl:mt-auto"
+              className="w-full sm:h-3/5 xl:h-[80%] 3xl:h-[85%] sm:mt-[20%] xl:mt-auto"
             >
               <Image
                 src={concept_2}

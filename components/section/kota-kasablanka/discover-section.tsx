@@ -42,20 +42,20 @@ const DiscoverSection = () => {
         <div className="flex flex-col mb-8 sm:mb-32">
           <WordsPullUp
             text="KOTA KASABLANKA PHASE 4"
-            className="text-xl sm:text-3xl text-[#9D7958] tracking-widest mb-4 sm:mb-8"
+            className="text-xl sm:text-3xl 3xl:text-4xl text-[#9D7958] tracking-widest mb-4 sm:mb-8"
           />
           <WordsPullUp
             text="A WORLD CLASS"
-            className="text-3xl sm:text-5xl lg:text-6xl font-medium text-[#9D7958] tracking-widest"
+            className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-medium text-[#9D7958] tracking-widest"
           />
           <WordsPullUp
             text="LIFESTYLE"
-            className="text-3xl sm:text-5xl lg:text-6xl font-medium text-[#9D7958] tracking-widest mb-64 sm:mb-16"
+            className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-medium text-[#9D7958] tracking-widest mb-64 sm:mb-16"
           />
 
           <LinkPullUp
             href=""
-            className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg pt-px w-40 h-11.25 text-[#9D7958] border border-[#9D7958] hover:text-[#F3F0E8] hover:bg-[#9D7958] transition-all duration-200 ease-in-out"
+            className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg 3xl:text-2xl pt-px w-40 3xl:w-55 h-11.25 3xl:h-15 text-[#9D7958] border border-[#9D7958] hover:text-[#F3F0E8] hover:bg-[#9D7958] transition-all duration-200 ease-in-out"
           >
             VISIT KOKAS
           </LinkPullUp>
@@ -74,16 +74,16 @@ const DiscoverSection = () => {
             className="absolute xl:relative sm:mr-5 sm:mb-5 lg:mb-0 xl:mr-0 right-0"
             direction="left"
           >
-            <div className="hidden xl:block absolute w-105 xl:h-full bg-[#9D7958]/40 top-2.5 right-4 z-0"></div>
-            <div className="-mr-5 -mb-15 sm:mb-0 sm:mr-0 relative w-80 sm:w-96 lg:w-105 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-8 flex flex-col justify-between gap-5 xl:gap-8 items-center">
-              <h3 className="font-medium sm:text-lg tracking-widest text-[#F3F0E8]">
+            <div className="hidden xl:block absolute w-105 3xl:w-130 xl:h-full bg-[#9D7958]/40 top-2.5 right-4 z-0"></div>
+            <div className="-mr-5 -mb-15 sm:mb-0 sm:mr-0 relative w-80 sm:w-96 lg:w-105 3xl:w-130 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-8 flex flex-col justify-between gap-5 xl:gap-8 items-center">
+              <h3 className="font-medium sm:text-lg 3xl:text-3xl tracking-widest text-[#F3F0E8]">
                 Since 2012, Kota Kasablanka has become one of Jakarta's most
                 vibrant lifestyle destinations. Just steps from Elora and
                 Eluna,it offers a curated blend of global fashion, beauty,
                 dining, and entertainment—including family friendly zones, a
                 rooftop pool, and the new Little Tokyo culinary hub.
               </h3>
-              <p className="sm:text-lg font-normal text-[#F3F0E8]">
+              <p className="sm:text-lg font-normal 3xl:text-3xl text-[#F3F0E8]">
                 With complete amenities like a taxi lounge, nursery, function
                 hall, and award-winning mosque, Kota Kasablanka is more than a
                 shopping center—it's a dynamic lifestyle ecosystem seamlessly

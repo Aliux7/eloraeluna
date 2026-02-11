@@ -19,25 +19,25 @@ const HeroSection = () => {
         <div className="py-8 sm:py-0">
           <WordsPullUp
             text="A LIFESTYLE"
-            className="text-3xl sm:text-5xl lg:text-6xl font-light text-[#9D7958] sm:text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
+            className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-light text-[#9D7958] sm:text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
           />
           <WordsPullUp
             text="OF DISTINCTION"
-            className="text-3xl sm:text-5xl lg:text-6xl font-medium sm:font-bold text-[#9D7958] sm:text-[#F3F0E8] tracking-widest ml-10 sm:ml-0 lg:ml-[5vw] mb-6 md:mb-10 xl:mb-8"
+            className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-medium sm:font-bold text-[#9D7958] sm:text-[#F3F0E8] tracking-widest ml-10 sm:ml-0 lg:ml-[5vw] mb-6 md:mb-10 xl:mb-8"
           />
 
           <WordsPullUp
             text="Discover thoughtfully curated amenities designed to elevate comfort,"
-            className="hidden sm:block text-sm sm:text-lg lg:text-xl font-normal text-[#9D7958] sm:text-[#F3F0E8]"
+            className="hidden sm:block text-sm sm:text-lg lg:text-xl 3xl:text-2xl font-normal text-[#9D7958] sm:text-[#F3F0E8]"
           />
           <WordsPullUp
             text="leisure, and modern luxury at Eluna."
-            className="hidden sm:block text-sm sm:text-lg lg:text-xl font-normal text-[#9D7958] sm:text-[#F3F0E8]"
+            className="hidden sm:block text-sm sm:text-lg lg:text-xl 3xl:text-2xl font-normal text-[#9D7958] sm:text-[#F3F0E8]"
           />  
 
           <WordsPullUp
             text="Discover thoughtfully curated amenities designed to elevate comfort, leisure, and modern luxury at Eluna."
-            className="block sm:hidden text-sm sm:text-lg lg:text-xl font-normal text-[#9D7958] sm:text-[#F3F0E8]"
+            className="block sm:hidden text-sm sm:text-lg lg:text-xl 3xl:text-2xl font-normal text-[#9D7958] sm:text-[#F3F0E8]"
           />  
         </div>
       </div>
