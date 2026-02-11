@@ -109,13 +109,13 @@ const MapSection = () => {
             </div>
             <div className="flex justify-center items-center gap-20">
               <FadeSlide className="flex justify-center items-center gap-2.5">
-                <div className="bg-[#D9D9D9] border border-[#AA7A56] size-6"></div>
+                <div className="bg-[#D9D9D9] border border-[#AA7A56] size-5 sm:size-6"></div>
                 <h1 className="text-[#AA7A56] font-bold text-xs sm:text-sm mt-1">
                   2 BEDROOM
                 </h1>
               </FadeSlide>
               <FadeSlide className="flex justify-center items-center gap-2.5">
-                <div className="bg-[#D9D9D9] border border-[#AA7A56] size-6"></div>
+                <div className="bg-[#D9D9D9] border border-[#AA7A56] size-5 sm:size-6"></div>
                 <h1 className="text-[#AA7A56] font-bold text-xs sm:text-sm mt-1">
                   3 BEDROOM
                 </h1>
@@ -133,9 +133,9 @@ const MapSection = () => {
           <div className="mt-12 flex flex-col justify-start items-start w-full h-fit">
             <WordsPullUp
               text="ELUNA FLOORPLAN TYPICAL 2-38"
-              className="mb-10 font-semibold text-2xl md:text-3xl tracking-widest text-[#F3F0E8]"
+              className="pr-5 sm:pr-0 mb-10 font-semibold text-2xl md:text-3xl tracking-widest text-[#F3F0E8]"
             />
-            <div className="relative flex flex-col lg:flex-row justify-between w-full h-full gap-16 xl:gap-32">
+            <div className="relative flex flex-col-reverse lg:flex-row justify-between w-full h-full gap-10 sm:gap-16 xl:gap-32">
               <div className="sm:w-100">
                 <div className="py-3">
                   <FadeSlide>

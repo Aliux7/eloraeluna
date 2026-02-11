@@ -91,22 +91,22 @@ const TowerSection = () => {
             <div className="flex flex-col justify-start items-start gap-1">
               <WordsPullUp
                 text="ELUNA SOCIAL DECK"
-                className="text-[#F3F0E8] font-bold tracking-widest"
+                className="text-[#F3F0E8] font-bold tracking-[0.1rem] text-sm sm:text-base"
               />
               <WordsPullUp
                 text="20TH FLOOR"
-                className="text-[#9D7958] font-bold tracking-widest"
+                className="text-[#9D7958] font-bold tracking-[0.1rem] text-sm sm:text-base"
               />
               <FadeSlide>
                 <div className="border-t border-[#F3F0E8] w-36 sm:w-20 lg:w-32 my-1" />
               </FadeSlide>
               <WordsPullUp
                 text="Zen Garden"
-                className="text-[#F3F0E8] tracking-widest"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
               />
               <WordsPullUp
                 text="Playing Area"
-                className="text-[#F3F0E8] tracking-widest"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
               />
             </div>
           </div>
@@ -119,18 +119,18 @@ const TowerSection = () => {
             <div className="flex flex-col justify-start items-start gap-1">
               <WordsPullUp
                 text="ELUNA PET PARK"
-                className="text-[#F3F0E8] font-bold tracking-widest"
+                className="text-[#F3F0E8] font-bold tracking-[0.1rem] text-sm sm:text-base"
               />
               <WordsPullUp
                 text="P12"
-                className="text-[#9D7958] font-bold tracking-widest"
+                className="text-[#9D7958] font-bold tracking-[0.1rem] text-sm sm:text-base"
               />
               <FadeSlide>
                 <div className="border-t border-[#F3F0E8] w-36 sm:w-20 lg:w-32 my-1" />
               </FadeSlide>
               <WordsPullUp
                 text="Pet Park"
-                className="text-[#F3F0E8] tracking-widest"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
               />
             </div>
           </div>
@@ -143,22 +143,22 @@ const TowerSection = () => {
             <div className="flex flex-col justify-start items-start gap-1">
               <WordsPullUp
                 text="ELUNA LOBBY"
-                className="text-[#F3F0E8] font-bold tracking-widest"
+                className="text-[#F3F0E8] font-bold tracking-[0.1rem] text-sm sm:text-base"
               />
               <WordsPullUp
                 text="GROUND FLOOR"
-                className="text-[#9D7958] font-bold tracking-widest"
+                className="text-[#9D7958] font-bold tracking-[0.1rem] text-sm sm:text-base"
               />
               <FadeSlide>
-                <div className="border-t border-[#F3F0E8] w-20 lg:w-32 my-1" />
+                <div className="border-t border-[#F3F0E8] w-36 sm:w-20 lg:w-32 my-1" />
               </FadeSlide>
               <WordsPullUp
                 text="Drop Off"
-                className="text-[#F3F0E8] tracking-widest"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
               />
               <WordsPullUp
                 text="Main Lobby"
-                className="text-[#F3F0E8] tracking-widest"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
               />
             </div>
           </div>
@@ -171,86 +171,86 @@ const TowerSection = () => {
             <div className="flex flex-col justify-start sm:items-end gap-1">
               <WordsPullUp
                 text="FACILITY FLOOR"
-                className="text-[#F3F0E8] font-bold tracking-widest"
+                className="text-[#F3F0E8] font-bold tracking-[0.1rem] text-sm sm:text-base"
               />
               <WordsPullUp
                 text="1ST FLOOR"
-                className="text-[#9D7958] font-bold tracking-widest"
+                className="text-[#9D7958] font-bold tracking-[0.1rem] text-sm sm:text-base"
               />
               <FadeSlide>
-                <div className="border-t border-[#F3F0E8] w-20 lg:w-32 my-1" />
+                <div className="border-t border-[#F3F0E8] w-36 sm:w-20 lg:w-32 my-1" />
               </FadeSlide>
               <WordsPullUp
                 text="Function Room (Eluna)"
-                className="text-[#F3F0E8] tracking-widest"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
               />
               <WordsPullUp
                 text="Pre Function (Eluna)"
-                className="text-[#F3F0E8] tracking-widest"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
               />
               <WordsPullUp
                 text="Gym"
-                className="text-[#F3F0E8] tracking-widest"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
               />
               <WordsPullUp
                 text="Gym Class"
-                className="text-[#F3F0E8] tracking-widest"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
               />
               <WordsPullUp
                 text="Family Lounge"
-                className="text-[#F3F0E8] tracking-widest"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
               />
               <WordsPullUp
                 text="Kids Room"
-                className="text-[#F3F0E8] tracking-widest"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
               />
               <WordsPullUp
                 text="Outdoor Lounge"
-                className="text-[#F3F0E8] tracking-widest"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
               />
               <WordsPullUp
                 text="Lap Pool"
-                className="text-[#F3F0E8] tracking-widest"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
               />
               <WordsPullUp
                 text="Sunken PooI"
-                className="text-[#F3F0E8] tracking-widest"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
               />
               <WordsPullUp
                 text="Cabana Deck"
-                className="text-[#F3F0E8] tracking-widest"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
               />
               <WordsPullUp
                 text="Sunken Lounge"
-                className="text-[#F3F0E8] tracking-widest"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
               />
               <WordsPullUp
                 text="Lagoon Pool"
-                className="text-[#F3F0E8] tracking-widest"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
               />
               <WordsPullUp
                 text="Kids Pool"
-                className="text-[#F3F0E8] tracking-widest"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
               />
               <WordsPullUp
                 text="Children Play Ground"
-                className="text-[#F3F0E8] tracking-widest"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
               />
               <WordsPullUp
                 text="BBQ Area"
-                className="text-[#F3F0E8] tracking-widest"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
               />
               <WordsPullUp
                 text="Tennis Court"
-                className="text-[#F3F0E8] tracking-widest"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
               />
               <WordsPullUp
                 text="Jogging Track"
-                className="text-[#F3F0E8] tracking-widest"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
               />
               <WordsPullUp
                 text="Gazebo"
-                className="text-[#F3F0E8] tracking-widest"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base"
               />
             </div>
           </div>
