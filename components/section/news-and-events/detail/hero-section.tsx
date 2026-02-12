@@ -1,4 +1,4 @@
-import hero_background from "@/app/assets/facilities/hero_background.svg";
+import hero_background from "@/app/assets/facilities/hero_background.jpeg";
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 

@@ -20,7 +20,7 @@ const HeroSection = () => {
         priority
       />
 
-      <div className="relative px-5 sm:px-10 xl:px-48 py-36 sm:py-40 space-y-16">
+      <div className="relative px-5 sm:px-10 xl:px-48 py-26 sm:py-36 space-y-16">
         <FadeSlide className="flex flex-wrap lg:flex-nowrap justify-between items-start gap-10 lg:gap-20">
           <Image
             src={eluna}

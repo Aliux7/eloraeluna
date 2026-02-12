@@ -42,7 +42,11 @@ const DesignSection = () => {
           className="font-bold tracking-widest text-lg sm:text-2xl xl:text-3xl 3xl:text-4xl text-[#F3F0E8]"
         />
         <FadeSlide className="flex flex-col lg:flex-row justify-between items-start gap-10 lg:gap-32 xl:gap-16">
-          <Image src={eluna} alt="" className="w-fit h-12 lg:h-14 xl:h-16 3xl:h-20" />
+          <Image
+            src={eluna}
+            alt=""
+            className="w-fit h-12 lg:h-14 xl:h-16 3xl:h-20"
+          />
           <p className="text-xl xl:text-2xl 3xl:text-3xl w-full text-[#F3F0E8]">
             WHERE ELEGANCE BECOMES A WAY OF LIFE BLENDING TRANQUILITY, COMFORT,
             AND A REFINED AESTHETIC INTO YOUR DAILY RHYTHM.
@@ -106,7 +110,10 @@ const DesignSection = () => {
             ref={scrollRef}
             className="flex justify-start items-center gap-12 overflow-hidden no-scrollbar px-[16vw] sm:px-0 transition-all duration-300 ease-in-out"
           >
-            <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 3xl:h-80 transition-all duration-300 ease-in-out">
+            <FadeSlide
+              direction="left"
+              className="relative flex justify-center items-center aspect-video h-32 sm:h-45 3xl:h-80 transition-all duration-300 ease-in-out"
+            >
               <Image
                 src={lobby}
                 alt=""
@@ -116,13 +123,19 @@ const DesignSection = () => {
                 Lobby Lounge
               </span>
             </FadeSlide>
-            <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 3xl:h-80 transition-all duration-300 ease-in-out">
+            <FadeSlide
+              direction="left"
+              className="relative flex justify-center items-center aspect-video h-32 sm:h-45 3xl:h-80 transition-all duration-300 ease-in-out"
+            >
               <Image src={pool} alt="" className="w-full h-full object-cover" />
               <span className="absolute bottom-1 text-[#F3F0E8] text-xl">
                 Pool Lounge
               </span>
             </FadeSlide>
-            <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 3xl:h-80 transition-all duration-300 ease-in-out">
+            <FadeSlide
+              direction="left"
+              className="relative flex justify-center items-center aspect-video h-32 sm:h-45 3xl:h-80 transition-all duration-300 ease-in-out"
+            >
               <Image
                 src={dining}
                 alt=""
@@ -132,7 +145,10 @@ const DesignSection = () => {
                 Private Dining
               </span>
             </FadeSlide>
-            <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 3xl:h-80 transition-all duration-300 ease-in-out">
+            <FadeSlide
+              direction="left"
+              className="relative flex justify-center items-center aspect-video h-32 sm:h-45 3xl:h-80 transition-all duration-300 ease-in-out"
+            >
               <Image src={gym} alt="" className="w-full h-full object-cover" />
               <span className="absolute bottom-1 text-[#F3F0E8] text-xl">
                 GYM

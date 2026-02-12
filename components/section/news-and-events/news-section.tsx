@@ -8,7 +8,7 @@ import { LinkPullUp } from "@/components/animation/link-pull-up";
 
 const NewsSection = () => {
   return (
-    <section className="relative bg-[#F3F0E8] py-36 px-5 sm:px-10 xl:px-48 flex flex-col gap-10">
+    <section className="relative bg-[#F3F0E8] py-26 sm:py-36 px-5 sm:px-10 xl:px-48 flex flex-col gap-10">
       <div className="flex justify-between items-center gap-10">
         <h1 className="text-[#464948] text-4xl sm:text-5xl lg:text-6xl font-normal tracking-widest">
           NEWS & EVENTS

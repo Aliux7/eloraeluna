@@ -107,7 +107,7 @@ const SharedSection = () => {
             ref={scrollRef}
             className="flex justify-start items-center gap-12 overflow-hidden no-scrollbar px-[16vw] sm:px-0 transition-all duration-300 ease-in-out"
           >
-            <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 3xl:h-80 transition-all duration-300 ease-in-out">
+            <FadeSlide direction="left" className="relative flex justify-center items-center aspect-video h-32 sm:h-45 3xl:h-80">
               <Image
                 src={lobby}
                 alt=""
@@ -117,13 +117,13 @@ const SharedSection = () => {
                 Lobby Lounge
               </span>
             </FadeSlide>
-            <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 3xl:h-80 transition-all duration-300 ease-in-out">
+            <FadeSlide direction="left" className="relative flex justify-center items-center aspect-video h-32 sm:h-45 3xl:h-80">
               <Image src={pool} alt="" className="w-full h-full object-cover" />
               <span className="absolute bottom-1 text-[#F3F0E8] text-xl">
                 Pool Lounge
               </span>
             </FadeSlide>
-            <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 3xl:h-80 transition-all duration-300 ease-in-out">
+            <FadeSlide direction="left" className="relative flex justify-center items-center aspect-video h-32 sm:h-45 3xl:h-80">
               <Image
                 src={dining}
                 alt=""
@@ -133,7 +133,7 @@ const SharedSection = () => {
                 Private Dining
               </span>
             </FadeSlide>
-            <FadeSlide className="relative flex justify-center items-center aspect-video h-32 sm:h-45 3xl:h-80 transition-all duration-300 ease-in-out">
+            <FadeSlide direction="left" className="relative flex justify-center items-center aspect-video h-32 sm:h-45 3xl:h-80">
               <Image src={gym} alt="" className="w-full h-full object-cover" />
               <span className="absolute bottom-1 text-[#F3F0E8] text-xl">
                 GYM

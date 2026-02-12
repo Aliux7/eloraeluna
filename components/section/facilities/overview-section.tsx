@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
-import map from "@/app/assets/facilities/map.svg";
+import map from "@/app/assets/facilities/map.png";
 import elora from "@/app/assets/elora_gold.svg";
 import eluna from "@/app/assets/eluna_gold.svg";
 

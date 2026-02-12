@@ -102,7 +102,7 @@ const MapSection = () => {
           className="flex justify-start items-start gap-12 overflow-hidden no-scrollbar mt-10 w-full"
         >
           <div className="flex justify-start items-start">
-            <FadeSlide className="w-72 3xl:w-96">
+            <FadeSlide direction="right" className="w-72 3xl:w-96">
               <div className="flex items-center justify-start gap-4 mb-3">
                 <div className="flex flex-col justify-end items-end gap-1.5">
                   <div className="size-9 bg-[#006174] rounded-full"></div>
@@ -118,7 +118,7 @@ const MapSection = () => {
               </div>
             </FadeSlide>
 
-            <FadeSlide className="w-72 3xl:w-96">
+            <FadeSlide direction="right" className="w-72 3xl:w-96">
               <div className="flex items-center justify-start gap-4 mb-3">
                 <div className="flex flex-col justify-end items-end gap-1.5">
                   <div className="size-9 bg-[#79242D] rounded-full"></div>
@@ -132,7 +132,7 @@ const MapSection = () => {
               </div>
             </FadeSlide>
 
-            <FadeSlide className="w-72 3xl:w-96">
+            <FadeSlide direction="right" className="w-72 3xl:w-96">
               <div className="flex items-center justify-start gap-4 mb-3">
                 <div className="flex flex-col justify-end items-end gap-1.5">
                   <div className="size-9 bg-[#304A73] rounded-full"></div>
@@ -146,7 +146,7 @@ const MapSection = () => {
               </div>
             </FadeSlide>
 
-            <FadeSlide className="w-72 3xl:w-96">
+            <FadeSlide direction="right" className="w-72 3xl:w-96">
               <div className="flex items-center justify-start gap-4 mb-3">
                 <div className="flex flex-col justify-end items-end gap-1.5">
                   <div className="size-9 bg-[#304A73] rounded-full"></div>
