@@ -19,7 +19,7 @@ const NewsSection = () => {
           <Image
             src={news_1}
             alt=""
-            className="w-full h-96 lg:h-118 object-cover"
+            className="w-full h-96 lg:h-118 2xl:h-200 object-cover"
           />
           <div className="absolute top-0 z-10 p-5 flex flex-col justify-between items-start h-full">
             <h3 className="text-3xl font-medium text-white">
@@ -41,7 +41,7 @@ const NewsSection = () => {
           <Image
             src={news_2}
             alt=""
-            className="w-full h-96 lg:h-118 object-cover"
+            className="w-full h-96 lg:h-118 2xl:h-200 object-cover"
           />
           <div className="absolute top-0 z-10 p-5 flex flex-col justify-between items-start h-full w-full">
             <h3 className="text-3xl font-medium text-white lg:w-105">
@@ -63,7 +63,7 @@ const NewsSection = () => {
           <Image
             src={news_3}
             alt=""
-            className="w-full h-96 lg:h-118 object-cover"
+            className="w-full h-96 lg:h-118 2xl:h-200 object-cover"
           />
           <div className="absolute top-0 z-10 p-5 flex flex-col justify-between items-start h-full w-full">
             <h3 className="text-3xl font-medium text-white lg:w-105">
@@ -85,7 +85,7 @@ const NewsSection = () => {
           <Image
             src={news_4}
             alt=""
-            className="w-full h-96 lg:h-118 object-cover"
+            className="w-full h-96 lg:h-118 2xl:h-200 object-cover"
           />
           <div className="absolute top-0 z-10 p-5 flex flex-col justify-between items-start h-full">
             <h3 className="text-3xl font-medium text-white">
@@ -107,7 +107,7 @@ const NewsSection = () => {
           <Image
             src={news_1}
             alt=""
-            className="w-full h-96 lg:h-118 object-cover"
+            className="w-full h-96 lg:h-118 2xl:h-200 object-cover"
           />
           <div className="absolute top-0 z-10 p-5 flex flex-col justify-between items-start h-full">
             <h3 className="text-3xl font-medium text-white">
@@ -129,7 +129,7 @@ const NewsSection = () => {
           <Image
             src={news_2}
             alt=""
-            className="w-full h-96 lg:h-118 object-cover"
+            className="w-full h-96 lg:h-118 2xl:h-200 object-cover"
           />
           <div className="absolute top-0 z-10 p-5 flex flex-col justify-between items-start h-full w-full">
             <h3 className="text-3xl font-medium text-white lg:w-105">
@@ -151,7 +151,7 @@ const NewsSection = () => {
           <Image
             src={news_3}
             alt=""
-            className="w-full h-96 lg:h-118 object-cover"
+            className="w-full h-96 lg:h-118 2xl:h-200 object-cover"
           />
           <div className="absolute top-0 z-10 p-5 flex flex-col justify-between items-start h-full w-full">
             <h3 className="text-3xl font-medium text-white lg:w-105">
@@ -173,7 +173,7 @@ const NewsSection = () => {
           <Image
             src={news_4}
             alt=""
-            className="w-full h-96 lg:h-118 object-cover"
+            className="w-full h-96 lg:h-118 2xl:h-200 object-cover"
           />
           <div className="absolute top-0 z-10 p-5 flex flex-col justify-between items-start h-full">
             <h3 className="text-3xl font-medium text-white">

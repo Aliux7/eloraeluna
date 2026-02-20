@@ -18,8 +18,8 @@ export default function Home() {
       <FacilitiesSection />
       <LocationSection />
       <DeveloperSection />
-      <CommingSoon />
-      {/* <NewsSection /> */}
+      <NewsSection />
+      {/* <CommingSoon /> */}
     </main>
   );
 }

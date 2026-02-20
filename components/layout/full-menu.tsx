@@ -38,13 +38,13 @@ const FullMenu: React.FC<FullMenuProps> = ({ open, onClose }) => {
               onClick={onClose}
               className="w-full flex items-center justify-between group cursor-pointer p-5 xl:px-20 hover:bg-[#614429] bg-transparent transition-all duration-300 ease-in-out"
             >
-              <span className="sm:text-lg md:text-xl 3xl:text-3xl tracking-wide">
+              <span className="sm:text-lg md:text-xl 2xl:text-3xl tracking-wide">
                 {item.title}
               </span>
 
               <ArrowRight
                 size={22}
-                className="opacity-70 group-hover:translate-x-1 transition-transform 3xl:scale-120"
+                className="opacity-70 group-hover:translate-x-1 transition-transform 2xl:scale-120"
               />
             </LinkPullUp>
           ))}

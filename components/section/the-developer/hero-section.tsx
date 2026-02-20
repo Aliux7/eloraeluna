@@ -22,18 +22,18 @@ const HeroSection = () => {
         <div className="py-8 sm:py-0">
           <WordsPullUp
             text="COMMUNITIES THAT"
-            className="text-xl sm:text-2xl lg:text-3xl 3xl:text-4xl font-bold text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
+            className="text-xl sm:text-2xl lg:text-3xl 2xl:text-4xl font-bold text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
           />
           <WordsPullUp
             text="REDEFINE"
-            className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-extralight text-[#F3F0E8] tracking-widest mb-3"
+            className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-extralight text-[#F3F0E8] tracking-widest mb-3"
           />
           <WordsPullUp
             text="CITY LIVING"
-            className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-medium text-[#F3F0E8] tracking-widest ml-10 sm:ml-0 lg:ml-[5vw] mb-6 sm:mb-8"
+            className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-medium text-[#F3F0E8] tracking-widest ml-10 sm:ml-0 lg:ml-[5vw] mb-6 sm:mb-8"
           />
 
-          <FadeSlide className="max-w-2xl text-sm sm:text-lg lg:text-xl 3xl:text-2xl font-normal text-[#F3F0E8] mb-8">
+          <FadeSlide className="max-w-2xl text-sm sm:text-lg lg:text-xl 2xl:text-2xl font-normal text-[#F3F0E8] mb-8">
             Continuing to shape Indonesia's skyline, Pakuwon Group leads the
             industry with thoughtful design, cutting-edge innovation, and an
             unwavering commitment to excellence. By crafting spaces that inspire
@@ -43,7 +43,7 @@ const HeroSection = () => {
 
           <FadeSlide
             direction="up"
-            className="flex justify-start items-start gap-3 h-10 md:h-13 3xl:h-16 w-fit mb-12"
+            className="flex justify-start items-start gap-3 h-10 md:h-13 2xl:h-16 w-fit mb-12"
           >
             <Image
               src={pakuwon_logo}
@@ -54,7 +54,7 @@ const HeroSection = () => {
 
           <LinkPullUp
             href="#"
-            className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg 3xl:text-2xl pt-px w-52 3xl:w-70 h-11.25 3xl:h-15 text-[#F3F0E8] border border-[#9D7958] hover:text-[#9D7958] hover:bg-[#F3F0E8] transition-all duration-200 ease-in-out"
+            className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg 2xl:text-2xl pt-px w-52 2xl:w-70 h-11.25 2xl:h-15 text-[#F3F0E8] border border-[#9D7958] hover:text-[#9D7958] hover:bg-[#F3F0E8] transition-all duration-200 ease-in-out"
           >
             VISIT PAKUWON
           </LinkPullUp>

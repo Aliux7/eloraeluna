@@ -1,5 +1,5 @@
 import developer_ornament from "@/app/assets/home/developer_ornament.png";
-import developer_background from "@/app/assets/home/developer_background.png";
+import developer_background from "@/app/assets/home/developer_background.jpg";
 import developer_logo from "@/app/assets/pakuwon_logo.svg";
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
@@ -9,7 +9,7 @@ import { LinkPullUp } from "@/components/animation/link-pull-up";
 const DeveloperSection = () => {
   return (
     <section className="relative bg-[#464948] min-h-screen flex flex-col xl:flex-row">
-      <div className="relative w-full xl:w-1/2 min-h-screen z-10">
+      <div className="relative w-full xl:w-1/2 h-[66vh] min-h-144 sm:min-h-screen z-10">
         <Image
           src={developer_ornament}
           alt=""
@@ -17,24 +17,30 @@ const DeveloperSection = () => {
           className="object-cover opacity-70"
         />
 
-        <div className="absolute inset-0 z-10 flex flex-col justify-center py-16 px-5 sm:px-10 xl:px-16 3xl:px-48">
+        <div className="absolute inset-0 z-10 flex flex-col justify-center sm:py-16 px-5 sm:px-10 xl:px-16 2xl:px-48">
           <WordsPullUp
             text="THE DEVELOPER"
-            className="font-bold tracking-widest text-lg sm:text-2xl xl:text-3xl 3xl:text-4xl text-[#F3F0E8] mb-32"
+            className="font-bold tracking-widest text-lg sm:text-2xl xl:text-3xl 2xl:text-4xl text-[#F3F0E8] mb-20 sm:mb-32"
           />
-          <FadeSlide className="relative h-12 sm:h-14 lg:h-17 3xl:h-20 w-fit mb-16">
-            <Image src={developer_logo} alt="" width={1000} height={1000} className="w-full h-full"/>
+          <FadeSlide className="relative h-10 sm:h-14 2xl:h-18 justify-start items-start w-auto mb-10 sm:mb-16">
+            <Image
+              src={developer_logo}
+              alt=""
+              width={1000}
+              height={1000}
+              className="w-auto h-full self-start"
+            />
           </FadeSlide>
 
-          <FadeSlide className="text-[#F3F0E8] font-normal text-lg sm:text-xl md:text-2xl 3xl:text-3xl mb-14 lg:mb-16 max-w-140 3xl:max-w-200 sm:pr-10 text-balance">
+          <FadeSlide className="text-[#F3F0E8] font-normal text-sm sm:text-xl 2xl:text-3xl mb-14 lg:mb-16 max-w-140 2xl:max-w-200 sm:pr-10 text-balance">
             Pakuwon Group is a pioneer in Indonesia's property scene, known for
             visionary superblocks that blend luxury living, vibrant retail, and
             world-class hospitality across major cities.
           </FadeSlide>
 
           <LinkPullUp
-            href="#"
-            className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg 3xl:text-2xl pt-px w-56 3xl:w-75 h-11.25 3xl:h-15 border border-[#9D7958] hover:bg-[#F3F0E8]/90 text-[#F3F0E8] hover:text-[#9D7958] transition-all duration-200 ease-in-out"
+            href="/the-developer"
+            className="flex justify-center items-center cursor-pointer font-medium capitalize text-sm sm:text-base 2xl:text-lg pt-px w-52 sm:w-56 2xl:w-75 h-11.25 2xl:h-14 border border-[#9D7958] hover:bg-[#F3F0E8]/90 text-[#F3F0E8] hover:text-[#9D7958] transition-all duration-200 ease-in-out"
           >
             MEET THE DEVELOPER
           </LinkPullUp>
@@ -45,7 +51,7 @@ const DeveloperSection = () => {
           src={developer_background}
           alt=""
           fill
-          className="object-cover"
+          className="object-cover object-[center_10%]"
         />
       </div>
     </section>

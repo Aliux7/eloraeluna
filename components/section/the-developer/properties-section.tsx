@@ -12,14 +12,14 @@ const PropertiesSection = () => {
         <div className="flex flex-col justify-end items-end w-fit">
           <WordsPullUp
             text="PAKUWON"
-            className="text-[#D9D9D9] text-4xl sm:text-5xl xl:text-6xl 3xl:text-7xl font-light mr-10 md:mr-0"
+            className="text-[#D9D9D9] text-4xl sm:text-5xl xl:text-6xl 2xl:text-7xl font-light mr-10 md:mr-0"
           />
           <WordsPullUp
             text="PROPERTIES"
-            className="text-[#F3F0E8] text-2xl sm:text-3xl 3xl:text-4xl font-bold"
+            className="text-[#F3F0E8] text-2xl sm:text-3xl 2xl:text-4xl font-bold"
           />
         </div>
-        <FadeSlide className="font-medium text-sm sm:text-lg lg:text-xl 3xl:text-2xl tracking-widest max-w-lg 3xl:max-w-xl text-[#F3F0E8]">
+        <FadeSlide className="font-medium text-sm sm:text-lg lg:text-xl 2xl:text-2xl tracking-widest max-w-lg 2xl:max-w-xl text-[#F3F0E8]">
           Pakuwon Group develops malls, residences, offices, hospitality, and
           superblocks in Surabaya and Jakarta. We take pride in our leadership
           and remain committed to advancing sustainability across the industry
@@ -30,7 +30,7 @@ const PropertiesSection = () => {
         <div className="space-y-3">
           <WordsPullUp
             text="Super Block"
-            className="text-2xl 3xl:text-3xl text-[#F3F0E8] font-medium"
+            className="text-2xl 2xl:text-3xl text-[#F3F0E8] font-medium"
           />
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -44,7 +44,7 @@ const PropertiesSection = () => {
         <div className="space-y-3">
           <WordsPullUp
             text="Mall & Entertainment"
-            className="text-2xl 3xl:text-3xl text-[#F3F0E8] font-medium"
+            className="text-2xl 2xl:text-3xl text-[#F3F0E8] font-medium"
           />
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -58,7 +58,7 @@ const PropertiesSection = () => {
         <div className="space-y-3">
           <WordsPullUp
             text="Residential"
-            className="text-2xl 3xl:text-3xl text-[#F3F0E8] font-medium"
+            className="text-2xl 2xl:text-3xl text-[#F3F0E8] font-medium"
           />
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -72,7 +72,7 @@ const PropertiesSection = () => {
         <div className="space-y-3">
           <WordsPullUp
             text="Hospitality"
-            className="text-2xl 3xl:text-3xl text-[#F3F0E8] font-medium"
+            className="text-2xl 2xl:text-3xl text-[#F3F0E8] font-medium"
           />
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -86,7 +86,7 @@ const PropertiesSection = () => {
         <div className="space-y-3">
           <WordsPullUp
             text="Offices"
-            className="text-2xl 3xl:text-3xl text-[#F3F0E8] font-medium"
+            className="text-2xl 2xl:text-3xl text-[#F3F0E8] font-medium"
           />
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">

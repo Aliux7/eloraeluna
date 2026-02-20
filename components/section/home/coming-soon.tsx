@@ -32,20 +32,20 @@ const CommingSoon = () => {
             className="object-cover w-30 sm:w-40 lg:w-70"
           />
         </FadeSlide>
-        <div className="flex flex-col 3xl:flex-row min-h-120 md:min-h-150 h-fit w-full justify-center items-center pb-10">
-          <div className="w-full xl:text-end xl:mr-auto xl:w-1/2 space-y-2 3xl:pr-14 3xl:border-r 3xl:border-white">
-            <FadeSlide className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 3xl:text-6xl font-medium text-[#F3F0E8] tracking-widest text-nowrap">
+        <div className="flex flex-col 2xl:flex-row min-h-120 md:min-h-150 h-fit w-full justify-center items-center pb-10">
+          <div className="w-full xl:text-end xl:mr-auto xl:w-1/2 space-y-2 2xl:pr-14 2xl:border-r 2xl:border-white">
+            <FadeSlide className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-medium text-[#F3F0E8] tracking-widest text-nowrap">
               <span className="font-extralight">SOMETHING</span> SPECIAL
             </FadeSlide>
-            <FadeSlide className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 3xl:text-6xl font-medium text-[#F3F0E8] tracking-widest text-nowrap">
+            <FadeSlide className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-medium text-[#F3F0E8] tracking-widest text-nowrap">
               <span className="font-thin">IS</span> COMING
             </FadeSlide>
-            <FadeSlide className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 3xl:text-6xl font-medium text-[#F3F0E8] tracking-widest">
+            <FadeSlide className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-medium text-[#F3F0E8] tracking-widest">
               FOR YOU
             </FadeSlide>
           </div>
-          <div className="h-fit w-full xl:w-1/2 p-0 flex flex-col xl:ml-auto text-end xl:text-start 3xl:pl-14">
-            <div className="3xl:hidden border-t w-full border-white my-5 md:my-10"></div>
+          <div className="h-fit w-full xl:w-1/2 p-0 flex flex-col xl:ml-auto text-end xl:text-start 2xl:pl-14">
+            <div className="2xl:hidden border-t w-full border-white my-5 md:my-10"></div>
             <WordsPullUp
               text="0811 8999 6968"
               className="text-[#F3F0E8] text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-1 sm:mb-3 md:mb-5 text-nowrap"

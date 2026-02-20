@@ -19,11 +19,11 @@ const HeroSection = () => {
         <div className="py-8 sm:py-0">
           <WordsPullUp
             text="INFINITE"
-            className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-normal text-[#9D7958] sm:text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
+            className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-normal text-[#9D7958] sm:text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
           />
           <WordsPullUp
             text="CONNECTIVITY"
-            className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-light text-[#9D7958] sm:text-[#F3F0E8] tracking-widest ml-10 sm:ml-0 lg:ml-[5vw] mb-6 md:mb-10 xl:mb-8"
+            className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-light text-[#9D7958] sm:text-[#F3F0E8] tracking-widest ml-10 sm:ml-0 lg:ml-[5vw] mb-6 md:mb-10 xl:mb-8"
           /> 
         </div>
       </div>

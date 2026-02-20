@@ -12,7 +12,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="z-50 fixed top-0 left-0 w-full bg-linear-to-r from-[#391F07]/95 via-[#9D7958]/95 to-[#391F07]/95 h-14 sm:h-18 flex justify-between items-center px-5 sm:px-10 xl:px-16 ">
+    <nav className="z-50 fixed top-0 left-0 w-full bg-linear-to-r from-[#391F07]/90 via-[#9D7958]/90 to-[#391F07]/90 h-14 sm:h-18 flex justify-between items-center px-5 sm:px-10 xl:px-16 ">
       <div
         className="flex flex-col justifty-center items-center gap-1 sm:gap-1.25 cursor-pointer"
         onClick={() => setOpen(!open)}
@@ -50,7 +50,7 @@ const Header = () => {
           className="w-full h-3 sm:h-4.5"
         />
       </div>
-      <div className="lg:h-10 w-auto hidden lg:block">
+      <div className="lg:h-8.5 w-auto hidden lg:block">
         <Image
           src={pakuwon_logo}
           alt=""

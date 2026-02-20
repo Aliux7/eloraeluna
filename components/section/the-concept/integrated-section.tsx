@@ -10,14 +10,14 @@ const IntegratedSection = () => {
       <Image
         src={diamond_background}
         alt=""
-        className="w-full 3xl:w-[80%] h-auto opacity-80 absolute top-120 sm:top-130 lg:top-120 xl:top-40 3xl:top-1/2 3xl:-translate-y-1/2 3xl:left-1/2 3xl:-translate-x-1/2"
+        className="w-full 2xl:w-[80%] h-auto opacity-80 absolute top-120 sm:top-130 lg:top-120 xl:top-40 2xl:top-1/2 2xl:-translate-y-1/2 2xl:left-1/2 2xl:-translate-x-1/2"
         priority
       />
       <div className="relative px-5 sm:px-10 xl:px-48 py-40 space-y-16">
         <div className="flex flex-col gap-20 xl:gap-20 justify-between items-start mb-8 sm:mb-32">
           <FadeSlide
             direction="up"
-            className="text-xl sm:text-3xl 3xl:text-4xl font-bold text-[#F3F0E8] tracking-widest"
+            className="text-xl sm:text-3xl 2xl:text-4xl font-bold text-[#F3F0E8] tracking-widest"
           >
             INTEGRATED WITH
           </FadeSlide>
@@ -25,24 +25,24 @@ const IntegratedSection = () => {
             <div className="flex flex-col gap-1 sm:gap-4">
               <FadeSlide
                 direction="left"
-                className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-extralight text-[#F3F0E8] tracking-widest"
+                className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-extralight text-[#F3F0E8] tracking-widest"
               >
                 THE ICON
               </FadeSlide>
               <FadeSlide
                 direction="left"
-                className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-medium text-[#F3F0E8] tracking-widest ml-14 sm:ml-20"
+                className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-medium text-[#F3F0E8] tracking-widest ml-14 sm:ml-20"
               >
                 <span className="font-extralight">OF</span> BOLD
               </FadeSlide>
               <FadeSlide
                 direction="left"
-                className="text-3xl sm:text-5xl lg:text-6xl 3xl:text-7xl font-medium text-[#F3F0E8] tracking-widest ml-24 sm:ml-32"
+                className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-medium text-[#F3F0E8] tracking-widest ml-24 sm:ml-32"
               >
                 LUXURY LIVING
               </FadeSlide>
             </div>
-            <FadeSlide className="max-w-md 3xl:max-w-lg font-normal text-base sm:text-xl 3xl:text-2xl text-[#F3F0E8]">
+            <FadeSlide className="max-w-md 2xl:max-w-lg font-normal text-base sm:text-xl 2xl:text-2xl text-[#F3F0E8]">
               Connected to W Hotels—Forbes' most innovative brand—and Courtyard
               by Marriott, Elora and Eluna offer bold design, vibrant energy,
               and contemporary living at the heart of Kota Kasablanka.
@@ -54,18 +54,18 @@ const IntegratedSection = () => {
             <div className="text-center w-fit mb-16">
               <WordsPullUp
                 text="TRIBUTE"
-                className="text-[#9D7958] font-semibold text-3xl sm:text-4xl 3xl:text-5xl tracking-[0.5rem] sm:tracking-[1rem]"
+                className="text-[#9D7958] font-semibold text-3xl sm:text-4xl 2xl:text-5xl tracking-[0.5rem] sm:tracking-[1rem]"
               />
               <WordsPullUp
                 text="PORTOFOLIO"
-                className="text-[#9D7958] font-semibold text-3xl sm:text-4xl 3xl:text-5xl tracking-[0.5rem] sm:tracking-[1rem]"
+                className="text-[#9D7958] font-semibold text-3xl sm:text-4xl 2xl:text-5xl tracking-[0.5rem] sm:tracking-[1rem]"
               />
             </div>
-            <FadeSlide className="text-[#F3F0E8] text-lg sm:text-xl xl:text-[22px] 3xl:text-3xl font-light tracking-widest mb-4">
+            <FadeSlide className="text-[#F3F0E8] text-lg sm:text-xl xl:text-[22px] 2xl:text-3xl font-light tracking-widest mb-4">
               Courtyard by marriot brings a fresh take on contemporary living to
               kota kasablanka.
             </FadeSlide>
-            <FadeSlide className="text-[#F3F0E8] sm:text-lg xl:text-xl 3xl:text-2xl font-medium tracking-wider">
+            <FadeSlide className="text-[#F3F0E8] sm:text-lg xl:text-xl 2xl:text-2xl font-medium tracking-wider">
               Blending stylish comfort with intuitive spaces, it's designed for
               those who seek balance between momentum and mindfulness. with
               uplifting interiors, seamless service, and easy access to the
@@ -74,14 +74,14 @@ const IntegratedSection = () => {
             </FadeSlide>
           </div>
           <div className="w-full lg:w-1/2">
-            <FadeSlide className="text-center h-25 3xl:h-30 w-fit mb-14">
+            <FadeSlide className="text-center h-25 2xl:h-30 w-fit mb-14">
               <Image src={w_hotel_logo} alt="" className="h-full w-full" />
             </FadeSlide>
-            <FadeSlide className="text-[#F3F0E8] text-lg sm:text-xl xl:text-[22px] 3xl:text-3xl font-light tracking-widest mb-4">
+            <FadeSlide className="text-[#F3F0E8] text-lg sm:text-xl xl:text-[22px] 2xl:text-3xl font-light tracking-widest mb-4">
               NAMED One of the world's most innovative hotel brand by forbes, W
               hotel is where vibrant energy meets visionary design
             </FadeSlide>
-            <FadeSlide className="text-[#F3F0E8] sm:text-lg xl:text-xl 3xl:text-2xl font-medium tracking-wider">
+            <FadeSlide className="text-[#F3F0E8] sm:text-lg xl:text-xl 2xl:text-2xl font-medium tracking-wider">
               From New York to Jakarta, W redefines modern luxury with magnetic
               spaces, standout service, and a signature attitude that celebrates
               bold self-expression. More than a hotel, W is a lifestyle, where
