@@ -22,20 +22,20 @@ const DiscoverSection = () => {
           <Image
             src={illustration}
             alt=""
-            className="w-80 sm:w-96 md:w-130 rotate-180"
+            className="w-72 sm:w-96 md:w-130 rotate-180"
           />
         </FadeSlide>
         <FadeSlide
           direction="right"
-          className="absolute top-130 sm:top-96 -left-28 xl:left-16"
+          className="absolute top-130 sm:top-96 2xl:top-120 -left-28 xl:left-16"
         >
-          <Image src={illustration} alt="" className="w-80 sm:w-96 md:w-130" />
+          <Image src={illustration} alt="" className="w-72 sm:w-96 md:w-130" />
         </FadeSlide>
         <FadeSlide
           direction="right"
-          className="absolute bottom-0 -right-10 sm:right-16 "
+          className="absolute bottom-0 -right-10 sm:-right-52 "
         >
-          <Image src={illustration_bottom} alt="" className="w-96 md:w-120" />
+          <Image src={illustration_bottom} alt="" className="w-72 sm:w-96 md:w-130" />
         </FadeSlide>
       </div>
       <div className="relative z-10">
@@ -55,27 +55,26 @@ const DiscoverSection = () => {
 
           <LinkPullUp
             href=""
-            className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg 2xl:text-2xl pt-px w-40 2xl:w-55 h-11.25 2xl:h-15 text-[#9D7958] border border-[#9D7958] hover:text-[#F3F0E8] hover:bg-[#9D7958] transition-all duration-200 ease-in-out"
+            className="flex justify-center items-center cursor-pointer font-medium capitalize text-sm sm:text-base 2xl:text-lg pt-px w-36 sm:w-40 2xl:w-55 h-11.25 2xl:h-14 text-[#9D7958] border border-[#9D7958] hover:text-[#F3F0E8] hover:bg-[#9D7958] transition-all duration-200 ease-in-out"
           >
             VISIT KOKAS
           </LinkPullUp>
         </div>
         <div className="relative flex justify-start xl:justify-center items-end lg:items-center">
-          <FadeSlide className="w-full h-full lg:h-[80vh]">
+          <FadeSlide className="w-full h-full lg:h-[80vh] sm:pr-80 mb-96 sm:mb-0">
             <Image
               src={content_1}
               alt=""
-              className="w-full h-140 sm:h-200 lg:h-full object-cover xl:min-h-145"
+              className="w-full h-120 sm:h-200 lg:h-full object-cover xl:min-h-145"
               width={2000}
               height={2000}
             />
           </FadeSlide>
           <FadeSlide
-            className="absolute xl:relative sm:mr-5 sm:mb-5 lg:mb-0 xl:mr-0 right-0"
+            className="absolute sm:mr-5 sm:mb-5 lg:mb-0 xl:mr-0 right-0"
             direction="left"
           >
-            <div className="hidden xl:block absolute w-105 2xl:w-130 xl:h-full bg-[#9D7958]/40 top-2.5 right-4 z-0"></div>
-            <div className="-mr-5 -mb-15 sm:mb-0 sm:mr-0 relative w-80 sm:w-96 lg:w-105 2xl:w-130 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-8 flex flex-col justify-between gap-5 xl:gap-8 items-center">
+            <div className="-mr-5 mb-0 sm:mr-0 relative w-80 sm:w-96 lg:w-105 2xl:w-130 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-8 flex flex-col justify-between gap-5 xl:gap-8 items-center">
               <h3 className="font-medium sm:text-lg 2xl:text-3xl tracking-widest text-[#F3F0E8]">
                 Since 2012, Kota Kasablanka has become one of Jakarta's most
                 vibrant lifestyle destinations. Just steps from Elora and
@@ -83,7 +82,7 @@ const DiscoverSection = () => {
                 dining, and entertainment—including family friendly zones, a
                 rooftop pool, and the new Little Tokyo culinary hub.
               </h3>
-              <p className="sm:text-lg font-normal 2xl:text-3xl text-[#F3F0E8]">
+              <p className="font-normal sm:text-base 2xl:text-2xl text-[#F3F0E8]">
                 With complete amenities like a taxi lounge, nursery, function
                 hall, and award-winning mosque, Kota Kasablanka is more than a
                 shopping center—it's a dynamic lifestyle ecosystem seamlessly

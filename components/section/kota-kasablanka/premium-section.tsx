@@ -6,9 +6,14 @@ import illustration from "@/app/assets/home/illustration.png";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
 import content_1 from "@/app/assets/kota-kasablanka/premium_content_1.jpg";
-import content_2 from "@/app/assets/kota-kasablanka/premium_content_2.png";
+import content_2 from "@/app/assets/kota-kasablanka/premium_content_2.jpg";
 import content_3 from "@/app/assets/kota-kasablanka/premium_content_3.jpg";
 import content_4 from "@/app/assets/kota-kasablanka/premium_content_4.jpg"; 
+import mall_content_1 from "@/app/assets/kota-kasablanka/mall_content_1.jpg"; 
+import mall_content_2 from "@/app/assets/kota-kasablanka/mall_content_2.jpg"; 
+import mall_content_3 from "@/app/assets/kota-kasablanka/mall_content_3.jpg"; 
+import mall_content_4 from "@/app/assets/kota-kasablanka/mall_content_4.jpg"; 
+import mall_content_5 from "@/app/assets/kota-kasablanka/mall_content_5.jpg"; 
 
 const PremiumSection = () => {
   return (
@@ -19,29 +24,29 @@ const PremiumSection = () => {
       <div className="absolute inset-0 z-0 pointer-events-none">
         <FadeSlide
           direction="right"
-          className="absolute top-0 sm:top-30 xl:top-7 -right-16 xl:right-16"
+          className="absolute top-10 sm:top-30 xl:top-7 -right-16 xl:right-16"
         >
           <Image
             src={illustration}
             alt=""
-            className="w-80 sm:w-96 md:w-130 rotate-180"
+            className="w-68 sm:w-96 md:w-130 rotate-180"
           />
         </FadeSlide>
         <FadeSlide
           direction="right"
           className="absolute top-96 left-28 xl:left-16"
         >
-          <Image src={illustration} alt="" className="w-80 sm:w-96 md:w-130" />
+          <Image src={illustration} alt="" className="w-68 sm:w-96 md:w-130" />
         </FadeSlide>
         <FadeSlide
           direction="right"
           className="absolute bottom-0 -right-10 sm:right-16 "
         >
-          <Image src={illustration_bottom} alt="" className="w-96 md:w-120" />
+          <Image src={illustration_bottom} alt="" className="w-68 sm:w-96 md:w-130" />
         </FadeSlide>
       </div>
-      <div className="relative z-10">
-        <div className="flex flex-col mb-8 sm:mb-32">
+      <div className="relative z-10 flex flex-col justify-start items-start gap-10 md:gap-16">
+        <div className="w-full flex flex-col mb-8 sm:mb-32">
           <WordsPullUp
             text="REDEFINING PREMIUM LIVING IN"
             className="text-xl sm:text-3xl 2xl:text-4xl text-[#F3F0E8] tracking-widest mb-8"
@@ -55,13 +60,12 @@ const PremiumSection = () => {
             className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-medium text-[#F3F0E8] tracking-widest mb-16"
           />
         </div>
-        <div className="relative flex justify-start xl:justify-center items-end lg:items-center">
+        <div className="w-full relative flex justify-start xl:justify-center items-end lg:items-center">
           <FadeSlide
-            className="absolute xl:relative sm:ml-5 sm:mb-5 lg:mb-0 xl:ml-0 z-10"
+            className="absolute sm:ml-5 sm:mb-5 lg:mb-0 xl:ml-0 z-10 left-0"
             direction="right"
-          >
-            <div className="hidden xl:block absolute w-110 2xl:w-130 xl:h-full bg-[#9D7958]/40 top-2.5 left-4 z-0"></div>
-            <div className="-ml-5 -mb-15 sm:mb-0 sm:ml-0 relative w-80 sm:w-96 lg:w-110 2xl:w-130 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-8 flex flex-col justify-center gap-5 xl:gap-0 items-center">
+          > 
+            <div className="-ml-5 mb-0 sm:ml-0 relative w-80 sm:w-96 lg:w-110 2xl:w-130 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-8 flex flex-col justify-center gap-5 xl:gap-0 items-center">
               <p className="sm:text-lg 2xl:text-3xl tracking-widest text-[#F3F0E8]">
                 Long recognized as one of Jakarta's most dynamic lifestyle
                 destinations, Kota Kasablanka has established itself as a
@@ -75,7 +79,7 @@ const PremiumSection = () => {
               </p>
             </div>
           </FadeSlide>
-          <FadeSlide className="w-full h-full lg:h-[80vh]">
+          <FadeSlide className="w-full h-full lg:h-[80vh] sm:pl-80 mb-96 sm:mb-0">
             <Image
               src={content_1}
               alt=""
@@ -85,7 +89,7 @@ const PremiumSection = () => {
             />
           </FadeSlide>
         </div>
-        <div className="flex flex-col lg:flex-row justify-between items-center h-full gap-10 md:gap-16 mt-10 md:mt-16">
+        <div className="w-full flex flex-col lg:flex-row justify-between items-center h-full gap-10 md:gap-16">
           <FadeSlide className="w-full h-fit aspect-square lg:aspect-4/3">
             <Image
               src={content_2}
@@ -105,7 +109,7 @@ const PremiumSection = () => {
             />
           </FadeSlide>
         </div>
-        <FadeSlide className="w-full mt-16">
+        <FadeSlide className="w-full ">
           <Image
             src={content_4}
             alt=""
@@ -115,10 +119,10 @@ const PremiumSection = () => {
           />
         </FadeSlide>
 
-        <div className="grid lg:grid-cols-3 h-full gap-10 md:gap-16 mt-10 md:mt-16">
+        <div className="w-full grid lg:grid-cols-3 h-full gap-10 md:gap-16">
           <FadeSlide className="w-full aspect-square lg:aspect-2/1 lg:col-span-2">
             <Image
-              src={content_2}
+              src={mall_content_1}
               alt=""
               className="w-full h-full object-cover"
               width={1000}
@@ -127,7 +131,7 @@ const PremiumSection = () => {
           </FadeSlide>
           <FadeSlide className="w-full h-full">
             <Image
-              src={content_3}
+              src={mall_content_2}
               alt=""
               className="w-full h-full object-cover"
               width={1000}
@@ -136,7 +140,7 @@ const PremiumSection = () => {
           </FadeSlide>
           <FadeSlide className="w-full h-full">
             <Image
-              src={content_3}
+              src={mall_content_3}
               alt=""
               className="w-full h-full object-cover"
               width={1000}
@@ -145,31 +149,22 @@ const PremiumSection = () => {
           </FadeSlide>
           <FadeSlide className="w-full aspect-square lg:aspect-2/1 lg:col-span-2">
             <Image
-              src={content_2}
+              src={mall_content_4}
               alt=""
               className="w-full h-full object-cover"
               width={1000}
               height={1000}
             />
           </FadeSlide>
-          <FadeSlide className="w-full aspect-square lg:aspect-2/1 lg:col-span-2">
+          <FadeSlide className="w-full aspect-square lg:aspect-2/1 lg:col-span-3">
             <Image
-              src={content_2}
+              src={mall_content_1}
               alt=""
               className="w-full h-full object-cover"
               width={1000}
               height={1000}
             />
-          </FadeSlide>
-          <FadeSlide className="w-full h-full">
-            <Image
-              src={content_3}
-              alt=""
-              className="w-full h-full object-cover"
-              width={1000}
-              height={1000}
-            />
-          </FadeSlide>
+          </FadeSlide> 
         </div>
       </div>
     </section>
