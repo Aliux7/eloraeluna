@@ -8,12 +8,13 @@ import { FadeSlide } from "@/components/animation/fade-slide";
 import content_1 from "@/app/assets/kota-kasablanka/premium_content_1.jpg";
 import content_2 from "@/app/assets/kota-kasablanka/premium_content_2.jpg";
 import content_3 from "@/app/assets/kota-kasablanka/premium_content_3.jpg";
-import content_4 from "@/app/assets/kota-kasablanka/premium_content_4.jpg"; 
-import mall_content_1 from "@/app/assets/kota-kasablanka/mall_content_1.jpg"; 
-import mall_content_2 from "@/app/assets/kota-kasablanka/mall_content_2.jpg"; 
-import mall_content_3 from "@/app/assets/kota-kasablanka/mall_content_3.jpg"; 
-import mall_content_4 from "@/app/assets/kota-kasablanka/mall_content_4.jpg"; 
-import mall_content_5 from "@/app/assets/kota-kasablanka/mall_content_5.jpg"; 
+import content_4 from "@/app/assets/kota-kasablanka/premium_content_4.jpg";
+import mall_content_1 from "@/app/assets/kota-kasablanka/mall_content_1.jpg";
+import mall_content_2 from "@/app/assets/kota-kasablanka/mall_content_2.jpg";
+import mall_content_3 from "@/app/assets/kota-kasablanka/mall_content_3.jpg";
+import mall_content_4 from "@/app/assets/kota-kasablanka/mall_content_4.jpg";
+import mall_content_5 from "@/app/assets/kota-kasablanka/mall_content_5.jpg";
+import mall_content_6 from "@/app/assets/kota-kasablanka/mall_content_6.jpg";
 
 const PremiumSection = () => {
   return (
@@ -42,7 +43,11 @@ const PremiumSection = () => {
           direction="right"
           className="absolute bottom-0 -right-10 sm:right-16 "
         >
-          <Image src={illustration_bottom} alt="" className="w-68 sm:w-96 md:w-130" />
+          <Image
+            src={illustration_bottom}
+            alt=""
+            className="w-68 sm:w-96 md:w-130"
+          />
         </FadeSlide>
       </div>
       <div className="relative z-10 flex flex-col justify-start items-start gap-10 md:gap-16">
@@ -64,7 +69,7 @@ const PremiumSection = () => {
           <FadeSlide
             className="absolute sm:ml-5 sm:mb-5 lg:mb-0 xl:ml-0 z-10 left-0"
             direction="right"
-          > 
+          >
             <div className="-ml-5 mb-0 sm:ml-0 relative w-80 sm:w-96 lg:w-110 2xl:w-130 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-8 flex flex-col justify-center gap-5 xl:gap-0 items-center">
               <p className="sm:text-lg 2xl:text-3xl tracking-widest text-[#F3F0E8]">
                 Long recognized as one of Jakarta's most dynamic lifestyle
@@ -156,15 +161,24 @@ const PremiumSection = () => {
               height={1000}
             />
           </FadeSlide>
-          <FadeSlide className="w-full aspect-square lg:aspect-2/1 lg:col-span-3">
+          <FadeSlide className="w-full aspect-square lg:aspect-2/1 lg:col-span-2">
             <Image
-              src={mall_content_1}
+              src={mall_content_5}
               alt=""
               className="w-full h-full object-cover"
               width={1000}
               height={1000}
             />
-          </FadeSlide> 
+          </FadeSlide>
+          <FadeSlide className="w-full h-full">
+            <Image
+              src={mall_content_6}
+              alt=""
+              className="w-full h-full object-cover"
+              width={1000}
+              height={1000}
+            />
+          </FadeSlide>
         </div>
       </div>
     </section>
