@@ -15,7 +15,7 @@ const NewsSection = () => {
         </h1>
         <LinkPullUp
           href="/news-events"
-          className="flex justify-center items-center cursor-pointer font-medium capitalize text-sm sm:text-base 2xl:text-lg pt-px w-32 sm:w-40 2xl:w-55 h-11.25 2xl:h-11 sm:h-14 border border-[#9D7958] hover:bg-[#9D7958]/10 text-[#9D7958] hover:text-[#9D7958] transition-all duration-200 ease-in-out"
+          className="flex justify-center items-center cursor-pointer font-medium capitalize text-sm sm:text-base 2xl:text-lg pt-px w-32 sm:w-40 2xl:w-55 h-11.25 2xl:h-14 border border-[#9D7958] hover:bg-[#9D7958]/10 text-[#9D7958] hover:text-[#9D7958] transition-all duration-200 ease-in-out"
         >
           SEE ALL
         </LinkPullUp>
