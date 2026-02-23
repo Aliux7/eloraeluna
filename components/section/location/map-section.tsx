@@ -202,7 +202,7 @@ const MapSection = () => {
               }}
             >
               <div className="flex items-center justify-start gap-4 mb-3">
-                <div className="flex flex-col justify-end items-end gap-1.5">
+                <div className="flex flex-col justify-end items-end gap-3">
                   <div className="size-9 bg-[#006174] rounded-full"></div>
                   <div className="w-14 h-2 bg-[#006174] rounded-full"></div>
                 </div>
