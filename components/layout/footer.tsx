@@ -116,7 +116,7 @@ const Footer = () => {
               />
             </LinkPullUp>
             <LinkPullUp
-              href="#"
+              href="https://www.instagram.com/elora.eluna/"
               className="relative size-4.5 sm:size-6 flex justify-center items-center cursor-pointer"
             >
               <Image

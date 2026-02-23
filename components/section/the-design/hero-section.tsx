@@ -6,14 +6,14 @@ import illustration_bottom from "@/app/assets/home/illustration_bottom.png";
 
 const HeroSection = () => {
   return (
-    <section id="hero-section" className="relative min-h-screen bg-[#F3F0E8]">
-      <FadeSlide className="absolute z-20 top-2/5 -left-40 xl:-right-64 scale-y-[-1] scale-x-[-1] w-72 xl:w-96">
+    <section id="hero-section" className="relative sm:min-h-screen bg-[#464948]">
+      <FadeSlide direction="right" className="absolute z-20 top-[55%] sm:top-20 left-0 -translate-y-3/5 sm:translate-y-0 -translate-x-[55%] scale-y-[-1] scale-x-[-1] w-72 xl:w-96 2xl:w-130">
         <Image src={illustration_bottom} alt="" />
       </FadeSlide>
-      <FadeSlide className="absolute z-20 bottom-10 -right-32 xl:-right-64 scale-y-[-1] scale-x-[-1] w-72 xl:w-96">
+      <FadeSlide direction="left" className="absolute z-20 bottom-17 sm:bottom-10 right-0 translate-x-2/5 sm:translate-x-1/5 scale-y-[-1] scale-x-[-1] w-72 xl:w-96 2xl:w-130">
         <Image src={illustration_bottom} alt="" />
       </FadeSlide>
-      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-black/30">
+      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-black/0">
         <Image
           src={hero_background}
           alt=""

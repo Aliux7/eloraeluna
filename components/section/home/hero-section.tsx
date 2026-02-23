@@ -9,7 +9,7 @@ import { FadeSlide } from "@/components/animation/fade-slide";
 const HeroSection = () => {
   return (
     <section id="hero-section" className="relative sm:min-h-screen bg-[#464948]">
-      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-black/0">
+      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-linear-to-tr after:from-black/25 after:to-transparent ">
         <Image
           src={hero_background}
           alt=""
@@ -56,7 +56,7 @@ const HeroSection = () => {
         />
 
         <LinkPullUp
-          href="#"
+          href="/the-design"
           className="flex justify-center items-center cursor-pointer font-medium capitalize text-sm sm:text-base 2xl:text-lg pt-px w-40 sm:w-47.5 2xl:w-60 h-11.25 2xl:h-14 text-[#F3F0E8] border border-[#9D7958] hover:bg-[#F3F0E8]/90 hover:text-[#9D7958] transition-all duration-200 ease-in-out"
         >
           EXPLORE NOW

@@ -5,7 +5,7 @@ import { FadeSlide } from "@/components/animation/fade-slide";
 const ConclusionSection = () => {
   return (
     <div className="bg-[#F3F0E8] flex flex-col sm:flex-row">
-      <div className="w-full sm:w-1/2 h-screen max-h-200">
+      <div className="w-full sm:w-1/2 h-screen max-h-200 sm:max-h-none">
         <Image src={conclusion} alt="" className="w-full h-full object-cover" />
       </div>
       <div className="sm:w-1/2 p-10 lg:p-16">

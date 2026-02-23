@@ -54,7 +54,7 @@ const DiscoverSection = () => {
           />
 
           <LinkPullUp
-            href=""
+            href="https://www.kotakasablanka.co.id/"
             className="flex justify-center items-center cursor-pointer font-medium capitalize text-sm sm:text-base 2xl:text-lg pt-px w-36 sm:w-40 2xl:w-55 h-11.25 2xl:h-14 text-[#9D7958] border border-[#9D7958] hover:text-[#F3F0E8] hover:bg-[#9D7958] transition-all duration-200 ease-in-out"
           >
             VISIT KOKAS

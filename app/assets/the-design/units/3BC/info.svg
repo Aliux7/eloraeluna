@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Furniture" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 150">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        font-family: SupremeLL-Light, 'Supreme LL';
+        font-weight: 300;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        fill: #aa7a56;
+      }
+
+      .cls-2, .cls-4 {
+        font-size: 8px;
+      }
+
+      .cls-3 {
+        font-size: 4.66px;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6 {
+        font-family: SupremeLL-Regular, 'Supreme LL';
+      }
+
+      .cls-7 {
+        letter-spacing: .13em;
+      }
+
+      .cls-8 {
+        letter-spacing: .13em;
+      }
+
+      .cls-9 {
+        letter-spacing: .13em;
+      }
+
+      .cls-10 {
+        letter-spacing: .13em;
+      }
+
+      .cls-11 {
+        letter-spacing: .14em;
+      }
+
+      .cls-12 {
+        letter-spacing: .15em;
+      }
+
+      .cls-13 {
+        letter-spacing: .15em;
+      }
+
+      .cls-14 {
+        letter-spacing: .15em;
+      }
+
+      .cls-15 {
+        letter-spacing: .15em;
+      }
+
+      .cls-16 {
+        letter-spacing: .14em;
+      }
+
+      .cls-5 {
+        font-size: 36px;
+      }
+
+      .cls-6 {
+        font-size: 20px;
+      }
+
+      .cls-17 {
+        letter-spacing: .1em;
+      }
+
+      .cls-18 {
+        letter-spacing: .1em;
+      }
+
+      .cls-19 {
+        letter-spacing: .1em;
+      }
+
+      .cls-20 {
+        letter-spacing: .1em;
+      }
+
+      .cls-21 {
+        letter-spacing: .12em;
+      }
+    </style>
+    <clipPath id="clippath">
+      <polyline class="cls-1" points="442.54 121.56 442.54 -2.2 52.1 -2.2"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <polyline class="cls-1" points="442.54 121.56 442.54 -2.2 52.1 -2.2"/>
+    </clipPath>
+  </defs>
+  <text class="cls-2" transform="translate(68.74 104.19)"><tspan class="cls-13" x="0" y="0">S</tspan><tspan class="cls-12" x="5.55" y="0">e</tspan><tspan class="cls-13" x="10.94" y="0">mi </tspan><tspan class="cls-16" x="24.34" y="0">G</tspan><tspan class="cls-9" x="32.19" y="0">r</tspan><tspan class="cls-15" x="35.74" y="0">oss</tspan><tspan class="cls-21" x="49.86" y="0"> </tspan><tspan class="cls-12" x="52.84" y="0">A</tspan><tspan class="cls-9" x="59.39" y="0">r</tspan><tspan class="cls-12" x="62.94" y="0">ea</tspan><tspan class="cls-15" x="74.21" y="0"> </tspan><tspan class="cls-12" x="77.43" y="0">=</tspan><tspan x="83.33" y="0"> </tspan></text>
+  <text class="cls-4" transform="translate(155.33 104.19)"><tspan class="cls-13" x="0" y="0">18</tspan><tspan class="cls-12" x="9.74" y="0">3</tspan><tspan class="cls-15" x="15.46" y="0"> </tspan><tspan x="18.58" y="0">M</tspan></text>
+  <text class="cls-3" transform="translate(182.61 101.52)"><tspan x="0" y="0">2</tspan></text>
+  <text class="cls-2" transform="translate(68.74 118.22)"><tspan class="cls-11" x="0" y="0">N</tspan><tspan class="cls-16" x="8.36" y="0">e</tspan><tspan class="cls-7" x="13.7" y="0">t</tspan><tspan class="cls-21" x="17.07" y="0"> </tspan><tspan class="cls-15" x="20.05" y="0">A</tspan><tspan class="cls-10" x="26.61" y="0">r</tspan><tspan class="cls-14" x="30.15" y="0">e</tspan><tspan class="cls-15" x="35.54" y="0">a </tspan><tspan class="cls-12" x="44.66" y="0">=</tspan><tspan x="50.55" y="0"> </tspan></text>
+  <polyline class="cls-1" points="52.1 -2.2 52.1 121.56 442.54 121.56"/>
+  <text class="cls-4" transform="translate(122.54 118.22)"><tspan class="cls-13" x="0" y="0">1</tspan><tspan class="cls-8" x="3.93" y="0">4</tspan><tspan class="cls-13" x="9.77" y="0">9 </tspan><tspan x="18.8" y="0">M</tspan></text>
+  <text class="cls-3" transform="translate(150.04 115.55)"><tspan x="0" y="0">2</tspan></text>
+  <text class="cls-6" transform="translate(67.74 62.09)"><tspan class="cls-18" x="0" y="0">TYP</tspan><tspan x="40.32" y="0">E</tspan></text>
+  <text class="cls-5" transform="translate(121.33 62.09)"><tspan class="cls-19" x="0" y="0"> </tspan><tspan class="cls-20" x="12.24" y="0">3</tspan><tspan class="cls-17" x="36.18" y="0" xml:space="preserve"> B</tspan><tspan x="73.26" y="0">C</tspan></text>
+  <polyline class="cls-1" points="52.1 -2.2 52.1 73.5 442.54 73.5"/>
+  <polyline class="cls-1" points="52.1 -2.2 52.1 121.56 442.54 121.56"/>
+  <polyline class="cls-1" points="52.1 -2.2 52.1 121.56 442.54 121.56"/>
+</svg>

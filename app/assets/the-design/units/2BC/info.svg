@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Wall" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 293.33 132.06">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #1d1d1b;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 12px;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(86.2 47.95)"><tspan class="cls-4" x="0" y="0">T</tspan><tspan x="5.48" y="0">ype 2BC</tspan><tspan class="cls-7" x="0" y="14.4">S</tspan><tspan class="cls-3" x="5.99" y="14.4">emi G</tspan><tspan class="cls-5" x="35.11" y="14.4">r</tspan><tspan x="38.92" y="14.4">oss </tspan><tspan class="cls-6" x="57.55" y="14.4">A</tspan><tspan class="cls-5" x="64.86" y="14.4">r</tspan><tspan x="68.66" y="14.4">ea - 122M</tspan></text>
+  <text class="cls-1" transform="translate(203.55 58.35) scale(.58)"><tspan x="0" y="0">2</tspan></text>
+  <text class="cls-1" transform="translate(86.2 91.15)"><tspan x="0" y="0">Net </tspan><tspan class="cls-6" x="20.42" y="0">A</tspan><tspan class="cls-5" x="27.73" y="0">r</tspan><tspan class="cls-3" x="31.54" y="0">ea - 102M</tspan></text>
+  <text class="cls-2" transform="translate(166.42 87.15) scale(.58)"><tspan x="0" y="0">2</tspan></text>
+</svg>

@@ -1,4 +1,28 @@
 "use client";
+import map2BA from "@/app/assets/the-design/units/2BA/map.svg";
+import unit2BA from "@/app/assets/the-design/units/2BA/unit.svg";
+
+import map2BB from "@/app/assets/the-design/units/2BB/map.svg";
+import unit2BB from "@/app/assets/the-design/units/2BB/unit.svg";
+
+import map2BC from "@/app/assets/the-design/units/2BC/map.svg";
+import unit2BC from "@/app/assets/the-design/units/2BC/unit.svg";
+
+import map2BD from "@/app/assets/the-design/units/2BD/map.svg";
+import unit2BD from "@/app/assets/the-design/units/2BD/unit.svg";
+
+import map2BE from "@/app/assets/the-design/units/2BE/map.svg";
+import unit2BE from "@/app/assets/the-design/units/2BE/unit.svg";
+
+import map3BA from "@/app/assets/the-design/units/3BA/map.svg";
+import unit3BA from "@/app/assets/the-design/units/3BA/unit.svg";
+
+import map3BB from "@/app/assets/the-design/units/3BB/map.svg";
+import unit3BB from "@/app/assets/the-design/units/3BB/unit.svg";
+
+import map3BC from "@/app/assets/the-design/units/3BC/map.svg";
+import unit3BC from "@/app/assets/the-design/units/3BC/unit.svg";
+
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
@@ -10,12 +34,69 @@ import elora_gold from "@/app/assets/elora_gold.svg";
 import eluna from "@/app/assets/eluna.svg";
 import elora from "@/app/assets/elora.svg";
 import { useState } from "react";
-import { EOL } from "node:os";
-import { div } from "framer-motion/client";
 
 const MapSection = () => {
+  const units = [
+    {
+      code: "2BA",
+      grossArea: 93,
+      netArea: 78,
+      pathMap: map2BA,
+      pathUnit: unit2BA,
+    },
+    {
+      code: "2BB",
+      grossArea: 89,
+      netArea: 74,
+      pathMap: map2BB,
+      pathUnit: unit2BB,
+    },
+    {
+      code: "2BC",
+      grossArea: 122,
+      netArea: 102,
+      pathMap: map2BC,
+      pathUnit: unit2BC,
+    },
+    {
+      code: "2BD",
+      grossArea: 85,
+      netArea: 71,
+      pathMap: map2BD,
+      pathUnit: unit2BD,
+    },
+    {
+      code: "2BE",
+      grossArea: 90,
+      netArea: 75,
+      pathMap: map2BE,
+      pathUnit: unit2BE,
+    },
+    {
+      code: "3BA",
+      grossArea: 167,
+      netArea: 140,
+      pathMap: map3BA,
+      pathUnit: unit3BA,
+    },
+    {
+      code: "3BB",
+      grossArea: 178,
+      netArea: 149,
+      pathMap: map3BB,
+      pathUnit: unit3BB,
+    },
+    {
+      code: "3BC",
+      grossArea: 183,
+      netArea: 149,
+      pathMap: map3BC,
+      pathUnit: unit3BC,
+    },
+  ];
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const [elunaElora, setElunaElora] = useState(true);
+  const [activeUnit, setActiveUnit] = useState(units[0]);
 
   return (
     <section
@@ -23,7 +104,6 @@ const MapSection = () => {
       className="relative bg-[#464948] min-h-screen px-5 sm:px-10 xl:px-48 py-32"
     >
       <div className="relative z-10 flex flex-col justify-between items-start gap-2 sm:gap-4">
-        {/* Non Mobile */}
         <WordsPullUp
           text="WHERE TRANQUILITY MEETS"
           className="hidden sm:block text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-extralight text-[#F3F0E8] tracking-widest"
@@ -122,7 +202,7 @@ const MapSection = () => {
               </FadeSlide>
             </div>
             <div
-              className={`${!elunaElora ? "opacity-100" : "opacity-0"} flex justify-center items-center absolute w-full h-full bg-[#464948]/90 top-0 right-0 transition-all duration-500 ease-in-out`}
+              className={`${!elunaElora ? "opacity-100" : "opacity-0"} z-10 flex justify-center items-center absolute w-full h-full bg-[#464948]/90 top-0 right-0 transition-all duration-500 ease-in-out`}
             >
               <WordsPullUp
                 text="Coming Soon Phase 2"
@@ -130,10 +210,10 @@ const MapSection = () => {
               />
             </div>
           </div>
-          <div className="mt-12 flex flex-col justify-start items-start w-full h-fit">
+          <div className="mt-20 sm:mt-12 flex flex-col justify-start items-start w-full h-fit">
             <WordsPullUp
               text="ELUNA FLOORPLAN TYPICAL 2-38"
-              className="pr-5 sm:pr-0 mb-10 font-semibold text-2xl md:text-3xl 2xl:text-4xl tracking-widest text-[#F3F0E8]"
+              className="hidden sm:block pr-5 sm:pr-0 mb-10 font-semibold text-2xl md:text-3xl 2xl:text-4xl tracking-widest text-[#F3F0E8]"
             />
             <div className="relative flex flex-col-reverse lg:flex-row justify-between w-full h-full gap-10 sm:gap-16 xl:gap-32">
               <div className="sm:w-100">
@@ -155,32 +235,16 @@ const MapSection = () => {
                   </FadeSlide>
 
                   <FadeSlide
-                    className={`overflow-auto transition-all duration-300 ease-in-out pl-24 ${openIndex === 0 ? "opacity-100 mt-3" : "max-h-0 opacity-0"}`}
+                    className={`overflow-auto transition-all duration-300 ease-in-out pl-20 ${openIndex === 0 ? "opacity-100 mt-3" : "max-h-0 opacity-0"}`}
                   >
-                    <button className="w-full flex justify-between items-center text-left border-b border-white cursor-pointer px-1 py-3 text-white 2xl:text-lg">
-                      UNIT 2BA
-                    </button>
-                    <button className="w-full flex justify-between items-center text-left border-b border-white cursor-pointer px-1 py-3 text-white 2xl:text-lg">
-                      UNIT 2BB
-                    </button>
-                    <button className="w-full flex justify-between items-center text-left border-b border-white cursor-pointer px-1 py-3 text-white 2xl:text-lg">
-                      UNIT 2BC
-                    </button>
-                    <button className="w-full flex justify-between items-center text-left border-b border-white cursor-pointer px-1 py-3 text-white 2xl:text-lg">
-                      UNIT 2BD
-                    </button>
-                    <button className="w-full flex justify-between items-center text-left border-b border-white cursor-pointer px-1 py-3 text-white 2xl:text-lg">
-                      UNIT 2BE
-                    </button>
-                    <button className="w-full flex justify-between items-center text-left border-b border-white cursor-pointer px-1 py-3 text-white 2xl:text-lg">
-                      UNIT 3BA
-                    </button>
-                    <button className="w-full flex justify-between items-center text-left border-b border-white cursor-pointer px-1 py-3 text-white 2xl:text-lg">
-                      UNIT 3BB
-                    </button>
-                    <button className="w-full flex justify-between items-center text-left border-b border-white cursor-pointer px-1 py-3 text-white 2xl:text-lg">
-                      UNIT 3BC
-                    </button>
+                    {units.map((unit) => (
+                      <button
+                        onClick={() => setActiveUnit(unit)}
+                        className={`${activeUnit.code === unit.code ? "bg-[#AA7A56]" : "bg-transparent hover:bg-white/5"} w-full flex justify-between items-center text-left border-b border-white cursor-pointer px-3 py-3 text-white 2xl:text-lg`}
+                      >
+                        UNIT {unit.code}
+                      </button>
+                    ))}
                   </FadeSlide>
                 </div>
 
@@ -204,56 +268,53 @@ const MapSection = () => {
                   <FadeSlide
                     className={`overflow-auto transition-all duration-300 ease-in-out pl-24 ${openIndex === 1 ? "opacity-100 mt-3" : "max-h-0 opacity-0"}`}
                   >
-                    <button className="w-full flex justify-between items-center text-left border-b border-white cursor-pointer px-1 py-3 text-white 2xl:text-lg">
-                      UNIT 2BA
-                    </button>
-                    <button className="w-full flex justify-between items-center text-left border-b border-white cursor-pointer px-1 py-3 text-white 2xl:text-lg">
-                      UNIT 2BB
-                    </button>
-                    <button className="w-full flex justify-between items-center text-left border-b border-white cursor-pointer px-1 py-3 text-white 2xl:text-lg">
-                      UNIT 2BC
-                    </button>
-                    <button className="w-full flex justify-between items-center text-left border-b border-white cursor-pointer px-1 py-3 text-white 2xl:text-lg">
-                      UNIT 2BD
-                    </button>
-                    <button className="w-full flex justify-between items-center text-left border-b border-white cursor-pointer px-1 py-3 text-white 2xl:text-lg">
-                      UNIT 2BE
-                    </button>
-                    <button className="w-full flex justify-between items-center text-left border-b border-white cursor-pointer px-1 py-3 text-white 2xl:text-lg">
-                      UNIT 3BA
-                    </button>
-                    <button className="w-full flex justify-between items-center text-left border-b border-white cursor-pointer px-1 py-3 text-white 2xl:text-lg">
-                      UNIT 3BB
-                    </button>
-                    <button className="w-full flex justify-between items-center text-left border-b border-white cursor-pointer px-1 py-3 text-white 2xl:text-lg">
-                      UNIT 3BC
-                    </button>
+                    {units.map((unit) => (
+                      <button
+                        onClick={() => setActiveUnit(unit)}
+                        className={`${activeUnit.code === unit.code ? "bg-[#AA7A56]" : "bg-transparent hover:bg-white/5"} w-full flex justify-between items-center text-left border-b border-white cursor-pointer px-3 py-3 text-white 2xl:text-lg`}
+                      >
+                        UNIT {unit.code}
+                      </button>
+                    ))}
                   </FadeSlide>
                 </div>
               </div>
-              <FadeSlide className="relative flex-1 w-full h-fit border-x-2 border-[#AA7A56] p-10 xl:px-20 flex flex-col gap-10">
-                <div className="flex justify-between items-start">
-                  <div className="flex flex-col">
-                    <h1 className="text-2xl xl:text-3xl tracking-widest text-[#AA7A56] font-medium">
+
+              <WordsPullUp
+                text="ELUNA FLOORPLAN TYPICAL 2-38"
+                className="sm:hidden pr-5 sm:pr-0 mt-10 sm:mt-0 sm:mb-10 font-semibold text-2xl md:text-3xl 2xl:text-4xl tracking-widest text-[#F3F0E8]"
+              />
+              <FadeSlide className="relative flex-1 w-full h-fit sm:border-x-2 border-[#AA7A56] sm:p-10 2xl:px-20 flex flex-col gap-10">
+                <div className="flex justify-between items-center">
+                  <div className="flex flex-col w-full">
+                    <h1 className="text-2xl xl:text-3xl 2xl:text-4xl tracking-widest text-[#AA7A56] font-medium">
                       TYPE{" "}
-                      <span className="text-4xl xl:text-5xl font-semibold">
-                        2BA
+                      <span className="text-4xl xl:text-5xl 2xl:text-6xl font-semibold">
+                        {activeUnit.code}
                       </span>
                     </h1>
-                    <h3 className="text-[#AA7A56]">
-                      Semi Gross Area - 93 M<sup>2</sup>
+                    <h3 className="text-[#AA7A56] text-xs sm:text-base 2xl:text-2xl">
+                      Semi Gross Area - {activeUnit.grossArea} M<sup>2</sup>
                     </h3>
-                    <h3 className="text-[#AA7A56]">
-                      Net Area - 78 M<sup>2</sup>
+                    <h3 className="text-[#AA7A56] text-xs sm:text-base 2xl:text-2xl">
+                      Net Area - {activeUnit.netArea} M<sup>2</sup>
                     </h3>
                   </div>
-                  <Image src={mini_map} alt="" className="w-[30%]" />
+                  <div className="w-full aspect-video">
+                    <Image
+                      src={activeUnit.pathMap}
+                      alt=""
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
-                <Image
-                  src={room}
-                  alt=""
-                  className="w-full xl:w-[80%] mx-auto"
-                />
+                <div className="relative px-5 sm:px-0 w-full aspect-square overflow-hidden">
+                  <Image
+                    src={activeUnit.pathUnit}
+                    alt=""
+                    className="w-full h-full scale-110 object-cover object-[50%_40%]"
+                  />
+                </div>
               </FadeSlide>
             </div>
           </div>

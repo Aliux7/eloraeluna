@@ -11,10 +11,10 @@ const TowerSection = () => {
       id="design-section"
       className="relative bg-linear-to-b from-[#333333] to-[#464948]  min-h-screen px-5 sm:px-10 xl:px-48 py-32"
     >
-      <FadeSlide className="absolute top-10 sm:top-40 lg:top-64 -right-10 lg:left-10 xl:left-16 scale-x-[-1] w-60 lg:w-72 xl:w-96">
+      <FadeSlide className="absolute top-10 sm:top-40 lg:top-64 -right-10 lg:left-10 xl:left-16 scale-x-[-1] w-60 lg:w-72 xl:w-96 2xl:w-130">
         <Image src={illustration_2} alt="" />
       </FadeSlide>
-      <FadeSlide className="absolute bottom-0 -right-30 xl:-right-64 scale-y-[-1] scale-x-[-1] w-72 xl:w-96">
+      <FadeSlide className="absolute bottom-0 -right-30 xl:right-0 xl:translate-x-1/3 scale-y-[-1] scale-x-[-1] w-72 xl:w-96 2xl:w-130">
         <Image src={illustration_bottom} alt="" />
       </FadeSlide>
       <div className="relative z-10 gap-16 flex flex-col lg:flex-row justify-between items-start">
@@ -76,8 +76,7 @@ const TowerSection = () => {
               </div>
             </div>
           </div>
-
-          {/* Content */}
+ 
           <div className="text-xs lg:text-lg absolute left-[51.5%] sm:left-[55%] top-[5%] sm:top-[10%] w-[25%] text-center text-[#F3F0E8]">
             <WordsPullUp text="COMING" className="lg:font-bold" />
             <WordsPullUp text="SOON" className="lg:font-bold" />

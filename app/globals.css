@@ -1,12 +1,11 @@
 @import "tailwindcss";
 
-
 @theme {
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1280px;
-  --breakpoint-2xl: 1920px; 
+  --breakpoint-2xl: 1920px;
 }
 
 * {
@@ -20,10 +19,23 @@ body {
 }
 
 .no-scrollbar::-webkit-scrollbar {
-  display: none;  
+  display: none;
 }
 
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.legend-card {
+  min-width: 320px;
+  width: 100%;
+  max-width: 500px;
+  flex-shrink: 0;
+}
+
+@media (min-width: 640px) {
+  .legend-card {
+    width: 33.333333%;
+  }
 }

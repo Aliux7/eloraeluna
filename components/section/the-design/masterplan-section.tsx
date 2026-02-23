@@ -1,4 +1,4 @@
-import master_plan from "@/app/assets/the-design/master_plan.png";
+import master_plan from "@/app/assets/the-design/master_plan.jpg";
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
@@ -7,9 +7,9 @@ const MasterplanSection = () => {
   return (
     <section
       id="discover-section"
-      className="relative bg-[#F3F0E8] min-h-screen px-5 sm:px-10 xl:px-48 py-8 lg:py-32 flex flex-col-reverse xl:flex-row justify-between gap-24"
+      className="relative bg-[#F3F0E8] min-h-screen px-5 sm:px-10 xl:px-48 py-8 lg:py-32 flex flex-col-reverse xl:flex-row justify-between gap-14 sm:gap-24"
     >
-      <div className="2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-start">
+      <div className="flex-1 2xl:flex 2xl:flex-col 2xl:justify-start 2xl:items-start">
         <div>
           <WordsPullUp
             text="SPANNING 12.9 HECTARES, THE KOTA"
@@ -111,11 +111,11 @@ const MasterplanSection = () => {
           text="OVERVIEW"
           className="text-[#9D7958] font-light text-3xl sm:text-5xl xl:text-6xl 2xl:text-7xl tracking-wider ml-20 sm:ml-40 xl:ml-0"
         />
-        <FadeSlide direction="left" className="relative aspect-square mt-8">
+        <FadeSlide direction="left" className="relative mt-8 w-full h-auto 2xl:w-4/5 2xl:ml-auto">
           <Image
             src={master_plan}
             alt=""
-            className="w-full h-full 2xl:w-4/5 2xl:h-4/5 object-cover 2xl:ml-auto"
+            className="w-full h-full"
           />
         </FadeSlide>
       </div>

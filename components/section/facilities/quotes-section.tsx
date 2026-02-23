@@ -10,7 +10,7 @@ const QuotesSection = () => {
       <Image
         src={qoutes_background}
         alt=""
-        className="w-full h-340 object-cover"
+        className="w-full sm:h-340 object-cover"
       />
       <div className="absolute flex flex-col justify-center items-start gap-3">
         <FadeSlide>

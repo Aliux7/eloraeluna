@@ -10,20 +10,110 @@ import illustration2 from "@/app/assets/home/illustration.png";
 import { useRef } from "react";
 
 const MapSection = () => {
+  const legends = [
+    {
+      category: "MRT",
+      items: ["BNI City"],
+    },
+    {
+      category: "LRT",
+      items: ["BNI City"],
+    },
+    {
+      category: "Mall & Shopping Area",
+      items: [
+        "Kuningan City",
+        "Lotte Shopping Avenue",
+        "Pacific Place",
+        "Plaza Indonesia",
+        "Grand Indonesia",
+        "Plaza Senayan",
+        "Senayan City",
+      ],
+    },
+    {
+      category: "Embassy",
+      items: [
+        "U.S.A Embassy",
+        "Japan Embassy",
+        "France Embassy",
+        "German Embassy",
+        "Russian Federation Embassy",
+        "Malaysia Embassy",
+        "U.A.E Embassy",
+        "P.R.C Embassy",
+        "Australia Embassy",
+        "British Embassy",
+        "Singapore Embassy",
+        "Republic of Korea Embassy",
+      ],
+    },
+    {
+      category: "School",
+      items: [
+        "Kolose Kanisius",
+        "IISS",
+        "JIS Pattimura Elementary",
+        "Al-Azhar",
+        "Taraknita",
+        "Santa Ursula",
+      ],
+    },
+    {
+      category: "Commuter Line",
+      items: ["Sudirman Station", "Manggarai"],
+    },
+    {
+      category: "Fly Over",
+      items: ["Jakarta Inner Ring Road Toll"],
+    },
+    {
+      category: "Hotel",
+      items: [
+        "Wyndham",
+        "Westin",
+        "JW Marriott",
+        "Ritz-Carlton Mega Kuningan",
+        "Ritz-Carlton Pacific Place",
+        "Raffles",
+        "Grand Melia",
+        "The Langham",
+        "Hotel Mulia",
+        "Le Meridien",
+        "Shangri-La",
+        "St. Regis",
+        "H.I Kempinsky",
+        "Grand Hyatt",
+        "Park Hyatt",
+        "Four Seasons",
+      ],
+    },
+    {
+      category: "Hospital",
+      items: [
+        "MMC",
+        "Mayapada Hospital",
+        "RS Agung",
+        "Brawijaya Hospital",
+        "Tebet Hospital",
+        "Medistra",
+        "MRCC Siloam",
+      ],
+    },
+  ];
   const scrollRef = useRef<HTMLDivElement>(null);
+  const isSmall = typeof window !== "undefined" && window.innerWidth >= 640;
 
   const scroll = (direction: "left" | "right") => {
     if (!scrollRef.current) return;
 
     const container = scrollRef.current;
-    const wrapper = container.firstElementChild as HTMLElement;
-    if (!wrapper) return;
+    const firstItem = container.children[0] as HTMLElement;
 
-    const firstItem = wrapper.firstElementChild as HTMLElement;
-    if (!firstItem) return;
-
+    const itemWidth = firstItem.offsetWidth;
     const gap = 0;
-    const scrollAmount = firstItem.offsetWidth + gap;
+
+    const scrollAmount = itemWidth + gap;
 
     container.scrollBy({
       left: direction === "right" ? scrollAmount : -scrollAmount,
@@ -57,16 +147,16 @@ const MapSection = () => {
       <div className="flex flex-col justify-center items-center">
         <WordsPullUp
           text="SCULPTED FOR"
-          className="text-3xl sm:text-5xl xl:text-6xl 2xl:text-7xl font-medium text-[#9D7958]"
+          className="text-3xl sm:text-5xl xl:text-6xl 2xl:text-8xl font-medium text-[#9D7958]"
         />
         <WordsPullUp
           text="THE SOUL"
-          className="text-3xl sm:text-5xl xl:text-6xl 2xl:text-7xl font-medium text-[#9D7958]"
+          className="text-3xl sm:text-5xl xl:text-6xl 2xl:text-8xl font-medium text-[#9D7958]"
         />
       </div>
       <FadeSlide
         direction="left"
-        className="relative w-fit max-w-[90vw] sm:max-w-[80vw] flex justify-center items-center z-10 h-fit"
+        className="relative w-full max-w-[90vw] sm:max-w-[70vw] 2xl:max-w-[50vw] flex justify-center items-center z-10 h-fit"
       >
         <Image
           src={map}
@@ -76,10 +166,11 @@ const MapSection = () => {
       </FadeSlide>
       <LinkPullUp
         href="#"
-        className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg 2xl:text-2xl pt-px w-47.5 2xl:w-60 h-11.25 2xl:h-15 text-[#9D7958] border border-[#9D7958] hover:bg-[#9D7958]/10 hover:text-[#9D7958] transition-all duration-200 ease-in-out"
+        className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-base 2xl:text-2xl pt-px w-47.5 2xl:w-80 h-11.25 2xl:h-14 text-[#9D7958] border border-[#9D7958] hover:bg-[#9D7958]/10 hover:text-[#9D7958] transition-all duration-200 ease-in-out"
       >
         VIEW IN MAPS
       </LinkPullUp>
+
       <div className="relative w-full px-10 xl:px-0 mt-20">
         <Image
           src={arrow}
@@ -99,71 +190,34 @@ const MapSection = () => {
         />
         <div
           ref={scrollRef}
-          className="flex justify-start items-start gap-12 overflow-hidden no-scrollbar mt-10 w-full"
+          className="flex justify-start items-start gap-0 overflow-hidden no-scrollbar px-0 transition-all duration-300 ease-in-out mt-10"
         >
-          <div className="flex justify-start items-start">
-            <FadeSlide direction="right" className="w-72 2xl:w-96">
+          {legends.map((legend) => (
+            <div 
+              style={{
+                minWidth: isSmall ? "320px" : "none",
+                width: isSmall ? "33.333333%" : "99.7%",
+                maxWidth: "500px",
+                flexShrink: 0,
+              }}
+            >
               <div className="flex items-center justify-start gap-4 mb-3">
                 <div className="flex flex-col justify-end items-end gap-1.5">
                   <div className="size-9 bg-[#006174] rounded-full"></div>
                   <div className="w-14 h-2 bg-[#006174] rounded-full"></div>
                 </div>
-                <span className="text-[#006174] text-lg 2xl:text-2xl font-medium">
-                  Commuter Line
+                <span className="text-[#006174] text-lg 2xl:text-2xl font-medium text-nowrap">
+                  {legend.category}
                 </span>
               </div>
 
               <div className="text-lg text-gray-600 space-y-1 mt-8">
-                <p className="2xl:text-2xl">Sudirman & Manggarai</p>
+                {legend.items.map((item) => (
+                  <p className="2xl:text-2xl">{item}</p>
+                ))}
               </div>
-            </FadeSlide>
-
-            <FadeSlide direction="right" className="w-72 2xl:w-96">
-              <div className="flex items-center justify-start gap-4 mb-3">
-                <div className="flex flex-col justify-end items-end gap-1.5">
-                  <div className="size-9 bg-[#79242D] rounded-full"></div>
-                  <div className="w-14 h-2 bg-[#79242D] rounded-full"></div>
-                </div>
-                <span className="text-[#79242D] text-lg 2xl:text-2xl font-medium">LRT</span>
-              </div>
-
-              <div className="text-lg text-gray-600 space-y-1 mt-8">
-                <p className="2xl:text-2xl">BNI City</p>
-              </div>
-            </FadeSlide>
-
-            <FadeSlide direction="right" className="w-72 2xl:w-96">
-              <div className="flex items-center justify-start gap-4 mb-3">
-                <div className="flex flex-col justify-end items-end gap-1.5">
-                  <div className="size-9 bg-[#304A73] rounded-full"></div>
-                  <div className="w-14 h-2 bg-[#304A73] rounded-full"></div>
-                </div>
-                <span className="text-[#304A73] text-lg 2xl:text-2xl font-medium">MRT</span>
-              </div>
-
-              <div className="text-lg text-gray-600 space-y-1 mt-8">
-                <p className="2xl:text-2xl">BNI City</p>
-              </div>
-            </FadeSlide>
-
-            <FadeSlide direction="right" className="w-72 2xl:w-96">
-              <div className="flex items-center justify-start gap-4 mb-3">
-                <div className="flex flex-col justify-end items-end gap-1.5">
-                  <div className="size-9 bg-[#304A73] rounded-full"></div>
-                  <div className="w-14 h-2 bg-[#304A73] rounded-full"></div>
-                </div>
-                <span className="text-[#304A73] text-lg 2xl:text-2xl font-medium">MRT</span>
-              </div>
-
-              <div className="text-lg text-gray-600 space-y-1 mt-8">
-                <p className="2xl:text-2xl">Kolase Kanisius</p>
-                <p className="2xl:text-2xl">IISS</p>
-                <p className="2xl:text-2xl">JIS Pattimura Elementary</p>
-                <p className="2xl:text-2xl">Al-Azhar</p>
-                <p className="2xl:text-2xl">Taraknita</p>
-              </div>
-            </FadeSlide>
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

@@ -22,13 +22,15 @@ const HeroSection = () => {
 
       <div className="relative px-5 sm:px-10 xl:px-48 py-26 sm:py-36 space-y-16">
         <FadeSlide className="flex flex-wrap lg:flex-nowrap justify-between items-start gap-10 lg:gap-20">
-          <Image
-            src={eluna}
-            alt=""
-            width={1000}
-            height={1000}
-            className="w-fit h-7 sm:h-9 2xl:h-14 object-contain"
-          />
+          <div className="w-auto h-7 sm:h-9 2xl:h-14">
+            <Image
+              src={eluna}
+              alt=""
+              width={1000}
+              height={1000}
+              className="w-auto h-full object-contain"
+            />
+          </div>
           <div className="border-t border-white flex-1 lg:w-full mt-4.5" />
           <div className="w-full lg:w-fit flex flex-col justify-start items-end">
             <WordsPullUp
@@ -53,11 +55,10 @@ const HeroSection = () => {
 
         <div className="relative flex justify-start xl:justify-center items-end lg:items-center">
           <FadeSlide
-            className="absolute xl:relative sm:ml-5 sm:mb-5 lg:mb-0 xl:ml-0 z-10"
+            className="absolute sm:ml-5 sm:mb-5 lg:mb-0 xl:ml-0 z-10 left-0"
             direction="right"
           >
-            <div className="hidden xl:block absolute w-80 2xl:w-130 xl:h-full bg-[#9D7958]/40 top-2.5 left-4 z-0"></div>
-            <div className="-ml-5 -mb-15 sm:mb-0 sm:ml-0 relative w-80 sm:w-80 2xl:w-130 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-9 flex flex-col justify-between gap-5 xl:gap-0 items-center">
+            <div className="-ml-5 mb-0 sm:ml-0 relative w-80 sm:w-80 2xl:w-130 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-9 flex flex-col justify-between gap-5 xl:gap-0 items-center">
               <p className="sm:text-lg 2xl:text-3xl font-normal text-[#F3F0E8] flex justify-center items-center h-full">
                 Eluna reflects the luminous allure of the moon, offering a
                 lifestyle of elegance, rhythm, and refined luxury. It is a home
@@ -68,11 +69,11 @@ const HeroSection = () => {
               </p>
             </div>
           </FadeSlide>
-          <FadeSlide className="w-full h-full lg:h-[80vh]">
+          <FadeSlide className="w-full h-full lg:h-[80vh] sm:pl-64 2xl:pl-80 mb-56 sm:mb-0">
             <Image
               src={content_1}
               alt=""
-              className="w-full h-140 sm:h-200 lg:h-full object-cover xl:min-h-145"
+              className="w-full h-120 sm:h-200 lg:h-full object-cover xl:min-h-145"
               width={2000}
               height={2000}
             />
@@ -122,13 +123,15 @@ const HeroSection = () => {
           </div>
           <FadeSlide className="flex sm:flex-wrap lg:flex-nowrap justify-center sm:justify-between items-center w-full gap-11">
             <div className="border-t border-white flex-1 hidden sm:block lg:w-full lg:hidden xl:block" />
-            <Image
-              src={elora}
-              alt=""
-              width={1000}
-              height={1000}
-              className="w-fit h-7 sm:h-9 2xl:h-14 object-contain"
-            />
+            <div className="w-auto h-7 sm:h-9 2xl:h-14">
+              <Image
+                src={elora}
+                alt=""
+                width={1000}
+                height={1000}
+                className="w-auto h-full object-contain"
+              />
+            </div>
             <div className="flex flex-col justify-center items-start gap-0">
               <WordsPullUp
                 direction="left"
@@ -145,7 +148,7 @@ const HeroSection = () => {
         </div>
 
         <div>
-          <FadeSlide className="text-[#FFFFFF] max-w-lg 2xl:max-w-xl sm:text-xl 2xl:text-2xl">
+          <FadeSlide className="text-[#FFFFFF] max-w-lg 2xl:max-w-xl sm:text-lg 2xl:text-2xl">
             Elora radiates the vitality of the sun, bringing warmth, light, and
             inspiration to those who call it home. It is a place where life
             thrives, filled with dynamic energy and opportunities to shine.
@@ -183,22 +186,21 @@ const HeroSection = () => {
           </div>
 
           <div className="relative flex flex-col sm:flex-row justify-start xl:justify-center items-end lg:items-center">
-            <FadeSlide className="w-full h-full lg:h-[80vh]">
+            <FadeSlide className="w-full h-full lg:h-[80vh] sm:pr-80 mb-0">
               <Image
                 src={content_4}
                 alt=""
-                className="w-full h-96 sm:h-200 lg:h-full object-cover xl:min-h-145 object-right sm:object-center"
+                className="w-full h-96 sm:h-200 lg:h-full object-cover xl:min-h-145 object-right sm:object-right"
                 width={2000}
                 height={2000}
               />
             </FadeSlide>
             <FadeSlide
-              className="relative sm:absolute xl:relative sm:mr-5 sm:mb-5 lg:mb-0 xl:mr-0 right-0"
+              className="relative sm:absolute sm:mr-5 sm:mb-5 lg:mb-0 xl:mr-0 right-0"
               direction="left"
             >
-              <div className="hidden xl:block absolute w-105 2xl:w-130 xl:h-full bg-[#9D7958]/40 top-2.5 right-4 z-0"></div>
               <div className="-mb-15 sm:mb-0 sm:mr-0 relative w-full sm:w-96 lg:w-105 2xl:w-130 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-8 flex flex-col justify-between gap-5 sm:gap-8 items-center">
-                <div className="sm:hidden flex flex-col justify-start items-start">
+                <div className="sm:hidden flex flex-col justify-start items-start w-full">
                   <div className="flex justify-start items-center gap-2 sm:gap-4">
                     <WordsPullUp
                       direction="left"
@@ -211,7 +213,7 @@ const HeroSection = () => {
                       className="text-[#FFFFFF] font-medium text-2xl sm:text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl tracking-[0.5rem] text-nowrap"
                     />
                   </div>
-                  <div className="flex justify-start items-center gap-2 sm:gap-4 sm:ml-14 lg:ml-28">
+                  <div className="flex justify-start items-center gap-2 sm:gap-4 ml-6 sm:ml-14 lg:ml-28">
                     <WordsPullUp
                       direction="left"
                       text="MEETS"
@@ -235,13 +237,13 @@ const HeroSection = () => {
                   harmonize vibrance and tranquility, creating a luxurious
                   sanctuary where life moves with purpose and grace.
                 </p>
-                <div className="flex justify-center items-center gap-7 h-8 lg:h-12">
+                <div className="flex justify-center items-center gap-7 h-7 sm:h-8 lg:h-12">
                   <Image
                     src={elora}
                     alt=""
                     width={1000}
                     height={1000}
-                    className="w-full h-6"
+                    className="w-full h-5 sm:h-6"
                   />
                   <Image
                     src={and}
@@ -255,7 +257,7 @@ const HeroSection = () => {
                     alt=""
                     width={1000}
                     height={1000}
-                    className="w-full h-6"
+                    className="w-full h-5 sm:h-6"
                   />
                 </div>
               </div>

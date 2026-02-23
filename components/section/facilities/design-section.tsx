@@ -1,17 +1,45 @@
 "use client";
 import Image from "next/image";
-import design_content_1 from "@/app/assets/facilities/the_design_content_1.png";
-import lobby from "@/app/assets/facilities/lobby.jpg";
-import pool from "@/app/assets/facilities/pool.jpg";
-import dining from "@/app/assets/facilities/dining.jpg";
-import gym from "@/app/assets/facilities/gym.jpg";
 import eluna from "@/app/assets/eluna_gold.svg";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import arrow from "@/app/assets/home/arrow.png";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { FadeSlide } from "@/components/animation/fade-slide";
+import facilities1 from "@/app/assets/facilities/lists/Facilities-01---Private-Dining.jpg";
+import facilities2 from "@/app/assets/facilities/lists/Facilities-02---Main-Lobby.jpg";
+import facilities3 from "@/app/assets/facilities/lists/Facilities-03---Lobby-Lounge.jpg";
+import facilities4 from "@/app/assets/facilities/lists/Facilities-04---Library.jpg";
+import facilities5 from "@/app/assets/facilities/lists/Facilities-05---Function-Hall.jpg";
+import facilities6 from "@/app/assets/facilities/lists/Facilities-06---Pool-Lounge.jpg";
+import facilities7 from "@/app/assets/facilities/lists/Facilities-07---Blue-Lagoon.jpg";
+import facilities8 from "@/app/assets/facilities/lists/Facilities-08---Lagoon-Pool.jpg";
+import facilities9 from "@/app/assets/facilities/lists/Facilities-09---Cabana.jpg";
+import facilities10 from "@/app/assets/facilities/lists/Facilities-10---Sunken-Lounge.jpg";
+import facilities11 from "@/app/assets/facilities/lists/Facilities-11---BBQ-Lawn.jpg";
+import facilities12 from "@/app/assets/facilities/lists/Facilities-12---Kids-Pool-&-Playgrounds.jpg";
+import facilities13 from "@/app/assets/facilities/lists/Facilities-13---Kids-Room.jpg";
+import facilities14 from "@/app/assets/facilities/lists/Facilities-14---Gym.jpg";
+import facilities15 from "@/app/assets/facilities/lists/Facilities-15---Padel-Court.jpg";
+import facilities16 from "@/app/assets/facilities/lists/Facilities-16---Jogging-Track.jpg";
+import facilities17 from "@/app/assets/facilities/lists/Facilities-17---Pet-Park.jpg";
+import facilities18 from "@/app/assets/facilities/lists/Facilities-18---Play-Area.jpg";
+import facilities19 from "@/app/assets/facilities/lists/Facilities-19---Sky-View-Terrace.jpg";
+import facilities20 from "@/app/assets/facilities/lists/Facilities-20---Zen-Garden.jpg";
 
 const DesignSection = () => {
+  const listFacilities = [
+    { name: "Private Dining", image: facilities1 },
+    { name: "Main Lobby", image: facilities2 },
+    { name: "Lobby Lounge", image: facilities3 },
+    { name: "Function Hall", image: facilities5 },
+    { name: "Pool Lounge", image: facilities6 },
+    { name: "Sunken Lounge", image: facilities10 },
+    { name: "Gym", image: facilities14 },
+    { name: "Kids Room", image: facilities13 },
+    { name: "Sky View Terrace", image: facilities19 },
+    { name: "Zen Garden", image: facilities20 },
+  ];
+  const [active, setActive] = useState(listFacilities[0]);
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const scroll = (direction: "left" | "right") => {
@@ -36,55 +64,55 @@ const DesignSection = () => {
       id="design-section"
       className="relative bg-[#464948] min-h-screen py-16 lg:py-32 flex flex-col justify-between items-center gap-14 sm:gap-24"
     >
-      <div className="px-5 sm:px-10 xl:px-48 space-y-8">
+      <div className="px-5 sm:px-10 xl:px-48 space-y-8 w-full">
         <WordsPullUp
           text="THE DESIGN"
           className="font-bold tracking-widest text-lg sm:text-2xl xl:text-3xl 2xl:text-4xl text-[#F3F0E8]"
         />
-        <FadeSlide className="flex flex-col lg:flex-row justify-between items-start gap-10 lg:gap-32 xl:gap-16">
+        <FadeSlide className="flex flex-col lg:flex-row justify-between w-full items-start gap-10 lg:gap-32 xl:gap-32">
           <Image
             src={eluna}
             alt=""
             className="w-fit h-12 lg:h-14 xl:h-16 2xl:h-20"
           />
-          <p className="text-xl xl:text-2xl 2xl:text-3xl w-full text-[#F3F0E8]">
+          <p className="text-base sm:text-lg xl:text-xl 2xl:text-3xl w-full text-[#F3F0E8] max-w-4xl">
             WHERE ELEGANCE BECOMES A WAY OF LIFE BLENDING TRANQUILITY, COMFORT,
             AND A REFINED AESTHETIC INTO YOUR DAILY RHYTHM.
           </p>
         </FadeSlide>
       </div>
       <div className="relative w-full bg-white">
-        <div className="flex justify-start items-start absolute top-10 right-5 sm:right-10">
+        <div className="flex justify-start items-start absolute top-0 right-0">
           <WordsPullUp
             text="01"
-            className="text-9xl md:text-[170px] lg:text-[200px] xl:text-[260px] leading-[0.9] text-[#F3F0E8]"
+            className="text-7xl sm:text-9xl md:text-[170px] lg:text-[200px] xl:text-[260px] leading-[0.9] text-[#F3F0E8]"
           />
           <WordsPullUp
             text="ST"
-            className="text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-light text-[#F3F0E8]"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-light text-[#F3F0E8]"
           />
         </div>
         <Image
-          src={design_content_1}
+          src={active.image}
           alt=""
-          className="w-full h-100 sm:h-140 2xl:h-230 object-cover"
+          className="w-full h-auto object-contain"
         />
       </div>
-      <div className="px-5 sm:px-10 xl:px-48 space-y-16 w-full">
+      <div className="px-5 sm:px-10 xl:px-48 space-y-16 w-full min-h-96 flex flex-col justify-between items-center">
         <div className="flex flex-col lg:flex-row justify-between items-start w-full gap-6 lg:gap-3">
           <div className="flex lg:flex-col justify-center items-start w-fit gap-3 lg:gap-0">
             <WordsPullUp
               direction="left"
-              text="PRIVATE"
-              className="text-[#F3F0E8] font-light text-3xl sm:text-5xl xl:text-6xl 2xl:text-7xl tracking-widest"
+              text={active.name.split(" ")[0]}
+              className="text-[#F3F0E8] font-light text-3xl sm:text-5xl xl:text-6xl 2xl:text-7xl tracking-widest uppercase"
             />
             <WordsPullUp
               direction="left"
-              text="DINING"
-              className="text-[#F3F0E8] font-medium text-3xl sm:text-5xl xl:text-6xl 2xl:text-7xl tracking-widest xl:mr-20"
+              text={active.name.split(" ").slice(1).join(" ")}
+              className="text-[#F3F0E8] font-medium text-3xl sm:text-5xl xl:text-6xl 2xl:text-7xl tracking-widest xl:mr-20 uppercase"
             />
           </div>
-          <FadeSlide className="text-lg sm:text-xl xl:text-2xl 2xl:text-3xl w-fit max-w-2xl text-[#F3F0E8] font-medium">
+          <FadeSlide className="text-base sm:text-lg xl:text-xl 2xl:text-3xl w-fit max-w-2xl text-[#F3F0E8] font-medium">
             An elegant setting for intimate dining and grand celebrations, where
             every gathering is enriched by sophistication and seamless service.
           </FadeSlide>
@@ -110,50 +138,21 @@ const DesignSection = () => {
             ref={scrollRef}
             className="flex justify-start items-center gap-12 overflow-hidden no-scrollbar px-[16vw] sm:px-0 transition-all duration-300 ease-in-out"
           >
-            <FadeSlide
-              direction="left"
-              className="relative flex justify-center items-center aspect-video h-32 sm:h-45 2xl:h-80 transition-all duration-300 ease-in-out"
-            >
-              <Image
-                src={lobby}
-                alt=""
-                className="w-full h-full object-cover"
-              />
-              <span className="absolute bottom-1 text-[#F3F0E8] text-xl">
-                Lobby Lounge
-              </span>
-            </FadeSlide>
-            <FadeSlide
-              direction="left"
-              className="relative flex justify-center items-center aspect-video h-32 sm:h-45 2xl:h-80 transition-all duration-300 ease-in-out"
-            >
-              <Image src={pool} alt="" className="w-full h-full object-cover" />
-              <span className="absolute bottom-1 text-[#F3F0E8] text-xl">
-                Pool Lounge
-              </span>
-            </FadeSlide>
-            <FadeSlide
-              direction="left"
-              className="relative flex justify-center items-center aspect-video h-32 sm:h-45 2xl:h-80 transition-all duration-300 ease-in-out"
-            >
-              <Image
-                src={dining}
-                alt=""
-                className="w-full h-full object-cover"
-              />
-              <span className="absolute bottom-1 text-[#F3F0E8] text-xl">
-                Private Dining
-              </span>
-            </FadeSlide>
-            <FadeSlide
-              direction="left"
-              className="relative flex justify-center items-center aspect-video h-32 sm:h-45 2xl:h-80 transition-all duration-300 ease-in-out"
-            >
-              <Image src={gym} alt="" className="w-full h-full object-cover" />
-              <span className="absolute bottom-1 text-[#F3F0E8] text-xl">
-                GYM
-              </span>
-            </FadeSlide>
+            {listFacilities.map((facilities) => (
+              <div
+                onClick={() => setActive(facilities)}
+                className="relative flex justify-center items-center aspect-video h-32 sm:h-45 2xl:h-80 transition-all duration-300 ease-in-out cursor-pointer p-px bg-transparent hover:bg-white"
+              >
+                <Image
+                  src={facilities.image}
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+                <span className="absolute bottom-1 text-[#F3F0E8] text-xl">
+                  {facilities.name}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       </div>

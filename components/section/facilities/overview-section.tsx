@@ -1,15 +1,13 @@
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
-import map from "@/app/assets/facilities/map.png";
-import elora from "@/app/assets/elora_gold.svg";
-import eluna from "@/app/assets/eluna_gold.svg";
+import map from "@/app/assets/facilities/map.png"; 
 
 const OverviewSection = () => {
   return (
     <section
       id="overview-section"
-      className="relative bg-[#F3F0E8] min-h-screen px-5 sm:px-10 xl:px-48 py-16 lg:py-32 flex flex-col justify-between items-center gap-24"
+      className="relative bg-[#F3F0E8] min-h-screen px-5 sm:px-10 xl:px-48 py-16 lg:py-32 flex flex-col justify-between items-center gap-16"
     >
       <div className="flex justify-between items-start w-full">
         <div className="flex justify-start items-start">
@@ -35,18 +33,11 @@ const OverviewSection = () => {
           />
         </div>
       </div>
-      <FadeSlide className="relative xl:mt-8 w-fit max-w-[65vw] xl:max-w-[80vw] flex justify-center items-center">
+      <FadeSlide className="relative w-full sm:max-w-[60vw] 2xl:max-w-[50vw] flex justify-center items-center"> 
         <Image
-          src={eluna}
+          src={map}
           alt=""
-          className="w-fit h-3.5 sm:h-5 2xl:h-7 object-contain absolute top-20 -left-15 sm:-left-20 2xl:-left-25"
-        />
-        <div className="right-0 h-full w-[13.5%] absolute bg-[#F3F0E8]"></div>
-        <Image src={map} alt="" className="w-fit xl:h-182 2xl:h-230 object-contain" />
-        <Image
-          src={elora}
-          alt=""
-          className="w-fit h-3.5 sm:h-5 2xl:h-7 object-contain absolute top-3/5 -right-14 sm:-right-16 lg:-right-10 2xl:-right-14"
+          className="w-full h-full object-contain"
         />
       </FadeSlide>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16">

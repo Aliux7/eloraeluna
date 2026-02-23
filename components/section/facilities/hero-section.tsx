@@ -1,11 +1,11 @@
-import hero_background from "@/app/assets/facilities/hero_background.jpeg";
+import hero_background from "@/app/assets/facilities/hero_background.jpg";
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up"; 
 
 const HeroSection = () => {
   return (
-    <section id="hero-section" className="relative min-h-screen bg-[#F3F0E8]">
-      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-black/30">
+    <section id="hero-section" className="relative sm:min-h-screen bg-[#F3F0E8]">
+      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-100 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-black/0">
         <Image
           src={hero_background}
           alt=""
@@ -37,7 +37,7 @@ const HeroSection = () => {
 
           <WordsPullUp
             text="Discover thoughtfully curated amenities designed to elevate comfort, leisure, and modern luxury at Eluna."
-            className="block sm:hidden text-sm sm:text-lg lg:text-xl 2xl:text-2xl font-normal text-[#9D7958] sm:text-[#F3F0E8]"
+            className="ml-10 block sm:hidden text-sm sm:text-lg lg:text-xl 2xl:text-2xl font-normal text-[#9D7958] sm:text-[#F3F0E8]"
           />  
         </div>
       </div>
