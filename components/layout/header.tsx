@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image"; 
+import Image from "next/image";
 import pakuwon_logo from "@/app/assets/pakuwon_logo.svg";
 import pakuwon_mini_logo from "@/app/assets/pakuwon_mini_logo.png";
 import and from "@/app/assets/and.svg";
@@ -28,27 +28,35 @@ const Header = () => {
         />
       </div>
       <div className="flex justify-center items-center gap-4 sm:gap-5 h-6 sm:h-7 lg:h-8 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-        <Image
-          src={elora}
-          alt=""
-          width={1000}
-          height={1000}
-          className="w-full h-3 sm:h-4.5"
-        />
-        <Image
-          src={and}
-          alt=""
-          width={1000}
-          height={1000}
-          className="w-full h-full"
-        />
-        <Image
-          src={eluna}
-          alt=""
-          width={1000}
-          height={1000}
-          className="w-full h-3 sm:h-4.5"
-        />
+        <div className="relative w-auto h-3 sm:h-4.5">
+          <Image
+            src={elora}
+            alt=""
+            width={1000}
+            height={1000}
+            className="w-full h-full"
+          />
+        </div>
+
+        <div className="relative w-auto h-auto">
+          <Image
+            src={and}
+            alt=""
+            width={1000}
+            height={1000}
+            className="w-full h-full"
+          />
+        </div>
+
+        <div className="relative w-auto h-3 sm:h-4.5">
+          <Image
+            src={eluna}
+            alt=""
+            width={1000}
+            height={1000}
+            className="w-full h-3 sm:h-4.5"
+          />
+        </div>
       </div>
       <div className="lg:h-8.5 w-auto hidden lg:block">
         <Image

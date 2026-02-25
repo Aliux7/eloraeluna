@@ -34,6 +34,12 @@ body {
   flex-shrink: 0;
 }
 
+@media (min-width: 1920px) {
+  * {
+    letter-spacing: 0.2rem;
+  }
+}
+
 @media (min-width: 640px) {
   .legend-card {
     width: 33.333333%;

@@ -15,7 +15,7 @@ const DesignSection = () => {
       <div className="absolute inset-0 z-10 pt-32 px-5 sm:px-10 py-16 xl:p-48 flex flex-col xl:gap-0 justify-between items-start">
         <WordsPullUp
           text="THE DESIGN"
-          className="font-bold tracking-widest text-lg sm:text-2xl xl:text-3xl 2xl:text-4xl text-[#F3F0E8]"
+          className="font-medium tracking-widest text-lg sm:text-2xl xl:text-3xl 2xl:text-4xl text-[#F3F0E8]"
         /> 
         <div className="flex flex-col xl:flex-row justify-between xl:items-center gap-10">
           <div className="w-full flex flex-col gap-2 sm:gap-4">
@@ -35,7 +35,7 @@ const DesignSection = () => {
 
             <FadeSlide
               direction="up"
-              className="block xl:hidden lg:w-1/2 text-[#F3F0E8] font-normal text-sm sm:text-xl 2xl:text-3xl text-balance mt-5 sm:mt-10 ml-20 sm:ml-0"
+              className="block xl:hidden lg:w-1/2 text-[#F3F0E8] font-normal text-sm sm:text-xl 2xl:text-2xl text-balance mt-5 sm:mt-10 ml-20 sm:ml-0"
             >
               An iconic development on 12.9 gectares of prime land, Kota
               Kasablanka redefines what a modern city hub can be bold, vibrant,
@@ -48,7 +48,7 @@ const DesignSection = () => {
               UNCOVER OUR DESIGN
             </LinkPullUp>
           </div>
-          <FadeSlide className="hidden xl:block max-w-1/2 text-[#F3F0E8] font-normal text-sm sm:text-xl 2xl:text-3xl text-balance pl-10 ml-20 sm:ml-0">
+          <FadeSlide className="hidden xl:block max-w-1/2 text-[#F3F0E8] font-normal text-sm sm:text-xl 2xl:text-2xl text-balance pl-10 ml-20 sm:ml-0">
             An iconic development on 12.9 gectares of prime land, Kota
             Kasablanka redefines what a modern city hub can be bold, vibrant,
             and unforgetable.

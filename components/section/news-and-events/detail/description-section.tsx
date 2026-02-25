@@ -4,7 +4,7 @@ import React from "react";
 
 const DescriptionSection = () => {
   return (
-    <section className="w-full bg-[#E7E3DB] py-32 px-5 sm:px-10 xl:px-48">
+    <section className="w-full bg-[#E7E3DB] py-8 sm:py-32 px-5 sm:px-10 xl:px-48">
       <div className="space-y-12">
         <FadeSlide className="text-[#464948] leading-relaxed text-base lg:text-[22px] 2xl:text-3xl">
           City life means everything is close — and when you live at Eluna,

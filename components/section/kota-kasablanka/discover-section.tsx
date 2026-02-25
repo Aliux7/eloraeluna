@@ -74,15 +74,15 @@ const DiscoverSection = () => {
             className="absolute sm:mr-5 sm:mb-5 lg:mb-0 xl:mr-0 right-0"
             direction="left"
           >
-            <div className="-mr-5 mb-0 sm:mr-0 relative w-80 sm:w-96 lg:w-105 2xl:w-130 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-8 flex flex-col justify-between gap-5 xl:gap-8 items-center">
-              <h3 className="font-medium sm:text-lg 2xl:text-3xl tracking-widest text-[#F3F0E8]">
+            <div className="-mr-5 mb-0 sm:mr-0 relative w-80 sm:w-96 lg:w-100 2xl:w-125 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-8 flex flex-col justify-between gap-5 xl:gap-8 items-center">
+              <h3 className="font-medium sm:text-lg 2xl:text-2xl tracking-widest text-[#F3F0E8]">
                 Since 2012, Kota Kasablanka has become one of Jakarta's most
                 vibrant lifestyle destinations. Just steps from Elora and
                 Eluna,it offers a curated blend of global fashion, beauty,
                 dining, and entertainment—including family friendly zones, a
                 rooftop pool, and the new Little Tokyo culinary hub.
               </h3>
-              <p className="font-normal sm:text-base 2xl:text-2xl text-[#F3F0E8]">
+              <p className="font-normal sm:text-base 2xl:text-xl text-[#F3F0E8]">
                 With complete amenities like a taxi lounge, nursery, function
                 hall, and award-winning mosque, Kota Kasablanka is more than a
                 shopping center—it's a dynamic lifestyle ecosystem seamlessly

@@ -1,10 +1,11 @@
 import Image from "next/image";
 import conclusion from "@/app/assets/the-design/conclusion.jpg";
 import { FadeSlide } from "@/components/animation/fade-slide";
+import illustration_2 from "@/app/assets/home/illustration_2.png";
 
 const ConclusionSection = () => {
   return (
-    <div className="bg-[#F3F0E8] flex flex-col sm:flex-row">
+    <div className="relative bg-[#F3F0E8] flex flex-col sm:flex-row">
       <div className="w-full sm:w-1/2 h-screen max-h-200 sm:max-h-none">
         <Image src={conclusion} alt="" className="w-full h-full object-cover" />
       </div>
@@ -24,6 +25,10 @@ const ConclusionSection = () => {
           inspired stillness.
         </FadeSlide>
       </div>
+
+      <FadeSlide className="absolute bottom-10 right-10 w-60 lg:w-72 xl:w-80 2xl:w-110 h-auto">
+        <Image src={illustration_2} alt=""  className="w-full h-full"/>
+      </FadeSlide>
     </div>
   );
 };

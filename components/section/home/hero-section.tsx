@@ -9,7 +9,7 @@ import { FadeSlide } from "@/components/animation/fade-slide";
 const HeroSection = () => {
   return (
     <section id="hero-section" className="relative sm:min-h-screen bg-[#464948]">
-      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-linear-to-tr after:from-black/25 after:to-transparent ">
+      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-linear-to-tr after:from-black/40 after:to-transparent ">
         <Image
           src={hero_background}
           alt=""
@@ -40,19 +40,19 @@ const HeroSection = () => {
         />
         <WordsPullUp
           text="Eluna Is Where Elegance Lingers In Every Detail"
-          className="hidden sm:block text-sm sm:text-xl 2xl:text-3xl font-normal text-[#F3F0E8]"
+          className="hidden sm:block text-sm sm:text-xl 2xl:text-2xl font-normal text-[#F3F0E8]"
         />
         <WordsPullUp
           text="— A Quiet Statement Of Timeless Living For"
-          className="hidden sm:block text-sm sm:text-xl 2xl:text-3xl font-normal text-[#F3F0E8]"
+          className="hidden sm:block text-sm sm:text-xl 2xl:text-2xl font-normal text-[#F3F0E8]"
         />
         <WordsPullUp
           text="Those Who Seek Undersstand Luxury."
-          className="hidden sm:block text-sm sm:text-xl 2xl:text-3xl font-normal text-[#F3F0E8] mb-16"
+          className="hidden sm:block text-sm sm:text-xl 2xl:text-2xl font-normal text-[#F3F0E8] mb-16"
         />
          <WordsPullUp
           text="Eluna Is Where Elegance Lingers In Every Detail — A Quiet Statement Of Timeless Living For Those Who Seek Undersstand Luxury."
-          className="sm:hidden text-sm sm:text-xl 2xl:text-3xl font-normal text-[#F3F0E8] my-16 ml-20"
+          className="sm:hidden text-sm sm:text-xl 2xl:text-2xl font-normal text-[#F3F0E8] my-16 ml-20"
         />
 
         <LinkPullUp

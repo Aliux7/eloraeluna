@@ -8,7 +8,7 @@ const HeroSection = () => {
       id="hero-section"
       className="relative sm:min-h-screen bg-[#F3F0E8]"
     >
-      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-black/30">
+      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-black/0">
         <Image
           src={hero_background}
           alt=""

@@ -27,8 +27,8 @@ import facilities20 from "@/app/assets/facilities/lists/Facilities-20---Zen-Gard
 
 const SharedSection = () => {
   const listFacilities = [
-    { name: "Library", image: facilities4 },
     { name: "Blue Lagoon", image: facilities7 },
+    { name: "Library", image: facilities4 },
     { name: "Lagoon Pool", image: facilities8 },
     { name: "Cabana", image: facilities9 },
     { name: "BBQ Lawn", image: facilities11 },
@@ -73,7 +73,7 @@ const SharedSection = () => {
             className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-normal text-[#9D7958] tracking-widest ml-14 sm:ml-20"
           />
         </div>
-        <FadeSlide className="text-base sm:text-lg xl:text-xl 2xl:text-3xl max-w-lg text-[#9D7958]">
+        <FadeSlide className="text-base sm:text-lg xl:text-xl 2xl:text-2xl w-full text-[#9D7958] max-w-xl 2xl:max-w-3xl">
           WHERE two worlds meet—spaces designed to connect, inspire, and elevate
           the everyday.
         </FadeSlide>
@@ -108,8 +108,8 @@ const SharedSection = () => {
               text={active.name.split(" ").slice(1).join(" ")}
               className="text-[#A4704F] font-medium text-3xl sm:text-5xl xl:text-6xl 2xl:text-7xl tracking-widest xl:mr-20 uppercase"
             />
-          </div> 
-          <FadeSlide className="text-base sm:text-lg xl:text-xl 2xl:text-3xl w-fit max-w-2xl text-[#A4704F] font-medium">
+          </div>
+          <FadeSlide className="text-base sm:text-lg xl:text-xl 2xl:text-2xl w-fit max-w-xl 2xl:max-w-3xl text-[#A4704F]"> 
             A serene pool extension blending tranquil waters with natural
             charm—perfect for peaceful relaxation.
           </FadeSlide>

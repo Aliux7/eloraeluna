@@ -8,7 +8,7 @@ import { LinkPullUp } from "@/components/animation/link-pull-up";
 const HeroSection = () => {
   return (
     <section id="hero-section" className="relative min-h-screen bg-[#414242]">
-      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-black/30">
+      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-black/0">
         <Image
           src={hero_background}
           alt=""
@@ -33,7 +33,7 @@ const HeroSection = () => {
             className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-medium text-[#F3F0E8] tracking-widest ml-10 sm:ml-0 lg:ml-[5vw] mb-6 sm:mb-8"
           />
 
-          <FadeSlide className="max-w-2xl text-sm sm:text-lg lg:text-xl 2xl:text-2xl font-normal text-[#F3F0E8] mb-8">
+          <FadeSlide className="max-w-2xl 2xl:max-w-3xl text-sm sm:text-lg lg:text-xl 2xl:text-2xl font-normal text-[#F3F0E8] mb-8">
             Continuing to shape Indonesia's skyline, Pakuwon Group leads the
             industry with thoughtful design, cutting-edge innovation, and an
             unwavering commitment to excellence. By crafting spaces that inspire
@@ -54,7 +54,7 @@ const HeroSection = () => {
 
           <LinkPullUp
             href="#"
-            className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-lg 2xl:text-2xl pt-px w-52 2xl:w-70 h-11.25 2xl:h-15 text-[#F3F0E8] border border-[#9D7958] hover:text-[#9D7958] hover:bg-[#F3F0E8] transition-all duration-200 ease-in-out"
+            className="flex justify-center items-center cursor-pointer font-medium capitalize text-sm sm:text-base 2xl:text-lg pt-px w-52 2xl:w-70 h-11.25 2xl:h-14 text-[#F3F0E8] border border-[#9D7958] hover:text-[#9D7958] hover:bg-[#F3F0E8] transition-all duration-200 ease-in-out"
           >
             VISIT PAKUWON
           </LinkPullUp>

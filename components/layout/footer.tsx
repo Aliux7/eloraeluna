@@ -15,9 +15,9 @@ import { LinkPullUp } from "../animation/link-pull-up";
 const Footer = () => {
   return (
     <footer className="bg-[#9D7958] text-white">
-      <div className="px-5 sm:px-10 xl:px-48 py-8 pt-10 sm:py-16">
+      <div className="px-5 sm:px-10 xl:px-48 py-7 sm:py-16">
         <div className="relative flex flex-row md:flex-col lg:flex-row justify-between items-end md:items-start lg:items-end gap-10 lg:gap-16">
-          <div className="space-y-5">
+          <div className="space-y-2 sm:space-y-5">
             <div className="w-auto">
               <div className="w-fit flex flex-col justify-center items-start 2xl:gap-2">
                 <FadeSlide
@@ -49,7 +49,7 @@ const Footer = () => {
 
                 <FadeSlide
                   direction="up"
-                  className="flex justify-start items-start gap-3 h-2.5 sm:h-3 w-full mt-3 mb-8"
+                  className="flex justify-start items-start gap-3 h-2.5 sm:h-3 w-full mt-3 mb-5 sm:mb-8"
                 >
                   <Image
                     src={kota}
@@ -61,7 +61,7 @@ const Footer = () => {
 
               <FadeSlide
                 direction="up"
-                className="flex justify-start items-start gap-3 h-8 sm:h-9 w-fit mb-8 "
+                className="flex justify-start items-start gap-3 h-8 sm:h-9 w-fit mb-4 sm:mb-8 "
               >
                 <Image
                   src={pakuwon_logo}
@@ -75,7 +75,7 @@ const Footer = () => {
                 className="uppercase tracking-widest sm:text-lg font-bold"
               />
             </div>
-            <div className="flex flex-col md:flex-row md:justify-start md:items-end gap-8 sm:gap-4">
+            <div className="flex flex-col md:flex-row md:justify-start md:items-end gap-3 sm:gap-4">
               <div className="space-y-3 text-sm leading-relaxed max-w-sm ">
                 <WordsPullUp
                   text="Head Marketing Office"
@@ -148,9 +148,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-white my-6 md:my-8" />
+        <div className="border-t border-white my-3 sm:my-6 md:my-8" />
 
-        <div className="flex flex-col md:flex-row justify-between items-end md:items-center gap-3 md:gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-end md:items-center gap-2 sm:gap-3 md:gap-6">
           <WordsPullUp
             text="Disclaimer | Terms and Conditions"
             className="text-xs sm:text-base tracking-wider"

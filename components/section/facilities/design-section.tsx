@@ -67,7 +67,7 @@ const DesignSection = () => {
       <div className="px-5 sm:px-10 xl:px-48 space-y-8 w-full">
         <WordsPullUp
           text="THE DESIGN"
-          className="font-bold tracking-widest text-lg sm:text-2xl xl:text-3xl 2xl:text-4xl text-[#F3F0E8]"
+          className="font-medium tracking-widest text-lg sm:text-2xl xl:text-3xl 2xl:text-4xl text-[#F3F0E8]"
         />
         <FadeSlide className="flex flex-col lg:flex-row justify-between w-full items-start gap-10 lg:gap-32 xl:gap-32">
           <Image
@@ -75,7 +75,7 @@ const DesignSection = () => {
             alt=""
             className="w-fit h-12 lg:h-14 xl:h-16 2xl:h-20"
           />
-          <p className="text-base sm:text-lg xl:text-xl 2xl:text-3xl w-full text-[#F3F0E8] max-w-4xl">
+          <p className="text-base sm:text-lg xl:text-xl 2xl:text-2xl w-full text-[#F3F0E8] max-w-xl 2xl:max-w-3xl">
             WHERE ELEGANCE BECOMES A WAY OF LIFE BLENDING TRANQUILITY, COMFORT,
             AND A REFINED AESTHETIC INTO YOUR DAILY RHYTHM.
           </p>
@@ -85,11 +85,11 @@ const DesignSection = () => {
         <div className="flex justify-start items-start absolute top-0 right-0">
           <WordsPullUp
             text="01"
-            className="text-7xl sm:text-9xl md:text-[170px] lg:text-[200px] xl:text-[260px] leading-[0.9] text-[#F3F0E8]"
+            className="text-7xl sm:text-9xl md:text-[170px] lg:text-[200px] xl:text-[260px] leading-[0.87] text-[#F3F0E8]"
           />
           <WordsPullUp
             text="ST"
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-light text-[#F3F0E8]"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-light leading-[0.87] text-[#F3F0E8]"
           />
         </div>
         <Image
@@ -112,7 +112,7 @@ const DesignSection = () => {
               className="text-[#F3F0E8] font-medium text-3xl sm:text-5xl xl:text-6xl 2xl:text-7xl tracking-widest xl:mr-20 uppercase"
             />
           </div>
-          <FadeSlide className="text-base sm:text-lg xl:text-xl 2xl:text-3xl w-fit max-w-2xl text-[#F3F0E8] font-medium">
+          <FadeSlide className="text-base sm:text-lg xl:text-xl 2xl:text-2xl w-fit max-w-xl 2xl:max-w-3xl text-[#F3F0E8]">
             An elegant setting for intimate dining and grand celebrations, where
             every gathering is enriched by sophistication and seamless service.
           </FadeSlide>

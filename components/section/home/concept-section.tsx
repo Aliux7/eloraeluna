@@ -32,7 +32,7 @@ const ConceptSection = () => {
       <div className="relative z-10 p-32 px-5 sm:px-10 xl:p-48 gap-16 flex flex-col justify-between items-start">
         <WordsPullUp
           text="THE CONCEPT"
-          className="font-bold tracking-widest text-lg sm:text-2xl xl:text-3xl 2xl:text-4xl text-[#F3F0E8]"
+          className="font-medium tracking-widest text-lg sm:text-2xl xl:text-3xl 2xl:text-4xl text-[#F3F0E8]"
         />
         <div className="flex flex-col lg:flex-row justify-between w-full items-start lg:items-center gap-20 lg:gap-0 min-h-162.5 xl:h-162.5 2xl:h-200">
           <div className="flex flex-col gap-2 sm:gap-4">
@@ -44,7 +44,7 @@ const ConceptSection = () => {
               text="THE UNIVERSE"
               className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-normal text-[#F3F0E8] tracking-widest ml-14 sm:ml-20 mb-6 sm:mb-10"
             />
-            <FadeSlide className="text-[#F3F0E8] font-normal ml-14 sm:ml-0 text-sm sm:text-xl 2xl:text-3xl sm:w-122 2xl:w-160 mb-14 lg:mb-20">
+            <FadeSlide className="text-[#F3F0E8] font-normal ml-14 sm:ml-0 text-sm sm:text-xl 2xl:text-2xl sm:w-110 2xl:w-145 mb-14 lg:mb-20">
               Elora and Eluna, inspired by the sun and moon, offer a harmonious
               blend of vibrance and tranqulity in South Jakarta's premier
               lifestyle hub.

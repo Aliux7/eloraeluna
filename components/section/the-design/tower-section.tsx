@@ -20,7 +20,7 @@ const TowerSection = () => {
       <div className="relative z-10 gap-16 flex flex-col lg:flex-row justify-between items-start">
         <WordsPullUp
           text="OUR TOWERS"
-          className="font-bold tracking-widest text-lg sm:text-2xl xl:text-3xl text-[#F3F0E8]"
+          className="font-medium tracking-widest text-lg sm:text-2xl xl:text-3xl text-[#F3F0E8]"
         />
         <div className="lg:w-3/5 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-20 lg:gap-0">
           <div className="flex flex-col gap-2 sm:gap-4">

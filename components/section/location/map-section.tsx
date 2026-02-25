@@ -196,7 +196,7 @@ const MapSection = () => {
             <div 
               style={{
                 minWidth: isSmall ? "320px" : "none",
-                width: isSmall ? "33.333333%" : "99.7%",
+                width: isSmall ? "33.333333%" : "99.9%",
                 maxWidth: "500px",
                 flexShrink: 0,
               }}

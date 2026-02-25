@@ -132,20 +132,20 @@ const MapSection = () => {
           className="sm:hidden text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl font-medium text-[#F3F0E8] tracking-widest ml-auto lg:ml-20 mb-6 sm:mb-10"
         />
         {/* END */}
-        <FadeSlide className="text-[#F3F0E8] font-normal text-lg sm:text-xl 2xl:text-2xl mb-14 lg:mb-16 max-w-sm 2xl:max-w-md">
+        <FadeSlide className="text-[#F3F0E8] font-normal text-lg sm:text-xl 2xl:text-2xl mb-14 lg:mb-16 max-w-sm sm:max-w-md">
           Eluna & Elora is a refined sanctuary in the sky—where serene design
           and elevated living come together in quiet splendor.
         </FadeSlide>
         <div className="flex justify-between items-center w-full gap-5 sm:gap-10 lg:gap-28">
           <FadeSlide
             onClick={() => setElunaElora(true)}
-            className={`${elunaElora ? "border-[#9D7958] hover:bg-[#9D7958]/5" : "border-[#F3F0E8]/50 hover:bg-[#F3F0E8]/5"} group border h-10 sm:h-18 w-full flex justify-center items-center cursor-pointer`}
+            className={`${elunaElora ? "border-[#9D7958] hover:bg-[#9D7958]/5" : "border-[#9D7958]/50 hover:bg-[#9D7958]/5"} group border h-10 sm:h-18 w-full flex justify-center items-center cursor-pointer`}
           >
             {elunaElora ? (
               <Image src={eluna_gold} alt="" className="w-24 lg:w-32 xl:w-44" />
             ) : (
               <Image
-                src={eluna}
+                src={eluna_gold}
                 alt=""
                 className="w-24 lg:w-32 xl:w-44 opacity-50 group-hover:opacity-100"
               />
@@ -153,24 +153,25 @@ const MapSection = () => {
           </FadeSlide>
           <FadeSlide
             onClick={() => setElunaElora(false)}
-            className={`${!elunaElora ? "border-[#9D7958] hover:bg-[#9D7958]/5" : "border-[#F3F0E8]/50 hover:bg-[#F3F0E8]/5"} group border w-full flex justify-center items-center opacity-30 h-10 sm:h-18 cursor-pointer`}
+            className={`${!elunaElora ? "border-[#9D7958] hover:bg-[#9D7958]/5" : "border-[#9D7958]/50 hover:bg-[#9D7958]/5"} group border w-full flex justify-center items-center opacity-30 h-10 sm:h-18 cursor-pointer`}
           >
             {elunaElora ? (
               <Image
-                src={elora}
+                src={elora_gold}
                 alt=""
                 className="w-24 lg:w-32 xl:w-44 opacity-50 group-hover:opacity-100"
               />
             ) : (
               <div className="flex justify-center items-center gap-2 lg:gap-5 duration-300 transition-all ease-in-out">
-                <Image
-                  src={elora_gold}
-                  alt=""
-                  className="w-24 lg:w-32 xl:w-44 opacity-50 group-hover:opacity-100"
-                />
+                <FadeSlide
+                  direction="right"
+                  className="h-auto w-24 lg:w-32 xl:w-44"
+                >
+                  <Image src={elora_gold} alt="" className="w-full h-full" />
+                </FadeSlide>
                 <WordsPullUp
                   text="Coming Soon Phase 2"
-                  className="hidden sm:block text-xs md:text-sm lg:text-xl text-[#9D7958]/80"
+                  className="hidden sm:block text-xs md:text-sm lg:text-xl text-[#9D7958]"
                 />
               </div>
             )}

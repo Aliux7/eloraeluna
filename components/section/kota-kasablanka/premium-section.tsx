@@ -71,7 +71,7 @@ const PremiumSection = () => {
             direction="right"
           >
             <div className="-ml-5 mb-0 sm:ml-0 relative w-80 sm:w-96 lg:w-110 2xl:w-130 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-8 flex flex-col justify-center gap-5 xl:gap-0 items-center">
-              <p className="sm:text-lg 2xl:text-3xl tracking-widest text-[#F3F0E8]">
+              <p className="sm:text-lg 2xl:text-2xl tracking-widest text-[#F3F0E8]">
                 Long recognized as one of Jakarta's most dynamic lifestyle
                 destinations, Kota Kasablanka has established itself as a
                 benchmark for integrated urban living—where upscale residences,
@@ -84,11 +84,11 @@ const PremiumSection = () => {
               </p>
             </div>
           </FadeSlide>
-          <FadeSlide className="w-full h-full lg:h-[80vh] sm:pl-80 mb-96 sm:mb-0">
+          <FadeSlide className="w-full h-full lg:h-[80vh] sm:pl-80 mb-100 sm:mb-0">
             <Image
               src={content_1}
               alt=""
-              className="w-full h-140 sm:h-200 lg:h-full object-cover xl:min-h-145"
+              className="w-full h-90 object-[55%_50%] sm:object-center sm:h-200 lg:h-full object-cover xl:min-h-145"
               width={2000}
               height={2000}
             />
