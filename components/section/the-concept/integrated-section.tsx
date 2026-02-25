@@ -10,7 +10,7 @@ const IntegratedSection = () => {
       <Image
         src={diamond_background}
         alt=""
-        className="w-full 2xl:w-[80%] h-auto opacity-80 absolute top-125 sm:top-130 lg:top-120 xl:top-45 2xl:top-1/2 2xl:-translate-y-[55%] 2xl:left-1/2 2xl:-translate-x-1/2"
+        className="w-full 2xl:w-[80%] h-auto opacity-80 absolute top-125 sm:top-130 lg:top-120 xl:top-45 2xl:top-1/2 2xl:-translate-y-[60%] 2xl:left-1/2 2xl:-translate-x-1/2"
         priority
       />
       <div className="relative px-5 sm:px-10 xl:px-48 py-40 space-y-16">
@@ -49,7 +49,7 @@ const IntegratedSection = () => {
             </FadeSlide>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row justify-between items-start mt-46 sm:mt-80 xl:mt-120 gap-20 xl:gap-32">
+        <div className="flex flex-col lg:flex-row justify-between items-start mt-46 sm:mt-80 xl:mt-120 2xl:mt-150 gap-20 xl:gap-32">
           <div className="w-full lg:w-1/2">
             <div className="text-center w-fit sm:h-25 2xl:h-32 pt-3 mb-8 sm:mb-16 ">
               <WordsPullUp
