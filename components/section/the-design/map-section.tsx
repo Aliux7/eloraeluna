@@ -34,6 +34,7 @@ import elora_gold from "@/app/assets/elora_gold.svg";
 import eluna from "@/app/assets/eluna.svg";
 import elora from "@/app/assets/elora.svg";
 import { useState } from "react";
+import ImageZoom from "@/components/ui/image-zoom";
 
 const MapSection = () => {
   const units = [
@@ -162,13 +163,10 @@ const MapSection = () => {
                 className="w-24 lg:w-32 xl:w-44 opacity-50 group-hover:opacity-100"
               />
             ) : (
-              <div className="flex justify-center items-center gap-2 lg:gap-5 duration-300 transition-all ease-in-out">
-                <FadeSlide
-                  direction="right"
-                  className="h-auto w-24 lg:w-32 xl:w-44"
-                >
+              <div className="flex justify-center items-center gap-2 lg:gap-5">
+                <div className="h-auto w-24 lg:w-32 xl:w-44">
                   <Image src={elora_gold} alt="" className="w-full h-full" />
-                </FadeSlide>
+                </div>
                 <WordsPullUp
                   text="Coming Soon Phase 2"
                   className="hidden sm:block text-xs md:text-sm lg:text-xl text-[#9D7958]"
@@ -180,13 +178,8 @@ const MapSection = () => {
         <div className="w-full flex flex-col justify-center items-center gap-8">
           <div className="relative w-full h-auto mt-10 flex flex-col justify-center items-center gap-8">
             <div className="relative w-full h-full flex justify-center items-center mx-auto">
-              <div className="bg-white w-4/5 h-[73%] mt-[5%] flex-1 absolute z-0"></div>
-              <Image
-                src={map}
-                alt=""
-                className="relative w-full h-full object-contain z-10"
-                priority
-              />
+              <div className="bg-white w-4/5 h-[73%] mt-[5%] flex-1 absolute -z-10"></div>
+              <ImageZoom src={map.src} alt="Map" />
             </div>
             <div className="flex justify-center items-center gap-20 2xl:mt-5">
               <FadeSlide className="flex justify-center items-center gap-2.5">
@@ -203,7 +196,7 @@ const MapSection = () => {
               </FadeSlide>
             </div>
             <div
-              className={`${!elunaElora ? "opacity-100" : "opacity-0"} z-10 flex justify-center items-center absolute w-full h-full bg-[#464948]/90 top-0 right-0 transition-all duration-500 ease-in-out`}
+              className={`${!elunaElora ? "opacity-100 " : "opacity-0  pointer-events-none "} select-none z-10 flex justify-center items-center absolute w-full h-full bg-[#464948]/90 top-0 right-0 transition-all duration-500 ease-in-out`}
             >
               <WordsPullUp
                 text="Coming Soon Phase 2"
@@ -302,19 +295,11 @@ const MapSection = () => {
                     </h3>
                   </div>
                   <div className="w-full aspect-video">
-                    <Image
-                      src={activeUnit.pathMap}
-                      alt=""
-                      className="w-full h-full object-cover"
-                    />
+                    <ImageZoom src={activeUnit.pathMap.src} alt="Map" />
                   </div>
                 </div>
                 <div className="relative px-5 sm:px-0 w-full aspect-square overflow-hidden">
-                  <Image
-                    src={activeUnit.pathUnit}
-                    alt=""
-                    className="w-full h-full scale-110 object-cover object-[50%_40%]"
-                  />
+                  <ImageZoom src={activeUnit.pathUnit.src} alt="Map" />
                 </div>
               </FadeSlide>
             </div>

@@ -26,7 +26,7 @@ const ConclusionSection = () => {
         </FadeSlide>
       </div>
 
-      <FadeSlide className="absolute bottom-10 right-10 w-60 lg:w-72 xl:w-80 2xl:w-110 h-auto">
+      <FadeSlide className="absolute -bottom-20 sm:bottom-10 -right-20 sm:right-10 w-60 lg:w-72 xl:w-80 2xl:w-110 h-auto">
         <Image src={illustration_2} alt=""  className="w-full h-full"/>
       </FadeSlide>
     </div>
