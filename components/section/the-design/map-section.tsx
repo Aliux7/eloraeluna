@@ -298,7 +298,7 @@ const MapSection = () => {
                     <ImageZoom src={activeUnit.pathMap.src} alt="Map" />
                   </div>
                 </div>
-                <div className="relative px-5 sm:px-0 w-full aspect-square overflow-hidden">
+                <div className="relative px-5 sm:px-0 w-full h-full mt-20 ">
                   <ImageZoom src={activeUnit.pathUnit.src} alt="Map" />
                 </div>
               </FadeSlide>
