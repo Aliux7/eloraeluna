@@ -12,7 +12,13 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav style={{backgroundColor: "#92653B"}} className="z-50 fixed top-0 left-0 w-full h-14 sm:h-18 flex justify-between items-center px-5 sm:px-10 xl:px-16 ">
+    <nav
+      style={{
+        background:
+          "linear-gradient(to right, rgba(146,101,59,1), rgba(157,121,88,1), rgba(146,101,59,1))",
+      }}
+      className="z-50 fixed top-0 left-0 w-full h-14 sm:h-18 flex justify-between items-center px-5 sm:px-10 xl:px-16 "
+    >
       <div
         className="flex flex-col justifty-center items-center gap-1 sm:gap-1.25 cursor-pointer"
         onClick={() => setOpen(!open)}
