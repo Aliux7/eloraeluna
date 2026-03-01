@@ -8,8 +8,11 @@ import { FadeSlide } from "@/components/animation/fade-slide";
 
 const HeroSection = () => {
   return (
-    <section id="hero-section" className="relative sm:min-h-screen bg-[#464948]">
-      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-linear-to-tr after:from-black/40 after:to-transparent ">
+    <section
+      id="hero-section"
+      className="relative sm:min-h-screen bg-[#464948]"
+    >
+      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-linear-to-tr after:sm:from-black/40 after:to-transparent after:pointer-events-none after:select-none ">
         <Image
           src={hero_background}
           alt=""
@@ -17,18 +20,28 @@ const HeroSection = () => {
           height={2000}
           className="w-full h-full object-cover object-top"
           priority
+        /> 
+        <Image
+          src={arrow}
+          alt=""
+          className="z-20 block sm:hidden absolute top-[60%] sm:top-1/2 -translate-y-1/2 left-5 sm:left-10 xl:left-16 cursor-pointer scale-70 sm:scale-100"
         />
         <Image
           src={arrow}
           alt=""
-          className="block sm:hidden xl:block absolute top-[60%] sm:top-1/2 -translate-y-1/2 left-5 sm:left-10 xl:left-16 cursor-pointer scale-70 sm:scale-100"
-        />
-        <Image
-          src={arrow}
-          alt=""
-          className="block sm:hidden xl:block absolute top-[60%] sm:top-1/2 -translate-y-1/2 right-5 sm:right-10 xl:right-16 rotate-180 cursor-pointer scale-70 sm:scale-100"
+          className="z-20 block sm:hidden absolute top-[60%] sm:top-1/2 -translate-y-1/2 right-5 sm:right-10 xl:right-16 rotate-180 cursor-pointer scale-70 sm:scale-100"
         />
       </div>
+      <Image
+        src={arrow}
+        alt=""
+        className="z-20 hidden sm:block absolute top-[60%] sm:top-1/2 -translate-y-1/2 left-5 sm:left-10 xl:left-16 cursor-pointer scale-70 sm:scale-100"
+      />
+      <Image
+        src={arrow}
+        alt=""
+        className="z-20 hidden sm:block absolute top-[60%] sm:top-1/2 -translate-y-1/2 right-5 sm:right-10 xl:right-16 rotate-180 cursor-pointer scale-70 sm:scale-100"
+      />
       <div className="relative z-10 px-5 sm:px-10 xl:px-48 py-8 sm:py-0 w-full sm:min-h-screen pb-10 lg:pb-16 flex flex-col justify-end items-start ">
         <WordsPullUp
           text="THE ECHOES"
@@ -50,7 +63,7 @@ const HeroSection = () => {
           text="Those Who Seek Undersstand Luxury."
           className="hidden sm:block text-sm sm:text-xl 2xl:text-2xl font-normal text-[#F3F0E8] mb-16"
         />
-         <WordsPullUp
+        <WordsPullUp
           text="Eluna Is Where Elegance Lingers In Every Detail — A Quiet Statement Of Timeless Living For Those Who Seek Undersstand Luxury."
           className="sm:hidden text-sm sm:text-xl 2xl:text-2xl font-normal text-[#F3F0E8] my-16 ml-20"
         />
