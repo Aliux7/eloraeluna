@@ -165,7 +165,7 @@ const MapSection = () => {
         />
       </FadeSlide>
       <LinkPullUp
-        href="#"
+        href="https://www.google.com/maps/place/Elora+%26+Eluna/data=!4m2!3m1!1s0x0:0x48f82199a0b90713?sa=X&ved=1t:2428&ictx=111"
         className="flex justify-center items-center cursor-pointer font-medium capitalize sm:text-base 2xl:text-2xl pt-px w-47.5 2xl:w-80 h-11.25 2xl:h-14 text-[#9D7958] border border-[#9D7958] hover:bg-[#9D7958]/10 hover:text-[#9D7958] transition-all duration-200 ease-in-out"
       >
         VIEW IN MAPS

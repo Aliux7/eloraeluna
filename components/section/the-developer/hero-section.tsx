@@ -53,7 +53,7 @@ const HeroSection = () => {
           </FadeSlide>
 
           <LinkPullUp
-            href="#"
+            href="https://www.pakuwon.com/"
             className="flex justify-center items-center cursor-pointer font-medium capitalize text-sm sm:text-base 2xl:text-lg pt-px w-52 2xl:w-70 h-11.25 2xl:h-14 text-[#F3F0E8] border border-[#9D7958] hover:text-[#9D7958] hover:bg-[#F3F0E8] transition-all duration-200 ease-in-out"
           >
             VISIT PAKUWON

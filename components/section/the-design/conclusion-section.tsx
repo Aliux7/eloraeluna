@@ -5,7 +5,7 @@ import illustration_2 from "@/app/assets/home/illustration_2.png";
 
 const ConclusionSection = () => {
   return (
-    <div className="relative bg-[#F3F0E8] flex flex-col sm:flex-row">
+    <div className="relative bg-[#F3F0E8] flex flex-col sm:flex-row overflow-hidden">
       <div className="w-full sm:w-1/2 h-screen max-h-200 sm:max-h-none">
         <Image src={conclusion} alt="" className="w-full h-full object-cover" />
       </div>

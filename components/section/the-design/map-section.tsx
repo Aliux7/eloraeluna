@@ -233,6 +233,7 @@ const MapSection = () => {
                   >
                     {units.map((unit) => (
                       <button
+                        id={unit.code}
                         onClick={() => setActiveUnit(unit)}
                         className={`${activeUnit.code === unit.code ? "bg-[#AA7A56]" : "bg-transparent hover:bg-white/5"} w-full flex justify-between items-center text-left border-b border-white cursor-pointer px-3 py-3 text-white 2xl:text-lg`}
                       >
@@ -264,6 +265,7 @@ const MapSection = () => {
                   >
                     {units.map((unit) => (
                       <button
+                        id={unit.code}
                         onClick={() => setActiveUnit(unit)}
                         className={`${activeUnit.code === unit.code ? "bg-[#AA7A56]" : "bg-transparent hover:bg-white/5"} w-full flex justify-between items-center text-left border-b border-white cursor-pointer px-3 py-3 text-white 2xl:text-lg`}
                       >
@@ -294,7 +296,7 @@ const MapSection = () => {
                       Net Area - {activeUnit.netArea} M<sup>2</sup>
                     </h3>
                   </div>
-                  <div className="w-full aspect-video">
+                  <div className="w-full ">
                     <ImageZoom src={activeUnit.pathMap.src} alt="Map" />
                   </div>
                 </div>
