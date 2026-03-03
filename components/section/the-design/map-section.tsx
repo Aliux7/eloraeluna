@@ -31,8 +31,8 @@ import room from "@/app/assets/the-design/room_design.svg";
 import mini_map from "@/app/assets/the-design/mini_map.png";
 import eluna_gold from "@/app/assets/eluna_gold.svg";
 import elora_gold from "@/app/assets/elora_gold.svg";
-import eluna from "@/app/assets/eluna.svg";
-import elora from "@/app/assets/elora.svg";
+import eluna from "@/app/assets/the-design/eluna.svg";
+import elora from "@/app/assets/the-design/elora.svg";
 import { useState } from "react";
 import ImageZoom from "@/components/ui/image-zoom";
 
@@ -112,7 +112,7 @@ const MapSection = () => {
         <WordsPullUp
           text="CONTEMPORARY GLAMOUR"
           className="hidden sm:block text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-medium text-[#F3F0E8] tracking-widest ml-0 lg:ml-20 mb-6 sm:mb-10"
-        /> 
+        />
         <WordsPullUp
           text="WHERE TRANQUILITY"
           className="sm:hidden text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-extralight text-[#F3F0E8] tracking-widest"
@@ -130,7 +130,7 @@ const MapSection = () => {
         <WordsPullUp
           text="GLAMOUR"
           className="sm:hidden text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl font-medium text-[#F3F0E8] tracking-widest ml-auto lg:ml-20 mb-6 sm:mb-10"
-        /> 
+        />
         <FadeSlide className="text-[#F3F0E8] font-normal text-lg sm:text-xl 2xl:text-2xl mb-14 lg:mb-16 max-w-sm sm:max-w-md">
           Eluna & Elora is a refined sanctuary in the sky—where serene design
           and elevated living come together in quiet splendor.
@@ -138,36 +138,59 @@ const MapSection = () => {
         <div className="flex justify-between items-center w-full gap-5 sm:gap-10 lg:gap-28">
           <FadeSlide
             onClick={() => setElunaElora(true)}
-            className={`${elunaElora ? "border-[#9D7958] hover:bg-[#9D7958]/5" : "border-[#9D7958]/50 hover:bg-[#9D7958]/5"} group border h-10 sm:h-18 w-full flex justify-center items-center cursor-pointer`}
+            className={`${elunaElora ? "border-[#9D7958]" : "hover:border-[#9D7958] border-[#202020]/50"} relative group border h-10 sm:h-18 w-full flex justify-center items-center cursor-pointer duration-200 transition-all ease-in-out`}
           >
             {elunaElora ? (
-              <Image src={eluna_gold} alt="" className="w-24 lg:w-32 xl:w-44" />
-            ) : (
               <Image
                 src={eluna_gold}
                 alt=""
-                className="w-24 lg:w-32 xl:w-44 opacity-50 group-hover:opacity-100"
+                className="absolute w-24 lg:w-32 xl:w-44"
               />
+            ) : (
+              <div>
+                <Image
+                  src={eluna}
+                  alt=""
+                  className="absolute left-1/2 top-1/2 -translate-1/2 w-24 lg:w-32 xl:w-44 opacity-50 group-hover:opacity-0 transition-opacity duration-200 ease-in-out"
+                />
+
+                <Image
+                  src={eluna_gold}
+                  alt=""
+                  className="absolute left-1/2 top-1/2 -translate-1/2  w-24 lg:w-32 xl:w-44 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-in-out"
+                />
+              </div>
             )}
           </FadeSlide>
           <FadeSlide
             onClick={() => setElunaElora(false)}
-            className={`${!elunaElora ? "border-[#9D7958] hover:bg-[#9D7958]/5" : "border-[#9D7958]/50 hover:bg-[#9D7958]/5"} group border w-full flex justify-center items-center opacity-30 h-10 sm:h-18 cursor-pointer`}
+            className={`${!elunaElora ? "border-[#9D7958]" : "hover:border-[#9D7958] border-[#1D2025]/50"} relative group border w-full flex justify-center items-center opacity-30 h-10 sm:h-18 cursor-pointer transition-all duration-200 ease-in-out`}
           >
-            {elunaElora ? (
-              <Image
-                src={elora_gold}
-                alt=""
-                className="w-24 lg:w-32 xl:w-44 opacity-50 group-hover:opacity-100"
-              />
-            ) : (
-              <div className="flex justify-center items-center gap-2 lg:gap-5">
-                <div className="h-auto w-24 lg:w-32 xl:w-44">
-                  <Image src={elora_gold} alt="" className="w-full h-full" />
-                </div>
+            {!elunaElora ? (
+              <div className="flex justify-center items-center gap-3">
+                <Image
+                  src={elora_gold}
+                  alt=""
+                  className="w-24 lg:w-32 xl:w-44"
+                />
+
                 <WordsPullUp
                   text="Coming Soon Phase 2"
                   className="hidden sm:block text-xs md:text-sm lg:text-xl text-[#9D7958]"
+                />
+              </div>
+            ) : (
+              <div>
+                <Image
+                  src={elora}
+                  alt=""
+                  className="absolute left-1/2 top-1/2 -translate-1/2 w-24 lg:w-32 xl:w-44 opacity-50 group-hover:opacity-0 transition-opacity duration-200 ease-in-out"
+                />
+
+                <Image
+                  src={elora_gold}
+                  alt=""
+                  className="absolute left-1/2 top-1/2 -translate-1/2  w-24 lg:w-32 xl:w-44 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-in-out"
                 />
               </div>
             )}
@@ -175,9 +198,9 @@ const MapSection = () => {
         </div>
         <div className="w-full flex flex-col justify-center items-center gap-8">
           <div className="relative w-full h-auto mt-10 flex flex-col justify-center items-center gap-8">
-            <div className="relative w-full h-full flex justify-center items-center mx-auto"> 
+            <div className="relative w-full h-full flex justify-center items-center mx-auto">
               <ImageZoom src={map.src} alt="Map" />
-            </div> 
+            </div>
             <div
               className={`${!elunaElora ? "opacity-100 " : "opacity-0  pointer-events-none "} select-none z-10 flex justify-center items-center absolute w-full h-full bg-[#464948]/90 top-0 right-0 transition-all duration-500 ease-in-out`}
             >
