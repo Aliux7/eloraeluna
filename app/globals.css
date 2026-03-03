@@ -34,6 +34,10 @@ body {
   flex-shrink: 0;
 }
 
+.overlay-hero::after {
+  opacity: 0;
+}
+
 @media (min-width: 1920px) {
   * {
     letter-spacing: 0.2rem;
@@ -43,5 +47,8 @@ body {
 @media (min-width: 640px) {
   .legend-card {
     width: 33.333333%;
+  }
+  .overlay-hero::after {
+    opacity: 1;
   }
 }

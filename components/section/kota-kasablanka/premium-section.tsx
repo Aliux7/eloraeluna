@@ -71,7 +71,7 @@ const PremiumSection = () => {
             direction="right"
           >
             <div className="-ml-5 mb-0 sm:ml-0 relative w-80 sm:w-96 lg:w-110 2xl:w-130 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-8 flex flex-col justify-center gap-5 xl:gap-0 items-center">
-              <p className="sm:text-lg 2xl:text-2xl tracking-widest text-[#F3F0E8]">
+              <p className="sm:text-lg 2xl:text-2xl tracking-widest text-[#F3F0E8]  font-extralight sm:font-normal 2xl:font-extralight">
                 Long recognized as one of Jakarta's most dynamic lifestyle
                 destinations, Kota Kasablanka has established itself as a
                 benchmark for integrated urban living—where upscale residences,

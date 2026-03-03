@@ -12,7 +12,7 @@ const HeroSection = () => {
       id="hero-section"
       className="relative sm:min-h-screen bg-[#464948]"
     >
-      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-linear-to-tr after:sm:from-black/40 after:to-transparent after:pointer-events-none after:select-none ">
+      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden overlay-hero after:content-[''] after:absolute after:inset-0 after:bg-linear-to-tr after:from-black/40 after:to-transparent after:pointer-events-none after:select-none ">
         <Image
           src={hero_background}
           alt=""
@@ -20,7 +20,7 @@ const HeroSection = () => {
           height={2000}
           className="w-full h-full object-cover object-top"
           priority
-        /> 
+        />
         <Image
           src={arrow}
           alt=""

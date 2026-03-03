@@ -27,16 +27,94 @@ import facilities20 from "@/app/assets/facilities/lists/Facilities-20---Zen-Gard
 
 const SharedSection = () => {
   const listFacilities = [
-    { name: "Blue Lagoon", image: facilities7 },
-    { name: "Library", image: facilities4 },
-    { name: "Lagoon Pool", image: facilities8 },
-    { name: "Cabana", image: facilities9 },
-    { name: "BBQ Lawn", image: facilities11 },
-    { name: "Kids Pool & Playground", image: facilities12 },
-    { name: "Padel Court", image: facilities15 },
-    { name: "Jogging Track", image: facilities16 },
-    { name: "Pet Park", image: facilities17 },
-    { name: "Play Area", image: facilities18 },
+    {
+      name: "Lagoon Pool",
+      image: facilities8,
+      description:
+        "A serene extension of the pool, where tranquil waters and natural charm come together. Perfect for relaxing in harmony with the surroundings.",
+      floor: "GF",
+      pangkat: "",
+    },
+    {
+      name: "Blue Lagoon",
+      image: facilities7,
+      description:
+        "Where the horizon blurs, and serenity flows endlessly. A space to escape, reflect, and rejuvenate.",
+      floor: "GF",
+      pangkat: "",
+    },
+    {
+      name: "Cabana",
+      image: facilities9,
+      description:
+        "A serene escape with a touch of social charm. Relax, connect, and unwind in shaded elegance by the water.",
+      floor: "GF",
+      pangkat: "",
+    },
+    {
+      name: "BBQ Lawn",
+      image: facilities11,
+      description:
+        "A space to connect, unwind, and create lasting memories by the water. Where moments of joy and togetherness come to life.",
+      floor: "GF",
+      pangkat: "",
+    },
+    {
+      name: "Kids Pool & Playground",
+      image: facilities12,
+      description:
+        "A world of play and imagination, where laughter echoes and endless adventures await. Designed for the joy of every little explorer.",
+      floor: "GF",
+      pangkat: "",
+    },
+    {
+      name: "Kids Room",
+      image: facilities13,
+      description:
+        "A playful haven where imagination comes to life and creativity knows no bounds. A space for little ones to explore, learn, and create joyful moments in comfort and safety.",
+      floor: "GF",
+      pangkat: "",
+    },
+    {
+      name: "Gym",
+      image: facilities14,
+      description:
+        "A space where movement flows naturally and strength is built with intention. Designed to restore balance, energize the body, and elevate your daily rhythm",
+      floor: "GF",
+      pangkat: "",
+    },
+    {
+      name: "Padel Court",
+      image: facilities15,
+      description:
+        "Where movement meets connection in a lively yet balanced rhythm. A space to play, engage, and share moments of energy in a relaxed, social setting.",
+      floor: "GF",
+      pangkat: "",
+    },
+    {
+      name: "Jogging Track",
+      image: facilities16,
+      description:
+        "A gentle path where movement flows in harmony with nature. Designed for mindful strides, quiet moments, and a refreshing rhythm to start or end the day.",
+      floor: "GF",
+      pangkat: "",
+    },
+
+    {
+      name: "Pet Park",
+      image: facilities17,
+      description:
+        "A welcoming green space where pets can roam freely and moments of joy unfold naturally. Designed for play, connection, and shared time in a relaxed outdoor setting.",
+      floor: "P12",
+      pangkat: "",
+    },
+    {
+      name: "Sunken Lounge",
+      image: facilities10,
+      description: "",
+      floor: "",
+      pangkat: "",
+    },
   ];
   const [active, setActive] = useState(listFacilities[0]);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -81,12 +159,12 @@ const SharedSection = () => {
       <div className="relative w-full bg-white">
         <div className="flex justify-start items-start absolute top-0 right-0">
           <WordsPullUp
-            text="01"
-            className="text-7xl sm:text-9xl md:text-[170px] lg:text-[200px] xl:text-[260px] leading-[0.9] text-[#F3F0E8]"
+            text={active.floor}
+            className="text-7xl sm:text-9xl md:text-[170px] lg:text-[200px] xl:text-[260px] leading-[0.87] text-[#F3F0E8]"
           />
           <WordsPullUp
-            text="ST"
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-light text-[#F3F0E8]"
+            text={active.pangkat}
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-light leading-[0.87] text-[#F3F0E8]"
           />
         </div>
         <Image
@@ -109,7 +187,7 @@ const SharedSection = () => {
               className="text-[#A4704F] font-medium text-3xl sm:text-5xl xl:text-6xl 2xl:text-7xl tracking-widest xl:mr-20 uppercase"
             />
           </div>
-          <FadeSlide className="text-base sm:text-lg xl:text-xl 2xl:text-2xl w-fit max-w-xl 2xl:max-w-3xl text-[#A4704F]"> 
+          <FadeSlide className="text-base sm:text-lg xl:text-xl 2xl:text-2xl w-fit max-w-xl 2xl:max-w-3xl text-[#A4704F]">
             A serene pool extension blending tranquil waters with natural
             charm—perfect for peaceful relaxation.
           </FadeSlide>

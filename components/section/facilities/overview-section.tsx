@@ -1,9 +1,33 @@
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
-import map from "@/app/assets/facilities/map.png"; 
+import map from "@/app/assets/facilities/map.png";
 
 const OverviewSection = () => {
+  const listElunaFacilities = [
+    "Main Lobby",
+    "Lobby Lounge",
+    "Library",
+    "Private Dining",
+    "Pool Lounge",
+    "Function Hall",
+    "Play Area",
+    "Sky View Terrace",
+    "Zen Garden",
+  ];
+
+  const listSharedFacilities = [
+    "Lagoon Pool",
+    "Blue Lagoon",
+    "Cabana",
+    "BBQ Lawn",
+    "Kids Pool & Playground",
+    "Kids Room",
+    "Gym",
+    "Padel Court",
+    "Jogging Track",
+    "Pet Park",
+  ];
   return (
     <section
       id="overview-section"
@@ -33,12 +57,8 @@ const OverviewSection = () => {
           />
         </div>
       </div>
-      <FadeSlide className="relative w-full sm:max-w-[60vw] 2xl:max-w-[50vw] flex justify-center items-center"> 
-        <Image
-          src={map}
-          alt=""
-          className="w-full h-full object-contain"
-        />
+      <FadeSlide className="relative w-full sm:max-w-[60vw] 2xl:max-w-[50vw] flex justify-center items-center">
+        <Image src={map} alt="" className="w-full h-full object-contain" />
       </FadeSlide>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16">
         <div>
@@ -48,37 +68,12 @@ const OverviewSection = () => {
           />
 
           <div className="grid grid-cols-2 gap-x-12 gap-y-6 text-[#9D7958]">
-            <WordsPullUp
-              text="Function Room"
-              className="text-lg 2xl:text-2xl border-b border-[#9D7958] pb-2"
-            />
-            <WordsPullUp
-              text="Family Lounge"
-              className="text-lg 2xl:text-2xl border-b border-[#9D7958] pb-2"
-            />
-
-            <WordsPullUp
-              text="Pre Function"
-              className="text-lg 2xl:text-2xl border-b border-[#9D7958] pb-2"
-            />
-            <WordsPullUp
-              text="Kids Room"
-              className="text-lg 2xl:text-2xl border-b border-[#9D7958] pb-2"
-            />
-
-            <WordsPullUp
-              text="Gym"
-              className="text-lg 2xl:text-2xl border-b border-[#9D7958] pb-2"
-            />
-            <WordsPullUp
-              text="Outside Lounge"
-              className="text-lg 2xl:text-2xl border-b border-[#9D7958] pb-2"
-            />
-
-            <WordsPullUp
-              text="Gym Class"
-              className="text-lg 2xl:text-2xl border-b border-[#9D7958] pb-2"
-            />
+            {listElunaFacilities.map((facility) => (
+              <WordsPullUp
+                text={facility}
+                className="text-lg 2xl:text-2xl border-b border-[#9D7958] pb-2"
+              />
+            ))}
           </div>
         </div>
 
@@ -89,55 +84,12 @@ const OverviewSection = () => {
           />
 
           <div className="grid grid-cols-2 gap-x-12 gap-y-6 text-[#9D7958]">
-            <WordsPullUp
-              text="Lap Pool"
-              className="text-lg 2xl:text-2xl border-b border-[#9D7958] pb-2"
-            />
-            <WordsPullUp
-              text="Lagoon Pool"
-              className="text-lg 2xl:text-2xl border-b border-[#9D7958] pb-2"
-            />
-
-            <WordsPullUp
-              text="Sun Bathing Pool Chair"
-              className="text-lg 2xl:text-2xl border-b border-[#9D7958] pb-2"
-            />
-            <WordsPullUp
-              text="Kids Pool"
-              className="text-lg 2xl:text-2xl border-b border-[#9D7958] pb-2"
-            />
-
-            <WordsPullUp
-              text="Cabana Deck"
-              className="text-lg 2xl:text-2xl border-b border-[#9D7958] pb-2"
-            />
-            <WordsPullUp
-              text="Children Play Ground"
-              className="text-lg 2xl:text-2xl border-b border-[#9D7958] pb-2"
-            />
-
-            <WordsPullUp
-              text="Sunken Seating"
-              className="text-lg 2xl:text-2xl border-b border-[#9D7958] pb-2"
-            />
-            <WordsPullUp
-              text="BBQ Area"
-              className="text-lg 2xl:text-2xl border-b border-[#9D7958] pb-2"
-            />
-
-            <WordsPullUp
-              text="Tennis Court"
-              className="text-lg 2xl:text-2xl border-b border-[#9D7958] pb-2"
-            />
-            <WordsPullUp
-              text="Jogging Track"
-              className="text-lg 2xl:text-2xl border-b border-[#9D7958] pb-2"
-            />
-
-            <WordsPullUp
-              text="Gazebo"
-              className="text-lg 2xl:text-2xl border-b border-[#9D7958] pb-2"
-            />
+            {listSharedFacilities.map((facility) => (
+              <WordsPullUp
+                text={facility}
+                className="text-lg 2xl:text-2xl border-b border-[#9D7958] pb-2"
+              />
+            ))}
           </div>
         </div>
       </div>

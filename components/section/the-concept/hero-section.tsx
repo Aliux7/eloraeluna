@@ -59,7 +59,7 @@ const HeroSection = () => {
             direction="right"
           >
             <div className="-ml-5 mb-0 sm:ml-0 relative w-80 sm:w-80 2xl:w-130 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-9 flex flex-col justify-between gap-5 xl:gap-0 items-center">
-              <p className="sm:text-lg 2xl:text-2xl font-normal text-[#F3F0E8] flex justify-center items-center h-full">
+              <p className="sm:text-lg 2xl:text-2xl font-extralight sm:font-normal 2xl:font-extralight text-[#F3F0E8] flex justify-center items-center h-full">
                 Eluna reflects the luminous allure of the moon, offering a
                 lifestyle of elegance, rhythm, and refined luxury. It is a home
                 for those who embrace elevated living—where thoughtful design
@@ -226,7 +226,7 @@ const HeroSection = () => {
                     />
                   </div>
                 </div>
-                <p className="text-sm sm:text-lg 2xl:text-2xl font-normal text-[#F3F0E8]">
+                <p className="text-sm sm:text-lg 2xl:text-2xl font-extralight sm:font-normal 2xl:font-extralight text-[#F3F0E8]">
                   Elora and Eluna embody the essential balance of life, inspired
                   by the sun and the moon. Elora channels the sun's energy
                   through bold architecture, luminous interiors, and a vibrant

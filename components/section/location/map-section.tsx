@@ -7,19 +7,34 @@ import map from "@/app/assets/location/location_map.svg";
 import { LinkPullUp } from "@/components/animation/link-pull-up";
 import illustration from "@/app/assets/home/illustration_2.png";
 import illustration2 from "@/app/assets/home/illustration.png";
+import CommuterLine from "@/app/assets/location/Commuter_Line.svg";
+import Embassy from "@/app/assets/location/Embassy.svg";
+import FlyOver from "@/app/assets/location/Fly_Over.svg";
+import Hospital from "@/app/assets/location/Hospital.svg";
+import Hotel from "@/app/assets/location/Hotel.svg";
+import LRT from "@/app/assets/location/LRT.svg";
+import MallShoppingCenter from "@/app/assets/location/Mall_&_Shopping_Center.svg";
+import MRT from "@/app/assets/location/MRT.svg";
+import School from "@/app/assets/location/School.svg";
 import { useRef } from "react";
 
 const MapSection = () => {
   const legends = [
     {
+      color: "#274572",
+      image: MRT,
       category: "MRT",
       items: ["BNI City"],
     },
     {
+      color: "#791D2B",
+      image: LRT,
       category: "LRT",
       items: ["BNI City"],
     },
     {
+      color: "#F37361",
+      image: MallShoppingCenter,
       category: "Mall & Shopping Area",
       items: [
         "Kuningan City",
@@ -32,6 +47,8 @@ const MapSection = () => {
       ],
     },
     {
+      color: "#474B4B",
+      image: Embassy,
       category: "Embassy",
       items: [
         "U.S.A Embassy",
@@ -49,6 +66,8 @@ const MapSection = () => {
       ],
     },
     {
+      color: "#1B1D4B",
+      image: School,
       category: "School",
       items: [
         "Kolose Kanisius",
@@ -60,14 +79,20 @@ const MapSection = () => {
       ],
     },
     {
+      color: "#006877",
+      image: CommuterLine,
       category: "Commuter Line",
       items: ["Sudirman Station", "Manggarai"],
     },
     {
+      color: "#474B4B",
+      image: FlyOver,
       category: "Fly Over",
       items: ["Jakarta Inner Ring Road Toll"],
     },
     {
+      color: "#005250",
+      image: Hotel,
       category: "Hotel",
       items: [
         "Wyndham",
@@ -89,6 +114,8 @@ const MapSection = () => {
       ],
     },
     {
+      color: "#5F0D1B",
+      image: Hospital,
       category: "Hospital",
       items: [
         "MMC",
@@ -193,7 +220,8 @@ const MapSection = () => {
           className="flex justify-start items-start gap-0 overflow-hidden no-scrollbar px-0 transition-all duration-300 ease-in-out mt-10"
         >
           {legends.map((legend) => (
-            <div 
+            <div
+              key={legend.category}
               style={{
                 minWidth: isSmall ? "320px" : "none",
                 width: isSmall ? "33.333333%" : "99.9%",
@@ -201,19 +229,29 @@ const MapSection = () => {
                 flexShrink: 0,
               }}
             >
-              <div className="flex items-center justify-start gap-4 mb-3">
+              <div className="flex items-start justify-start gap-4 mb-3">
                 <div className="flex flex-col justify-end items-end gap-3">
-                  <div className="size-9 bg-[#006174] rounded-full"></div>
-                  <div className="w-14 h-2 bg-[#006174] rounded-full"></div>
+                  <div className="w-10 h-auto">
+                    <Image
+                      src={legend.image}
+                      alt=""
+                      className="w-full h-full"
+                    />
+                  </div>
                 </div>
-                <span className="text-[#006174] text-lg 2xl:text-2xl font-medium text-nowrap">
+                <span
+                  style={{ color: legend.color }}
+                  className="mt-1.5 text-lg 2xl:text-2xl font-medium text-nowrap"
+                >
                   {legend.category}
                 </span>
               </div>
 
               <div className="text-lg text-gray-600 space-y-1 mt-8">
-                {legend.items.map((item) => (
-                  <p className="2xl:text-2xl">{item}</p>
+                {legend.items.map((item, index) => (
+                  <p key={index} className="2xl:text-2xl">
+                    {item}
+                  </p>
                 ))}
               </div>
             </div>

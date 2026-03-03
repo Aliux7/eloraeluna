@@ -112,8 +112,7 @@ const MapSection = () => {
         <WordsPullUp
           text="CONTEMPORARY GLAMOUR"
           className="hidden sm:block text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-medium text-[#F3F0E8] tracking-widest ml-0 lg:ml-20 mb-6 sm:mb-10"
-        />
-        {/* Mobile */}
+        /> 
         <WordsPullUp
           text="WHERE TRANQUILITY"
           className="sm:hidden text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-extralight text-[#F3F0E8] tracking-widest"
@@ -131,8 +130,7 @@ const MapSection = () => {
         <WordsPullUp
           text="GLAMOUR"
           className="sm:hidden text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl font-medium text-[#F3F0E8] tracking-widest ml-auto lg:ml-20 mb-6 sm:mb-10"
-        />
-        {/* END */}
+        /> 
         <FadeSlide className="text-[#F3F0E8] font-normal text-lg sm:text-xl 2xl:text-2xl mb-14 lg:mb-16 max-w-sm sm:max-w-md">
           Eluna & Elora is a refined sanctuary in the sky—where serene design
           and elevated living come together in quiet splendor.
@@ -177,24 +175,9 @@ const MapSection = () => {
         </div>
         <div className="w-full flex flex-col justify-center items-center gap-8">
           <div className="relative w-full h-auto mt-10 flex flex-col justify-center items-center gap-8">
-            <div className="relative w-full h-full flex justify-center items-center mx-auto">
-              <div className="bg-white w-4/5 h-[73%] mt-[5%] flex-1 absolute -z-10"></div>
+            <div className="relative w-full h-full flex justify-center items-center mx-auto"> 
               <ImageZoom src={map.src} alt="Map" />
-            </div>
-            <div className="flex justify-center items-center gap-20 2xl:mt-5">
-              <FadeSlide className="flex justify-center items-center gap-2.5">
-                <div className="bg-[#D9D9D9] border border-[#AA7A56] size-5 sm:size-6"></div>
-                <h1 className="text-[#AA7A56] font-bold text-xs sm:text-sm 2xl:text-lg mt-1">
-                  2 BEDROOM
-                </h1>
-              </FadeSlide>
-              <FadeSlide className="flex justify-center items-center gap-2.5">
-                <div className="bg-[#D9D9D9] border border-[#AA7A56] size-5 sm:size-6"></div>
-                <h1 className="text-[#AA7A56] font-bold text-xs sm:text-sm 2xl:text-lg mt-1">
-                  3 BEDROOM
-                </h1>
-              </FadeSlide>
-            </div>
+            </div> 
             <div
               className={`${!elunaElora ? "opacity-100 " : "opacity-0  pointer-events-none "} select-none z-10 flex justify-center items-center absolute w-full h-full bg-[#464948]/90 top-0 right-0 transition-all duration-500 ease-in-out`}
             >

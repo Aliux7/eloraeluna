@@ -11,33 +11,86 @@ import facilities3 from "@/app/assets/facilities/lists/Facilities-03---Lobby-Lou
 import facilities4 from "@/app/assets/facilities/lists/Facilities-04---Library.jpg";
 import facilities5 from "@/app/assets/facilities/lists/Facilities-05---Function-Hall.jpg";
 import facilities6 from "@/app/assets/facilities/lists/Facilities-06---Pool-Lounge.jpg";
-import facilities7 from "@/app/assets/facilities/lists/Facilities-07---Blue-Lagoon.jpg";
-import facilities8 from "@/app/assets/facilities/lists/Facilities-08---Lagoon-Pool.jpg";
-import facilities9 from "@/app/assets/facilities/lists/Facilities-09---Cabana.jpg";
-import facilities10 from "@/app/assets/facilities/lists/Facilities-10---Sunken-Lounge.jpg";
-import facilities11 from "@/app/assets/facilities/lists/Facilities-11---BBQ-Lawn.jpg";
-import facilities12 from "@/app/assets/facilities/lists/Facilities-12---Kids-Pool-&-Playgrounds.jpg";
-import facilities13 from "@/app/assets/facilities/lists/Facilities-13---Kids-Room.jpg";
-import facilities14 from "@/app/assets/facilities/lists/Facilities-14---Gym.jpg";
-import facilities15 from "@/app/assets/facilities/lists/Facilities-15---Padel-Court.jpg";
-import facilities16 from "@/app/assets/facilities/lists/Facilities-16---Jogging-Track.jpg";
-import facilities17 from "@/app/assets/facilities/lists/Facilities-17---Pet-Park.jpg";
 import facilities18 from "@/app/assets/facilities/lists/Facilities-18---Play-Area.jpg";
 import facilities19 from "@/app/assets/facilities/lists/Facilities-19---Sky-View-Terrace.jpg";
 import facilities20 from "@/app/assets/facilities/lists/Facilities-20---Zen-Garden.jpg";
 
 const DesignSection = () => {
   const listFacilities = [
-    { name: "Private Dining", image: facilities1 },
-    { name: "Main Lobby", image: facilities2 },
-    { name: "Lobby Lounge", image: facilities3 },
-    { name: "Function Hall", image: facilities5 },
-    { name: "Pool Lounge", image: facilities6 },
-    { name: "Sunken Lounge", image: facilities10 },
-    { name: "Gym", image: facilities14 },
-    { name: "Kids Room", image: facilities13 },
-    { name: "Sky View Terrace", image: facilities19 },
-    { name: "Zen Garden", image: facilities20 },
+    {
+      name: "Main Lobby",
+      image: facilities2,
+      description:
+        "Step into a world of sophistication, where every detail reflects timeless luxury. The journey begins with an arrival designed to inspire.",
+      floor: "GF",
+      pangkat: "",
+    },
+    {
+      name: "Lobby Lounge",
+      image: facilities3,
+      description:
+        "A serene welcome, where graceful design meets quiet luxury. The perfect beginning to a tranquil retreat.",
+      floor: "GF",
+      pangkat: "",
+    },
+    {
+      name: "Library",
+      image: facilities4,
+      description:
+        "A balanced space for mind. Reflect in quiet sophistication.",
+      floor: "GF",
+      pangkat: "",
+    },
+
+    {
+      name: "Private Dining",
+      image: facilities1,
+      description:
+        "A secluded space where connection deepens and every moment feels more personal. Perfect for sharing stories, celebrating quietly, and enjoying time without distraction.",
+      floor: "01",
+      pangkat: "ST",
+    },
+    {
+      name: "Pool Lounge",
+      image: facilities6,
+      description:
+        "An oasis of calm, where comfort meets style. Relax, unwind, and soak in the serene ambiance.",
+      floor: "01",
+      pangkat: "ST",
+    },
+    {
+      name: "Function Hall",
+      image: facilities5,
+      description:
+        "A versatile space where moments come together with ease and intention. Designed to host gatherings, celebrations, and meaningful connections in a refined setting.",
+      floor: "01",
+      pangkat: "ST",
+    },
+
+    {
+      name: "Play Area",
+      image: facilities18,
+      description:
+        "A lively space in the sky, blending fun and relaxation. Perfect for moments of connections and entertainment.",
+      floor: "20",
+      pangkat: "TH",
+    },
+    {
+      name: "Sky View Terrace",
+      image: facilities19,
+      description:
+        "An elevated space where open skies and distant horizons create a sense of calm. Designed for quiet moments, gentle gatherings, and a renewed perspective above it all.",
+      floor: "20",
+      pangkat: "TH",
+    },
+    {
+      name: "Zen Garden",
+      image: facilities20,
+      description:
+        "A tranquil sanctuary where stillness invites reflection and the mind finds clarity. Designed for quiet moments, gentle pauses, and a deeper sense of balance.",
+      floor: "20",
+      pangkat: "TH",
+    },
   ];
   const [active, setActive] = useState(listFacilities[0]);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -84,11 +137,11 @@ const DesignSection = () => {
       <div className="relative w-full bg-white">
         <div className="flex justify-start items-start absolute top-0 right-0">
           <WordsPullUp
-            text="01"
+            text={active.floor}
             className="text-7xl sm:text-9xl md:text-[170px] lg:text-[200px] xl:text-[260px] leading-[0.87] text-[#F3F0E8]"
           />
           <WordsPullUp
-            text="ST"
+            text={active.pangkat}
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-light leading-[0.87] text-[#F3F0E8]"
           />
         </div>
@@ -113,8 +166,7 @@ const DesignSection = () => {
             />
           </div>
           <FadeSlide className="text-base sm:text-lg xl:text-xl 2xl:text-2xl w-fit max-w-xl 2xl:max-w-3xl text-[#F3F0E8]">
-            An elegant setting for intimate dining and grand celebrations, where
-            every gathering is enriched by sophistication and seamless service.
+            {active.description}
           </FadeSlide>
         </div>
         <div className="relative w-full">

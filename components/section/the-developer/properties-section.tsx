@@ -1,6 +1,12 @@
 import { FadeSlide } from "@/components/animation/fade-slide";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
-import React from "react";
+import Image from "next/image";
+import mall_content_1 from "@/app/assets/kota-kasablanka/mall_content_1.jpg";
+import mall_content_2 from "@/app/assets/kota-kasablanka/mall_content_2.jpg";
+import mall_content_3 from "@/app/assets/kota-kasablanka/mall_content_3.jpg";
+import mall_content_4 from "@/app/assets/kota-kasablanka/mall_content_4.jpg";
+import mall_content_5 from "@/app/assets/kota-kasablanka/mall_content_5.jpg";
+import mall_content_6 from "@/app/assets/kota-kasablanka/mall_content_6.jpg";
 
 const PropertiesSection = () => {
   return (
@@ -15,7 +21,7 @@ const PropertiesSection = () => {
             className="text-[#D9D9D9] text-4xl sm:text-5xl xl:text-6xl 2xl:text-7xl font-light mr-10 md:mr-0"
           />
           <WordsPullUp
-            text="PROPERTIES"
+            text="SHOWCASE"
             className="text-[#F3F0E8] text-2xl sm:text-3xl 2xl:text-4xl font-bold"
           />
         </div>
@@ -27,74 +33,61 @@ const PropertiesSection = () => {
         </FadeSlide>
       </div>
       <div className="py-14 space-y-10">
-        <div className="space-y-3">
-          <WordsPullUp
-            text="Super Block"
-            className="text-2xl 2xl:text-3xl text-[#F3F0E8] font-medium"
-          />
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <FadeSlide direction="right" className="bg-[#7D7D7D] aspect-video"> </FadeSlide>
-            <FadeSlide direction="right" className="bg-[#7D7D7D] aspect-video"> </FadeSlide>
-            <FadeSlide direction="right" className="bg-[#7D7D7D] aspect-video"> </FadeSlide>
-            <FadeSlide direction="right" className="bg-[#7D7D7D] aspect-video"> </FadeSlide>
-          </div>
-        </div>
-
-        <div className="space-y-3">
-          <WordsPullUp
-            text="Mall & Entertainment"
-            className="text-2xl 2xl:text-3xl text-[#F3F0E8] font-medium"
-          />
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <FadeSlide direction="right" className="bg-[#7D7D7D] aspect-video"> </FadeSlide>
-            <FadeSlide direction="right" className="bg-[#7D7D7D] aspect-video"> </FadeSlide>
-            <FadeSlide direction="right" className="bg-[#7D7D7D] aspect-video"> </FadeSlide>
-            <FadeSlide direction="right" className="bg-[#7D7D7D] aspect-video"> </FadeSlide>
-          </div>
-        </div>
-
-        <div className="space-y-3">
-          <WordsPullUp
-            text="Residential"
-            className="text-2xl 2xl:text-3xl text-[#F3F0E8] font-medium"
-          />
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <FadeSlide direction="right" className="bg-[#7D7D7D] aspect-video"> </FadeSlide>
-            <FadeSlide direction="right" className="bg-[#7D7D7D] aspect-video"> </FadeSlide>
-            <FadeSlide direction="right" className="bg-[#7D7D7D] aspect-video"> </FadeSlide>
-            <FadeSlide direction="right" className="bg-[#7D7D7D] aspect-video"> </FadeSlide>
-          </div>
-        </div>
-
-        <div className="space-y-3">
-          <WordsPullUp
-            text="Hospitality"
-            className="text-2xl 2xl:text-3xl text-[#F3F0E8] font-medium"
-          />
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <FadeSlide direction="right" className="bg-[#7D7D7D] aspect-video"> </FadeSlide>
-            <FadeSlide direction="right" className="bg-[#7D7D7D] aspect-video"> </FadeSlide>
-            <FadeSlide direction="right" className="bg-[#7D7D7D] aspect-video"> </FadeSlide>
-            <FadeSlide direction="right" className="bg-[#7D7D7D] aspect-video"> </FadeSlide>
-          </div>
-        </div>
-
-        <div className="space-y-3">
-          <WordsPullUp
-            text="Offices"
-            className="text-2xl 2xl:text-3xl text-[#F3F0E8] font-medium"
-          />
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <FadeSlide direction="right" className="bg-[#7D7D7D] aspect-video"> </FadeSlide>
-            <FadeSlide direction="right" className="bg-[#7D7D7D] aspect-video"> </FadeSlide>
-            <FadeSlide direction="right" className="bg-[#7D7D7D] aspect-video"> </FadeSlide>
-            <FadeSlide direction="right" className="bg-[#7D7D7D] aspect-video"> </FadeSlide>
-          </div>
+        <div className="w-full grid lg:grid-cols-3 h-full gap-10 md:gap-16">
+          <FadeSlide className="w-full aspect-square lg:aspect-2/1 lg:col-span-2">
+            <Image
+              src={mall_content_1}
+              alt=""
+              className="w-full h-full object-cover"
+              width={1000}
+              height={1000}
+            />
+          </FadeSlide>
+          <FadeSlide className="w-full h-full">
+            <Image
+              src={mall_content_2}
+              alt=""
+              className="w-full h-full object-cover"
+              width={1000}
+              height={1000}
+            />
+          </FadeSlide>
+          <FadeSlide className="w-full h-full">
+            <Image
+              src={mall_content_3}
+              alt=""
+              className="w-full h-full object-cover"
+              width={1000}
+              height={1000}
+            />
+          </FadeSlide>
+          <FadeSlide className="w-full aspect-square lg:aspect-2/1 lg:col-span-2">
+            <Image
+              src={mall_content_4}
+              alt=""
+              className="w-full h-full object-cover"
+              width={1000}
+              height={1000}
+            />
+          </FadeSlide>
+          <FadeSlide className="w-full aspect-square lg:aspect-2/1 lg:col-span-2">
+            <Image
+              src={mall_content_5}
+              alt=""
+              className="w-full h-full object-cover"
+              width={1000}
+              height={1000}
+            />
+          </FadeSlide>
+          <FadeSlide className="w-full h-full">
+            <Image
+              src={mall_content_6}
+              alt=""
+              className="w-full h-full object-cover"
+              width={1000}
+              height={1000}
+            />
+          </FadeSlide>
         </div>
       </div>
     </section>
