@@ -144,14 +144,14 @@ const SharedSection = () => {
         <div>
           <WordsPullUp
             text="SHARED"
-            className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-extralight text-[#9D7958] tracking-widest"
+            className="text-3xl sm:text-5xl lg:text-6xl font-extralight text-[#9D7958] tracking-widest"
           />
           <WordsPullUp
             text="FACILITIES"
-            className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-normal text-[#9D7958] tracking-widest ml-14 sm:ml-20"
+            className="text-3xl sm:text-5xl lg:text-6xl font-normal text-[#9D7958] tracking-widest ml-14 sm:ml-20"
           />
         </div>
-        <FadeSlide className="text-base sm:text-lg xl:text-xl 2xl:text-2xl w-full text-[#9D7958] max-w-xl 2xl:max-w-3xl">
+        <FadeSlide className="text-base sm:text-lg xl:text-xl 2xl:text-xl w-full font-normal 2xl:font-light text-[#9D7958] max-w-xl 2xl:max-w-3xl">
           WHERE two worlds meet—spaces designed to connect, inspire, and elevate
           the everyday.
         </FadeSlide>
@@ -179,15 +179,15 @@ const SharedSection = () => {
             <WordsPullUp
               direction="left"
               text={active.name.split(" ")[0]}
-              className="text-[#A4704F] font-light text-3xl sm:text-5xl xl:text-6xl 2xl:text-7xl tracking-widest uppercase"
+              className="text-[#A4704F] font-light 2xl:font-extralight text-3xl sm:text-5xl xl:text-6xl tracking-widest uppercase"
             />
             <WordsPullUp
               direction="left"
               text={active.name.split(" ").slice(1).join(" ")}
-              className="text-[#A4704F] font-medium text-3xl sm:text-5xl xl:text-6xl 2xl:text-7xl tracking-widest xl:mr-20 uppercase"
+              className="text-[#A4704F] font-medium 2xl:font-normal text-3xl sm:text-5xl xl:text-6xl tracking-widest xl:mr-20 uppercase"
             />
           </div>
-          <FadeSlide className="text-base sm:text-lg xl:text-xl 2xl:text-2xl w-fit max-w-xl 2xl:max-w-3xl text-[#A4704F]">
+          <FadeSlide className="text-base sm:text-lg xl:text-xl 2xl:font-light w-fit max-w-xl 2xl:max-w-3xl text-[#A4704F]">
             A serene pool extension blending tranquil waters with natural
             charm—perfect for peaceful relaxation.
           </FadeSlide>

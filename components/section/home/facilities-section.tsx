@@ -37,14 +37,14 @@ const FacilitiesSection = () => {
           <div className="flex flex-col gap-2 sm:gap-4">
             <WordsPullUp
               text="OUR"
-              className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-extralight text-[#F3F0E8] tracking-widest"
+              className="text-3xl sm:text-5xl lg:text-6xl font-extralight text-[#F3F0E8] tracking-widest"
             />
             <WordsPullUp
               text="FACILITIES"
-              className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-medium text-[#F3F0E8] tracking-widest ml-10 sm:ml-20 mb-6 lg:mb-10"
+              className="text-3xl sm:text-5xl lg:text-6xl font-medium text-[#F3F0E8] tracking-widest ml-10 sm:ml-20 mb-6 lg:mb-10"
             />
 
-            <FadeSlide className="text-[#F3F0E8] font-normal ml-10 sm:ml-0 text-sm sm:text-xl 2xl:text-2xl w-auto sm:w-2/3 lg:w-140 2xl:w-190 mb-10 sm:mb-16 xl:mb-20">
+            <FadeSlide className="text-[#F3F0E8] font-normal 2xl:font-light text-balance ml-10 sm:ml-0 text-sm sm:text-xl w-auto sm:w-2/3 lg:w-140 2xl:w-190 mb-10 sm:mb-16 xl:mb-20">
               Where two worlds meet—spaces designed to connect, inspire, and
               elevate the everyday.
             </FadeSlide>

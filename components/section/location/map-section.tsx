@@ -174,11 +174,11 @@ const MapSection = () => {
       <div className="flex flex-col justify-center items-center">
         <WordsPullUp
           text="SCULPTED FOR"
-          className="text-3xl sm:text-5xl xl:text-6xl 2xl:text-8xl font-medium text-[#9D7958]"
+          className="text-3xl sm:text-5xl xl:text-6xl 2xl:text-7xl font-medium 2xl:font-normal text-[#9D7958]"
         />
         <WordsPullUp
           text="THE SOUL"
-          className="text-3xl sm:text-5xl xl:text-6xl 2xl:text-8xl font-medium text-[#9D7958]"
+          className="text-3xl sm:text-5xl xl:text-6xl 2xl:text-7xl font-medium 2xl:font-normal text-[#9D7958]"
         />
       </div>
       <FadeSlide
@@ -249,7 +249,7 @@ const MapSection = () => {
 
               <div className="text-lg text-gray-600 space-y-1 mt-8">
                 {legend.items.map((item, index) => (
-                  <p key={index} className="2xl:text-2xl">
+                  <p key={index} className="2xl:text-xl">
                     {item}
                   </p>
                 ))}

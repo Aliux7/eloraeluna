@@ -6,7 +6,6 @@ import FacilitiesSection from "@/components/section/home/facilities-section";
 import LocationSection from "@/components/section/home/location-section";
 import DeveloperSection from "@/components/section/home/developer-section";
 import NewsSection from "@/components/section/home/news-section";
-import CommingSoon from "@/components/section/home/coming-soon";
 
 export default function Home() {
   return (
@@ -19,7 +18,6 @@ export default function Home() {
       <LocationSection />
       <DeveloperSection />
       <NewsSection />
-      {/* <CommingSoon /> */}
     </main>
   );
 }

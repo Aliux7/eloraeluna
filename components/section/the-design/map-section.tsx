@@ -107,31 +107,31 @@ const MapSection = () => {
       <div className="relative z-10 flex flex-col justify-between items-start gap-2 sm:gap-4">
         <WordsPullUp
           text="WHERE TRANQUILITY MEETS"
-          className="hidden sm:block text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-extralight text-[#F3F0E8] tracking-widest"
+          className="hidden sm:block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extralight text-[#F3F0E8] tracking-widest"
         />
         <WordsPullUp
           text="CONTEMPORARY GLAMOUR"
-          className="hidden sm:block text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-medium text-[#F3F0E8] tracking-widest ml-0 lg:ml-20 mb-6 sm:mb-10"
+          className="hidden sm:block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium 2xl:font-normal text-[#F3F0E8] tracking-widest ml-0 lg:ml-20 mb-6 sm:mb-10"
         />
         <WordsPullUp
           text="WHERE TRANQUILITY"
-          className="sm:hidden text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-extralight text-[#F3F0E8] tracking-widest"
+          className="sm:hidden text-3xl sm:text-5xl lg:text-6xl font-extralight text-[#F3F0E8] tracking-widest"
         />
         <div className="flex justify-start items-center gap-3">
           <WordsPullUp
             text="MEETS"
-            className="sm:hidden text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-extralight text-[#F3F0E8] tracking-widest"
+            className="sm:hidden text-3xl sm:text-5xl lg:text-6xl font-extralight text-[#F3F0E8] tracking-widest"
           />
           <WordsPullUp
             text="CONTEMPORARY"
-            className="sm:hidden text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl font-medium text-[#F3F0E8] tracking-widest"
+            className="sm:hidden text-3xl md:text-5xl lg:text-6xl font-medium 2xl:font-normal text-[#F3F0E8] tracking-widest"
           />
         </div>
         <WordsPullUp
           text="GLAMOUR"
-          className="sm:hidden text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl font-medium text-[#F3F0E8] tracking-widest ml-auto lg:ml-20 mb-6 sm:mb-10"
+          className="sm:hidden text-3xl md:text-5xl lg:text-6xl font-medium 2xl:font-normal text-[#F3F0E8] tracking-widest ml-auto lg:ml-20 mb-6 sm:mb-10"
         />
-        <FadeSlide className="text-[#F3F0E8] font-normal text-lg sm:text-xl 2xl:text-2xl mb-14 lg:mb-16 max-w-sm sm:max-w-md">
+        <FadeSlide className="text-[#F3F0E8] font-normal 2xl:font-light text-lg sm:text-xl mb-14 lg:mb-16 max-w-sm sm:max-w-md 2xl:max-w-lg">
           Eluna & Elora is a refined sanctuary in the sky—where serene design
           and elevated living come together in quiet splendor.
         </FadeSlide>
@@ -213,7 +213,7 @@ const MapSection = () => {
           <div className="mt-20 sm:mt-12 flex flex-col justify-start items-start w-full h-fit">
             <WordsPullUp
               text="ELUNA FLOORPLAN TYPICAL 2-38"
-              className="hidden sm:block pr-5 sm:pr-0 mb-10 font-semibold text-2xl md:text-3xl 2xl:text-4xl tracking-widest text-[#F3F0E8]"
+              className="hidden sm:block pr-5 sm:pr-0 mb-10 font-semibold 2xl:font-normal text-2xl md:text-3xl 2xl:text-[32px] tracking-widest text-[#F3F0E8]"
             />
             <div className="relative flex flex-col-reverse lg:flex-row justify-between w-full h-full gap-10 sm:gap-16 xl:gap-32">
               <div className="sm:w-100">
@@ -223,7 +223,7 @@ const MapSection = () => {
                       onClick={() => setOpenIndex(openIndex === 0 ? null : 0)}
                       className="w-full flex justify-between items-center text-left border-b border-white cursor-pointer"
                     >
-                      <h3 className="text-lg 2xl:text-2xl font-medium text-white tracking-widest p-1">
+                      <h3 className="text-lg 2xl:text-xl font-medium text-white tracking-widest p-1">
                         2<sup>nd</sup> - 19<sup>th</sup> Floor
                       </h3>
                       <div className="mr-2 mt-1 text-xl font-light transition-transform duration-300">
@@ -255,7 +255,7 @@ const MapSection = () => {
                       onClick={() => setOpenIndex(openIndex === 1 ? null : 1)}
                       className="w-full flex justify-between items-center text-left border-b border-white cursor-pointer"
                     >
-                      <h3 className="text-lg 2xl:text-2xl font-medium text-white tracking-widest p-1">
+                      <h3 className="text-lg 2xl:text-xl font-medium text-white tracking-widest p-1">
                         21<sup>st</sup> - 35<sup>th</sup> Floor
                       </h3>
                       <div className="mr-2 mt-1 text-xl font-light transition-transform duration-300">
