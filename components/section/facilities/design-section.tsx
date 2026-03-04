@@ -128,7 +128,7 @@ const DesignSection = () => {
             alt=""
             className="w-fit h-12 lg:h-14 xl:h-16 2xl:h-20"
           />
-          <p className="text-base sm:text-lg xl:text-xl 2xl:text-2xl w-full text-[#F3F0E8] max-w-xl 2xl:max-w-3xl">
+          <p className="text-base sm:text-lg xl:text-xl font-normal 2xl:font-light w-full text-[#F3F0E8] max-w-xl 2xl:max-w-3xl">
             WHERE ELEGANCE BECOMES A WAY OF LIFE BLENDING TRANQUILITY, COMFORT,
             AND A REFINED AESTHETIC INTO YOUR DAILY RHYTHM.
           </p>
@@ -157,15 +157,15 @@ const DesignSection = () => {
             <WordsPullUp
               direction="left"
               text={active.name.split(" ")[0]}
-              className="text-[#F3F0E8] font-light text-3xl sm:text-5xl xl:text-6xl 2xl:text-7xl tracking-widest uppercase"
+              className="text-[#F3F0E8] font-light 2xl:font-extralight text-3xl sm:text-5xl xl:text-6xl tracking-widest uppercase"
             />
             <WordsPullUp
               direction="left"
               text={active.name.split(" ").slice(1).join(" ")}
-              className="text-[#F3F0E8] font-medium text-3xl sm:text-5xl xl:text-6xl 2xl:text-7xl tracking-widest xl:mr-20 uppercase"
+              className="text-[#F3F0E8] font-medium 2xl:font-normal text-3xl sm:text-5xl xl:text-6xl tracking-widest xl:mr-20 uppercase"
             />
           </div>
-          <FadeSlide className="text-base sm:text-lg xl:text-xl 2xl:text-2xl w-fit max-w-xl 2xl:max-w-3xl text-[#F3F0E8]">
+          <FadeSlide className="text-base sm:text-lg xl:text-xl font-normal 2xl:font-light w-fit max-w-xl 2xl:max-w-3xl text-[#F3F0E8]">
             {active.description}
           </FadeSlide>
         </div>

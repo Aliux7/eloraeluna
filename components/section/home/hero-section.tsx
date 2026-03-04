@@ -45,27 +45,27 @@ const HeroSection = () => {
       <div className="relative z-10 px-5 sm:px-10 xl:px-48 py-8 sm:py-0 w-full sm:min-h-screen pb-10 lg:pb-16 flex flex-col justify-end items-start ">
         <WordsPullUp
           text="THE ECHOES"
-          className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-light text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
+          className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-light 2xl:font-extralight text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
         />
         <WordsPullUp
           text="OF SPLENDOR"
-          className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-medium sm:font-bold text-[#F3F0E8] tracking-widest ml-20 lg:ml-[10vw] xl:ml-64 mb-6 md:mb-10 xl:mb-14"
+          className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-medium sm:font-bold 2xl:font-medium text-[#F3F0E8] tracking-widest ml-20 lg:ml-[10vw] xl:ml-64 mb-6 md:mb-10 xl:mb-14"
         />
         <WordsPullUp
           text="Eluna Is Where Elegance Lingers In Every Detail"
-          className="hidden sm:block text-sm sm:text-xl 2xl:text-2xl font-normal text-[#F3F0E8]"
+          className="hidden sm:block text-sm sm:text-xl font-normal 2xl:font-light text-[#F3F0E8]"
         />
         <WordsPullUp
           text="— A Quiet Statement Of Timeless Living For"
-          className="hidden sm:block text-sm sm:text-xl 2xl:text-2xl font-normal text-[#F3F0E8]"
+          className="hidden sm:block text-sm sm:text-xl font-normal 2xl:font-light text-[#F3F0E8]"
         />
         <WordsPullUp
           text="Those Who Seek Undersstand Luxury."
-          className="hidden sm:block text-sm sm:text-xl 2xl:text-2xl font-normal text-[#F3F0E8] mb-16"
+          className="hidden sm:block text-sm sm:text-xl font-normal 2xl:font-light text-[#F3F0E8] mb-16"
         />
         <WordsPullUp
           text="Eluna Is Where Elegance Lingers In Every Detail — A Quiet Statement Of Timeless Living For Those Who Seek Undersstand Luxury."
-          className="sm:hidden text-sm sm:text-xl 2xl:text-2xl font-normal text-[#F3F0E8] my-16 ml-20"
+          className="sm:hidden text-sm sm:text-xl font-normal 2xl:font-light text-[#F3F0E8] my-16 ml-20"
         />
 
         <LinkPullUp

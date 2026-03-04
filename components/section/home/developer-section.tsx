@@ -20,7 +20,7 @@ const DeveloperSection = () => {
         <div className="absolute inset-0 z-10 flex flex-col justify-center sm:py-16 px-5 sm:px-10 xl:px-16 2xl:px-48">
           <WordsPullUp
             text="THE DEVELOPER"
-            className="font-medium tracking-widest text-lg sm:text-2xl xl:text-3xl 2xl:text-4xl text-[#F3F0E8] mb-20 sm:mb-32"
+            className="font-medium tracking-widest text-lg sm:text-2xl xl:text-3xl 2xl:text-[32px] text-[#F3F0E8] mb-20 sm:mb-32"
           />
           <FadeSlide className="relative h-10 sm:h-14 2xl:h-18 justify-start items-start w-auto mb-10 sm:mb-16">
             <Image
@@ -32,7 +32,7 @@ const DeveloperSection = () => {
             />
           </FadeSlide>
 
-          <FadeSlide className="text-[#F3F0E8] font-normal text-sm sm:text-xl 2xl:text-2xl mb-14 lg:mb-16 max-w-140 2xl:max-w-200 sm:pr-10 2xl:pr-0 text-balance">
+          <FadeSlide className="text-[#F3F0E8] font-normal 2xl:font-light text-sm sm:text-xl mb-14 lg:mb-16 max-w-140 2xl:max-w-200 sm:pr-10 2xl:pr-0 text-balance">
             Pakuwon Group is a pioneer in Indonesia's property scene, known for
             visionary superblocks that blend luxury living, vibrant retail, and
             world-class hospitality across major cities.

@@ -48,12 +48,12 @@ const OverviewSection = () => {
           <WordsPullUp
             direction="left"
             text="FACILITIES"
-            className="text-[#9D7958] font-medium text-3xl sm:text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl tracking-wider sm:mr-20"
+            className="text-[#9D7958] font-medium 2xl:font-normal text-3xl sm:text-4xl md:text-5xl xl:text-6xl 2xl:text-[67px] tracking-wider sm:mr-20"
           />
           <WordsPullUp
             direction="left"
             text="OVERVIEW"
-            className="text-[#9D7958] font-light text-3xl sm:text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl tracking-wider"
+            className="text-[#9D7958] font-light 2xl:font-extralight text-3xl sm:text-4xl md:text-5xl xl:text-6xl 2xl:text-[67px] tracking-wider"
           />
         </div>
       </div>
@@ -64,14 +64,14 @@ const OverviewSection = () => {
         <div>
           <WordsPullUp
             text="ELUNA FACILITIES"
-            className="text-3xl 2xl:text-4xl tracking-[0.3em] text-[#9D7958] font-semibold mb-8"
+            className="text-3xl 2xl:text-[32px] tracking-[0.3em] text-[#9D7958] font-semibold 2xl:font-medium mb-8"
           />
 
           <div className="grid grid-cols-2 gap-x-12 gap-y-6 text-[#9D7958]">
             {listElunaFacilities.map((facility) => (
               <WordsPullUp
                 text={facility}
-                className="text-lg 2xl:text-2xl border-b border-[#9D7958] pb-2"
+                className="text-lg 2xl:text-xl border-b border-[#9D7958] pb-2"
               />
             ))}
           </div>
@@ -80,14 +80,14 @@ const OverviewSection = () => {
         <div>
           <WordsPullUp
             text="SHARED FACILITIES"
-            className="text-3xl 2xl:text-4xl tracking-[0.3em] text-[#9D7958] font-semibold mb-8"
+            className="text-3xl 2xl:text-[32px] tracking-[0.3em] text-[#9D7958] font-semibold 2xl:font-medium mb-8"
           />
 
           <div className="grid grid-cols-2 gap-x-12 gap-y-6 text-[#9D7958]">
             {listSharedFacilities.map((facility) => (
               <WordsPullUp
                 text={facility}
-                className="text-lg 2xl:text-2xl border-b border-[#9D7958] pb-2"
+                className="text-lg 2xl:text-xl border-b border-[#9D7958] pb-2"
               />
             ))}
           </div>

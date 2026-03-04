@@ -19,21 +19,21 @@ const LocationSection = () => {
       <div className="relative z-10 pt-0 sm:pt-32 py-32 px-5 sm:px-10 xl:px-48 gap-16 flex flex-col lg:flex-row justify-between items-start">
         <WordsPullUp
           text="OUR LOCATION"
-          className="font-medium tracking-widest text-lg sm:text-2xl xl:text-3xl 2xl:text-4xl text-[#F3F0E8]"
+          className="font-medium tracking-widest text-lg sm:text-2xl xl:text-3xl 2xl:text-[32px] text-[#F3F0E8]"
         />
         <div className="sm:w-1/2 lg:w-3/5 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-20 lg:gap-0">
           <div className="flex flex-col gap-2 sm:gap-4">
             <WordsPullUp
               text="INFINITE"
-              className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-extralight text-[#F3F0E8] tracking-widest"
+              className="text-3xl sm:text-5xl lg:text-6xl font-extralight text-[#F3F0E8] tracking-widest"
             />
 
             <WordsPullUp
               text="CONNECTIVITY"
-              className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-medium text-[#F3F0E8] tracking-widest ml-16 sm:ml-20 mb-6 sm:mb-10"
+              className="text-3xl sm:text-5xl lg:text-6xl font-medium 2xl:font-normal text-[#F3F0E8] tracking-widest ml-16 sm:ml-20 mb-6 sm:mb-10"
             />
 
-            <FadeSlide className="text-[#F3F0E8] font-normal ml-16 sm:ml-0 text-sm sm:text-xl 2xl:text-2xl mb-14 lg:mb-16 max-w-5xl">
+            <FadeSlide className="text-[#F3F0E8] font-normal 2xl:font-light ml-16 sm:ml-0 text-sm sm:text-xl mb-14 lg:mb-16 max-w-5xl">
               Surrounded by key business, entertainment, and lifestyle
               destinations, the location offers unparalleled accessibility and
               convenience. Whether for work or leisure, residents and visitors

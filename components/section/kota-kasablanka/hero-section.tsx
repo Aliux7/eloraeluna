@@ -21,35 +21,35 @@ const HeroSection = () => {
           <div className="flex justify-start items-center gap-2.5 sm:gap-5">
             <WordsPullUp
               text="A"
-              className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-light text-[#9D7958] sm:text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
+              className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-light 2xl:font-extralight text-[#9D7958] sm:text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
             />
             <WordsPullUp
               text="MASTERPLAN"
-              className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-medium text-[#9D7958] sm:text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
+              className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-medium 2xl:font-normal text-[#9D7958] sm:text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
             />
             <WordsPullUp
               text="OF"
-              className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-light text-[#9D7958] sm:text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
+              className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-light 2xl:font-extralight text-[#9D7958] sm:text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
             />
           </div>
           <WordsPullUp
             text="INTEGRATED LIVING"
-            className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-medium sm:font-bold text-[#9D7958] sm:text-[#F3F0E8] tracking-widest ml-10 sm:ml-0 lg:ml-[5vw] mb-6 md:mb-10 xl:mb-8"
+            className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-medium sm:font-bold 2xl:font-medium text-[#9D7958] sm:text-[#F3F0E8] tracking-widest ml-10 sm:ml-0 lg:ml-[5vw] mb-6 md:mb-10 xl:mb-8"
           />
 
           <WordsPullUp
             text="Steps away from world-class fashion, dining, entertainment, and family-"
-            className="hidden sm:block text-sm sm:text-xl 2xl:text-2xl font-normal text-[#9D7958] sm:text-[#F3F0E8]"
+            className="hidden sm:block text-sm sm:text-xl font-normal 2xl:font-light text-[#9D7958] sm:text-[#F3F0E8]"
           />
           <WordsPullUp
             text="friendly experiences. Elora and Eluna offer direct access to the vibrant"
-            className="hidden sm:block text-sm sm:text-xl 2xl:text-2xl font-normal text-[#9D7958] sm:text-[#F3F0E8]"
+            className="hidden sm:block text-sm sm:text-xl font-normal 2xl:font-light text-[#9D7958] sm:text-[#F3F0E8]"
           />
           <WordsPullUp
             text="energy of Kota Kasablanka—where everything you need is within reach."
-            className="hidden sm:block text-sm sm:text-xl 2xl:text-2xl font-normal text-[#9D7958] sm:text-[#F3F0E8] mb-16"
+            className="hidden sm:block text-sm sm:text-xl font-normal 2xl:font-light text-[#9D7958] sm:text-[#F3F0E8] mb-16"
           />
-          <FadeSlide className="sm:hidden ml-10  text-sm sm:text-xl 2xl:text-2xl font-normal text-[#9D7958] sm:text-[#F3F0E8]">
+          <FadeSlide className="sm:hidden ml-10  text-sm sm:text-xl font-normal 2xl:font-light text-[#9D7958] sm:text-[#F3F0E8]">
             Steps away from world-class fashion, dining, entertainment, and
             family-friendly experiences. Elora and Eluna offer direct access to
             the vibrant energy of Kota Kasablanka—where everything you need is

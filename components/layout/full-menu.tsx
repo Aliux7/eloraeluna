@@ -38,7 +38,7 @@ const FullMenu: React.FC<FullMenuProps> = ({ open, onClose }) => {
               onClick={onClose}
               className="w-full flex items-center justify-between group cursor-pointer p-5 xl:px-20 hover:bg-[#614429] bg-transparent transition-all duration-300 ease-in-out"
             >
-              <span className="sm:text-lg md:text-xl 2xl:text-[26px] tracking-wide 2xl:font-light">
+              <span className="sm:text-lg md:text-xl 2xl:text-2xl tracking-wide 2xl:font-light">
                 {item.title}
               </span>
 
