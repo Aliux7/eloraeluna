@@ -26,11 +26,11 @@ const HeroSection = () => {
           />
           <WordsPullUp
             text="EXPERIENCE CITY LIVING"
-            className="text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-medium sm:font-bold text-[#9D7958] sm:text-[#F3F0E8] tracking-widest"
+            className="text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-medium sm:font-bold 2xl:font-medium text-[#9D7958] sm:text-[#F3F0E8] tracking-widest"
           />
           <WordsPullUp
             text="LIKE NEVER BEFORE"
-            className="text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-medium sm:font-bold text-[#9D7958] sm:text-[#F3F0E8] tracking-widest mb-4"
+            className="text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-medium sm:font-bold 2xl:font-medium text-[#9D7958] sm:text-[#F3F0E8] tracking-widest mb-4"
           />
           <WordsPullUp
             text="Author: John Doe"

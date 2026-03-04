@@ -7,7 +7,7 @@ const page = () => {
     <main className="overflow-x-hidden bg-[#F3F0E8]">
       <HeroSection />
       <MapSection />
-      <ConclusionSection />
+      {/* <ConclusionSection /> */}
     </main>
   );
 };

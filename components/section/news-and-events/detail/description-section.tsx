@@ -6,7 +6,7 @@ const DescriptionSection = () => {
   return (
     <section className="w-full bg-[#E7E3DB] py-8 sm:py-32 px-5 sm:px-10 xl:px-48">
       <div className="space-y-12">
-        <FadeSlide className="text-[#464948] leading-relaxed text-base lg:text-[22px] 2xl:text-3xl">
+        <FadeSlide className="text-[#464948] leading-relaxed text-base lg:text-[22px] 2xl:text-2xl">
           City life means everything is close — and when you live at Eluna,
           everything really does mean everything. Step outside and find yourself
           surrounded by vibrant cafes, curated boutiques, fitness studios, and
@@ -24,10 +24,10 @@ const DescriptionSection = () => {
         <div className="space-y-6">
           <WordsPullUp
             text="A Lifestyle That Matches Your Pace"
-            className="text-xl lg:text-4xl 2xl:text-5xl font-medium text-[#464948]"
+            className="text-xl lg:text-4xl 2xl:text-[40px] font-medium text-[#464948]"
           />
 
-          <FadeSlide className="text-[#464948] leading-relaxed text-base lg:text-2xl 2xl:text-3xl">
+          <FadeSlide className="text-[#464948] leading-relaxed text-base lg:text-2xl 2xl:text-2xl">
             Urban living doesn't have to mean chaos. Inside Eluna, you'll find
             spaces thoughtfully designed for both momentum and mindfulness.
             Start your morning at the private gym, work remotely from the
@@ -35,7 +35,7 @@ const DescriptionSection = () => {
             over the skyline.
           </FadeSlide>
 
-          <FadeSlide className="text-[#464948] leading-relaxed text-base lg:text-2xl 2xl:text-3xl">
+          <FadeSlide className="text-[#464948] leading-relaxed text-base lg:text-2xl 2xl:text-2xl">
             Every feature, from the lobby to the rooftop, is curated to support
             modern, flexible living — so you can enjoy the rush of the city
             while always having a place to recharge.

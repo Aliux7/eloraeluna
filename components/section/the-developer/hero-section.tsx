@@ -22,7 +22,7 @@ const HeroSection = () => {
         <div className="py-8 sm:py-0">
           <WordsPullUp
             text="COMMUNITIES THAT"
-            className="text-xl sm:text-2xl lg:text-3xl 2xl:text-4xl font-bold text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
+            className="text-xl sm:text-2xl lg:text-3xl 2xl:text-4xl font-bold 2xl:font-semibold text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
           />
           <WordsPullUp
             text="REDEFINE"
@@ -30,10 +30,10 @@ const HeroSection = () => {
           />
           <WordsPullUp
             text="CITY LIVING"
-            className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-medium text-[#F3F0E8] tracking-widest ml-10 sm:ml-0 lg:ml-[5vw] mb-6 sm:mb-8"
+            className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-medium 2xl:font-normal text-[#F3F0E8] tracking-widest ml-10 sm:ml-0 lg:ml-[5vw] mb-6 sm:mb-8"
           />
 
-          <FadeSlide className="max-w-2xl 2xl:max-w-3xl text-sm sm:text-lg lg:text-xl 2xl:text-2xl font-normal text-[#F3F0E8] mb-8">
+          <FadeSlide className="max-w-2xl 2xl:max-w-3xl text-sm sm:text-lg lg:text-xl 2xl:text-2xl font-normal 2xl:font-light text-[#F3F0E8] mb-8">
             Continuing to shape Indonesia's skyline, Pakuwon Group leads the
             industry with thoughtful design, cutting-edge innovation, and an
             unwavering commitment to excellence. By crafting spaces that inspire

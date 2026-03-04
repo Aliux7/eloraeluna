@@ -20,7 +20,7 @@ const TowerSection = () => {
       <div className="relative z-10 gap-16 flex flex-col lg:flex-row justify-between items-start">
         <WordsPullUp
           text="OUR TOWERS"
-          className="font-medium tracking-widest text-lg sm:text-2xl xl:text-3xl text-[#F3F0E8]"
+          className="font-medium tracking-widest text-lg sm:text-2xl xl:text-3xl 2xl:text-[32px] text-[#F3F0E8]"
         />
         <div className="lg:w-3/5 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-20 lg:gap-0">
           <div className="flex flex-col gap-2 sm:gap-4">
@@ -34,7 +34,7 @@ const TowerSection = () => {
               className="text-3xl sm:text-5xl lg:text-6xl font-medium text-[#F3F0E8] tracking-widest ml-16 sm:ml-20 mb-6 sm:mb-10"
             />
 
-            <FadeSlide className="text-[#F3F0E8] font-normal text-lg sm:text-xl mb-14 lg:mb-16">
+            <FadeSlide className="text-[#F3F0E8] font-normal 2xl:font-light text-lg sm:text-xl mb-14 lg:mb-16">
               Two towers, two visions—crafted in <br /> harmony, designed to
               elevate.
             </FadeSlide>
