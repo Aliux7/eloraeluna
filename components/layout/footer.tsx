@@ -89,23 +89,20 @@ const Footer = () => {
 
               <div className="flex flex-col justify-between">
                 <div className="space-y-1 text-lg font-light">
-                  <FadeSlide className="tracking-wider text-sm sm:text-base">
-                    <span className="font-medium mr-3 pr-1">P</span>{" "}
+                  <FadeSlide className="tracking-wider text-sm sm:text-base font-medium ">
+                    <span className="mr-3 pr-1">P</span>{" "}
                     081189996968
                   </FadeSlide>
-                  <FadeSlide className="tracking-wider text-sm sm:text-base">
-                    <span className="font-medium mr-3 pr-1">E</span>{" "}
+                  <FadeSlide className="tracking-wider text-sm sm:text-base font-medium ">
+                    <span className="mr-3 pr-1">E</span>{" "}
                     info@elora-eluna.id
-                  </FadeSlide>
-                  <FadeSlide className="tracking-wider text-sm sm:text-base">
-                    <span className="font-medium mr-3">W</span> elora-eluna.id
-                  </FadeSlide>
+                  </FadeSlide> 
                 </div>
               </div>
             </div>
           </div>
           <div className="absolute bottom-0 right-0 sm:relative flex gap-5 sm:gap-6 md:gap-9 mt-10 md:mt-0 text-lg">
-            <LinkPullUp
+            {/* <LinkPullUp
               href="#"
               className="relative size-4.5 sm:size-6 flex justify-center items-center cursor-pointer"
             >
@@ -114,7 +111,7 @@ const Footer = () => {
                 alt=""
                 className="w-full h-full object-contain"
               />
-            </LinkPullUp>
+            </LinkPullUp> */}
             <LinkPullUp
               href="https://www.instagram.com/elora.eluna/"
               className="relative size-4.5 sm:size-6 flex justify-center items-center cursor-pointer"
@@ -125,7 +122,7 @@ const Footer = () => {
                 className="w-full h-full object-contain"
               />
             </LinkPullUp>
-            <LinkPullUp
+            {/* <LinkPullUp
               href="#"
               className="relative size-4.5 sm:size-6 flex justify-center items-center cursor-pointer"
             >
@@ -134,8 +131,8 @@ const Footer = () => {
                 alt=""
                 className="w-full h-full object-contain"
               />
-            </LinkPullUp>
-            <LinkPullUp
+            </LinkPullUp> */}
+            {/* <LinkPullUp
               href="#"
               className="relative size-4.5 sm:size-6 flex justify-center items-center cursor-pointer"
             >
@@ -144,7 +141,7 @@ const Footer = () => {
                 alt=""
                 className="w-full h-full object-contain"
               />
-            </LinkPullUp>
+            </LinkPullUp> */}
           </div>
         </div>
 

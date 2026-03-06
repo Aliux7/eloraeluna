@@ -302,8 +302,8 @@ const MapSection = () => {
                       Net Area - {activeUnit.netArea} M<sup>2</sup>
                     </h3>
                   </div>
-                  <div className="w-full ">
-                    <ImageZoom src={activeUnit.pathMap.src} alt="Map" />
+                  <div className="w-full h-auto">
+                    <Image src={activeUnit.pathMap} alt="" className="w-full h-full"/> 
                   </div>
                 </div>
                 <div className="relative px-0 w-full h-full mt-20 scale-110 sm:scale-none">

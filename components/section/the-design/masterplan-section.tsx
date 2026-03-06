@@ -71,12 +71,12 @@ const MasterplanSection = () => {
               <span>Pakuwon Tower</span>
             </li>
 
-            <li className="flex gap-4 text-sm sm:text-base 2xl:text-xl">
+            <li className="flex gap-4 text-sm sm:text-base 2xl:text-xl text-[#9D7958]">
               <span>7</span>
               <span>Eluna Tower</span>
             </li>
 
-            <li className="flex gap-4 text-sm sm:text-base 2xl:text-xl">
+            <li className="flex gap-4 text-sm sm:text-base 2xl:text-xl text-[#9D7958]">
               <span>8</span>
               <span>Elora Tower</span>
             </li>
