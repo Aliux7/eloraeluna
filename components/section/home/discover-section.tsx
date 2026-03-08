@@ -59,11 +59,11 @@ const DiscoverSection = () => {
             direction="right"
           > 
             <div className="-ml-5 mb-0 sm:ml-0 relative w-80 sm:w-96 lg:w-105 2xl:w-130 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-7 2xl:p-9 flex flex-col justify-between gap-5 xl:gap-8 items-center">
-              <h3 className="font-light sm:font-medium 2xl:font-light sm:text-lg 2xl:text-[22px] tracking-widest text-[#F3F0E8]">
+              <h3 className="font-medium 2xl:font-light sm:text-lg 2xl:text-[22px] tracking-widest text-[#F3F0E8]">
                 POSITIONED AT THE HEART OF JAKARTA'S MOST DYNAMIC DISTRICT, THIS
                 DEVELOPMENT CONNECTS YOU EFFORTLESSLY TO THE CITY'S PULSE.
               </h3>
-              <p className="sm:text-lg 2xl:text-[22px] font-extralight sm:font-normal 2xl:font-extralight text-[#F3F0E8]">
+              <p className="sm:text-lg 2xl:text-[22px] font-normal 2xl:font-extralight text-[#F3F0E8]">
                 Surrounded by key business, entertainment, and lifestyle
                 destinations, the location offers unparalleled accessibility and
                 convenience. Whether for work or leisure, residents and visitors

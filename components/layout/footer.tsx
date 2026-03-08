@@ -72,16 +72,16 @@ const Footer = () => {
 
               <WordsPullUp
                 text="PT Elite Prima Hutama"
-                className="uppercase tracking-widest sm:text-lg font-bold"
+                className="uppercase tracking-widest text-sm sm:text-lg font-bold"
               />
             </div>
             <div className="flex flex-col md:flex-row md:justify-start md:items-end gap-3 sm:gap-4">
-              <div className="space-y-3 text-sm leading-relaxed max-w-sm ">
+              <div className="space-y-3 text-xs leading-relaxed max-w-sm ">
                 <WordsPullUp
                   text="Head Marketing Office"
                   className="font-medium sm:text-lg tracking-wider"
                 />
-                <FadeSlide className="text-balance text-sm sm:text-base font-light tracking-wider">
+                <FadeSlide className="text-balance text-xs sm:text-base font-light tracking-wider">
                   Eightyeight@Kasablanka Tower B Lt. 20, Jl. Casablanca Raya Kav
                   88, Menteng Dalam, Tebet, Jakarta Selatan, DKI Jakarta 12870
                 </FadeSlide>
@@ -89,11 +89,11 @@ const Footer = () => {
 
               <div className="flex flex-col justify-between">
                 <div className="space-y-1 text-lg font-light">
-                  <FadeSlide className="tracking-wider text-sm sm:text-base font-medium ">
+                  <FadeSlide className="tracking-wider text-xs sm:text-base font-medium ">
                     <span className="mr-3 pr-1">P</span>{" "}
                     081189996968
                   </FadeSlide>
-                  <FadeSlide className="tracking-wider text-sm sm:text-base font-medium ">
+                  <FadeSlide className="tracking-wider text-xs sm:text-base font-medium ">
                     <span className="mr-3 pr-1">E</span>{" "}
                     info@elora-eluna.id
                   </FadeSlide> 

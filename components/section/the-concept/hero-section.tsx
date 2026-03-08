@@ -59,7 +59,7 @@ const HeroSection = () => {
             direction="right"
           >
             <div className="-ml-5 mb-0 sm:ml-0 relative w-80 sm:w-80 2xl:w-130 xl:h-fit bg-[#9D7958]/90 sm:bg-[#9D7958] p-5 sm:p-9 flex flex-col justify-between gap-5 xl:gap-0 items-center">
-              <p className="sm:text-lg 2xl:text-[22px] font-extralight sm:font-normal 2xl:font-extralight text-[#F3F0E8] flex justify-center items-center h-full">
+              <p className="sm:text-lg 2xl:text-[22px] font-normal 2xl:font-extralight text-[#F3F0E8] flex justify-center items-center h-full">
                 Eluna reflects the luminous allure of the moon, offering a
                 lifestyle of elegance, rhythm, and refined luxury. It is a home
                 for those who embrace elevated living—where thoughtful design
@@ -226,7 +226,7 @@ const HeroSection = () => {
                     />
                   </div>
                 </div>
-                <p className="text-sm sm:text-lg 2xl:text-[22px] 2xl:leading-[32px] font-extralight sm:font-normal 2xl:font-extralight text-[#F3F0E8]">
+                <p className="text-sm sm:text-lg 2xl:text-[22px] 2xl:leading-8 font-normal 2xl:font-extralight text-[#F3F0E8]">
                   Elora and Eluna embody the essential balance of life, inspired
                   by the sun and the moon. Elora channels the sun's energy
                   through bold architecture, luminous interiors, and a vibrant
@@ -237,13 +237,13 @@ const HeroSection = () => {
                   harmonize vibrance and tranquility, creating a luxurious
                   sanctuary where life moves with purpose and grace.
                 </p>
-                <div className="flex justify-center items-center gap-7 h-7 sm:h-8 lg:h-12">
+                <div className="flex justify-center items-center gap-7 h-6 sm:h-8 lg:h-12">
                   <Image
                     src={elora}
                     alt=""
                     width={1000}
                     height={1000}
-                    className="w-full h-5 sm:h-6"
+                    className="w-full h-4 sm:h-6"
                   />
                   <Image
                     src={and}
@@ -257,7 +257,7 @@ const HeroSection = () => {
                     alt=""
                     width={1000}
                     height={1000}
-                    className="w-full h-5 sm:h-6"
+                    className="w-full h-4 sm:h-6"
                   />
                 </div>
               </div>

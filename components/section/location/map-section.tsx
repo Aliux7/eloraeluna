@@ -203,13 +203,13 @@ const MapSection = () => {
           src={arrow}
           alt=""
           onClick={() => scroll("left")}
-          className="absolute top-1/2 -translate-y-1/2 left-0 xl:-left-16 cursor-pointer scale-70 sm:scale-100 z-20 opacity-50 hover:opacity-100"
+          className="absolute top-28 sm:top-1/2 -translate-y-1/2 left-0 xl:-left-16 cursor-pointer scale-70 sm:scale-100 z-20 opacity-50 hover:opacity-100"
         />
         <Image
           src={arrow}
           alt=""
           onClick={() => scroll("right")}
-          className="absolute top-1/2 -translate-y-1/2 right-0 xl:-right-16 rotate-180 cursor-pointer scale-70 sm:scale-100 z-20 opacity-50 hover:opacity-100"
+          className="absolute top-28 sm:top-1/2 -translate-y-1/2 right-0 xl:-right-16 rotate-180 cursor-pointer scale-70 sm:scale-100 z-20 opacity-50 hover:opacity-100"
         />
         <WordsPullUp
           text="LEGEND"
