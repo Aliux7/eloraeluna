@@ -36,17 +36,17 @@ const HeroSection = () => {
 
           <WordsPullUp
             text="The Kota Kasablanka master plan is a meticulously designed urban "
-            className="hidden sm:block text-sm sm:text-lg lg:text-xl font-normal 2xl:font-light text-[#9D7958] sm:text-[#F3F0E8]"
+            className="hidden sm:block text-sm sm:text-lg lg:text-xl 2xl:text-2xl font-normal 2xl:font-light text-[#9D7958] sm:text-[#F3F0E8]"
           />
           <WordsPullUp
             text="tapestry, harmonizing luxury, convenience, and connectivity in Jakarta's"
-            className="hidden sm:block text-sm sm:text-lg lg:text-xl font-normal 2xl:font-light text-[#9D7958] sm:text-[#F3F0E8]"
+            className="hidden sm:block text-sm sm:text-lg lg:text-xl 2xl:text-2xl font-normal 2xl:font-light text-[#9D7958] sm:text-[#F3F0E8]"
           />
           <WordsPullUp
             text="thriving business district."
-            className="hidden sm:block text-sm sm:text-lg lg:text-xl font-normal 2xl:font-light text-[#9D7958] sm:text-[#F3F0E8] mb-16"
+            className="hidden sm:block text-sm sm:text-lg lg:text-xl 2xl:text-2xl font-normal 2xl:font-light text-[#9D7958] sm:text-[#F3F0E8] mb-16"
           />
-          <FadeSlide className="sm:hidden text-sm sm:text-lg lg:text-xl font-normal 2xl:font-light text-[#F3F0E8] sm:text-[#F3F0E8]">
+          <FadeSlide className="sm:hidden text-sm sm:text-lg lg:text-xl 2xl:text-2xl font-normal 2xl:font-light text-[#F3F0E8] sm:text-[#F3F0E8]">
             The Kota Kasablanka master plan is a meticulously designed urban
             tapestry, harmonizing luxury, convenience, and connectivity in
             Jakarta's thriving business district.

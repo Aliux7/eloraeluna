@@ -28,16 +28,16 @@ const HeroSection = () => {
 
           <WordsPullUp
             text="Discover thoughtfully curated amenities designed to elevate comfort,"
-            className="hidden sm:block text-sm sm:text-lg lg:text-xl 2xl:text-xl font-normal 2xl:font-extralight text-[#9D7958] sm:text-[#F3F0E8]"
+            className="hidden sm:block text-sm sm:text-lg lg:text-xl 2xl:text-2xl font-normal 2xl:font-light text-[#9D7958] sm:text-[#F3F0E8]"
           />
           <WordsPullUp
             text="leisure, and modern luxury at Eluna."
-            className="hidden sm:block text-sm sm:text-lg lg:text-xl 2xl:text-xl font-normal 2xl:font-extralight text-[#9D7958] sm:text-[#F3F0E8]"
+            className="hidden sm:block text-sm sm:text-lg lg:text-xl 2xl:text-2xl font-normal 2xl:font-light text-[#9D7958] sm:text-[#F3F0E8]"
           />  
 
           <WordsPullUp
             text="Discover thoughtfully curated amenities designed to elevate comfort, leisure, and modern luxury at Eluna."
-            className="ml-10 block sm:hidden text-sm sm:text-lg lg:text-xl 2xl:text-xl font-normal 2xl:font-extralight text-[#9D7958] sm:text-[#F3F0E8]"
+            className="ml-10 block sm:hidden text-sm sm:text-lg lg:text-xl 2xl:text-2xl font-normal 2xl:font-light text-[#9D7958] sm:text-[#F3F0E8]"
           />  
         </div>
       </div>

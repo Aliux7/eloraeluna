@@ -1,18 +1,18 @@
+"use client";
 import hero_background from "@/app/assets/home/hero_background.jpg";
-import eluna_logo from "@/app/assets/home/eluna_logo.png";
 import Image from "next/image";
 import arrow from "@/app/assets/home/arrow.png";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { LinkPullUp } from "@/components/animation/link-pull-up";
-import { FadeSlide } from "@/components/animation/fade-slide";
+import { SwipeShiftButton } from "@/components/ui/swipeable-button";
 
-const HeroSection = () => {
+const HeroSection = () => { 
   return (
     <section
       id="hero-section"
       className="relative sm:min-h-screen bg-[#464948]"
     >
-      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden overlay-hero after:content-[''] after:absolute after:inset-0 after:bg-linear-to-tr after:from-black/40 after:to-transparent after:pointer-events-none after:select-none ">
+      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden overlay-hero after:content-[''] after:absolute after:inset-0 after:bg-linear-to-tr after:from-black/40 after:to-transparent after:pointer-events-none after:select-none">
         <Image
           src={hero_background}
           alt=""
@@ -53,27 +53,28 @@ const HeroSection = () => {
         />
         <WordsPullUp
           text="Eluna Is Where Elegance Lingers In Every Detail"
-          className="hidden sm:block text-sm sm:text-xl font-normal 2xl:font-light text-[#F3F0E8]"
+          className="hidden sm:block text-sm sm:text-xl 2xl:text-2xl font-normal 2xl:font-light text-[#F3F0E8]"
         />
         <WordsPullUp
           text="— A Quiet Statement Of Timeless Living For"
-          className="hidden sm:block text-sm sm:text-xl font-normal 2xl:font-light text-[#F3F0E8]"
+          className="hidden sm:block text-sm sm:text-xl 2xl:text-2xl font-normal 2xl:font-light text-[#F3F0E8]"
         />
         <WordsPullUp
           text="Those Who Seek Undersstand Luxury."
-          className="hidden sm:block text-sm sm:text-xl font-normal 2xl:font-light text-[#F3F0E8] mb-16"
+          className="hidden sm:block text-sm sm:text-xl 2xl:text-2xl font-normal 2xl:font-light text-[#F3F0E8] mb-16"
         />
         <WordsPullUp
           text="Eluna Is Where Elegance Lingers In Every Detail — A Quiet Statement Of Timeless Living For Those Who Seek Undersstand Luxury."
-          className="sm:hidden text-sm sm:text-xl font-normal 2xl:font-light text-[#F3F0E8] my-16 ml-20"
+          className="sm:hidden text-sm sm:text-xl 2xl:text-2xl font-normal 2xl:font-light text-[#F3F0E8] my-16 ml-20"
         />
 
         <LinkPullUp
           href="/the-design"
-          className="flex justify-center items-center cursor-pointer font-medium capitalize text-sm sm:text-base 2xl:text-lg pt-px w-40 sm:w-47.5 2xl:w-60 h-11.25 2xl:h-14 text-[#F3F0E8] border border-[#9D7958] hover:bg-[#F3F0E8]/90 hover:text-[#9D7958] transition-all duration-200 ease-in-out"
+          className="hidden sm:flex justify-center items-center cursor-pointer font-medium capitalize text-sm sm:text-base 2xl:text-lg pt-px w-40 sm:w-47.5 2xl:w-60 h-11.25 2xl:h-14 text-[#F3F0E8] border border-[#9D7958] hover:bg-[#F3F0E8]/90 hover:text-[#9D7958] transition-all duration-200 ease-in-out"
         >
           EXPLORE NOW
         </LinkPullUp>
+        <SwipeShiftButton href="/the-design">EXPLORE NOW</SwipeShiftButton>
       </div>
     </section>
   );
