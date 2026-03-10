@@ -223,7 +223,7 @@ const SharedSection = () => {
                   alt=""
                   className="w-full h-full object-cover"
                 />
-                <span className="absolute bottom-1 text-[#F3F0E8] text-xl">
+                <span className="absolute left-1 bottom-1 text-[#F3F0E8] text-xl">
                   {facilities.name}
                 </span>
               </div>
