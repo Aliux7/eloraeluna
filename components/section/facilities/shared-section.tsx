@@ -216,14 +216,14 @@ const SharedSection = () => {
             {listFacilities.map((facilities) => (
               <div
                 onClick={() => setActive(facilities)}
-                className="relative flex justify-center items-center aspect-video h-32 sm:h-45 2xl:h-80 transition-all duration-300 ease-in-out cursor-pointer p-px bg-transparent hover:bg-[#464948]"
+                className="relative flex justify-start items-center aspect-video h-32 sm:h-45 2xl:h-80 transition-all duration-300 ease-in-out cursor-pointer p-px bg-transparent hover:bg-[#464948]"
               >
                 <Image
                   src={facilities.image}
                   alt=""
                   className="w-full h-full object-cover"
                 />
-                <span className="absolute bottom-1 text-[#F3F0E8] text-xl">
+                <span className="absolute left-3 bottom-1 text-[#F3F0E8] text-xl">
                   {facilities.name}
                 </span>
               </div>
