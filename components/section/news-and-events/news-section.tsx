@@ -1,47 +1,14 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import news_1 from "@/app/assets/home/news_1.png";
-import news_2 from "@/app/assets/home/news_2.png";
-import news_3 from "@/app/assets/home/news_3.png";
-import news_4 from "@/app/assets/home/news_4.png";
 import arrow_1 from "@/app/assets/home/arrow_1.png";
 import Image from "next/image";
 import { LinkPullUp } from "@/components/animation/link-pull-up";
 import { ChevronDown } from "lucide-react";
+import { newsData } from "@/constants/news";
 
 const NewsSection = () => {
   const [sort, setSort] = useState<"newest" | "oldest">("newest");
-  const newsData = [
-    {
-      id: 1,
-      title: "EXPERIENCE CITY LIVING LIKE NEVER BEFORE",
-      image: news_1,
-      span: "col-span-1",
-      date: "2025-03-01",
-    },
-    {
-      id: 2,
-      title: "LIVE WHERE EVERYTHING HAPPENS: URBAN LIVING AT ITS BEST",
-      image: news_2,
-      span: "col-span-1 xl:col-span-2",
-      date: "2025-02-10",
-    },
-    {
-      id: 3,
-      title: "EXPERIENCE CITY LIVING LIKE NEVER BEFORE",
-      image: news_3,
-      span: "col-span-1 xl:col-span-2",
-      date: "2025-01-02",
-    },
-    {
-      id: 4,
-      title: "LIVE WHERE EVERYTHING HAPPENS: URBAN LIVING AT ITS BEST",
-      image: news_4,
-      span: "col-span-1",
-      date: "2024-12-12",
-    },
-  ];
 
   const sortedNews = [...newsData].sort((a, b) => {
     if (sort === "newest") {
@@ -137,7 +104,7 @@ const NewsSection = () => {
               </h3>
 
               <LinkPullUp
-                href="/news-detail"
+                href={`/news-detail/${news.id}`}
                 wfull={true}
                 className="h-14 border border-[#B38569] w-full flex justify-between items-center text-[#B38569] p-5 text-lg bg-white/90 hover:bg-white transition-all duration-200 ease-in-out cursor-pointer"
               >

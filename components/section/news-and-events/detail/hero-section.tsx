@@ -1,8 +1,28 @@
-import hero_background from "@/app/assets/facilities/hero_background.jpg";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 
-const HeroSection = () => {
+type Article = {
+  id: number;
+  title: string;
+  date: string;
+  image: StaticImageData;
+};
+
+type Props = {
+  article: Article;
+};
+
+const HeroSection = ({ article }: Props) => {
+  const formatDate = (dateString: string) => {
+    const date = new Date(dateString);
+    const options: Intl.DateTimeFormatOptions = {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    };
+    return date.toLocaleDateString("en-GB", options);
+  };
+
   return (
     <section
       id="hero-section"
@@ -10,7 +30,7 @@ const HeroSection = () => {
     >
       <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-black/0">
         <Image
-          src={hero_background}
+          src={article.image}
           alt=""
           width={2000}
           height={2000}
@@ -21,20 +41,12 @@ const HeroSection = () => {
       <div className="relative z-10 px-5 sm:px-10 xl:px-48 w-full sm:min-h-screen sm:pb-10 lg:pb-16 flex flex-col justify-end items-center">
         <div className="py-8 sm:py-0 text-center">
           <WordsPullUp
-            text="20 September 2025"
+            text={formatDate(article.date)}
             className="text-lg sm:text-xl lg:text-2xl 2xl:text-3xl text-[#9D7958] sm:text-[#FFFFFF] tracking-widest mb-2 lg:mb-4"
           />
           <WordsPullUp
-            text="EXPERIENCE CITY LIVING"
-            className="text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-medium sm:font-bold 2xl:font-medium text-[#9D7958] sm:text-[#F3F0E8] tracking-widest"
-          />
-          <WordsPullUp
-            text="LIKE NEVER BEFORE"
-            className="text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-medium sm:font-bold 2xl:font-medium text-[#9D7958] sm:text-[#F3F0E8] tracking-widest mb-4"
-          />
-          <WordsPullUp
-            text="Author: John Doe"
-            className="text-sm sm:text-lg lg:text-xl 2xl:text-2xl font-normal text-[#9D7958] sm:text-[#F3F0E8]"
+            text={article.title}
+            className="max-w-3xl text-balance text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-medium sm:font-bold 2xl:font-medium text-[#9D7958] sm:text-[#F3F0E8] tracking-widest"
           />
         </div>
       </div>

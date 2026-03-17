@@ -1,12 +1,22 @@
-import news_1 from "@/app/assets/home/news_1.png";
-import news_2 from "@/app/assets/home/news_2.png";
-import news_3 from "@/app/assets/home/news_3.png";
-import news_4 from "@/app/assets/home/news_4.png";
 import arrow_1 from "@/app/assets/home/arrow_1.png";
 import Image from "next/image";
 import { LinkPullUp } from "@/components/animation/link-pull-up";
+import { newsData } from "@/constants/news";
 
 const NewsSection = () => {
+  const sortedNews = [...newsData].sort((a, b) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  });
+
+  const getSpan = (index: number) => {
+    const pattern = [
+      "col-span-1",
+      "xl:col-span-2",
+      "xl:col-span-2",
+      "col-span-1",
+    ];
+    return pattern[index % 4];
+  };
   return (
     <section className="relative bg-[#F3F0E8] py-20 sm:py-36 px-5 sm:px-10 xl:px-48 flex flex-col gap-10">
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-5 sm:gap-10">
@@ -21,111 +31,41 @@ const NewsSection = () => {
         </LinkPullUp>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-        <div className="relative after:content-[''] after:absolute after:inset-0 after:bg-black/30 col-span-1">
-          <Image
-            src={news_1}
-            alt=""
-            className="w-full h-96 lg:h-118 2xl:h-200 object-cover"
-          />
-          <div className="absolute top-0 z-10 p-5 flex flex-col justify-between items-start h-full">
-            <h3 className="text-3xl font-medium text-white">
-              EXPERIENCE CITY LIVING LIKE NEVER BEFORE
-            </h3>
-            <LinkPullUp
-              href="/news-detail"
-              wfull={true}
-              className="h-11 sm:h-14 border border-[#B38569] w-full flex justify-between items-center text-[#B38569] p-5 text-sm sm:text-base 2xl:text-lg bg-white/90 hover:bg-white transition-all duration-200 ease-in-out cursor-pointer"
-            >
-              <span>Read More</span>
-              <Image
-                src={arrow_1}
-                alt=""
-                width={100}
-                height={100}
-                className="w-5 sm:w-7"
-              />
-            </LinkPullUp>
+        {sortedNews.map((news, index) => (
+          <div
+            key={news.id}
+            className={`relative after:content-[''] after:absolute after:inset-0 after:bg-black/30 ${getSpan(index)}`}
+          >
+            <Image
+              src={news.image}
+              alt=""
+              className="w-full h-96 lg:h-118 2xl:h-200 object-cover"
+            />
+
+            <div className="absolute top-0 z-10 p-5 flex flex-col justify-between items-start h-full w-full">
+              <h3 className="text-3xl font-medium text-white max-w-130">
+                {news.title}
+              </h3>
+
+              <LinkPullUp
+                href={`/news-detail/${news.id}`}
+                wfull={true}
+                className="h-14 border border-[#B38569] w-full flex justify-between items-center text-[#B38569] p-5 text-lg bg-white/90 hover:bg-white transition-all duration-200 ease-in-out cursor-pointer"
+              >
+                <span>Read More</span>
+
+                <Image
+                  src={arrow_1}
+                  alt=""
+                  width={100}
+                  height={100}
+                  className="w-7"
+                />
+              </LinkPullUp>
+            </div>
           </div>
-        </div>
-        <div className="relative after:content-[''] after:absolute after:inset-0 after:bg-black/30 col-span-1 xl:col-span-2">
-          <Image
-            src={news_2}
-            alt=""
-            className="w-full h-96 lg:h-118 2xl:h-200 object-cover"
-          />
-          <div className="absolute top-0 z-10 p-5 flex flex-col justify-between items-start h-full w-full">
-            <h3 className="text-3xl font-medium text-white lg:w-105">
-              LIVE WHERE EVERYTHING HAPPENS: URBAN LIVING AT ITS BEST
-            </h3>
-            <LinkPullUp
-              href="/news-detail"
-              wfull={true}
-              className="h-11 sm:h-14 border border-[#B38569] w-full flex justify-between items-center text-[#B38569] p-5 text-sm sm:text-base 2xl:text-lg bg-white/90 hover:bg-white transition-all duration-200 ease-in-out cursor-pointer"
-            >
-              <span>Read More</span>
-              <Image
-                src={arrow_1}
-                alt=""
-                width={100}
-                height={100}
-                className="w-5 sm:w-7"
-              />
-            </LinkPullUp>
-          </div>
-        </div>
-        <div className="relative after:content-[''] after:absolute after:inset-0 after:bg-black/30 col-span-1 xl:col-span-2">
-          <Image
-            src={news_3}
-            alt=""
-            className="w-full h-96 lg:h-118 2xl:h-200 object-cover"
-          />
-          <div className="absolute top-0 z-10 p-5 flex flex-col justify-between items-start h-full w-full">
-            <h3 className="text-3xl font-medium text-white lg:w-105">
-              EXPERIENCE CITY LIVING LIKE NEVER BEFORE
-            </h3>
-            <LinkPullUp
-              href="/news-detail"
-              wfull={true}
-              className="h-11 sm:h-14 border border-[#B38569] w-full flex justify-between items-center text-[#B38569] p-5 text-sm sm:text-base 2xl:text-lg bg-white/90 hover:bg-white transition-all duration-200 ease-in-out cursor-pointer"
-            >
-              <span>Read More</span>
-              <Image
-                src={arrow_1}
-                alt=""
-                width={100}
-                height={100}
-                className="w-5 sm:w-7"
-              />
-            </LinkPullUp>
-          </div>
-        </div>
-        <div className="relative after:content-[''] after:absolute after:inset-0 after:bg-black/30 col-span-1">
-          <Image
-            src={news_4}
-            alt=""
-            className="w-full h-96 lg:h-118 2xl:h-200 object-cover"
-          />
-          <div className="absolute top-0 z-10 p-5 flex flex-col justify-between items-start h-full">
-            <h3 className="text-3xl font-medium text-white">
-              LIVE WHERE EVERYTHING HAPPENS: URBAN LIVING AT ITS BEST
-            </h3>
-            <LinkPullUp
-              href="/news-detail"
-              wfull={true}
-              className="h-11 sm:h-14 border border-[#B38569] w-full flex justify-between items-center text-[#B38569] p-5 text-sm sm:text-base 2xl:text-lg bg-white/90 hover:bg-white transition-all duration-200 ease-in-out cursor-pointer"
-            >
-              <span>Read More</span>
-              <Image
-                src={arrow_1}
-                alt=""
-                width={100}
-                height={100}
-                className="w-5 sm:w-7"
-              />
-            </LinkPullUp>
-          </div>
-        </div>
-      </div> 
+        ))}
+      </div>
     </section>
   );
 };
