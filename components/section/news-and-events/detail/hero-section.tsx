@@ -28,7 +28,7 @@ const HeroSection = ({ article }: Props) => {
       id="hero-section"
       className="relative sm:min-h-screen bg-[#F3F0E8]"
     >
-      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-black/0">
+      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-linear-to-t after:from-black/40 after:to-transparent after:pointer-events-none after:select-none">
         <Image
           src={article.image}
           alt=""
@@ -46,7 +46,7 @@ const HeroSection = ({ article }: Props) => {
           />
           <WordsPullUp
             text={article.title}
-            className="max-w-3xl text-balance text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-medium sm:font-bold 2xl:font-medium text-[#9D7958] sm:text-[#F3F0E8] tracking-widest"
+            className="max-w-3xl text-balance text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl text-[#9D7958] sm:text-[#F3F0E8] tracking-widest"
           />
         </div>
       </div>

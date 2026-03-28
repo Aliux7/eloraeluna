@@ -11,7 +11,7 @@ const NewsSection = () => {
   const getSpan = (index: number) => {
     const pattern = [
       "col-span-1",
-      "xl:col-span-2",
+      "xl:col-span-2",  
       "xl:col-span-2",
       "col-span-1",
     ];

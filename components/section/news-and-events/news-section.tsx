@@ -99,7 +99,10 @@ const NewsSection = () => {
             />
 
             <div className="absolute top-0 z-10 p-5 flex flex-col justify-between items-start h-full w-full">
-              <h3 className="text-3xl font-medium text-white max-w-130">
+              <h3
+                style={{ wordSpacing: "-2px" }}
+                className="text-3xl text-white max-w-130"
+              >
                 {news.title}
               </h3>
 
