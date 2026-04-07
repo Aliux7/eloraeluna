@@ -2,7 +2,6 @@ import { FadeSlide } from "@/components/animation/fade-slide";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import news2 from "@/app/assets/news/news1/02.jpg";
 import news3 from "@/app/assets/news/news1/03.jpg";
-import news4 from "@/app/assets/news/news1/04.jpg";
 import Image from "next/image";
 
 const NewsOneSection = () => {
@@ -104,10 +103,6 @@ const NewsOneSection = () => {
           </FadeSlide>
         </div>
 
-        <FadeSlide className="w-full">
-          <Image src={news4} alt="" />
-        </FadeSlide>
-
         <div className="space-y-12">
           <WordsPullUp
             text="Lifestyle Infrastructure in Modern Residences"
@@ -138,10 +133,6 @@ const NewsOneSection = () => {
             coexist within a single environment.
           </FadeSlide>
         </div>
-
-        <FadeSlide className="w-full">
-          <Image src={news4} alt="" />
-        </FadeSlide>
 
         <div className="space-y-12">
           <WordsPullUp

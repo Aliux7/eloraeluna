@@ -1,10 +1,7 @@
 import { FadeSlide } from "@/components/animation/fade-slide";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import news2 from "@/app/assets/news/news3/02.jpg";
-import news3 from "@/app/assets/news/news3/03.jpg";
-import news4 from "@/app/assets/news/news3/04.jpg";
-import news5 from "@/app/assets/news/news3/05.jpg";
-import news6 from "@/app/assets/news/news3/06.jpg";
+import news3 from "@/app/assets/news/news3/03.jpg"; 
 import Image from "next/image";
 
 const NewsThreeSection = () => {
@@ -97,11 +94,7 @@ const NewsThreeSection = () => {
             In effect, architecture becomes a tool for managing emotional and
             psychological balance.
           </FadeSlide>
-        </div>
-
-        <FadeSlide className="w-full">
-          <Image src={news4} alt="" />
-        </FadeSlide>
+        </div> 
 
         <div className="space-y-12">
           <WordsPullUp
@@ -137,11 +130,7 @@ const NewsThreeSection = () => {
             continue a conversation in a shared lounge, and then retreat to the
             quiet comfort of their private residence.
           </FadeSlide>
-        </div>
-
-        <FadeSlide className="w-full">
-          <Image src={news5} alt="" />
-        </FadeSlide>
+        </div> 
 
         <div className="space-y-12">
           <WordsPullUp
@@ -165,12 +154,8 @@ const NewsThreeSection = () => {
             These design principles are increasingly visible in modern
             residential developments across global cities.
           </FadeSlide>
-        </div>
-
-        <FadeSlide className="w-full">
-          <Image src={news6} alt="" />
-        </FadeSlide>
-
+        </div> 
+        
         <div className="space-y-12">
           <WordsPullUp
             text="The Future of Urban Homes"

@@ -1,9 +1,7 @@
 import { FadeSlide } from "@/components/animation/fade-slide";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import news2 from "@/app/assets/news/news4/02.jpg";
-import news3 from "@/app/assets/news/news4/03.jpg";
-import news4 from "@/app/assets/news/news4/04.jpg";
-import news5 from "@/app/assets/news/news4/05.jpg";
+import news3 from "@/app/assets/news/news4/03.jpg"; 
 import Image from "next/image";
 
 const NewsFourSection = () => {
@@ -102,10 +100,6 @@ const NewsFourSection = () => {
           </FadeSlide>
         </div>
 
-        <FadeSlide className="w-full">
-          <Image src={news4} alt="" />
-        </FadeSlide>
-
         <div className="space-y-12">
           <WordsPullUp
             text="Architecture and Identity"
@@ -127,11 +121,7 @@ const NewsFourSection = () => {
             Architecture, in this sense, becomes part of a broader cultural
             conversation about the character of the city itself.
           </FadeSlide>
-        </div>
-
-        <FadeSlide className="w-full">
-          <Image src={news5} alt="" />
-        </FadeSlide>
+        </div> 
 
         <div className="space-y-12">
           <WordsPullUp
