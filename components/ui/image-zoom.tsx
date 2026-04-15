@@ -11,7 +11,10 @@ export default function ImageZoom({ src, alt }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const imgRef = useRef<HTMLImageElement>(null);
 
+  const isMobile = () => window.innerWidth <= 768;
+
   const handleZoom = (clientX: number, clientY: number) => {
+    if (isMobile()) return;
     const container = containerRef.current;
     const img = imgRef.current;
 
@@ -26,10 +29,12 @@ export default function ImageZoom({ src, alt }: Props) {
   };
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (isMobile()) return;
     handleZoom(e.clientX, e.clientY);
   };
 
   const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+    if (isMobile()) return;
     const touch = e.touches[0];
     handleZoom(touch.clientX, touch.clientY);
   };
@@ -54,12 +59,12 @@ export default function ImageZoom({ src, alt }: Props) {
           object-center 
           transition-transform
           duration-200
-          hover:scale-[2]
+          sm:hover:scale-[1.75]
           z-10
         "
         style={{
           WebkitTouchCallout: "none",
-          touchAction: "none",
+          touchAction: "pan-y",
         }}
       />
     </div>

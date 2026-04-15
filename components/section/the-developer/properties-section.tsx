@@ -1,12 +1,12 @@
 import { FadeSlide } from "@/components/animation/fade-slide";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import Image from "next/image";
-import mall_content_1 from "@/app/assets/kota-kasablanka/mall_content_1.jpg";
-import mall_content_2 from "@/app/assets/kota-kasablanka/mall_content_2.jpg";
-import mall_content_3 from "@/app/assets/kota-kasablanka/mall_content_3.jpg";
-import mall_content_4 from "@/app/assets/kota-kasablanka/mall_content_4.jpg";
-import mall_content_5 from "@/app/assets/kota-kasablanka/mall_content_5.jpg";
-import mall_content_6 from "@/app/assets/kota-kasablanka/mall_content_6.jpg";
+import developer_content1 from "@/app/assets/the-developer/developer_content1.jpg";
+import developer_content2 from "@/app/assets/the-developer/developer_content2.jpg";
+import developer_content3 from "@/app/assets/the-developer/developer_content3.jpg";
+import developer_content4 from "@/app/assets/the-developer/developer_content4.jpg";
+import developer_content5 from "@/app/assets/the-developer/developer_content5.jpg";
+import developer_content6 from "@/app/assets/the-developer/developer_content6.jpg";
 
 const PropertiesSection = () => {
   return (
@@ -36,7 +36,7 @@ const PropertiesSection = () => {
         <div className="w-full grid lg:grid-cols-3 h-full gap-10 md:gap-16">
           <FadeSlide className="w-full aspect-square lg:aspect-2/1 lg:col-span-2">
             <Image
-              src={mall_content_1}
+              src={developer_content1}
               alt=""
               className="w-full h-full object-cover"
               width={1000}
@@ -45,7 +45,7 @@ const PropertiesSection = () => {
           </FadeSlide>
           <FadeSlide className="w-full h-full">
             <Image
-              src={mall_content_2}
+              src={developer_content2}
               alt=""
               className="w-full h-full object-cover"
               width={1000}
@@ -54,7 +54,7 @@ const PropertiesSection = () => {
           </FadeSlide>
           <FadeSlide className="w-full h-full">
             <Image
-              src={mall_content_3}
+              src={developer_content3}
               alt=""
               className="w-full h-full object-cover"
               width={1000}
@@ -63,7 +63,7 @@ const PropertiesSection = () => {
           </FadeSlide>
           <FadeSlide className="w-full aspect-square lg:aspect-2/1 lg:col-span-2">
             <Image
-              src={mall_content_4}
+              src={developer_content4}
               alt=""
               className="w-full h-full object-cover"
               width={1000}
@@ -72,7 +72,7 @@ const PropertiesSection = () => {
           </FadeSlide>
           <FadeSlide className="w-full aspect-square lg:aspect-2/1 lg:col-span-2">
             <Image
-              src={mall_content_5}
+              src={developer_content5}
               alt=""
               className="w-full h-full object-cover"
               width={1000}
@@ -81,7 +81,7 @@ const PropertiesSection = () => {
           </FadeSlide>
           <FadeSlide className="w-full h-full">
             <Image
-              src={mall_content_6}
+              src={developer_content6}
               alt=""
               className="w-full h-full object-cover"
               width={1000}
