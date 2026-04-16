@@ -1,4 +1,4 @@
-import hero_background from "@/app/assets/the-developer/hero_backgrund.png";
+import hero_background from "@/app/assets/the-developer/hero_backgrund.jpg";
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
