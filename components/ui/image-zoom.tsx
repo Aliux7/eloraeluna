@@ -64,7 +64,7 @@ export default function ImageZoom({ src, alt }: Props) {
         "
         style={{
           WebkitTouchCallout: "none",
-          touchAction: "pan-y",
+          touchAction: "auto",
         }}
       />
     </div>
