@@ -5,7 +5,10 @@ import { FadeSlide } from "@/components/animation/fade-slide";
 
 const HeroSection = () => {
   return (
-    <section id="hero-section" className="relative sm:min-h-screen bg-[#F3F0E8]">
+    <section
+      id="hero-section"
+      className="relative sm:min-h-screen bg-[#F3F0E8]"
+    >
       <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden overlay-hero after:content-[''] after:absolute after:inset-0 after:bg-linear-to-tr after:from-black/30 after:to-transparent after:pointer-events-none after:select-none">
         <Image
           src={hero_background}
@@ -24,18 +27,20 @@ const HeroSection = () => {
               className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-light 2xl:font-extralight text-[#9D7958] sm:text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
             />
             <WordsPullUp
-              text="MASTERPLAN"
+              text="LIFESTYLE"
               className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-medium 2xl:font-normal text-[#9D7958] sm:text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
             />
+          </div>
+          <div className="flex justify-start items-center gap-2.5 sm:gap-5 ml-10 sm:ml-0 lg:ml-[5vw]">
             <WordsPullUp
               text="OF"
               className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-light 2xl:font-extralight text-[#9D7958] sm:text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
             />
+            <WordsPullUp
+              text="DISTINCTION"
+              className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-medium 2xl:font-normal text-[#9D7958] sm:text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
+            />
           </div>
-          <WordsPullUp
-            text="INTEGRATED LIVING"
-            className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-medium sm:font-bold 2xl:font-medium text-[#9D7958] sm:text-[#F3F0E8] tracking-widest ml-10 sm:ml-0 lg:ml-[5vw] mb-6 md:mb-10 xl:mb-8"
-          />
 
           <WordsPullUp
             text="Steps away from world-class fashion, dining, entertainment, and family-"

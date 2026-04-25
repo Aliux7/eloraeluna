@@ -34,7 +34,7 @@ const PropertiesSection = () => {
       </div>
       <div className="py-14 space-y-10">
         <div className="w-full grid lg:grid-cols-3 h-full gap-10 md:gap-16">
-          <FadeSlide className="w-full aspect-square lg:aspect-2/1 lg:col-span-2">
+          <FadeSlide className="relative w-full aspect-square lg:aspect-2/1 lg:col-span-2">
             <Image
               src={developer_content1}
               alt=""
@@ -42,8 +42,12 @@ const PropertiesSection = () => {
               width={1000}
               height={1000}
             />
+            <WordsPullUp
+              text="Superblock"
+              className="absolute left-5 bottom-2 text-[#F3F0E8] text-xl sm:text-2xl"
+            />
           </FadeSlide>
-          <FadeSlide className="w-full h-full">
+          <FadeSlide className="relative w-full h-full">
             <Image
               src={developer_content2}
               alt=""
@@ -51,8 +55,12 @@ const PropertiesSection = () => {
               width={1000}
               height={1000}
             />
+            <WordsPullUp
+              text="Superblock"
+              className="absolute left-5 bottom-2 text-[#F3F0E8] text-xl sm:text-2xl"
+            />
           </FadeSlide>
-          <FadeSlide className="w-full h-full">
+          <FadeSlide className="relative w-full h-full">
             <Image
               src={developer_content3}
               alt=""
@@ -60,8 +68,12 @@ const PropertiesSection = () => {
               width={1000}
               height={1000}
             />
+            <WordsPullUp
+              text="Superblock"
+              className="absolute left-5 bottom-2 text-[#F3F0E8] text-xl sm:text-2xl"
+            />
           </FadeSlide>
-          <FadeSlide className="w-full aspect-square lg:aspect-2/1 lg:col-span-2">
+          <FadeSlide className="relative w-full aspect-square lg:aspect-2/1 lg:col-span-2">
             <Image
               src={developer_content4}
               alt=""
@@ -69,8 +81,12 @@ const PropertiesSection = () => {
               width={1000}
               height={1000}
             />
+            <WordsPullUp
+              text="Superblock"
+              className="absolute left-5 bottom-2 text-[#F3F0E8] text-xl sm:text-2xl"
+            />
           </FadeSlide>
-          <FadeSlide className="w-full aspect-square lg:aspect-2/1 lg:col-span-2">
+          <FadeSlide className="relative w-full aspect-square lg:aspect-2/1 lg:col-span-2">
             <Image
               src={developer_content5}
               alt=""
@@ -78,14 +94,22 @@ const PropertiesSection = () => {
               width={1000}
               height={1000}
             />
+            <WordsPullUp
+              text="Superblock"
+              className="absolute left-5 bottom-2 text-[#F3F0E8] text-xl sm:text-2xl"
+            />
           </FadeSlide>
-          <FadeSlide className="w-full h-full">
+          <FadeSlide className="relative w-full h-full">
             <Image
               src={developer_content6}
               alt=""
               className="w-full h-full object-cover"
               width={1000}
               height={1000}
+            />
+            <WordsPullUp
+              text="Superblock"
+              className="absolute left-5 bottom-2 text-[#F3F0E8] text-xl sm:text-2xl"
             />
           </FadeSlide>
         </div>
