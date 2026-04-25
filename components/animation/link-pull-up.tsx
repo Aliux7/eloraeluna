@@ -33,6 +33,11 @@ export function LinkPullUp({
       ? { x: "-20%", opacity: 0 }
       : { y: "200%", opacity: 0 };
 
+  const isExternal =
+    href.startsWith("http://") ||
+    href.startsWith("https://") ||
+    href.startsWith("//");
+
   return (
     <div ref={ref} className={`overflow-hidden ${wfull ? "w-full" : ""}`}>
       <motion.div
@@ -45,7 +50,13 @@ export function LinkPullUp({
         }}
         className="inline-block w-full"
       >
-        <Link href={href} className={cn(className)} onClick={onClick}>
+        <Link
+          href={href}
+          className={cn(className)}
+          onClick={onClick}
+          target={isExternal ? "_blank" : undefined}
+          rel={isExternal ? "noopener noreferrer" : undefined}
+        >
           {children}
         </Link>
       </motion.div>

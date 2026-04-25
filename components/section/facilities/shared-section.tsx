@@ -32,72 +32,72 @@ const SharedSection = () => {
       image: facilities8,
       description:
         "A serene extension of the pool, where tranquil waters and natural charm come together. Perfect for relaxing in harmony with the surroundings.",
-      floor: "GF",
-      pangkat: "",
+      floor: "01",
+      pangkat: "ST",
     },
     {
       name: "Blue Lagoon",
       image: facilities7,
       description:
         "Where the horizon blurs, and serenity flows endlessly. A space to escape, reflect, and rejuvenate.",
-      floor: "GF",
-      pangkat: "",
+      floor: "01",
+      pangkat: "ST",
     },
     {
       name: "Cabana",
       image: facilities9,
       description:
         "A serene escape with a touch of social charm. Relax, connect, and unwind in shaded elegance by the water.",
-      floor: "GF",
-      pangkat: "",
+      floor: "01",
+      pangkat: "ST",
     },
     {
       name: "BBQ Lawn",
       image: facilities11,
       description:
         "A space to connect, unwind, and create lasting memories by the water. Where moments of joy and togetherness come to life.",
-      floor: "GF",
-      pangkat: "",
+      floor: "01",
+      pangkat: "ST",
     },
     {
       name: "Kids Pool & Playground",
       image: facilities12,
       description:
         "A world of play and imagination, where laughter echoes and endless adventures await. Designed for the joy of every little explorer.",
-      floor: "GF",
-      pangkat: "",
+      floor: "01",
+      pangkat: "ST",
     },
     {
       name: "Kids Room",
       image: facilities13,
       description:
         "A playful haven where imagination comes to life and creativity knows no bounds. A space for little ones to explore, learn, and create joyful moments in comfort and safety.",
-      floor: "GF",
-      pangkat: "",
+      floor: "01",
+      pangkat: "ST",
     },
     {
       name: "Gym",
       image: facilities14,
       description:
         "A space where movement flows naturally and strength is built with intention. Designed to restore balance, energize the body, and elevate your daily rhythm",
-      floor: "GF",
-      pangkat: "",
+      floor: "01",
+      pangkat: "ST",
     },
     {
       name: "Padel Court",
       image: facilities15,
       description:
         "Where movement meets connection in a lively yet balanced rhythm. A space to play, engage, and share moments of energy in a relaxed, social setting.",
-      floor: "GF",
-      pangkat: "",
+      floor: "01",
+      pangkat: "ST",
     },
     {
       name: "Jogging Track",
       image: facilities16,
       description:
         "A gentle path where movement flows in harmony with nature. Designed for mindful strides, quiet moments, and a refreshing rhythm to start or end the day.",
-      floor: "GF",
-      pangkat: "",
+      floor: "01",
+      pangkat: "ST",
     },
 
     {
@@ -188,8 +188,7 @@ const SharedSection = () => {
             />
           </div>
           <FadeSlide className="text-base sm:text-lg xl:text-xl 2xl:font-light w-fit max-w-xl 2xl:max-w-3xl text-[#A4704F]">
-            A serene pool extension blending tranquil waters with natural
-            charm—perfect for peaceful relaxation.
+            {active.description}
           </FadeSlide>
         </div>
         <div className="relative w-full">
