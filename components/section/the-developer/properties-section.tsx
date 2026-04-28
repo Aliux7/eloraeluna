@@ -34,7 +34,7 @@ const PropertiesSection = () => {
       </div>
       <div className="py-14 space-y-10">
         <div className="w-full grid lg:grid-cols-3 h-full gap-10 md:gap-16">
-          <FadeSlide className="relative w-full aspect-square lg:aspect-2/1 lg:col-span-2">
+          <FadeSlide className="relative w-full h-full lg:col-span-2">
             <Image
               src={developer_content1}
               alt=""
@@ -73,7 +73,7 @@ const PropertiesSection = () => {
               className="absolute left-5 bottom-2 text-[#F3F0E8] text-xl sm:text-2xl"
             />
           </FadeSlide>
-          <FadeSlide className="relative w-full aspect-square lg:aspect-2/1 lg:col-span-2">
+          <FadeSlide className="relative w-full h-full lg:col-span-2">
             <Image
               src={developer_content4}
               alt=""
@@ -86,7 +86,7 @@ const PropertiesSection = () => {
               className="absolute left-5 bottom-2 text-[#F3F0E8] text-xl sm:text-2xl"
             />
           </FadeSlide>
-          <FadeSlide className="relative w-full aspect-square lg:aspect-2/1 lg:col-span-2">
+          <FadeSlide className="relative w-full h-full lg:col-span-2">
             <Image
               src={developer_content5}
               alt=""
