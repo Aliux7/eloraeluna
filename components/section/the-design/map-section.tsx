@@ -1,32 +1,46 @@
 "use client";
-import map2BA from "@/app/assets/the-design/units/2BA/map.svg";
-import unit2BA from "@/app/assets/the-design/units/2BA/unit.svg";
+import map_3BB_01 from "@/app/assets/the-design/units/3BB/map-01.png";
+import unit_3BB_01 from "@/app/assets/the-design/units/3BB/unit-01.png";
 
-import map2BB from "@/app/assets/the-design/units/2BB/map.svg";
-import unit2BB from "@/app/assets/the-design/units/2BB/unit.svg";
+import map_2BE_02 from "@/app/assets/the-design/units/2BE/map-02.png";
+import unit_2BE_02 from "@/app/assets/the-design/units/2BE/unit-02.png";
 
-import map2BC from "@/app/assets/the-design/units/2BC/map.svg";
-import unit2BC from "@/app/assets/the-design/units/2BC/unit.svg";
+import map_2BC_03 from "@/app/assets/the-design/units/2BC/map-03.png";
+import unit_2BC_03 from "@/app/assets/the-design/units/2BC/unit-03.png";
 
-import map2BD from "@/app/assets/the-design/units/2BD/map.svg";
-import unit2BD from "@/app/assets/the-design/units/2BD/unit.svg";
+import map_2BC_05 from "@/app/assets/the-design/units/2BC/map-05.png";
+import unit_2BC_05 from "@/app/assets/the-design/units/2BC/unit-05.png";
 
-import map2BE from "@/app/assets/the-design/units/2BE/map.svg";
-import unit2BE from "@/app/assets/the-design/units/2BE/unit.svg";
+import map_2BD_06 from "@/app/assets/the-design/units/2BD/map-06.png";
+import unit_2BD_06 from "@/app/assets/the-design/units/2BD/unit-06.png";
 
-import map3BA from "@/app/assets/the-design/units/3BA/map.svg";
-import unit3BA from "@/app/assets/the-design/units/3BA/unit.svg";
+import map_3BA_07 from "@/app/assets/the-design/units/3BA/map-07.png";
+import unit_3BA_07 from "@/app/assets/the-design/units/3BA/unit-07.png";
 
-import map3BB from "@/app/assets/the-design/units/3BB/map.svg";
-import unit3BB from "@/app/assets/the-design/units/3BB/unit.svg";
+import map_3BC_08 from "@/app/assets/the-design/units/3BC/map-08.png";
+import unit_3BC_08 from "@/app/assets/the-design/units/3BC/unit-08.png";
 
-import map3BC from "@/app/assets/the-design/units/3BC/map.svg";
-import unit3BC from "@/app/assets/the-design/units/3BC/unit.svg";
+import map_2BA_09 from "@/app/assets/the-design/units/2BA/map-09.png";
+import unit_2BA_09 from "@/app/assets/the-design/units/2BA/unit-09.png";
+
+import map_2BB_10 from "@/app/assets/the-design/units/2BB/map-10.png";
+import unit_2BB_10 from "@/app/assets/the-design/units/2BB/unit-10.png";
+
+import map_2BB_11 from "@/app/assets/the-design/units/2BB/map-11.png";
+import unit_2BB_11 from "@/app/assets/the-design/units/2BB/unit-11.png";
+
+import map_2BA_12 from "@/app/assets/the-design/units/2BA/map-12.png";
+import unit_2BA_12 from "@/app/assets/the-design/units/2BA/unit-12.png";
+
+import map_3BA_15 from "@/app/assets/the-design/units/3BA/map-15.png";
+import unit_3BA_15 from "@/app/assets/the-design/units/3BA/unit-15.png";
+
+
 
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
-import map from "@/app/assets/the-design/map_design.svg";
+import map from "@/app/assets/the-design/map_design.png";
 import room from "@/app/assets/the-design/room_design.svg";
 import mini_map from "@/app/assets/the-design/mini_map.png";
 import eluna_gold from "@/app/assets/eluna_gold.svg";
@@ -39,61 +53,153 @@ import ImageZoom from "@/components/ui/image-zoom";
 const MapSection = () => {
   const units = [
     {
-      code: "2BA",
-      grossArea: 93,
-      netArea: 78,
-      pathMap: map2BA,
-      pathUnit: unit2BA,
-    },
-    {
-      code: "2BB",
-      grossArea: 89,
-      netArea: 74,
-      pathMap: map2BB,
-      pathUnit: unit2BB,
-    },
-    {
-      code: "2BC",
-      grossArea: 122,
-      netArea: 102,
-      pathMap: map2BC,
-      pathUnit: unit2BC,
-    },
-    {
-      code: "2BD",
-      grossArea: 85,
-      netArea: 71,
-      pathMap: map2BD,
-      pathUnit: unit2BD,
-    },
-    {
-      code: "2BE",
-      grossArea: 90,
-      netArea: 75,
-      pathMap: map2BE,
-      pathUnit: unit2BE,
-    },
-    {
-      code: "3BA",
-      grossArea: 167,
-      netArea: 140,
-      pathMap: map3BA,
-      pathUnit: unit3BA,
-    },
-    {
+      index: "01",
       code: "3BB",
       grossArea: 178,
       netArea: 149,
-      pathMap: map3BB,
-      pathUnit: unit3BB,
+      pathMap: map_3BB_01,
+      pathUnit: unit_3BB_01,
     },
     {
+      index: "02",
+      code: "2BE",
+      grossArea: 90,
+      netArea: 75,
+      pathMap: map_2BE_02,
+      pathUnit: unit_2BE_02,
+    },
+    {
+      index: "03",
+      code: "2BC",
+      grossArea: 122,
+      netArea: 102,
+      pathMap: map_2BC_03,
+      pathUnit: unit_2BC_03,
+    },
+    {
+      index: "05",
+      code: "2BC",
+      grossArea: 122,
+      netArea: 102,
+      pathMap: map_2BC_05,
+      pathUnit: unit_2BC_05,
+    },
+    {
+      index: "06",
+      code: "2BD",
+      grossArea: 85,
+      netArea: 71,
+      pathMap: map_2BD_06,
+      pathUnit: unit_2BD_06,
+    },
+    {
+      index: "07",
+      code: "3BA",
+      grossArea: 167,
+      netArea: 140,
+      pathMap: map_3BA_07,
+      pathUnit: unit_3BA_07,
+    },
+    {
+      index: "08",
       code: "3BC",
       grossArea: 183,
       netArea: 149,
-      pathMap: map3BC,
-      pathUnit: unit3BC,
+      pathMap: map_3BC_08,
+      pathUnit: unit_3BC_08,
     },
+    {
+      index: "09",
+      code: "2BA",
+      grossArea: 89,
+      netArea: 74,
+      pathMap: map_2BA_09,
+      pathUnit: unit_2BA_09,
+    },
+    {
+      index: "10",
+      code: "2BB",
+      grossArea: 89,
+      netArea: 74,
+      pathMap: map_2BB_10,
+      pathUnit: unit_2BB_10,
+    },
+    {
+      index: "11",
+      code: "2BB",
+      grossArea: 89,
+      netArea: 74,
+      pathMap: map_2BB_11,
+      pathUnit: unit_2BB_11,
+    },
+    {
+      index: "12",
+      code: "2BA",
+      grossArea: 89,
+      netArea: 74,
+      pathMap: map_2BA_12,
+      pathUnit: unit_2BA_12,
+    },
+    {
+      index: "15",
+      code: "3BA",
+      grossArea: 167,
+      netArea: 140,
+      pathMap: map_3BA_15,
+      pathUnit: unit_3BA_15,
+    }
+
+
+
+    // {
+    //   code: "2BB",
+    //   grossArea: 89,
+    //   netArea: 74,
+    //   pathMap: map2BB,
+    //   pathUnit: unit2BB,
+    // },
+    // {
+    //   code: "2BC",
+    //   grossArea: 122,
+    //   netArea: 102,
+    //   pathMap: map2BC,
+    //   pathUnit: unit2BC,
+    // },
+    // {
+    //   code: "2BD",
+    //   grossArea: 85,
+    //   netArea: 71,
+    //   pathMap: map2BD,
+    //   pathUnit: unit2BD,
+    // },
+    // {
+    //   code: "2BE",
+    //   grossArea: 90,
+    //   netArea: 75,
+    //   pathMap: map2BE,
+    //   pathUnit: unit2BE,
+    // },
+    // {
+    //   code: "3BA",
+    //   grossArea: 167,
+    //   netArea: 140,
+    //   pathMap: map3BA,
+    //   pathUnit: unit3BA,
+    // },
+    // {
+    //   code: "3BB",
+    //   grossArea: 178,
+    //   netArea: 149,
+    //   pathMap: map_3BB_01,
+    //   pathUnit: unit_3BB_01,
+    // },
+    // {
+    //   code: "3BC",
+    //   grossArea: 183,
+    //   netArea: 149,
+    //   pathMap: map3BC,
+    //   pathUnit: unit3BC,
+    // },
   ];
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const [elunaElora, setElunaElora] = useState(true);
@@ -201,6 +307,16 @@ const MapSection = () => {
             <div className="relative w-full h-full flex justify-center items-center mx-auto">
               <ImageZoom src={map.src} alt="Map" />
             </div>
+            <div className="flex justify-center items-center gap-10 sm:gap-20">
+              <div className="flex items-center gap-3">
+                <div className="size-6 sm:size-8 border border-[#AA7A56] bg-[#D4D0CA]" />
+                <span className="text-[#AA7A56] text-sm sm:text-base font-semibold tracking-widest">2 BEDROOM</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="size-6 sm:size-8 border border-[#AA7A56] bg-[#EDE3DC]" />
+                <span className="text-[#AA7A56] text-sm sm:text-base font-semibold tracking-widest">3 BEDROOM</span>
+              </div>
+            </div>
             <div
               className={`${!elunaElora ? "opacity-100 " : "opacity-0  pointer-events-none "} select-none z-10 flex justify-center items-center absolute w-full h-full bg-[#464948]/90 top-0 right-0 transition-all duration-500 ease-in-out`}
             >
@@ -224,7 +340,7 @@ const MapSection = () => {
                       className="w-full flex justify-between items-center text-left border-b border-white cursor-pointer"
                     >
                       <h3 className="text-lg 2xl:text-xl font-medium text-white tracking-widest p-1">
-                        2<sup>nd</sup> - 19<sup>th</sup> Floor
+                        M1 - M6
                       </h3>
                       <div className="mr-2 mt-1 text-xl font-light transition-transform duration-300">
                         <div
@@ -234,11 +350,12 @@ const MapSection = () => {
                     </button>
                   </FadeSlide>
 
-                  <FadeSlide
-                    className={`overflow-auto transition-all duration-300 ease-in-out pl-20 ${openIndex === 0 ? "opacity-100 mt-3" : "max-h-0 opacity-0"}`}
+                  {/* <FadeSlide
+                    className={`overflow-auto transition-all duration-300 ease-in-out pl-16 ${openIndex === 0 ? "opacity-100 mt-3" : "max-h-0 opacity-0"}`}
                   >
                     {units.map((unit) => (
                       <button
+                        key={unit.code}
                         id={unit.code}
                         onClick={() => setActiveUnit(unit)}
                         className={`${activeUnit.code === unit.code ? "bg-[#AA7A56]" : "bg-transparent hover:bg-white/5"} w-full flex justify-between items-center text-left border-b border-white cursor-pointer px-3 py-3 text-white 2xl:text-lg`}
@@ -246,7 +363,7 @@ const MapSection = () => {
                         UNIT {unit.code}
                       </button>
                     ))}
-                  </FadeSlide>
+                  </FadeSlide> */}
                 </div>
 
                 <div className="py-3">
@@ -256,7 +373,7 @@ const MapSection = () => {
                       className="w-full flex justify-between items-center text-left border-b border-white cursor-pointer"
                     >
                       <h3 className="text-lg 2xl:text-xl font-medium text-white tracking-widest p-1">
-                        21<sup>st</sup> - 35<sup>th</sup> Floor
+                        2<sup>nd</sup> - 35<sup>th</sup> Floor
                       </h3>
                       <div className="mr-2 mt-1 text-xl font-light transition-transform duration-300">
                         <div
@@ -267,15 +384,24 @@ const MapSection = () => {
                   </FadeSlide>
 
                   <FadeSlide
-                    className={`overflow-auto transition-all duration-300 ease-in-out pl-24 ${openIndex === 1 ? "opacity-100 mt-3" : "max-h-0 opacity-0"}`}
+                    className={`overflow-auto transition-all duration-300 ease-in-out pl-16 grid grid-cols-2 grid-flow-col gap-x-4 ${openIndex === 1 ? "opacity-100 mt-3" : "max-h-0 opacity-0"}`}
+                    style={{ gridTemplateRows: `repeat(${Math.ceil(units.length / 2)}, auto)` }}
                   >
                     {units.map((unit) => (
                       <button
-                        id={unit.code}
+                        key={unit.index}
+                        id={unit.index}
                         onClick={() => setActiveUnit(unit)}
-                        className={`${activeUnit.code === unit.code ? "bg-[#AA7A56]" : "bg-transparent hover:bg-white/5"} w-full flex justify-between items-center text-left border-b border-white cursor-pointer px-3 py-3 text-white 2xl:text-lg`}
+                        className={`${activeUnit.index === unit.index ? "bg-[#AA7A56]" : "bg-transparent hover:bg-white/5"} w-full flex justify-start items-center text-left border-b border-white cursor-pointer px-3 py-3 gap-2  text-white 2xl:text-lg`}
                       >
-                        UNIT {unit.code}
+                        <div
+                          className={`${activeUnit.index === unit.index ? "bg-white text-[#AA7A56]" : "bg-[#AA7A56] text-white"} size-6 flex justify-center items-center rounded-full`}
+                        >
+                          <span className="translate-px text-xs font-medium">
+                            {unit.index}
+                          </span>
+                        </div>
+                        <span className="pt-1">UNIT {unit.code}</span>
                       </button>
                     ))}
                   </FadeSlide>
@@ -303,7 +429,11 @@ const MapSection = () => {
                     </h3>
                   </div>
                   <div className="w-full h-auto">
-                    <Image src={activeUnit.pathMap} alt="" className="w-full h-full"/> 
+                    <Image
+                      src={activeUnit.pathMap}
+                      alt=""
+                      className="w-full h-full"
+                    />
                   </div>
                 </div>
                 <div className="relative px-0 w-full h-full mt-20 scale-110 sm:scale-none">

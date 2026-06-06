@@ -37,7 +37,7 @@ const OverviewSection = () => {
         <div className="flex justify-start items-start">
           <WordsPullUp
             text="01"
-            className="text-9xl md:text-[170px] lg:text-[200px] xl:text-[260px] leading-[0.9] text-[#464948]"
+            className="text-8xl md:text-[130px] lg:text-[160px] xl:text-[220px] leading-[0.9] text-[#464948]"
           />
           <WordsPullUp
             text="ST"
@@ -48,13 +48,13 @@ const OverviewSection = () => {
           <WordsPullUp
             direction="left"
             text="FACILITIES"
-            className="text-[#9D7958] font-medium 2xl:font-normal text-3xl sm:text-4xl md:text-5xl xl:text-6xl 2xl:text-[67px] tracking-wider sm:mr-20"
+            className="text-[#9D7958] font-medium 2xl:font-normal text-3xl sm:text-4xl md:text-5xl xl:text-6xl tracking-wider sm:mr-20"
           />
-          <WordsPullUp
+          {/* <WordsPullUp
             direction="left"
             text="OVERVIEW"
-            className="text-[#9D7958] font-light 2xl:font-extralight text-3xl sm:text-4xl md:text-5xl xl:text-6xl 2xl:text-[67px] tracking-wider"
-          />
+            className="text-[#9D7958] font-light 2xl:font-extralight text-3xl sm:text-4xl md:text-5xl xl:text-6xl tracking-wider"
+          /> */}
         </div>
       </div>
       <FadeSlide className="relative w-full sm:max-w-[60vw] 2xl:max-w-[50vw] flex justify-center items-center">
