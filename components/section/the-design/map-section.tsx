@@ -1,48 +1,44 @@
 "use client";
-import map_3BB_01 from "@/app/assets/the-design/units/3BB/map-01.png";
-import unit_3BB_01 from "@/app/assets/the-design/units/3BB/unit-01.png";
+import map_3BB_01 from "@/app/assets/the-design/units/3BB/map-01.svg";
+import unit_3BB_01 from "@/app/assets/the-design/units/3BB/unit-01.svg";
 
-import map_2BE_02 from "@/app/assets/the-design/units/2BE/map-02.png";
-import unit_2BE_02 from "@/app/assets/the-design/units/2BE/unit-02.png";
+import map_2BE_02 from "@/app/assets/the-design/units/2BE/map-02.svg";
+import unit_2BE_02 from "@/app/assets/the-design/units/2BE/unit-02.svg";
 
-import map_2BC_03 from "@/app/assets/the-design/units/2BC/map-03.png";
-import unit_2BC_03 from "@/app/assets/the-design/units/2BC/unit-03.png";
+import map_2BC_03 from "@/app/assets/the-design/units/2BC/map-03.svg";
+import unit_2BC_03 from "@/app/assets/the-design/units/2BC/unit-03.svg";
 
-import map_2BC_05 from "@/app/assets/the-design/units/2BC/map-05.png";
-import unit_2BC_05 from "@/app/assets/the-design/units/2BC/unit-05.png";
+import map_2BC_05 from "@/app/assets/the-design/units/2BC/map-05.svg";
+import unit_2BC_05 from "@/app/assets/the-design/units/2BC/unit-05.svg";
 
-import map_2BD_06 from "@/app/assets/the-design/units/2BD/map-06.png";
-import unit_2BD_06 from "@/app/assets/the-design/units/2BD/unit-06.png";
+import map_2BD_06 from "@/app/assets/the-design/units/2BD/map-06.svg";
+import unit_2BD_06 from "@/app/assets/the-design/units/2BD/unit-06.svg";
 
-import map_3BA_07 from "@/app/assets/the-design/units/3BA/map-07.png";
-import unit_3BA_07 from "@/app/assets/the-design/units/3BA/unit-07.png";
+import map_3BA_07 from "@/app/assets/the-design/units/3BA/map-07.svg";
+import unit_3BA_07 from "@/app/assets/the-design/units/3BA/unit-07.svg";
 
-import map_3BC_08 from "@/app/assets/the-design/units/3BC/map-08.png";
-import unit_3BC_08 from "@/app/assets/the-design/units/3BC/unit-08.png";
+import map_3BC_08 from "@/app/assets/the-design/units/3BC/map-08.svg";
+import unit_3BC_08 from "@/app/assets/the-design/units/3BC/unit-08.svg";
 
-import map_2BA_09 from "@/app/assets/the-design/units/2BA/map-09.png";
-import unit_2BA_09 from "@/app/assets/the-design/units/2BA/unit-09.png";
+import map_2BA_09 from "@/app/assets/the-design/units/2BA/map-09.svg";
+import unit_2BA_09 from "@/app/assets/the-design/units/2BA/unit-09.svg";
 
-import map_2BB_10 from "@/app/assets/the-design/units/2BB/map-10.png";
-import unit_2BB_10 from "@/app/assets/the-design/units/2BB/unit-10.png";
+import map_2BB_10 from "@/app/assets/the-design/units/2BB/map-10.svg";
+import unit_2BB_10 from "@/app/assets/the-design/units/2BB/unit-10.svg";
 
-import map_2BB_11 from "@/app/assets/the-design/units/2BB/map-11.png";
-import unit_2BB_11 from "@/app/assets/the-design/units/2BB/unit-11.png";
+import map_2BB_11 from "@/app/assets/the-design/units/2BB/map-11.svg";
+import unit_2BB_11 from "@/app/assets/the-design/units/2BB/unit-11.svg";
 
-import map_2BA_12 from "@/app/assets/the-design/units/2BA/map-12.png";
-import unit_2BA_12 from "@/app/assets/the-design/units/2BA/unit-12.png";
+import map_2BA_12 from "@/app/assets/the-design/units/2BA/map-12.svg";
+import unit_2BA_12 from "@/app/assets/the-design/units/2BA/unit-12.svg";
 
-import map_3BA_15 from "@/app/assets/the-design/units/3BA/map-15.png";
-import unit_3BA_15 from "@/app/assets/the-design/units/3BA/unit-15.png";
-
-
+import map_3BA_15 from "@/app/assets/the-design/units/3BA/map-15.svg";
+import unit_3BA_15 from "@/app/assets/the-design/units/3BA/unit-15.svg";
 
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
 import map from "@/app/assets/the-design/map_design.png";
-import room from "@/app/assets/the-design/room_design.svg";
-import mini_map from "@/app/assets/the-design/mini_map.png";
 import eluna_gold from "@/app/assets/eluna_gold.svg";
 import elora_gold from "@/app/assets/elora_gold.svg";
 import eluna from "@/app/assets/the-design/eluna.svg";
