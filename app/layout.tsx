@@ -14,6 +14,9 @@ const leagueSpartan = League_Spartan({
 export const metadata: Metadata = {
   title: "Elora Eluna",
   description: "",
+  icons: {
+    icon: "/Logo.svg",
+  },
 };
 
 export default function RootLayout({
