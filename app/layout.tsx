@@ -11,6 +11,7 @@ const leagueSpartan = League_Spartan({
   display: "swap",
 });
 
+
 export const metadata: Metadata = {
   title: "Elora Eluna",
   description: "",
