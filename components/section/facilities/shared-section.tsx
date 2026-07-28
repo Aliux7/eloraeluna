@@ -84,7 +84,7 @@ const SharedSection = () => {
       pangkat: "ST",
     },
     {
-      name: "Padel Court",
+      name: "Tennis Court",
       image: facilities15,
       description:
         "Where movement meets connection in a lively yet balanced rhythm. A space to play, engage, and share moments of energy in a relaxed, social setting.",

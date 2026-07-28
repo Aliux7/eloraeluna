@@ -17,6 +17,7 @@ const MENU: MenuItem[] = [
   { title: "THE DESIGN", link: "the-design" },
   { title: "THE CONCEPT", link: "the-concept" },
   { title: "FACILITIES", link: "facilities" },
+  { title: "GALLERY", link: "gallery" },
   { title: "LOCATION MAP", link: "location-map" },
   { title: "THE DEVELOPER", link: "the-developer" },
   { title: "NEWS & EVENTS", link: "news-events" },

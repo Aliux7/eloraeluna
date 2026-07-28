@@ -107,8 +107,8 @@ const MapSection = () => {
     {
       index: "09",
       code: "2BA",
-      grossArea: 89,
-      netArea: 74,
+      grossArea: 93,
+      netArea: 78,
       pathMap: map_2BA_09,
       pathUnit: unit_2BA_09,
     },
@@ -324,7 +324,7 @@ const MapSection = () => {
           </div>
           <div className="mt-20 sm:mt-12 flex flex-col justify-start items-start w-full h-fit">
             <WordsPullUp
-              text="ELUNA FLOORPLAN TYPICAL 2-38"
+              text="ELUNA FLOORPLAN TYPICAL 2-35"
               className="hidden sm:block pr-5 sm:pr-0 mb-10 font-semibold 2xl:font-normal text-2xl md:text-3xl 2xl:text-[32px] tracking-widest text-[#F3F0E8]"
             />
             <div className="relative flex flex-col-reverse lg:flex-row justify-between w-full h-full gap-10 sm:gap-16 xl:gap-32">
@@ -405,7 +405,7 @@ const MapSection = () => {
               </div>
 
               <WordsPullUp
-                text="ELUNA FLOORPLAN TYPICAL 2-38"
+                text="ELUNA FLOORPLAN TYPICAL 2-35"
                 className="sm:hidden pr-5 sm:pr-0 mt-10 sm:mt-0 sm:mb-10 font-semibold text-2xl md:text-3xl 2xl:text-4xl tracking-widest text-[#F3F0E8]"
               />
               <FadeSlide className="relative flex-1 w-full h-fit sm:border-x-2 border-[#AA7A56] sm:p-10 2xl:px-20 flex flex-col gap-10">

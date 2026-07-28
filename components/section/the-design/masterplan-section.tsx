@@ -83,7 +83,7 @@ const MasterplanSection = () => {
 
             <li className="flex gap-4 text-sm sm:text-base 2xl:text-xl">
               <span>9</span>
-              <span>W Hotels & Courtyard by Marriott</span>
+              <span>W Hotels & Tribute Portfolio by Marriott</span>
             </li>
           </ol>
         </FadeSlide>

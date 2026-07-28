@@ -43,7 +43,7 @@ const IntegratedSection = () => {
               </FadeSlide>
             </div>
             <FadeSlide className="max-w-md 2xl:max-w-xl font-normal 2xl:font-light text-base sm:text-xl text-[#F3F0E8]">
-              Connected to W Hotels—Forbes' most innovative brand—and Courtyard
+              Connected to W Hotels—Forbes' most innovative brand—and Tribute Portfolio
               by Marriott, Elora and Eluna offer bold design, vibrant energy,
               and contemporary living at the heart of Kota Kasablanka.
             </FadeSlide>
@@ -62,14 +62,14 @@ const IntegratedSection = () => {
               />
             </div>
             <FadeSlide className=" uppercase text-[#F3F0E8] text-lg sm:text-xl xl:text-[22px] font-light tracking-widest mb-4">
-              Courtyard by marriot brings a fresh take on contemporary living to
+              Tribute Portfolio by marriot brings a fresh take on contemporary living to
               kota kasablanka.
             </FadeSlide>
             <FadeSlide className="text-[#F3F0E8] sm:text-lg xl:text-xl">
               Blending stylish comfort with intuitive spaces, it's designed for
               those who seek balance between momentum and mindfulness. with
               uplifting interiors, seamless service, and easy access to the
-              city's best, Courtyard offers a stay that feels effortless,
+              city's best, Tribute Portfolio offers a stay that feels effortless,
               connected, and distincly modern.
             </FadeSlide>
           </div>

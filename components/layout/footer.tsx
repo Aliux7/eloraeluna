@@ -17,7 +17,7 @@ const Footer = () => {
     <footer className="bg-[#9D7958] text-white">
       <div className="px-5 sm:px-10 xl:px-48 py-7 sm:py-16">
         <div className="relative flex flex-row md:flex-col lg:flex-row justify-between items-end md:items-start lg:items-end gap-10 lg:gap-16">
-          <div className="space-y-2 sm:space-y-5">
+          <div className="">
             <div className="w-auto">
               <div className="w-fit flex flex-col justify-center items-start 2xl:gap-2">
                 <FadeSlide
@@ -75,28 +75,35 @@ const Footer = () => {
                 className="uppercase tracking-widest text-sm sm:text-lg font-bold"
               />
             </div>
-            <div className="flex flex-col md:flex-row md:justify-start md:items-end gap-3 sm:gap-4">
+            <div className="flex flex-col md:flex-row md:justify-start md:items-start gap-8 lg:gap-16">
               <div className="space-y-3 text-xs leading-relaxed max-w-sm ">
                 <WordsPullUp
-                  text="Head Marketing Office"
-                  className="font-medium sm:text-lg tracking-wider"
+                  text="Office"
+                  className="font-medium sm:text-base tracking-wider"
                 />
                 <FadeSlide className="text-balance text-xs sm:text-base font-light tracking-wider">
-                  Eightyeight@Kasablanka Tower B Lt. 20, Jl. Casablanca Raya Kav
-                  88, Menteng Dalam, Tebet, Jakarta Selatan, DKI Jakarta 12870
+                  Gandaria 8 Office Tower Lt. 32, Gandaria City Jl. Sultan
+                  Iskandar Muda No. 8, Kebayoran Lama, Jakarta Selatan, DKI
+                  Jakarta 12240
                 </FadeSlide>
               </div>
 
-              <div className="flex flex-col justify-between">
-                <div className="space-y-1 text-lg font-light">
-                  <FadeSlide className="tracking-wider text-xs sm:text-base font-medium ">
-                    <span className="mr-3 pr-1">P</span>{" "}
-                    081189996968
+              <div className="space-y-3 text-xs leading-relaxed max-w-sm ">
+                <WordsPullUp
+                  text="Marketing Gallery"
+                  className="font-medium sm:text-base tracking-wider"
+                />
+                <FadeSlide className="text-balance text-xs sm:text-base font-light tracking-wider">
+                  Pakuwon Tower Lt. 47 Kota Kasablanka Jl. Casablanca Raya Kav
+                  88, Menteng Dalam, Tebet, Jakarta Selatan, DKI Jakarta 12870
+                </FadeSlide>
+                <div className="flex justify-start gap-5 space-y-1 text-lg font-light">
+                  <FadeSlide className="tracking-wider text-xs sm:text-sm text-nowrap">
+                    <span className="pr-1 font-medium text-xs sm:text-base">P</span> 021 - 8370 9880
                   </FadeSlide>
-                  <FadeSlide className="tracking-wider text-xs sm:text-base font-medium ">
-                    <span className="mr-3 pr-1">E</span>{" "}
-                    info@elora-eluna.id
-                  </FadeSlide> 
+                  <FadeSlide className="tracking-wider text-xs sm:text-base text-nowrap">
+                    <span className="pr-1 font-medium">E</span> elora-eluna.com
+                  </FadeSlide>
                 </div>
               </div>
             </div>

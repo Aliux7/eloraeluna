@@ -24,7 +24,7 @@ const OverviewSection = () => {
     "Kids Pool & Playground",
     "Kids Room",
     "Gym",
-    "Padel Court",
+    "Tennis Court",
     "Jogging Track",
     "Pet Park",
   ];
