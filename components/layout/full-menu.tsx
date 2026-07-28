@@ -27,7 +27,7 @@ const FullMenu: React.FC<FullMenuProps> = ({ open, onClose }) => {
   if (!open) return null;
 
   return (
-    <div className="fixed top-14 sm:top-18 px-5 sm:px-10 xl:px-38 inset-0 z-40 bg-[#9D7958]/95 text-white overflow-y-auto no-scrollbar backdrop-blur-xs ">
+    <div className="fixed top-14 sm:top-18 px-5 sm:px-10 xl:px-38 inset-0 z-40 bg-[#9D7958]/95 text-white overflow-y-auto no-scrollbar backdrop-blur-xs overscroll-contain">
       <div className="py-5">
         <ul className="space-y-2">
           {MENU.map((item: MenuItem, i: number) => (

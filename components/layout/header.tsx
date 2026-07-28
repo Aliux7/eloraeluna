@@ -5,11 +5,23 @@ import pakuwon_mini_logo from "@/app/assets/pakuwon_mini_logo.png";
 import and from "@/app/assets/and.svg";
 import elora from "@/app/assets/elora.svg";
 import eluna from "@/app/assets/eluna.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import FullMenu from "./full-menu";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const original = document.body.style.overflow;
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = original || "";
+    }
+    return () => {
+      document.body.style.overflow = original;
+    };
+  }, [open]);
 
   return (
     <nav
