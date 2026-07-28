@@ -8,7 +8,6 @@ import DeveloperSection from "@/components/section/home/developer-section";
 import NewsSection from "@/components/section/home/news-section";
 
 export default function Home() {
-  
   return (
     <main className="overflow-x-hidden bg-[#464948]">
       <HeroSection />
