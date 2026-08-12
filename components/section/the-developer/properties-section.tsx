@@ -43,7 +43,7 @@ const PropertiesSection = () => {
               height={1000}
             />
             <WordsPullUp
-              text="Superblock"
+              text="Pakuwon Bekasi Superblock iBekasi Barat"
               className="absolute left-5 bottom-2 text-[#F3F0E8] text-xl sm:text-2xl"
             />
           </FadeSlide>
@@ -56,8 +56,8 @@ const PropertiesSection = () => {
               height={1000}
             />
             <WordsPullUp
-              text="Superblock"
-              className="absolute left-5 bottom-2 text-[#F3F0E8] text-xl sm:text-2xl"
+              text="Tunjungan Plaza Surabaya Pusat"
+              className="absolute left-5 bottom-2 text-[#F3F0E8] text-xl sm:text-2xl text-balance"
             />
           </FadeSlide>
           <FadeSlide className="relative w-full h-full">
@@ -82,7 +82,7 @@ const PropertiesSection = () => {
               height={1000}
             />
             <WordsPullUp
-              text="Superblock"
+              text="Gandaria City Superblock Jakarta Selatan"
               className="absolute left-5 bottom-2 text-[#F3F0E8] text-xl sm:text-2xl"
             />
           </FadeSlide>
@@ -108,8 +108,8 @@ const PropertiesSection = () => {
               height={1000}
             />
             <WordsPullUp
-              text="Superblock"
-              className="absolute left-5 bottom-2 text-[#F3F0E8] text-xl sm:text-2xl"
+              text="Pakuwon Mall Superblock Surabaya Barat"
+              className="absolute left-5 bottom-2 text-[#F3F0E8] text-xl sm:text-2xl text-balance"
             />
           </FadeSlide>
         </div>

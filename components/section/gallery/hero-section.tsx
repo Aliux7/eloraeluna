@@ -1,7 +1,25 @@
 import { GalleryCarousel } from "@/components/ui/gallery-carousel";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
-import master_bedroom from "@/app/assets/gallery/PICT 1.png";
+import master_bedroom_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/1/Master Bedroom View 1.jpg";
+import master_bedroom_2 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/1/Master Bedroom View 2.jpg";
+import master_bedroom_3 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/1/Master Bedroom View 3.jpg";
+import master_bedroom_4 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/1/Master Bedroom View 4.jpg";
+import walk_in_closet_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/1/Walk-in Closet View 1.jpg";
+import master_bathroom_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/1/Master Bathroom View 1.jpg";
+import master_bathroom_2 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/1/Master Bathroom View 2.jpg";
+import master_bathroom_3 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/1/Master Bathroom View 3.jpg";
+
+const bc2MasterBedroom = [
+  master_bedroom_1,
+  master_bedroom_2,
+  master_bedroom_3,
+  master_bedroom_4,
+  walk_in_closet_1,
+  master_bathroom_1,
+  master_bathroom_2,
+  master_bathroom_3,
+];
 
 const HeroSection = () => {
   return (
@@ -29,7 +47,7 @@ const HeroSection = () => {
       </div>
 
       <GalleryCarousel
-        images={[master_bedroom, master_bedroom]}
+        images={bc2MasterBedroom}
         label="2BC Master Bedroom"
         className="w-full md:flex-1 aspect-4/3 md:aspect-auto md:-ml-6"
         priority
