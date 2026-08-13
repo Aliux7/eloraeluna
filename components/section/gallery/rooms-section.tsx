@@ -92,7 +92,7 @@ const RoomsSection = () => {
         <GalleryCarousel
           images={bc2LivingDining}
           label="2BC Living & Dining"
-          className="w-full border aspect-15/6"
+          className="w-full aspect-15/6"
         />
 
         <div className="flex flex-col md:flex-row gap-5 sm:gap-10 xl:gap-16">
