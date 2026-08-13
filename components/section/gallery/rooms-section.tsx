@@ -3,40 +3,40 @@ import { FadeSlide } from "@/components/animation/fade-slide";
 import illustration_bottom from "@/app/assets/home/illustration_bottom.png";
 import Image from "next/image";
 
-import bc2_front from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/2/Front Face View.jpg";
-import bc2_living_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/2/Living View 1.jpg";
-import bc2_living_2 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/2/Living View 2.jpg";
-import bc2_living_3 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/2/Living View 3.jpg";
-import bc2_dining_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/2/Dining & Kitchen View 1.jpg";
-import bc2_dining_2 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/2/Dining & Kitchen View 2.jpg";
-import bc2_foyer_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/2/Foyer View 1.jpg";
-import bc2_foyer_2 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/2/Foyer View 2.jpg";
-import bc2_balcony_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/2/Balcony View 1.jpg";
-import bc2_bathroom_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/2/Main Bathroom View 1.jpg";
+import bc2_front from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/2/Front Face View.webp";
+import bc2_living_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/2/Living View 1.webp";
+import bc2_living_2 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/2/Living View 2.webp";
+import bc2_living_3 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/2/Living View 3.webp";
+import bc2_dining_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/2/Dining & Kitchen View 1.webp";
+import bc2_dining_2 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/2/Dining & Kitchen View 2.webp";
+import bc2_foyer_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/2/Foyer View 1.webp";
+import bc2_foyer_2 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/2/Foyer View 2.webp";
+import bc2_balcony_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/2/Balcony View 1.webp";
+import bc2_bathroom_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/2/Main Bathroom View 1.webp";
 
-import bc2_office_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/3/Office View 1.jpg";
-import bc2_office_2 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/3/Office View 2.jpg";
-import bc2_office_3 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/3/Office View 3.jpg";
-import bc2_office_4 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/3/Office View 4.jpg";
+import bc2_office_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/3/Office View 1.webp";
+import bc2_office_2 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/3/Office View 2.webp";
+import bc2_office_3 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/3/Office View 3.webp";
+import bc2_office_4 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/3/Office View 4.webp";
 
-import bc2_kids_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/4/Kids Bedroom View 1.jpg";
-import bc2_kids_2 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/4/Kids Bedroom View 2.jpg";
-import bc2_kids_3 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/4/Kids Bedroom View 3.jpg";
+import bc2_kids_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/4/Kids Bedroom View 1.webp";
+import bc2_kids_2 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/4/Kids Bedroom View 2.webp";
+import bc2_kids_3 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/4/Kids Bedroom View 3.webp";
 
-import bc3_master_main from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/1/V2_Master Bedroom Main View.png";
-import bc3_master_closet_closed from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/1/V4_Master Bedroom & Walk-In Closet Closed.png";
-import bc3_master_closet_open from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/1/V4_Master Bedroom & Walk-In Closet Open.png";
-import bc3_master_bathroom from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/1/V5_Master Bathroom.png";
+import bc3_master_main from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/1/V2_Master Bedroom Main View.webp";
+import bc3_master_closet_closed from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/1/V4_Master Bedroom & Walk-In Closet Closed.webp";
+import bc3_master_closet_open from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/1/V4_Master Bedroom & Walk-In Closet Open.webp";
+import bc3_master_bathroom from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/1/V5_Master Bathroom.webp";
 
-import bc3_ldk_main from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/2/V1_Dining, Kitchen, & Living Main View.png";
-import bc3_ldk_lounge from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/2/V1_LDK Lounge & Pantry.png";
-import bc3_ldk_pantry from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/2/V2_LDK Pantry.png";
-import bc3_foyer from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/2/V0_Foyer View.png";
-import bc3_bathroom from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/2/V8_Common Bathroom.png";
+import bc3_ldk_main from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/2/V1_Dining, Kitchen, & Living Main View.webp";
+import bc3_ldk_lounge from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/2/V1_LDK Lounge & Pantry.webp";
+import bc3_ldk_pantry from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/2/V2_LDK Pantry.webp";
+import bc3_foyer from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/2/V0_Foyer View.webp";
+import bc3_bathroom from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/2/V8_Common Bathroom.webp";
 
-import bc3_kids_main from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/3/V3_Kid_s Bedroom Main View.png";
-import bc3_kids_1 from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/3/V6_Kids Bedroom 1 Perspective.png";
-import bc3_kids_2 from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/3/V7_Kids Bedroom 2 Perspective.png";
+import bc3_kids_main from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/3/V3_Kid_s Bedroom Main View.webp";
+import bc3_kids_1 from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/3/V6_Kids Bedroom 1 Perspective.webp";
+import bc3_kids_2 from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/3/V7_Kids Bedroom 2 Perspective.webp";
 
 const bc2LivingDining = [
   bc2_front,
