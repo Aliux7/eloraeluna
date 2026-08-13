@@ -1,12 +1,31 @@
 import { FadeSlide } from "@/components/animation/fade-slide";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import Image from "next/image";
-import developer_content1 from "@/app/assets/the-developer/developer_content1.jpg";
-import developer_content2 from "@/app/assets/the-developer/developer_content2.jpg";
-import developer_content3 from "@/app/assets/the-developer/developer_content3.jpg";
-import developer_content4 from "@/app/assets/the-developer/developer_content4.jpg";
-import developer_content5 from "@/app/assets/the-developer/developer_content5.jpg";
-import developer_content6 from "@/app/assets/the-developer/developer_content6.jpg";
+import property01 from "@/app/assets/the-developer/01 Gandaria City Superblock Jakarta Selatan.webp";
+import property02 from "@/app/assets/the-developer/02 Pakuwon Mall Super Block Surabaya.webp";
+import property03 from "@/app/assets/the-developer/03 Tunjungan Plaza Surabaya Pusat.webp";
+import property04 from "@/app/assets/the-developer/04 Pakuwon Bekasi Superblock .webp";
+import property05 from "@/app/assets/the-developer/05 Pakuwon Mall City Surabaya Timur.webp";
+import property06 from "@/app/assets/the-developer/06 Grand Pakuwon Township.webp";
+import property07 from "@/app/assets/the-developer/07 Pakuwon Mall Solo.webp";
+import property08 from "@/app/assets/the-developer/08 Pakuwon City Township.webp";
+import property09 from "@/app/assets/the-developer/09 Plaza Blok M.webp";
+import property10 from "@/app/assets/the-developer/10 Royal Plaza- Surabaya.webp";
+
+const properties = [
+  { src: property01, title: "Gandaria City Superblock Jakarta Selatan" },
+  { src: property02, title: "Pakuwon Mall Super Block Surabaya" },
+  { src: property03, title: "Tunjungan Plaza Surabaya Pusat" },
+  { src: property04, title: "Pakuwon Bekasi Superblock" },
+  { src: property05, title: "Pakuwon Mall City Surabaya Timur" },
+  { src: property06, title: "Grand Pakuwon Township" },
+  { src: property07, title: "Pakuwon Mall Solo" },
+  { src: property08, title: "Pakuwon City Township" },
+  { src: property09, title: "Plaza Blok M" },
+  { src: property10, title: "Royal Plaza Surabaya" },
+];
+
+const spanPattern = ["lg:col-span-2", "", "", "lg:col-span-2"];
 
 const PropertiesSection = () => {
   return (
@@ -34,84 +53,24 @@ const PropertiesSection = () => {
       </div>
       <div className="py-14 space-y-10">
         <div className="w-full grid lg:grid-cols-3 h-full gap-10 md:gap-16">
-          <FadeSlide className="relative w-full h-full lg:col-span-2">
-            <Image
-              src={developer_content1}
-              alt=""
-              className="w-full h-full object-cover"
-              width={1000}
-              height={1000}
-            />
-            <WordsPullUp
-              text="Pakuwon Bekasi Superblock iBekasi Barat"
-              className="absolute left-5 bottom-2 text-[#F3F0E8] text-xl sm:text-2xl"
-            />
-          </FadeSlide>
-          <FadeSlide className="relative w-full h-full">
-            <Image
-              src={developer_content2}
-              alt=""
-              className="w-full h-full object-cover"
-              width={1000}
-              height={1000}
-            />
-            <WordsPullUp
-              text="Tunjungan Plaza Surabaya Pusat"
-              className="absolute left-5 bottom-2 text-[#F3F0E8] text-xl sm:text-2xl text-balance"
-            />
-          </FadeSlide>
-          <FadeSlide className="relative w-full h-full">
-            <Image
-              src={developer_content3}
-              alt=""
-              className="w-full h-full object-cover"
-              width={1000}
-              height={1000}
-            />
-            <WordsPullUp
-              text="Superblock"
-              className="absolute left-5 bottom-2 text-[#F3F0E8] text-xl sm:text-2xl"
-            />
-          </FadeSlide>
-          <FadeSlide className="relative w-full h-full lg:col-span-2">
-            <Image
-              src={developer_content4}
-              alt=""
-              className="w-full h-full object-cover"
-              width={1000}
-              height={1000}
-            />
-            <WordsPullUp
-              text="Gandaria City Superblock Jakarta Selatan"
-              className="absolute left-5 bottom-2 text-[#F3F0E8] text-xl sm:text-2xl"
-            />
-          </FadeSlide>
-          <FadeSlide className="relative w-full h-full lg:col-span-2">
-            <Image
-              src={developer_content5}
-              alt=""
-              className="w-full h-full object-cover"
-              width={1000}
-              height={1000}
-            />
-            <WordsPullUp
-              text="Superblock"
-              className="absolute left-5 bottom-2 text-[#F3F0E8] text-xl sm:text-2xl"
-            />
-          </FadeSlide>
-          <FadeSlide className="relative w-full h-full">
-            <Image
-              src={developer_content6}
-              alt=""
-              className="w-full h-full object-cover"
-              width={1000}
-              height={1000}
-            />
-            <WordsPullUp
-              text="Pakuwon Mall Superblock Surabaya Barat"
-              className="absolute left-5 bottom-2 text-[#F3F0E8] text-xl sm:text-2xl text-balance"
-            />
-          </FadeSlide>
+          {properties.map((property, index) => (
+            <FadeSlide
+              key={index}
+              className={`relative w-full h-full ${spanPattern[index % spanPattern.length]}`}
+            >
+              <Image
+                src={property.src}
+                alt={property.title}
+                className="w-full h-full object-cover"
+                width={1000}
+                height={1000}
+              />
+              <WordsPullUp
+                text={property.title}
+                className="absolute left-5 bottom-2 text-[#F3F0E8] text-xl sm:text-2xl text-balance"
+              />
+            </FadeSlide>
+          ))}
         </div>
       </div>
     </section>
