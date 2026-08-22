@@ -13,16 +13,16 @@ import property09 from "@/app/assets/the-developer/09 Plaza Blok M.webp";
 import property10 from "@/app/assets/the-developer/10 Royal Plaza- Surabaya.webp";
 
 const properties = [
-  { src: property01, title: "Gandaria City Superblock Jakarta Selatan" },
-  { src: property02, title: "Pakuwon Mall Super Block Surabaya" },
-  { src: property03, title: "Tunjungan Plaza Surabaya Pusat" },
-  { src: property04, title: "Pakuwon Bekasi Superblock" },
-  { src: property05, title: "Pakuwon Mall City Surabaya Timur" },
+  { src: property01, title: "Gandaria City Superblock" },
+  { src: property02, title: "Pakuwon Mall" },
+  { src: property03, title: "Tunjungan Plaza" },
+  { src: property04, title: "Pakuwon Bekasi" },
+  { src: property05, title: "Pakuwon Mall City" },
   { src: property06, title: "Grand Pakuwon Township" },
   { src: property07, title: "Pakuwon Mall Solo" },
   { src: property08, title: "Pakuwon City Township" },
   { src: property09, title: "Plaza Blok M" },
-  { src: property10, title: "Royal Plaza Surabaya" },
+  { src: property10, title: "Royal Plaza" },
 ];
 
 const spanPattern = ["lg:col-span-2", "", "", "lg:col-span-2"];
