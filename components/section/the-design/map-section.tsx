@@ -1,40 +1,4 @@
 "use client";
-import map_3BB_01 from "@/app/assets/the-design/units/3BB/map-01.svg";
-import unit_3BB_01 from "@/app/assets/the-design/units/3BB/unit-01.svg";
-
-import map_2BE_02 from "@/app/assets/the-design/units/2BE/map-02.svg";
-import unit_2BE_02 from "@/app/assets/the-design/units/2BE/unit-02.svg";
-
-import map_2BC_03 from "@/app/assets/the-design/units/2BC/map-03.svg";
-import unit_2BC_03 from "@/app/assets/the-design/units/2BC/unit-03.svg";
-
-import map_2BC_05 from "@/app/assets/the-design/units/2BC/map-05.svg";
-import unit_2BC_05 from "@/app/assets/the-design/units/2BC/unit-05.svg";
-
-import map_2BD_06 from "@/app/assets/the-design/units/2BD/map-06.svg";
-import unit_2BD_06 from "@/app/assets/the-design/units/2BD/unit-06.svg";
-
-import map_3BA_07 from "@/app/assets/the-design/units/3BA/map-07.svg";
-import unit_3BA_07 from "@/app/assets/the-design/units/3BA/unit-07.svg";
-
-import map_3BC_08 from "@/app/assets/the-design/units/3BC/map-08.svg";
-import unit_3BC_08 from "@/app/assets/the-design/units/3BC/unit-08.svg";
-
-import map_2BA_09 from "@/app/assets/the-design/units/2BA/map-09.svg";
-import unit_2BA_09 from "@/app/assets/the-design/units/2BA/unit-09.svg";
-
-import map_2BB_10 from "@/app/assets/the-design/units/2BB/map-10.svg";
-import unit_2BB_10 from "@/app/assets/the-design/units/2BB/unit-10.svg";
-
-import map_2BB_11 from "@/app/assets/the-design/units/2BB/map-11.svg";
-import unit_2BB_11 from "@/app/assets/the-design/units/2BB/unit-11.svg";
-
-import map_2BA_12 from "@/app/assets/the-design/units/2BA/map-12.svg";
-import unit_2BA_12 from "@/app/assets/the-design/units/2BA/unit-12.svg";
-
-import map_3BA_15 from "@/app/assets/the-design/units/3BA/map-15.svg";
-import unit_3BA_15 from "@/app/assets/the-design/units/3BA/unit-15.svg";
-
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
@@ -45,158 +9,9 @@ import eluna from "@/app/assets/the-design/eluna.svg";
 import elora from "@/app/assets/the-design/elora.svg";
 import { useState } from "react";
 import ImageZoom from "@/components/ui/image-zoom";
+import { units, elunaStructure, type StructureNode } from "@/constants/eluna-structure";
 
 const MapSection = () => {
-  const units = [
-    {
-      index: "01",
-      code: "3BB",
-      grossArea: 178,
-      netArea: 149,
-      pathMap: map_3BB_01,
-      pathUnit: unit_3BB_01,
-    },
-    {
-      index: "02",
-      code: "2BE",
-      grossArea: 90,
-      netArea: 75,
-      pathMap: map_2BE_02,
-      pathUnit: unit_2BE_02,
-    },
-    {
-      index: "03",
-      code: "2BC",
-      grossArea: 122,
-      netArea: 102,
-      pathMap: map_2BC_03,
-      pathUnit: unit_2BC_03,
-    },
-    {
-      index: "05",
-      code: "2BC",
-      grossArea: 122,
-      netArea: 102,
-      pathMap: map_2BC_05,
-      pathUnit: unit_2BC_05,
-    },
-    {
-      index: "06",
-      code: "2BD",
-      grossArea: 85,
-      netArea: 71,
-      pathMap: map_2BD_06,
-      pathUnit: unit_2BD_06,
-    },
-    {
-      index: "07",
-      code: "3BA",
-      grossArea: 167,
-      netArea: 140,
-      pathMap: map_3BA_07,
-      pathUnit: unit_3BA_07,
-    },
-    {
-      index: "08",
-      code: "3BC",
-      grossArea: 183,
-      netArea: 149,
-      pathMap: map_3BC_08,
-      pathUnit: unit_3BC_08,
-    },
-    {
-      index: "09",
-      code: "2BA",
-      grossArea: 93,
-      netArea: 78,
-      pathMap: map_2BA_09,
-      pathUnit: unit_2BA_09,
-    },
-    {
-      index: "10",
-      code: "2BB",
-      grossArea: 89,
-      netArea: 74,
-      pathMap: map_2BB_10,
-      pathUnit: unit_2BB_10,
-    },
-    {
-      index: "11",
-      code: "2BB",
-      grossArea: 89,
-      netArea: 74,
-      pathMap: map_2BB_11,
-      pathUnit: unit_2BB_11,
-    },
-    {
-      index: "12",
-      code: "2BA",
-      grossArea: 89,
-      netArea: 74,
-      pathMap: map_2BA_12,
-      pathUnit: unit_2BA_12,
-    },
-    {
-      index: "15",
-      code: "3BA",
-      grossArea: 167,
-      netArea: 140,
-      pathMap: map_3BA_15,
-      pathUnit: unit_3BA_15,
-    }
-
-
-
-    // {
-    //   code: "2BB",
-    //   grossArea: 89,
-    //   netArea: 74,
-    //   pathMap: map2BB,
-    //   pathUnit: unit2BB,
-    // },
-    // {
-    //   code: "2BC",
-    //   grossArea: 122,
-    //   netArea: 102,
-    //   pathMap: map2BC,
-    //   pathUnit: unit2BC,
-    // },
-    // {
-    //   code: "2BD",
-    //   grossArea: 85,
-    //   netArea: 71,
-    //   pathMap: map2BD,
-    //   pathUnit: unit2BD,
-    // },
-    // {
-    //   code: "2BE",
-    //   grossArea: 90,
-    //   netArea: 75,
-    //   pathMap: map2BE,
-    //   pathUnit: unit2BE,
-    // },
-    // {
-    //   code: "3BA",
-    //   grossArea: 167,
-    //   netArea: 140,
-    //   pathMap: map3BA,
-    //   pathUnit: unit3BA,
-    // },
-    // {
-    //   code: "3BB",
-    //   grossArea: 178,
-    //   netArea: 149,
-    //   pathMap: map_3BB_01,
-    //   pathUnit: unit_3BB_01,
-    // },
-    // {
-    //   code: "3BC",
-    //   grossArea: 183,
-    //   netArea: 149,
-    //   pathMap: map3BC,
-    //   pathUnit: unit3BC,
-    // },
-  ];
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const [elunaElora, setElunaElora] = useState(true);
   const [activeUnit, setActiveUnit] = useState(units[0]);
@@ -298,6 +113,21 @@ const MapSection = () => {
             )}
           </FadeSlide>
         </div>
+        <div className="mt-11.5 flex flex-col justify-center items-center w-full gap-4.5">
+          <h1 className="text-center uppercase font-semibold text-[28px] leading-7.5 tracking-[0.2em] text-[#F3F0E8]">
+            {elunaStructure.label} Floorplan Typical
+          </h1>
+          <div className="flex justify-center items-center gap-7">
+            {(elunaStructure.children as StructureNode[]).map((node) => (
+              <div
+                key={node.id}
+                className="cursor-pointer h-11.25 w-25 bg-[#F3F0E8] border border-[#9D7958] text-[#9D7958] text-center uppercase font-medium text-[20px] leading-none flex items-center justify-center"
+              >
+                {node.label}
+              </div>
+            ))}
+          </div>
+        </div>
         <div className="w-full flex flex-col justify-center items-center gap-8">
           <div className="relative w-full h-auto mt-10 flex flex-col justify-center items-center gap-8">
             <div className="relative w-full h-full flex justify-center items-center mx-auto">
@@ -306,11 +136,15 @@ const MapSection = () => {
             <div className="flex justify-center items-center gap-10 sm:gap-20">
               <div className="flex items-center gap-3">
                 <div className="size-6 sm:size-8 border border-[#AA7A56] bg-[#D4D0CA]" />
-                <span className="text-[#AA7A56] text-sm sm:text-base font-semibold tracking-widest">2 BEDROOM</span>
+                <span className="text-[#AA7A56] text-sm sm:text-base font-semibold tracking-widest">
+                  2 BEDROOM
+                </span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="size-6 sm:size-8 border border-[#AA7A56] bg-[#EDE3DC]" />
-                <span className="text-[#AA7A56] text-sm sm:text-base font-semibold tracking-widest">3 BEDROOM</span>
+                <span className="text-[#AA7A56] text-sm sm:text-base font-semibold tracking-widest">
+                  3 BEDROOM
+                </span>
               </div>
             </div>
             <div
@@ -381,7 +215,9 @@ const MapSection = () => {
 
                   <FadeSlide
                     className={`overflow-auto transition-all duration-300 ease-in-out pl-16 grid grid-cols-2 grid-flow-col gap-x-4 ${openIndex === 1 ? "opacity-100 mt-3" : "max-h-0 opacity-0"}`}
-                    style={{ gridTemplateRows: `repeat(${Math.ceil(units.length / 2)}, auto)` }}
+                    style={{
+                      gridTemplateRows: `repeat(${Math.ceil(units.length / 2)}, auto)`,
+                    }}
                   >
                     {units.map((unit) => (
                       <button

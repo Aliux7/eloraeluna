@@ -13,13 +13,14 @@ const HeroSection = () => {
       className="relative sm:min-h-screen bg-[#464948]"
     >
       <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden overlay-hero after:content-[''] after:absolute after:inset-0 after:bg-linear-to-tr after:from-black/25 after:to-transparent after:pointer-events-none after:select-none">
-        <Image
-          src={hero_background}
-          alt=""
-          width={2000}
-          height={2000}
+        <video
+          src="/videos/hero.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster={hero_background.src}
           className="w-full h-full object-cover object-top"
-          priority
         />
         <Image
           src={arrow}

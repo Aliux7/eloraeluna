@@ -57,7 +57,7 @@ const OverviewSection = () => {
           /> */}
         </div>
       </div>
-      <FadeSlide className="relative w-full sm:max-w-[60vw] 2xl:max-w-[50vw] flex justify-center items-center">
+      <FadeSlide className="relative w-full sm:max-w-[60vw] 2xl:max-w-[40vw] flex justify-center items-center">
         <Image src={map} alt="" className="w-full h-full object-contain" />
       </FadeSlide>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16">

@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
-import tower from "@/app/assets/the-design/tower_design.png";
+import tower_diagram from "@/app/assets/the-design/tower_diagram.svg";
+import tower_diagram_mobile from "@/app/assets/the-design/tower_diagram_mobile.svg";
 import illustration_2 from "@/app/assets/home/illustration_2.png";
 import illustration_bottom from "@/app/assets/home/illustration_bottom.png";
 
@@ -42,214 +43,224 @@ const TowerSection = () => {
         </div>
       </div>
       <div className="relative flex justify-center">
-        <div className="relative sm:w-[60vw] max-w-150 2xl:max-w-200 min-w-60 space-y-5 sm:space-y-0">
-          <div className="relative sm:static">
+        <FadeSlide className="hidden lg:block w-full">
+          <Image
+            src={tower_diagram}
+            alt=""
+            className="w-full h-auto object-contain"
+            priority
+          />
+        </FadeSlide>
+        <div className="lg:hidden w-full flex flex-col gap-5">
+          <FadeSlide className="w-[90%] mx-auto mb-8">
             <Image
-              src={tower}
+              src={tower_diagram_mobile}
               alt=""
-              className="w-[80%] mx-auto sm:w-full h-auto object-contain"
+              className="w-full h-auto object-contain"
               priority
             />
+          </FadeSlide>
 
-            {/* Line */}
-            <div className="absolute left-5 sm:left-0 xl:-left-[10%] top-[40%] sm:top-[41%] w-[15%] sm:w-[20%] xl:w-[25%] border-t-3 sm:border-t-2 border-[#9D7958]">
-              <div className="block sm:hidden bg-[#9D7958] text-[#F3F0E8] w-fit p-1 px-2.5 rounded-full text-xs absolute -top-3.5">
-                1
-              </div>
-            </div>
-            {/* Line */}
-            <div className="absolute left-5 sm:left-0 xl:-left-[10%] top-[67.5%] sm:top-[68%] w-[15%] sm:w-[20%] xl:w-[25%] border-t-3 sm:border-t-2 border-[#9D7958]">
-              <div className="block sm:hidden bg-[#9D7958] text-[#F3F0E8] w-fit p-1 px-2.5 rounded-full text-xs absolute -top-3.5">
-                2
-              </div>
-            </div>
-            {/* Line */}
-            <div className="absolute left-0 xl:-left-[10%] top-[95%] sm:bottom-[6%] w-[15%] sm:w-[20%] xl:w-[25%] border-t-3 sm:border-t-2 border-[#9D7958]">
-              <div className="block sm:hidden bg-[#9D7958] text-[#F3F0E8] w-fit p-1 px-2.5 rounded-full text-xs absolute -top-3.5">
-                3
-              </div>
-            </div>
-            {/* Line */}
-            <div className="absolute left-[44%] top-[60%] sm:top-[26%] sm:w-[50%] xl:w-[75%] h-[7%] sm:h-[40%] border-l-3 sm:border-l-2 border-t-2 border-[#9D7958]">
-              <div className="block sm:hidden bg-[#9D7958] text-[#F3F0E8] w-fit p-1 px-2.5 rounded-full text-xs absolute -top-3.5 -right-3 sm:right-0">
-                4
-              </div>
-            </div>
-          </div>
- 
-          <div className="text-xs lg:text-lg absolute left-[51.5%] sm:left-[55%] top-[5%] sm:top-[10%] w-[25%] text-center text-[#F3F0E8]">
-            <WordsPullUp text="COMING" className="lg:font-bold" />
-            <WordsPullUp text="SOON" className="lg:font-bold" />
-          </div>
-          {/* Content */}
-          <div className="flex justify-start items-start gap-4 border-t-2 border-[#9D7958] pt-5 sm:p-0 sm:border-0 sm:text-xs lg:text-base relative sm:absolute sm:-left-[30%] xl:-left-[45%] sm:top-[39%] w-full">
+          <div className="flex justify-start items-start gap-4 border-t-2 border-[#9D7958] pt-5 w-full">
             <WordsPullUp
               text="1"
-              className="bg-[#9D7958] text-[#F3F0E8] w-fit pt-0.5 size-6 rounded-full text-xs scale-100 flex sm:hidden justify-center items-center"
+              className="bg-[#9D7958] text-[#F3F0E8] w-fit pt-0.5 size-6 rounded-full text-xs scale-100 flex justify-center items-center"
             />
             <div className="flex flex-col justify-start items-start gap-1">
               <WordsPullUp
                 text="ELUNA SOCIAL DECK"
-                className="text-[#F3F0E8] font-bold tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#F3F0E8] font-bold tracking-[0.1rem] text-sm"
               />
               <WordsPullUp
                 text="20TH FLOOR"
-                className="text-[#9D7958] font-bold tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#9D7958] font-bold tracking-[0.1rem] text-sm"
               />
               <FadeSlide>
-                <div className="border-t border-[#F3F0E8] w-36 sm:w-20 lg:w-32 my-1" />
+                <div className="border-t border-[#F3F0E8] w-36 my-1" />
               </FadeSlide>
               <WordsPullUp
                 text="Zen Garden"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm"
               />
               <WordsPullUp
                 text="Playing Area"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm"
               />
             </div>
           </div>
-          {/* Content */}
-          <div className="flex justify-start items-start gap-4 border-t-2 border-[#9D7958] pt-5 sm:p-0 sm:border-0 sm:text-xs lg:text-base relative sm:absolute sm:-left-[30%] xl:-left-[45%] sm:top-[66%] w-full">
+
+          <div className="flex justify-start items-start gap-4 border-t-2 border-[#9D7958] pt-5 w-full">
             <WordsPullUp
               text="2"
-              className="bg-[#9D7958] text-[#F3F0E8] w-fit pt-0.5 size-6 rounded-full text-xs scale-100 flex sm:hidden justify-center items-center"
+              className="bg-[#9D7958] text-[#F3F0E8] w-fit pt-0.5 size-6 rounded-full text-xs scale-100 flex justify-center items-center"
             />
             <div className="flex flex-col justify-start items-start gap-1">
               <WordsPullUp
                 text="ELUNA PET PARK"
-                className="text-[#F3F0E8] font-bold tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#F3F0E8] font-bold tracking-[0.1rem] text-sm"
               />
               <WordsPullUp
-                text="P12"
-                className="text-[#9D7958] font-bold tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                text="P7A"
+                className="text-[#9D7958] font-bold tracking-[0.1rem] text-sm"
               />
               <FadeSlide>
-                <div className="border-t border-[#F3F0E8] w-36 sm:w-20 lg:w-32 my-1" />
+                <div className="border-t border-[#F3F0E8] w-36 my-1" />
               </FadeSlide>
               <WordsPullUp
                 text="Pet Park"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm"
               />
             </div>
           </div>
-          {/* Content */}
-          <div className="flex justify-start items-start gap-4 border-t-2 border-[#9D7958] pt-5 sm:p-0 sm:border-0 sm:text-xs lg:text-base relative sm:absolute sm:-left-[30%] xl:-left-[45%] sm:-bottom-[1%] w-full">
+
+          <div className="flex justify-start items-start gap-4 border-t-2 border-[#9D7958] pt-5 w-full">
             <WordsPullUp
               text="3"
-              className="bg-[#9D7958] text-[#F3F0E8] w-fit pt-0.5 size-6 rounded-full text-xs scale-100 flex sm:hidden justify-center items-center"
+              className="bg-[#9D7958] text-[#F3F0E8] w-fit pt-0.5 size-6 rounded-full text-xs scale-100 flex justify-center items-center"
             />
             <div className="flex flex-col justify-start items-start gap-1">
               <WordsPullUp
                 text="ELUNA LOBBY"
-                className="text-[#F3F0E8] font-bold tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#F3F0E8] font-bold tracking-[0.1rem] text-sm"
               />
               <WordsPullUp
                 text="GROUND FLOOR"
-                className="text-[#9D7958] font-bold tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#9D7958] font-bold tracking-[0.1rem] text-sm"
               />
               <FadeSlide>
-                <div className="border-t border-[#F3F0E8] w-36 sm:w-20 lg:w-32 my-1" />
+                <div className="border-t border-[#F3F0E8] w-36 my-1" />
               </FadeSlide>
               <WordsPullUp
                 text="Drop Off"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm"
               />
               <WordsPullUp
                 text="Main Lobby"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm"
               />
             </div>
           </div>
-          {/* Content */}
-          <div className="flex justify-start items-start gap-4 border-t-2 border-[#9D7958] pt-5 sm:p-0 sm:border-0 w-full sm:w-fit sm:text-xs lg:text-base relative sm:absolute sm:-right-[30%] xl:-right-[50%] sm:top-[24%] sm:text-end sm:flex sm:flex-col sm:items-end">
+
+          <div className="flex justify-start items-start gap-4 border-t-2 border-[#9D7958] pt-5 w-full">
             <WordsPullUp
               text="4"
-              className="bg-[#9D7958] text-[#F3F0E8] w-fit pt-0.5 size-6 rounded-full text-xs scale-100 flex sm:hidden justify-center items-center"
+              className="bg-[#9D7958] text-[#F3F0E8] w-fit pt-0.5 size-6 rounded-full text-xs scale-100 flex justify-center items-center"
             />
-            <div className="flex flex-col justify-start sm:items-end gap-1">
+            <div className="flex flex-col justify-start items-start gap-1">
               <WordsPullUp
-                text="FACILITY FLOOR"
-                className="text-[#F3F0E8] font-bold tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                text="CONDOMINUM PARKING"
+                className="text-[#F3F0E8] font-bold tracking-[0.1rem] text-sm"
+              />
+              <WordsPullUp
+                text="P1-P6"
+                className="text-[#9D7958] font-bold tracking-[0.1rem] text-sm"
+              />
+              <FadeSlide>
+                <div className="border-t border-[#F3F0E8] w-36 my-1" />
+              </FadeSlide>
+            </div>
+          </div>
+
+          <div className="flex justify-start items-start gap-4 border-t-2 border-[#9D7958] pt-5 w-full">
+            <WordsPullUp
+              text="5"
+              className="bg-[#9D7958] text-[#F3F0E8] w-fit pt-0.5 size-6 rounded-full text-xs scale-100 flex justify-center items-center"
+            />
+            <div className="flex flex-col justify-start items-start gap-1">
+              <WordsPullUp
+                text="FACILITY FLOOR INDOOR"
+                className="text-[#F3F0E8] font-bold tracking-[0.1rem] text-sm"
               />
               <WordsPullUp
                 text="1ST FLOOR"
-                className="text-[#9D7958] font-bold tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#9D7958] font-bold tracking-[0.1rem] text-sm"
               />
               <FadeSlide>
-                <div className="border-t border-[#F3F0E8] w-36 sm:w-20 lg:w-32 my-1" />
+                <div className="border-t border-[#F3F0E8] w-36 my-1" />
               </FadeSlide>
               <WordsPullUp
                 text="Function Room (Eluna)"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm"
               />
               <WordsPullUp
                 text="Pre Function (Eluna)"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm"
               />
               <WordsPullUp
                 text="Gym"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm"
               />
               <WordsPullUp
                 text="Gym Class"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm"
               />
               <WordsPullUp
                 text="Family Lounge"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm"
               />
               <WordsPullUp
                 text="Kids Room"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm"
+              />
+
+              <WordsPullUp
+                text="FACILITY FLOOR OUTDOOR"
+                className="text-[#F3F0E8] font-bold tracking-[0.1rem] text-sm mt-5"
               />
               <WordsPullUp
+                text="1ST FLOOR"
+                className="text-[#9D7958] font-bold tracking-[0.1rem] text-sm"
+              />
+              <FadeSlide>
+                <div className="border-t border-[#F3F0E8] w-36 my-1" />
+              </FadeSlide>
+              <WordsPullUp
                 text="Outdoor Lounge"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm"
               />
               <WordsPullUp
                 text="Lap Pool"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm"
               />
               <WordsPullUp
-                text="Sunken PooI"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                text="Sunken Pool"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm"
               />
               <WordsPullUp
                 text="Cabana Deck"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm"
               />
               <WordsPullUp
                 text="Sunken Lounge"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm"
               />
               <WordsPullUp
                 text="Lagoon Pool"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm"
               />
               <WordsPullUp
                 text="Kids Pool"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm"
               />
               <WordsPullUp
                 text="Children Play Ground"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm"
               />
               <WordsPullUp
                 text="BBQ Area"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm"
               />
               <WordsPullUp
                 text="Tennis Court"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm"
               />
               <WordsPullUp
                 text="Jogging Track"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm"
               />
               <WordsPullUp
                 text="Gazebo"
-                className="text-[#F3F0E8] tracking-[0.1rem] text-sm sm:text-base 2xl:text-xl"
+                className="text-[#F3F0E8] tracking-[0.1rem] text-sm"
               />
             </div>
           </div>
