@@ -117,11 +117,11 @@ const MapSection = () => {
           <h1 className="text-center uppercase font-semibold text-[28px] leading-7.5 tracking-[0.2em] text-[#F3F0E8]">
             {elunaStructure.label} Floorplan Typical
           </h1>
-          <div className="flex justify-center items-center gap-7">
+          <div className="grid grid-cols-2 sm:flex justify-center items-center gap-3 sm:gap-7 w-full sm:w-auto">
             {(elunaStructure.children as StructureNode[]).map((node) => (
               <div
                 key={node.id}
-                className="cursor-pointer h-11.25 w-25 bg-[#F3F0E8] border border-[#9D7958] text-[#9D7958] text-center uppercase font-medium text-[20px] leading-none flex items-center justify-center"
+                className="cursor-pointer h-9 sm:h-11.25 w-full sm:w-25 bg-[#F3F0E8] border border-[#9D7958] text-[#9D7958] text-center uppercase font-medium text-sm sm:text-[20px] leading-none flex items-center justify-center"
               >
                 {node.label}
               </div>
@@ -268,7 +268,7 @@ const MapSection = () => {
                     />
                   </div>
                 </div>
-                <div className="relative px-0 w-full h-full mt-20 scale-110 sm:scale-none">
+                <div className="relative px-0 w-full h-full mt-20 scale-none">
                   <ImageZoom src={activeUnit.pathUnit.src} alt="Map" />
                 </div>
               </FadeSlide>

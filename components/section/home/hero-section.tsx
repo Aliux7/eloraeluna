@@ -14,7 +14,7 @@ const HeroSection = () => {
     >
       <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden overlay-hero after:content-[''] after:absolute after:inset-0 after:bg-linear-to-tr after:from-black/25 after:to-transparent after:pointer-events-none after:select-none">
         <video
-          src="/videos/hero.mp4"
+          src="https://firebasestorage.googleapis.com/v0/b/dupi-aad53.firebasestorage.app/o/hero.mp4?alt=media&token=ad0e60e4-1427-4868-bb84-094fc98ef9be"
           autoPlay
           loop
           muted
