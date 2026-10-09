@@ -1,4 +1,4 @@
-import qoutes_background from "@/app/assets/facilities/quotes_background.png";
+import qoutes_background from "@/app/assets/facilities/quotes_background.webp";
 import qoutes_sign from "@/app/assets/facilities/quote_sign.svg";
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";

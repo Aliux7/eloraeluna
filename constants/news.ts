@@ -1,7 +1,7 @@
-import news_1 from "@/app/assets/news/news1/01_Banner.jpg";
-import news_2 from "@/app/assets/news/news2/01_Banner.jpg";
-import news_3 from "@/app/assets/news/news3/01_Banner.jpg";
-import news_4 from "@/app/assets/news/news4/01_Banner.jpg";
+import news_1 from "@/app/assets/news/news1/01_Banner.webp";
+import news_2 from "@/app/assets/news/news2/01_Banner.webp";
+import news_3 from "@/app/assets/news/news3/01_Banner.webp";
+import news_4 from "@/app/assets/news/news4/01_Banner.webp";
 
 export const newsData = [
   {

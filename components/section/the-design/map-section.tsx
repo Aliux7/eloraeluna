@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
-import map from "@/app/assets/the-design/map_design.png";
+import map from "@/app/assets/the-design/map_design.webp";
 import eluna_gold from "@/app/assets/eluna_gold.svg";
 import elora_gold from "@/app/assets/elora_gold.svg";
 import eluna from "@/app/assets/the-design/eluna.svg";
@@ -11,10 +11,45 @@ import { useState } from "react";
 import ImageZoom from "@/components/ui/image-zoom";
 import { units, elunaStructure, type StructureNode } from "@/constants/eluna-structure";
 
+const getOrdinalSuffix = (n: number) => {
+  const lastTwo = n % 100;
+  if (lastTwo >= 11 && lastTwo <= 13) return "th";
+  switch (n % 10) {
+    case 1:
+      return "st";
+    case 2:
+      return "nd";
+    case 3:
+      return "rd";
+    default:
+      return "th";
+  }
+};
+
+const renderFloorHeader = (label: string) => {
+  const rangeMatch = label.match(/^(\d+)\s*-\s*(\d+)$/);
+  if (rangeMatch) {
+    const start = Number(rangeMatch[1]);
+    const end = Number(rangeMatch[2]);
+    return (
+      <>
+        {start}
+        <sup>{getOrdinalSuffix(start)}</sup> - {end}
+        <sup>{getOrdinalSuffix(end)}</sup> Floor
+      </>
+    );
+  }
+  return <>{label} Floor</>;
+};
+
 const MapSection = () => {
+  const structureChildren = elunaStructure.children as StructureNode[];
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const [elunaElora, setElunaElora] = useState(true);
   const [activeUnit, setActiveUnit] = useState(units[0]);
+  const [selectedChild, setSelectedChild] = useState<StructureNode>(
+    structureChildren[structureChildren.length - 1],
+  );
 
   return (
     <section
@@ -118,14 +153,23 @@ const MapSection = () => {
             {elunaStructure.label} Floorplan Typical
           </h1>
           <div className="grid grid-cols-2 sm:flex justify-center items-center gap-3 sm:gap-7 w-full sm:w-auto">
-            {(elunaStructure.children as StructureNode[]).map((node) => (
-              <div
-                key={node.id}
-                className="cursor-pointer h-9 sm:h-11.25 w-full sm:w-25 bg-[#F3F0E8] border border-[#9D7958] text-[#9D7958] text-center uppercase font-medium text-sm sm:text-[20px] leading-none flex items-center justify-center"
-              >
-                {node.label}
-              </div>
-            ))}
+            {structureChildren.map((node) => {
+              const isActive = selectedChild.id === node.id;
+              return (
+                <button
+                  key={node.id}
+                  type="button"
+                  onClick={() => setSelectedChild(node)}
+                  className={`cursor-pointer h-9 sm:h-11.25 w-full sm:w-25 border border-[#9D7958] text-center uppercase font-medium text-sm sm:text-[20px] leading-none flex items-center justify-center transition-colors duration-200 ${
+                    isActive
+                      ? "bg-[#9D7958] text-[#F3F0E8]"
+                      : "bg-[#F3F0E8] text-[#9D7958] hover:bg-[#F3F0E8]/95"
+                  }`}
+                >
+                  {node.label}
+                </button>
+              );
+            })}
           </div>
         </div>
         <div className="w-full flex flex-col justify-center items-center gap-8">
@@ -158,12 +202,13 @@ const MapSection = () => {
           </div>
           <div className="mt-20 sm:mt-12 flex flex-col justify-start items-start w-full h-fit">
             <WordsPullUp
-              text="ELUNA FLOORPLAN TYPICAL 2-35"
+              key={`floorplan-sm-${selectedChild.id}`}
+              text={`ELUNA FLOORPLAN TYPICAL ${selectedChild.label}`}
               className="hidden sm:block pr-5 sm:pr-0 mb-10 font-semibold 2xl:font-normal text-2xl md:text-3xl 2xl:text-[32px] tracking-widest text-[#F3F0E8]"
             />
             <div className="relative flex flex-col-reverse lg:flex-row justify-between w-full h-full gap-10 sm:gap-16 xl:gap-32">
               <div className="sm:w-100">
-                <div className="py-3">
+                {/* <div className="py-3">
                   <FadeSlide>
                     <button
                       onClick={() => setOpenIndex(openIndex === 0 ? null : 0)}
@@ -178,7 +223,7 @@ const MapSection = () => {
                         ></div>
                       </div>
                     </button>
-                  </FadeSlide>
+                  </FadeSlide> */}
 
                   {/* <FadeSlide
                     className={`overflow-auto transition-all duration-300 ease-in-out pl-16 ${openIndex === 0 ? "opacity-100 mt-3" : "max-h-0 opacity-0"}`}
@@ -194,7 +239,7 @@ const MapSection = () => {
                       </button>
                     ))}
                   </FadeSlide> */}
-                </div>
+                {/* </div> */}
 
                 <div className="py-3">
                   <FadeSlide>
@@ -203,7 +248,7 @@ const MapSection = () => {
                       className="w-full flex justify-between items-center text-left border-b border-white cursor-pointer"
                     >
                       <h3 className="text-lg 2xl:text-xl font-medium text-white tracking-widest p-1">
-                        2<sup>nd</sup> - 35<sup>th</sup> Floor
+                        {renderFloorHeader(selectedChild.label)}
                       </h3>
                       <div className="mr-2 mt-1 text-xl font-light transition-transform duration-300">
                         <div
@@ -241,7 +286,8 @@ const MapSection = () => {
               </div>
 
               <WordsPullUp
-                text="ELUNA FLOORPLAN TYPICAL 2-35"
+                key={`floorplan-mobile-${selectedChild.id}`}
+                text={`ELUNA FLOORPLAN TYPICAL ${selectedChild.label}`}
                 className="sm:hidden pr-5 sm:pr-0 mt-10 sm:mt-0 sm:mb-10 font-semibold text-2xl md:text-3xl 2xl:text-4xl tracking-widest text-[#F3F0E8]"
               />
               <FadeSlide className="relative flex-1 w-full h-fit sm:border-x-2 border-[#AA7A56] sm:p-10 2xl:px-20 flex flex-col gap-10">

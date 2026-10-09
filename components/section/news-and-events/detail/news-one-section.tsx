@@ -1,7 +1,7 @@
 import { FadeSlide } from "@/components/animation/fade-slide";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
-import news2 from "@/app/assets/news/news1/02.jpg";
-import news3 from "@/app/assets/news/news1/03.jpg";
+import news2 from "@/app/assets/news/news1/02.webp";
+import news3 from "@/app/assets/news/news1/03.webp";
 import Image from "next/image";
 
 const NewsOneSection = () => {

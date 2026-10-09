@@ -1,14 +1,14 @@
 import { GalleryCarousel } from "@/components/ui/gallery-carousel";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
-import master_bedroom_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/1/Master Bedroom View 1.jpg";
-import master_bedroom_2 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/1/Master Bedroom View 2.jpg";
-import master_bedroom_3 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/1/Master Bedroom View 3.jpg";
-import master_bedroom_4 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/1/Master Bedroom View 4.jpg";
-import walk_in_closet_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/1/Walk-in Closet View 1.jpg";
-import master_bathroom_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/1/Master Bathroom View 1.jpg";
-import master_bathroom_2 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/1/Master Bathroom View 2.jpg";
-import master_bathroom_3 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/1/Master Bathroom View 3.jpg";
+import master_bedroom_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/1/Master Bedroom View 1.webp";
+import master_bedroom_2 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/1/Master Bedroom View 2.webp";
+import master_bedroom_3 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/1/Master Bedroom View 3.webp";
+import master_bedroom_4 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/1/Master Bedroom View 4.webp";
+import walk_in_closet_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/1/Walk-in Closet View 1.webp";
+import master_bathroom_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/1/Master Bathroom View 1.webp";
+import master_bathroom_2 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/1/Master Bathroom View 2.webp";
+import master_bathroom_3 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/1/Master Bathroom View 3.webp";
 
 const bc2MasterBedroom = [
   master_bedroom_1,

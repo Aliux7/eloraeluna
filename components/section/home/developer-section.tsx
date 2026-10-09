@@ -1,5 +1,5 @@
-import developer_ornament from "@/app/assets/home/developer_ornament.png";
-import developer_background from "@/app/assets/home/developer_background.jpg";
+import developer_ornament from "@/app/assets/home/developer_ornament.webp";
+import developer_background from "@/app/assets/home/developer_background.webp";
 import developer_logo from "@/app/assets/pakuwon_logo.svg";
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";

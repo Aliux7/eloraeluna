@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import arrow_1 from "@/app/assets/home/arrow_1.png";
+import arrow_1 from "@/app/assets/home/arrow_1.webp";
 import Image from "next/image";
 import { LinkPullUp } from "@/components/animation/link-pull-up";
 import { ChevronDown } from "lucide-react";

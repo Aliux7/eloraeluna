@@ -1,4 +1,4 @@
-import hero_background from "@/app/assets/location/location_background.jpg";
+import hero_background from "@/app/assets/location/location_background.webp";
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up"; 
 

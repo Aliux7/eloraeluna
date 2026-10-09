@@ -1,8 +1,8 @@
-import illustration_bottom from "@/app/assets/home/illustration_bottom.png";
-import content_1 from "@/app/assets/home/content_1.jpg";
-import content_2 from "@/app/assets/home/content_2.jpg";
-import content_3 from "@/app/assets/home/content_3.jpg";
-import illustration from "@/app/assets/home/illustration.png";
+import illustration_bottom from "@/app/assets/home/illustration_bottom.webp";
+import content_1 from "@/app/assets/home/content_1.webp";
+import content_2 from "@/app/assets/home/content_2.webp";
+import content_3 from "@/app/assets/home/content_3.webp";
+import illustration from "@/app/assets/home/illustration.webp";
 import Image from "next/image";
 import { FadeSlide } from "@/components/animation/fade-slide";
 import { LinkPullUp } from "@/components/animation/link-pull-up";

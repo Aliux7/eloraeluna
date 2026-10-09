@@ -1,5 +1,5 @@
-import location_shutter from "@/app/assets/home/location_shutter.png";
-import location from "@/app/assets/home/location.jpg";
+import location_shutter from "@/app/assets/home/location_shutter.webp";
+import location from "@/app/assets/home/location.webp";
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";

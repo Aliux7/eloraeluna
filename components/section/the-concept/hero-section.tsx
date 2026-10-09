@@ -1,14 +1,14 @@
-import the_concept_background from "@/app/assets/the-concept/the_concept_background.png";
+import the_concept_background from "@/app/assets/the-concept/the_concept_background.webp";
 import Image from "next/image";
 import eluna from "@/app/assets/eluna.svg";
 import elora from "@/app/assets/elora.svg";
 import and from "@/app/assets/and.svg";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
-import content_1 from "@/app/assets/the-concept/content_concept_1.jpg";
-import content_2 from "@/app/assets/the-concept/content_concept_2.jpg";
-import content_3 from "@/app/assets/the-concept/content_concept_3.jpg";
-import content_4 from "@/app/assets/the-concept/content_concept_4.jpg";
+import content_1 from "@/app/assets/the-concept/content_concept_1.webp";
+import content_2 from "@/app/assets/the-concept/content_concept_2.webp";
+import content_3 from "@/app/assets/the-concept/content_concept_3.webp";
+import content_4 from "@/app/assets/the-concept/content_concept_4.webp";
 
 const HeroSection = () => {
   return (

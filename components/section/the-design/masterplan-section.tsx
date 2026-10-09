@@ -1,4 +1,4 @@
-import master_plan from "@/app/assets/the-design/master_plan.jpg";
+import master_plan from "@/app/assets/the-design/master_plan.webp";
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";

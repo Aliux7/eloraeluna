@@ -1,7 +1,7 @@
 import Image from "next/image";
-import conclusion from "@/app/assets/the-design/conclusion.jpg";
+import conclusion from "@/app/assets/the-design/conclusion.webp";
 import { FadeSlide } from "@/components/animation/fade-slide";
-import illustration_2 from "@/app/assets/home/illustration_2.png";
+import illustration_2 from "@/app/assets/home/illustration_2.webp";
 
 const ConclusionSection = () => {
   return (

@@ -1,10 +1,10 @@
 import { FadeSlide } from "@/components/animation/fade-slide";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
-import news2 from "@/app/assets/news/news2/02.jpg";
-import news3 from "@/app/assets/news/news2/03.jpg";
-import news4 from "@/app/assets/news/news2/04.jpg";
-import news5 from "@/app/assets/news/news2/05.jpg";
-import news6 from "@/app/assets/news/news2/06.jpg";
+import news2 from "@/app/assets/news/news2/02.webp";
+import news3 from "@/app/assets/news/news2/03.webp";
+import news4 from "@/app/assets/news/news2/04.webp";
+import news5 from "@/app/assets/news/news2/05.webp";
+import news6 from "@/app/assets/news/news2/06.webp";
 import Image from "next/image";
 
 const NewsTwoSection = () => {

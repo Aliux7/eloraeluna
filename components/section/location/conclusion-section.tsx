@@ -1,5 +1,5 @@
 import Image from "next/image";
-import conclusion from "@/app/assets/kota-kasablanka/hero_background.jpg";
+import conclusion from "@/app/assets/kota-kasablanka/hero_background.webp";
 
 const ConclusionSection = () => {
   return (

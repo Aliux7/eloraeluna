@@ -3,8 +3,8 @@ import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
 import tower_diagram from "@/app/assets/the-design/tower_diagram.svg";
 import tower_diagram_mobile from "@/app/assets/the-design/tower_diagram_mobile.svg";
-import illustration_2 from "@/app/assets/home/illustration_2.png";
-import illustration_bottom from "@/app/assets/home/illustration_bottom.png";
+import illustration_2 from "@/app/assets/home/illustration_2.webp";
+import illustration_bottom from "@/app/assets/home/illustration_bottom.webp";
 
 const TowerSection = () => {
   return (

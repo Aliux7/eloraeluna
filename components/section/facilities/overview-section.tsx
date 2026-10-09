@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
-import map from "@/app/assets/facilities/map.png";
+import map from "@/app/assets/facilities/map.webp";
 
 const OverviewSection = () => {
   const listElunaFacilities = [

@@ -2,18 +2,18 @@
 import Image from "next/image";
 import eluna from "@/app/assets/eluna_gold.svg";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
-import arrow from "@/app/assets/home/arrow.png";
+import arrow from "@/app/assets/home/arrow.webp";
 import { useRef, useState } from "react";
 import { FadeSlide } from "@/components/animation/fade-slide";
-import facilities1 from "@/app/assets/facilities/lists/Facilities-01---Private-Dining.jpg";
-import facilities2 from "@/app/assets/facilities/lists/Facilities-02---Main-Lobby.jpg";
-import facilities3 from "@/app/assets/facilities/lists/Facilities-03---Lobby-Lounge.jpg";
-import facilities4 from "@/app/assets/facilities/lists/Facilities-04---Library.jpg";
-import facilities5 from "@/app/assets/facilities/lists/Facilities-05---Function-Hall.jpg";
-import facilities6 from "@/app/assets/facilities/lists/Facilities-06---Pool-Lounge.jpg";
-import facilities18 from "@/app/assets/facilities/lists/Facilities-18---Play-Area.jpg";
-import facilities19 from "@/app/assets/facilities/lists/Facilities-19---Sky-View-Terrace.jpg";
-import facilities20 from "@/app/assets/facilities/lists/Facilities-20---Zen-Garden.jpg";
+import facilities1 from "@/app/assets/facilities/lists/Facilities-01---Private-Dining.webp";
+import facilities2 from "@/app/assets/facilities/lists/Facilities-02---Main-Lobby.webp";
+import facilities3 from "@/app/assets/facilities/lists/Facilities-03---Lobby-Lounge.webp";
+import facilities4 from "@/app/assets/facilities/lists/Facilities-04---Library.webp";
+import facilities5 from "@/app/assets/facilities/lists/Facilities-05---Function-Hall.webp";
+import facilities6 from "@/app/assets/facilities/lists/Facilities-06---Pool-Lounge.webp";
+import facilities18 from "@/app/assets/facilities/lists/Facilities-18---Play-Area.webp";
+import facilities19 from "@/app/assets/facilities/lists/Facilities-19---Sky-View-Terrace.webp";
+import facilities20 from "@/app/assets/facilities/lists/Facilities-20---Zen-Garden.webp";
 
 const DesignSection = () => {
   const listFacilities = [

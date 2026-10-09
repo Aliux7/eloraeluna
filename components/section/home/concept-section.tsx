@@ -1,7 +1,7 @@
 import Image from "next/image";
-import illustration_2 from "@/app/assets/home/illustration_2.png";
-import concept_1 from "@/app/assets/home/concept_1.jpg";
-import concept_2 from "@/app/assets/home/concept_2.jpg";
+import illustration_2 from "@/app/assets/home/illustration_2.webp";
+import concept_1 from "@/app/assets/home/concept_1.webp";
+import concept_2 from "@/app/assets/home/concept_2.webp";
 import { FadeSlide } from "@/components/animation/fade-slide";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { LinkPullUp } from "@/components/animation/link-pull-up";

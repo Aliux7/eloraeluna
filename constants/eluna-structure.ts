@@ -1,40 +1,40 @@
 import type { StaticImageData } from "next/image";
 
-import map_3BB_01 from "@/app/assets/the-design/typical-floor/2-35/01-map-3BB.png";
-import unit_3BB_01 from "@/app/assets/the-design/typical-floor/2-35/01-room-3BB.png";
+import map_3BB_01 from "@/app/assets/the-design/typical-floor/2-35/01-map-3BB.webp";
+import unit_3BB_01 from "@/app/assets/the-design/typical-floor/2-35/01-room-3BB.webp";
 
-import map_2BE_02 from "@/app/assets/the-design/typical-floor/2-35/02-map-2BE.png";
-import unit_2BE_02 from "@/app/assets/the-design/typical-floor/2-35/02-room-2BE.png";
+import map_2BE_02 from "@/app/assets/the-design/typical-floor/2-35/02-map-2BE.webp";
+import unit_2BE_02 from "@/app/assets/the-design/typical-floor/2-35/02-room-2BE.webp";
 
-import map_2BC_03 from "@/app/assets/the-design/typical-floor/2-35/03-map-2BC.png";
-import unit_2BC_03 from "@/app/assets/the-design/typical-floor/2-35/03-room-2BC.png";
+import map_2BC_03 from "@/app/assets/the-design/typical-floor/2-35/03-map-2BC.webp";
+import unit_2BC_03 from "@/app/assets/the-design/typical-floor/2-35/03-room-2BC.webp";
 
-import map_2BC_05 from "@/app/assets/the-design/typical-floor/2-35/05-map-2BC.png";
-import unit_2BC_05 from "@/app/assets/the-design/typical-floor/2-35/05-room-2BC.png";
+import map_2BC_05 from "@/app/assets/the-design/typical-floor/2-35/05-map-2BC.webp";
+import unit_2BC_05 from "@/app/assets/the-design/typical-floor/2-35/05-room-2BC.webp";
 
-import map_2BD_06 from "@/app/assets/the-design/typical-floor/2-35/06-map-2BD.png";
-import unit_2BD_06 from "@/app/assets/the-design/typical-floor/2-35/06-room-2BD.png";
+import map_2BD_06 from "@/app/assets/the-design/typical-floor/2-35/06-map-2BD.webp";
+import unit_2BD_06 from "@/app/assets/the-design/typical-floor/2-35/06-room-2BD.webp";
 
-import map_3BA_07 from "@/app/assets/the-design/typical-floor/2-35/07-map-3BA.png";
-import unit_3BA_07 from "@/app/assets/the-design/typical-floor/2-35/07-room-3BA.png";
+import map_3BA_07 from "@/app/assets/the-design/typical-floor/2-35/07-map-3BA.webp";
+import unit_3BA_07 from "@/app/assets/the-design/typical-floor/2-35/07-room-3BA.webp";
 
-import map_3BC_08 from "@/app/assets/the-design/typical-floor/2-35/08-map-3BC.png";
-import unit_3BC_08 from "@/app/assets/the-design/typical-floor/2-35/08-room-3BC.png";
+import map_3BC_08 from "@/app/assets/the-design/typical-floor/2-35/08-map-3BC.webp";
+import unit_3BC_08 from "@/app/assets/the-design/typical-floor/2-35/08-room-3BC.webp";
 
-import map_2BA_09 from "@/app/assets/the-design/typical-floor/2-35/09-map-2BA.png";
-import unit_2BA_09 from "@/app/assets/the-design/typical-floor/2-35/09-room-2BA.png";
+import map_2BA_09 from "@/app/assets/the-design/typical-floor/2-35/09-map-2BA.webp";
+import unit_2BA_09 from "@/app/assets/the-design/typical-floor/2-35/09-room-2BA.webp";
 
-import map_2BB_10 from "@/app/assets/the-design/typical-floor/2-35/10-map-2BB.png";
-import unit_2BB_10 from "@/app/assets/the-design/typical-floor/2-35/10-room-2BB.png";
+import map_2BB_10 from "@/app/assets/the-design/typical-floor/2-35/10-map-2BB.webp";
+import unit_2BB_10 from "@/app/assets/the-design/typical-floor/2-35/10-room-2BB.webp";
 
-import map_2BB_11 from "@/app/assets/the-design/typical-floor/2-35/11-map-2BB.png";
-import unit_2BB_11 from "@/app/assets/the-design/typical-floor/2-35/11-room-2BB.png";
+import map_2BB_11 from "@/app/assets/the-design/typical-floor/2-35/11-map-2BB.webp";
+import unit_2BB_11 from "@/app/assets/the-design/typical-floor/2-35/11-room-2BB.webp";
 
-import map_2BA_12 from "@/app/assets/the-design/typical-floor/2-35/12-map-2BA.png";
-import unit_2BA_12 from "@/app/assets/the-design/typical-floor/2-35/12-room-2BA.png";
+import map_2BA_12 from "@/app/assets/the-design/typical-floor/2-35/12-map-2BA.webp";
+import unit_2BA_12 from "@/app/assets/the-design/typical-floor/2-35/12-room-2BA.webp";
 
-import map_3BA_15 from "@/app/assets/the-design/typical-floor/2-35/15-map-3BA.png";
-import unit_3BA_15 from "@/app/assets/the-design/typical-floor/2-35/15-room-3BA.png";
+import map_3BA_15 from "@/app/assets/the-design/typical-floor/2-35/15-map-3BA.webp";
+import unit_3BA_15 from "@/app/assets/the-design/typical-floor/2-35/15-room-3BA.webp";
 
 export type Unit = {
   index: string;

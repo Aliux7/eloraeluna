@@ -1,7 +1,7 @@
 import { FadeSlide } from "@/components/animation/fade-slide";
 import HeroSection from "@/components/section/gallery/hero-section";
 import RoomsSection from "@/components/section/gallery/rooms-section";
-import illustration_bottom from "@/app/assets/home/illustration_bottom.png";
+import illustration_bottom from "@/app/assets/home/illustration_bottom.webp";
 import Image from "next/image";
 
 const page = () => {

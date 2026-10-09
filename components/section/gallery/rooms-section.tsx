@@ -1,6 +1,6 @@
 import { GalleryCarousel } from "@/components/ui/gallery-carousel";
 import { FadeSlide } from "@/components/animation/fade-slide";
-import illustration_bottom from "@/app/assets/home/illustration_bottom.png";
+import illustration_bottom from "@/app/assets/home/illustration_bottom.webp";
 import Image from "next/image";
 
 import bc2_front from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/2/Front Face View.webp";

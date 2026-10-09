@@ -1,20 +1,20 @@
-import the_design from "@/app/assets/home/the_design.png";
+import the_design from "@/app/assets/home/the_design.webp";
 import Image from "next/image";
 
-import illustration_bottom from "@/app/assets/home/illustration_bottom.png";
-import illustration from "@/app/assets/home/illustration.png";
+import illustration_bottom from "@/app/assets/home/illustration_bottom.webp";
+import illustration from "@/app/assets/home/illustration.webp";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
-import content_1 from "@/app/assets/kota-kasablanka/premium_content_1.jpg";
-import content_2 from "@/app/assets/kota-kasablanka/premium_content_2.jpg";
-import content_3 from "@/app/assets/kota-kasablanka/premium_content_3.jpg";
-import content_4 from "@/app/assets/kota-kasablanka/premium_content_4.jpg";
-import mall_content_1 from "@/app/assets/kota-kasablanka/mall_content_1.jpg";
-import mall_content_2 from "@/app/assets/kota-kasablanka/mall_content_2.jpg";
-import mall_content_3 from "@/app/assets/kota-kasablanka/mall_content_3.jpg";
-import mall_content_4 from "@/app/assets/kota-kasablanka/mall_content_4.jpg";
-import mall_content_5 from "@/app/assets/kota-kasablanka/mall_content_5.jpg";
-import mall_content_6 from "@/app/assets/kota-kasablanka/mall_content_6.jpg";
+import content_1 from "@/app/assets/kota-kasablanka/premium_content_1.webp";
+import content_2 from "@/app/assets/kota-kasablanka/premium_content_2.webp";
+import content_3 from "@/app/assets/kota-kasablanka/premium_content_3.webp";
+import content_4 from "@/app/assets/kota-kasablanka/premium_content_4.webp";
+import mall_content_1 from "@/app/assets/kota-kasablanka/mall_content_1.webp";
+import mall_content_2 from "@/app/assets/kota-kasablanka/mall_content_2.webp";
+import mall_content_3 from "@/app/assets/kota-kasablanka/mall_content_3.webp";
+import mall_content_4 from "@/app/assets/kota-kasablanka/mall_content_4.webp";
+import mall_content_5 from "@/app/assets/kota-kasablanka/mall_content_5.webp";
+import mall_content_6 from "@/app/assets/kota-kasablanka/mall_content_6.webp";
 
 const PremiumSection = () => {
   return (

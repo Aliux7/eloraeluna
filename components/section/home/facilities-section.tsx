@@ -1,6 +1,6 @@
-import facilities_background from "@/app/assets/home/facilities_background.jpg";
+import facilities_background from "@/app/assets/home/facilities_background.webp";
 import Image from "next/image";
-import illustration_2 from "@/app/assets/home/illustration_2.png";
+import illustration_2 from "@/app/assets/home/illustration_2.webp";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
 import { LinkPullUp } from "@/components/animation/link-pull-up";

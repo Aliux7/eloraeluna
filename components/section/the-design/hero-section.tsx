@@ -1,8 +1,8 @@
-import hero_background from "@/app/assets/the-design/hero_background.jpg";
+import hero_background from "@/app/assets/the-design/hero_background.webp";
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
-import illustration_bottom from "@/app/assets/home/illustration_bottom.png";
+import illustration_bottom from "@/app/assets/home/illustration_bottom.webp";
 
 const HeroSection = () => {
   return (

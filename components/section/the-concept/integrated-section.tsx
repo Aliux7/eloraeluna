@@ -1,5 +1,5 @@
 import { FadeSlide } from "@/components/animation/fade-slide";
-import diamond_background from "@/app/assets/the-concept/diamond_background.png";
+import diamond_background from "@/app/assets/the-concept/diamond_background.webp";
 import w_hotel_logo from "@/app/assets/the-concept/w_hotel_logo.svg";
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";

@@ -1,7 +1,7 @@
-import the_design from "@/app/assets/home/the_design.png";
+import the_design from "@/app/assets/home/the_design.webp";
 import Image from "next/image";
 
-import full_the_design from "@/app/assets/home/full_the_design.png";
+import full_the_design from "@/app/assets/home/full_the_design.webp";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
 import { LinkPullUp } from "@/components/animation/link-pull-up";
