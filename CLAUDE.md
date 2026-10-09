@@ -4,6 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Commands
 
+
 ```bash
 npm run dev     # Next.js dev server (Turbopack) on http://localhost:3000
 npm run build   # production build
