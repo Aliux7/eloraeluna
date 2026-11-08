@@ -12,6 +12,7 @@ const LocationSection = () => {
         <Image
           src={location_shutter}
           alt=""
+          sizes="(min-width: 640px) 100vw, 140vw"
           className="w-full h-1/2 sm:h-full object-cover opacity-70"
         />
       </div>
@@ -53,7 +54,8 @@ const LocationSection = () => {
 
       <Image
         src={location}
-        alt=""
+        alt="Kota Kasablanka towers and mall lit up at night in South Jakarta"
+        sizes="100vw"
         className="relative w-full h-full object-cover z-10"
       />
     </section>

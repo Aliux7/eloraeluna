@@ -11,7 +11,7 @@ const IntegratedSection = () => {
         src={diamond_background}
         alt=""
         className="w-full 2xl:w-[80%] h-auto opacity-80 absolute top-125 sm:top-130 lg:top-120 xl:top-45 2xl:top-1/2 2xl:-translate-y-[60%] 2xl:left-1/2 2xl:-translate-x-1/2"
-        priority
+        sizes="(min-width: 1920px) 80vw, 100vw"
       />
       <div className="relative px-5 sm:px-10 xl:px-48 py-40 space-y-16">
         <div className="flex flex-col gap-20 xl:gap-20 justify-between items-start mb-8 sm:mb-32">
@@ -57,29 +57,29 @@ const IntegratedSection = () => {
                 className="text-[#9D7958] font-semibold text-3xl sm:text-4xl 2xl:text-5xl tracking-[0.5rem] sm:tracking-[1rem]"
               />
               <WordsPullUp
-                text="PORTOFOLIO"
+                text="PORTFOLIO"
                 className="text-[#9D7958] font-semibold text-3xl sm:text-4xl 2xl:text-5xl tracking-[0.5rem] sm:tracking-[1rem]"
               />
             </div>
             <FadeSlide className=" uppercase text-[#F3F0E8] text-lg sm:text-xl xl:text-[22px] font-light tracking-widest mb-4">
-              Tribute Portfolio by marriot brings a fresh take on contemporary living to
-              kota kasablanka.
+              Tribute Portfolio by Marriott brings a fresh take on contemporary living to
+              Kota Kasablanka.
             </FadeSlide>
             <FadeSlide className="text-[#F3F0E8] sm:text-lg xl:text-xl">
               Blending stylish comfort with intuitive spaces, it's designed for
-              those who seek balance between momentum and mindfulness. with
+              those who seek balance between momentum and mindfulness. With
               uplifting interiors, seamless service, and easy access to the
               city's best, Tribute Portfolio offers a stay that feels effortless,
-              connected, and distincly modern.
+              connected, and distinctly modern.
             </FadeSlide>
           </div>
           <div className="w-full lg:w-1/2">
             <FadeSlide className="text-center sm:h-25 2xl:h-32 w-fit mb-8 sm:mb-16 ">
-              <Image src={w_hotel_logo} alt="" className="h-full w-full" />
+              <Image src={w_hotel_logo} alt="W Hotels logo" className="h-full w-full" />
             </FadeSlide>
             <FadeSlide className=" uppercase text-[#F3F0E8] text-lg sm:text-xl xl:text-[22px] font-light tracking-widest mb-4">
-              NAMED One of the world's most innovative hotel brand by forbes, W
-              hotel is where vibrant energy meets visionary design
+              Named one of the world's most innovative hotel brands by Forbes, W
+              Hotels is where vibrant energy meets visionary design.
             </FadeSlide>
             <FadeSlide className="text-[#F3F0E8] sm:text-lg xl:text-xl 2xl:pr-5">
               From New York to Jakarta, W redefines modern luxury with magnetic
@@ -87,7 +87,7 @@ const IntegratedSection = () => {
               bold self-expression. More than a hotel, W is a lifestyle, where
               design, music, fashion, and culture collide to create experiences
               that are anything but ordinary. Now arriving at Kota Kasablanka, W
-              brings its unmistakeable glamour and global spirit to Elora and
+              brings its unmistakable glamour and global spirit to Elora and
               Eluna.
             </FadeSlide>
           </div>

@@ -2,14 +2,17 @@
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
-import map from "@/app/assets/the-design/map_design.webp";
 import eluna_gold from "@/app/assets/eluna_gold.svg";
 import elora_gold from "@/app/assets/elora_gold.svg";
 import eluna from "@/app/assets/the-design/eluna.svg";
 import elora from "@/app/assets/the-design/elora.svg";
 import { useState } from "react";
-import ImageZoom from "@/components/ui/image-zoom";
-import { units, elunaStructure, type StructureNode } from "@/constants/eluna-structure";
+import ImagePopup from "@/components/ui/image-popup";
+import {
+  elunaStructure,
+  type StructureNode,
+  type Unit,
+} from "@/constants/eluna-structure";
 
 const getOrdinalSuffix = (n: number) => {
   const lastTwo = n % 100;
@@ -44,12 +47,28 @@ const renderFloorHeader = (label: string) => {
 
 const MapSection = () => {
   const structureChildren = elunaStructure.children as StructureNode[];
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
   const [elunaElora, setElunaElora] = useState(true);
-  const [activeUnit, setActiveUnit] = useState(units[0]);
   const [selectedChild, setSelectedChild] = useState<StructureNode>(
     structureChildren[structureChildren.length - 1],
   );
+  const [activeUnit, setActiveUnit] = useState(
+    (selectedChild.children as Unit[])[0],
+  );
+  // The selected floor's accordion opens automatically; others can be toggled freely.
+  const [openFloorId, setOpenFloorId] = useState<string | null>(
+    selectedChild.id,
+  );
+
+  const selectFloor = (node: StructureNode) => {
+    setSelectedChild(node);
+    setActiveUnit((node.children as Unit[])[0]);
+    setOpenFloorId(node.id);
+  };
+
+  const selectUnit = (node: StructureNode, unit: Unit) => {
+    setSelectedChild(node);
+    setActiveUnit(unit);
+  };
 
   return (
     <section
@@ -95,14 +114,14 @@ const MapSection = () => {
             {elunaElora ? (
               <Image
                 src={eluna_gold}
-                alt=""
+                alt="Eluna"
                 className="absolute w-24 lg:w-32 xl:w-44"
               />
             ) : (
               <div>
                 <Image
                   src={eluna}
-                  alt=""
+                  alt="Eluna"
                   className="absolute left-1/2 top-1/2 -translate-1/2 w-24 lg:w-32 xl:w-44 opacity-50 group-hover:opacity-0 transition-opacity duration-200 ease-in-out"
                 />
 
@@ -122,7 +141,7 @@ const MapSection = () => {
               <div className="flex justify-center items-center gap-3">
                 <Image
                   src={elora_gold}
-                  alt=""
+                  alt="Elora"
                   className="w-24 lg:w-32 xl:w-44"
                 />
 
@@ -135,7 +154,7 @@ const MapSection = () => {
               <div>
                 <Image
                   src={elora}
-                  alt=""
+                  alt="Elora"
                   className="absolute left-1/2 top-1/2 -translate-1/2 w-24 lg:w-32 xl:w-44 opacity-50 group-hover:opacity-0 transition-opacity duration-200 ease-in-out"
                 />
 
@@ -149,9 +168,9 @@ const MapSection = () => {
           </FadeSlide>
         </div>
         <div className="mt-11.5 flex flex-col justify-center items-center w-full gap-4.5">
-          <h1 className="text-center uppercase font-semibold text-[28px] leading-7.5 tracking-[0.2em] text-[#F3F0E8]">
+          <h2 className="text-center uppercase font-semibold text-[28px] leading-7.5 tracking-[0.2em] text-[#F3F0E8]">
             {elunaStructure.label} Floorplan Typical
-          </h1>
+          </h2>
           <div className="grid grid-cols-2 sm:flex justify-center items-center gap-3 sm:gap-7 w-full sm:w-auto">
             {structureChildren.map((node) => {
               const isActive = selectedChild.id === node.id;
@@ -159,7 +178,7 @@ const MapSection = () => {
                 <button
                   key={node.id}
                   type="button"
-                  onClick={() => setSelectedChild(node)}
+                  onClick={() => selectFloor(node)}
                   className={`cursor-pointer h-9 sm:h-11.25 w-full sm:w-25 border border-[#9D7958] text-center uppercase font-medium text-sm sm:text-[20px] leading-none flex items-center justify-center transition-colors duration-200 ${
                     isActive
                       ? "bg-[#9D7958] text-[#F3F0E8]"
@@ -175,7 +194,14 @@ const MapSection = () => {
         <div className="w-full flex flex-col justify-center items-center gap-8">
           <div className="relative w-full h-auto mt-10 flex flex-col justify-center items-center gap-8">
             <div className="relative w-full h-full flex justify-center items-center mx-auto">
-              <ImageZoom src={map.src} alt="Map" />
+              {selectedChild.floorPlan && (
+                <ImagePopup
+                  key={selectedChild.id}
+                  src={selectedChild.floorPlan}
+                  alt={`${selectedChild.label} floor plan`}
+                  sizes="(min-width: 1280px) calc(100vw - 384px), (min-width: 640px) calc(100vw - 80px), calc(100vw - 40px)"
+                />
+              )}
             </div>
             <div className="flex justify-center items-center gap-10 sm:gap-20">
               <div className="flex items-center gap-3">
@@ -241,48 +267,57 @@ const MapSection = () => {
                   </FadeSlide> */}
                 {/* </div> */}
 
-                <div className="py-3">
-                  <FadeSlide>
-                    <button
-                      onClick={() => setOpenIndex(openIndex === 1 ? null : 1)}
-                      className="w-full flex justify-between items-center text-left border-b border-white cursor-pointer"
-                    >
-                      <h3 className="text-lg 2xl:text-xl font-medium text-white tracking-widest p-1">
-                        {renderFloorHeader(selectedChild.label)}
-                      </h3>
-                      <div className="mr-2 mt-1 text-xl font-light transition-transform duration-300">
-                        <div
-                          className={`${openIndex === 1 ? "rotate-135 " : "-rotate-45"} border-l border-b border-white w-2.5 h-2.5`}
-                        ></div>
-                      </div>
-                    </button>
-                  </FadeSlide>
-
-                  <FadeSlide
-                    className={`overflow-auto transition-all duration-300 ease-in-out pl-16 grid grid-cols-2 grid-flow-col gap-x-4 ${openIndex === 1 ? "opacity-100 mt-3" : "max-h-0 opacity-0"}`}
-                    style={{
-                      gridTemplateRows: `repeat(${Math.ceil(units.length / 2)}, auto)`,
-                    }}
-                  >
-                    {units.map((unit) => (
-                      <button
-                        key={unit.index}
-                        id={unit.index}
-                        onClick={() => setActiveUnit(unit)}
-                        className={`${activeUnit.index === unit.index ? "bg-[#AA7A56]" : "bg-transparent hover:bg-white/5"} w-full flex justify-start items-center text-left border-b border-white cursor-pointer px-3 py-3 gap-2  text-white 2xl:text-lg`}
-                      >
-                        <div
-                          className={`${activeUnit.index === unit.index ? "bg-white text-[#AA7A56]" : "bg-[#AA7A56] text-white"} size-6 flex justify-center items-center rounded-full`}
+                {structureChildren.map((node) => {
+                  const floorUnits = (node.children ?? []) as Unit[];
+                  const isOpen = openFloorId === node.id;
+                  return (
+                    <div key={node.id} className="py-3">
+                      <FadeSlide>
+                        <button
+                          onClick={() => setOpenFloorId(isOpen ? null : node.id)}
+                          aria-expanded={isOpen}
+                          className="w-full flex justify-between items-center text-left border-b border-white cursor-pointer"
                         >
-                          <span className="translate-px text-xs font-medium">
-                            {unit.index}
-                          </span>
-                        </div>
-                        <span className="pt-1">UNIT {unit.code}</span>
-                      </button>
-                    ))}
-                  </FadeSlide>
-                </div>
+                          <h3 className="text-lg 2xl:text-xl font-medium text-white tracking-widest p-1">
+                            {renderFloorHeader(node.label)}
+                          </h3>
+                          <div className="mr-2 mt-1 text-xl font-light transition-transform duration-300">
+                            <div
+                              className={`${isOpen ? "rotate-135 " : "-rotate-45"} border-l border-b border-white w-2.5 h-2.5`}
+                            ></div>
+                          </div>
+                        </button>
+                      </FadeSlide>
+
+                      <FadeSlide
+                        className={`overflow-auto transition-all duration-300 ease-in-out pl-16 grid grid-cols-2 grid-flow-col gap-x-4 ${isOpen ? "opacity-100 mt-3" : "max-h-0 opacity-0"}`}
+                        style={{
+                          gridTemplateRows: `repeat(${Math.ceil(floorUnits.length / 2)}, auto)`,
+                        }}
+                      >
+                        {floorUnits.map((unit) => {
+                          const isActive = activeUnit === unit;
+                          return (
+                            <button
+                              key={unit.index}
+                              onClick={() => selectUnit(node, unit)}
+                              className={`${isActive ? "bg-[#AA7A56]" : "bg-transparent hover:bg-white/5"} w-full flex justify-start items-center text-left border-b border-white cursor-pointer px-3 py-3 gap-2  text-white 2xl:text-lg`}
+                            >
+                              <div
+                                className={`${isActive ? "bg-white text-[#AA7A56]" : "bg-[#AA7A56] text-white"} size-6 flex justify-center items-center rounded-full`}
+                              >
+                                <span className="translate-px text-xs font-medium">
+                                  {unit.index}
+                                </span>
+                              </div>
+                              <span className="pt-1">UNIT {unit.code}</span>
+                            </button>
+                          );
+                        })}
+                      </FadeSlide>
+                    </div>
+                  );
+                })}
               </div>
 
               <WordsPullUp
@@ -293,29 +328,38 @@ const MapSection = () => {
               <FadeSlide className="relative flex-1 w-full h-fit sm:border-x-2 border-[#AA7A56] sm:p-10 2xl:px-20 flex flex-col gap-10">
                 <div className="flex justify-between items-center">
                   <div className="flex flex-col w-full">
-                    <h1 className="text-2xl xl:text-3xl 2xl:text-4xl tracking-widest text-[#AA7A56] font-medium">
+                    <h3 className="text-2xl xl:text-3xl 2xl:text-4xl tracking-widest text-[#AA7A56] font-medium">
                       TYPE{" "}
                       <span className="text-4xl xl:text-5xl 2xl:text-6xl font-semibold">
                         {activeUnit.code}
                       </span>
-                    </h1>
-                    <h3 className="text-[#AA7A56] text-xs sm:text-base 2xl:text-2xl">
-                      Semi Gross Area - {activeUnit.grossArea} M<sup>2</sup>
                     </h3>
-                    <h3 className="text-[#AA7A56] text-xs sm:text-base 2xl:text-2xl">
-                      Net Area - {activeUnit.netArea} M<sup>2</sup>
-                    </h3>
+                    {activeUnit.grossArea !== undefined && (
+                      <h3 className="text-[#AA7A56] text-xs sm:text-base 2xl:text-2xl">
+                        Semi Gross Area - {activeUnit.grossArea} M<sup>2</sup>
+                      </h3>
+                    )}
+                    {activeUnit.netArea !== undefined && (
+                      <h3 className="text-[#AA7A56] text-xs sm:text-base 2xl:text-2xl">
+                        Net Area - {activeUnit.netArea} M<sup>2</sup>
+                      </h3>
+                    )}
                   </div>
                   <div className="w-full h-auto">
                     <Image
                       src={activeUnit.pathMap}
-                      alt=""
+                      alt={`Key plan showing the position of unit ${activeUnit.code} on the floor`}
                       className="w-full h-full"
+                      sizes="(min-width: 1024px) 25vw, 50vw"
                     />
                   </div>
                 </div>
                 <div className="relative px-0 w-full h-full mt-20 scale-none">
-                  <ImageZoom src={activeUnit.pathUnit.src} alt="Map" />
+                  <ImagePopup
+                    src={activeUnit.pathUnit}
+                    alt={`Unit ${activeUnit.code} layout`}
+                    sizes="(min-width: 1920px) 50vw, (min-width: 1024px) 45vw, 100vw"
+                  />
                 </div>
               </FadeSlide>
             </div>

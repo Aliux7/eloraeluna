@@ -17,16 +17,31 @@ const ConceptSection = () => {
           direction="left"
           className="absolute top-0 sm:top-7 -left-36 sm:-left-40 lg:-left-28 rotate-19 w-70 sm:w-96 2xl:w-120 2xl:h-auto"
         >
-          <Image src={illustration_2} alt="" className="w-full h-full" />
+          <Image
+            src={illustration_2}
+            alt=""
+            sizes="(min-width: 1920px) 480px, (min-width: 640px) 384px, 280px"
+            className="w-full h-full"
+          />
         </FadeSlide>
         <FadeSlide
           direction="right"
           className="absolute top-110 sm:top-72 -right-30 sm:-right-20 lg:top-20 lg:-right-12 rotate-6 sm:rotate-0 w-64 sm:w-96 2xl:w-120 2xl:h-auto"
         >
-          <Image src={illustration_2} alt="" className="w-full h-full" />
+          <Image
+            src={illustration_2}
+            alt=""
+            sizes="(min-width: 1920px) 480px, (min-width: 640px) 384px, 256px"
+            className="w-full h-full"
+          />
         </FadeSlide>
         <FadeSlide className="absolute bottom-140 sm:bottom-12 -left-10 sm:left-120 2xl:left-1/3 2xl:-translate-x-1/3 w-64 sm:w-96 2xl:w-120 2xl:h-auto">
-          <Image src={illustration_2} alt="" className="w-full h-full" />
+          <Image
+            src={illustration_2}
+            alt=""
+            sizes="(min-width: 1920px) 480px, (min-width: 640px) 384px, 256px"
+            className="w-full h-full"
+          />
         </FadeSlide>
       </div>
       <div className="relative z-10 p-32 px-5 sm:px-10 xl:p-48 gap-16 flex flex-col justify-between items-start">
@@ -46,7 +61,7 @@ const ConceptSection = () => {
             />
             <FadeSlide className="text-[#F3F0E8] font-normal 2xl:font-light ml-14 sm:ml-0 text-sm sm:text-xl sm:w-110 2xl:w-145 mb-14 lg:mb-20">
               Elora and Eluna, inspired by the sun and moon, offer a harmonious
-              blend of vibrance and tranqulity in South Jakarta's premier
+              blend of vibrance and tranquility in South Jakarta's premier
               lifestyle hub.
             </FadeSlide>
 
@@ -64,8 +79,9 @@ const ConceptSection = () => {
             >
               <Image
                 src={concept_1}
-                alt=""
+                alt="Woman in an evening gown holding a glass of wine at an elegant gathering"
                 width={1000}
+                sizes="(min-width: 1280px) 25vw, (min-width: 640px) 50vw, 100vw"
                 className="object-cover w-full h-full"
               />
             </FadeSlide>
@@ -75,8 +91,9 @@ const ConceptSection = () => {
             >
               <Image
                 src={concept_2}
-                alt=""
+                alt="Woman in an evening gown seated in a refined lounge"
                 width={1000}
+                sizes="(min-width: 1280px) 25vw, (min-width: 640px) 50vw, 100vw"
                 className="object-cover w-full h-full"
               />
             </FadeSlide>

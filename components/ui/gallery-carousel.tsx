@@ -12,6 +12,7 @@ type GalleryCarouselProps = {
   className?: string;
   imageClassName?: string;
   priority?: boolean;
+  sizes?: string;
 };
 
 export function GalleryCarousel({
@@ -20,6 +21,7 @@ export function GalleryCarousel({
   className,
   imageClassName,
   priority,
+  sizes = "100vw",
 }: GalleryCarouselProps) {
   const [[index, direction], setState] = React.useState<[number, number]>([
     0, 0,
@@ -55,7 +57,8 @@ export function GalleryCarousel({
             src={images[index]}
             alt={currentLabel ?? ""}
             className={cn("w-full h-full object-cover", imageClassName)}
-            priority={priority}
+            sizes={sizes}
+            priority={priority && index === 0}
           />
         </motion.div>
       </AnimatePresence>

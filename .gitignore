@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Large media is uploaded to the server directly, not stored in git.
+/public/videos/*
+!/public/videos/.gitkeep

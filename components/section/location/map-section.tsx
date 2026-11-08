@@ -3,7 +3,7 @@ import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
 import arrow from "@/app/assets/arrow_gold.svg";
-import map from "@/app/assets/location/location_map.svg";
+import map from "@/app/assets/location/location_map.webp";
 import { LinkPullUp } from "@/components/animation/link-pull-up";
 import illustration from "@/app/assets/home/illustration_2.webp";
 import illustration2 from "@/app/assets/home/illustration.webp";
@@ -70,11 +70,11 @@ const MapSection = () => {
       image: School,
       category: "School",
       items: [
-        "Kolose Kanisius",
+        "Kolese Kanisius",
         "IISS",
         "JIS Pattimura Elementary",
         "Al-Azhar",
-        "Taraknita",
+        "Tarakanita",
         "Santa Ursula",
       ],
     },
@@ -107,7 +107,7 @@ const MapSection = () => {
         "Le Meridien",
         "Shangri-La",
         "St. Regis",
-        "H.I Kempinsky",
+        "H.I Kempinski",
         "Grand Hyatt",
         "Park Hyatt",
         "Four Seasons",
@@ -124,7 +124,7 @@ const MapSection = () => {
         "Brawijaya Hospital",
         "Tebet Hospital",
         "Medistra",
-        "MRCC Siloam",
+        "MRCCC Siloam",
       ],
     },
   ];
@@ -157,19 +157,34 @@ const MapSection = () => {
         direction="right"
         className="absolute -top-14 -left-30 lg:left-8 xl:left-20"
       >
-        <Image src={illustration} alt="" className="w-40 sm:w-60 md:w-80" />
+        <Image
+          src={illustration}
+          alt=""
+          className="w-40 sm:w-60 md:w-80"
+          sizes="(min-width: 768px) 320px, (min-width: 640px) 240px, 160px"
+        />
       </FadeSlide>
       <FadeSlide
         direction="right"
         className="absolute top-40 -right-40 lg:-right-20"
       >
-        <Image src={illustration2} alt="" className="w-50 sm:w-70 md:w-90" />
+        <Image
+          src={illustration2}
+          alt=""
+          className="w-50 sm:w-70 md:w-90"
+          sizes="(min-width: 768px) 360px, (min-width: 640px) 280px, 200px"
+        />
       </FadeSlide>
       <FadeSlide
         direction="right"
         className="absolute top-150 md:top-170 lg:top-230 xl:top-200 -left-40 md:-left-50 lg:-left-32"
       >
-        <Image src={illustration2} alt="" className="w-50 sm:w-70 md:w-90" />
+        <Image
+          src={illustration2}
+          alt=""
+          className="w-50 sm:w-70 md:w-90"
+          sizes="(min-width: 768px) 360px, (min-width: 640px) 280px, 200px"
+        />
       </FadeSlide>
       <div className="flex flex-col justify-center items-center">
         <WordsPullUp
@@ -187,8 +202,9 @@ const MapSection = () => {
       >
         <Image
           src={map}
-          alt=""
+          alt="Location map of Elora and Eluna with nearby transit, malls, embassies, hospitals and schools"
           className="w-[85%] 2xl:w-full h-fit object-contain border"
+          sizes="(min-width: 1920px) 50vw, (min-width: 640px) 60vw, 80vw"
         />
       </FadeSlide>
       <LinkPullUp
@@ -201,13 +217,13 @@ const MapSection = () => {
       <div className="relative w-full px-10 xl:px-0 mt-20">
         <Image
           src={arrow}
-          alt=""
+          alt="Scroll legend left"
           onClick={() => scroll("left")}
           className="absolute top-28 sm:top-1/2 -translate-y-1/2 left-0 xl:-left-16 cursor-pointer scale-70 sm:scale-100 z-20 opacity-50 hover:opacity-100"
         />
         <Image
           src={arrow}
-          alt=""
+          alt="Scroll legend right"
           onClick={() => scroll("right")}
           className="absolute top-28 sm:top-1/2 -translate-y-1/2 right-0 xl:-right-16 rotate-180 cursor-pointer scale-70 sm:scale-100 z-20 opacity-50 hover:opacity-100"
         />

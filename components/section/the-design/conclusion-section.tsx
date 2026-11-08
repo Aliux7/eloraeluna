@@ -7,7 +7,12 @@ const ConclusionSection = () => {
   return (
     <div className="relative bg-[#F3F0E8] flex flex-col sm:flex-row overflow-hidden">
       <div className="w-full sm:w-1/2 sm:h-screen max-h-200 sm:max-h-none">
-        <Image src={conclusion} alt="" className="w-full h-full object-cover" />
+        <Image
+          src={conclusion}
+          alt="Aerial view of the Eluna development at Kota Kasablanka"
+          className="w-full h-full object-cover"
+          sizes="(min-width: 1280px) 50vw, 100vw"
+        />
       </div>
       <div className="sm:w-1/2 p-10 lg:p-16">
         <FadeSlide className="text-[#A4704F] text-base lg:text-lg tracking-widest 2xl:max-w-5xl 2xl:text-[22px]">
@@ -27,7 +32,12 @@ const ConclusionSection = () => {
       </div>
 
       <FadeSlide className="absolute -bottom-20 sm:bottom-10 -right-20 sm:right-10 w-60 lg:w-72 xl:w-80 2xl:w-110 h-auto">
-        <Image src={illustration_2} alt=""  className="w-full h-full"/>
+        <Image
+          src={illustration_2}
+          alt=""
+          className="w-full h-full"
+          sizes="(min-width: 1920px) 440px, (min-width: 1280px) 320px, (min-width: 1024px) 288px, 240px"
+        />
       </FadeSlide>
     </div>
   );

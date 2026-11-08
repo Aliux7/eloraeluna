@@ -35,7 +35,7 @@ const NewsTwoSection = () => {
         </div>
 
         <FadeSlide className="w-full">
-          <Image src={news2} alt="" />
+          <Image src={news2} alt="Glass balconies of a residential high-rise against the sky" sizes="(min-width: 1280px) calc(100vw - 384px), (min-width: 640px) calc(100vw - 80px), calc(100vw - 40px)" />
         </FadeSlide>
 
         <div className="space-y-12">
@@ -65,7 +65,7 @@ const NewsTwoSection = () => {
         </div>
 
         <FadeSlide className="w-full">
-          <Image src={news3} alt="" />
+          <Image src={news3} alt="Bright, modern living room in a high-rise residence" sizes="(min-width: 1280px) calc(100vw - 384px), (min-width: 640px) calc(100vw - 80px), calc(100vw - 40px)" />
         </FadeSlide>
 
         <div className="space-y-12">
@@ -108,7 +108,7 @@ const NewsTwoSection = () => {
         </div>
 
         <FadeSlide className="w-full">
-          <Image src={news4} alt="" />
+          <Image src={news4} alt="Living room with floor-to-ceiling windows overlooking the city skyline" sizes="(min-width: 1280px) calc(100vw - 384px), (min-width: 640px) calc(100vw - 80px), calc(100vw - 40px)" />
         </FadeSlide>
 
         <div className="space-y-12">
@@ -137,7 +137,7 @@ const NewsTwoSection = () => {
         </div>
 
         <FadeSlide className="w-full">
-          <Image src={news5} alt="" />
+          <Image src={news5} alt="Landscaped rooftop terrace with lounge seating and a pool" sizes="(min-width: 1280px) calc(100vw - 384px), (min-width: 640px) calc(100vw - 80px), calc(100vw - 40px)" />
         </FadeSlide>
 
         <div className="space-y-12">
@@ -169,7 +169,7 @@ const NewsTwoSection = () => {
         </div>
 
         <FadeSlide className="w-full">
-          <Image src={news6} alt="" />
+          <Image src={news6} alt="Rooftop lounge with infinity pool and fire pit at dusk" sizes="(min-width: 1280px) calc(100vw - 384px), (min-width: 640px) calc(100vw - 80px), calc(100vw - 40px)" />
         </FadeSlide>
 
         <div className="space-y-12">

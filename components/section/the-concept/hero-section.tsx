@@ -17,6 +17,7 @@ const HeroSection = () => {
         src={the_concept_background}
         alt=""
         className="w-full h-auto opacity-80 absolute top-0"
+        sizes="100vw"
         priority
       />
 
@@ -25,9 +26,7 @@ const HeroSection = () => {
           <div className="w-auto h-7 sm:h-9 2xl:h-14">
             <Image
               src={eluna}
-              alt=""
-              width={1000}
-              height={1000}
+              alt="Eluna logo"
               className="w-auto h-full object-contain"
             />
           </div>
@@ -72,8 +71,9 @@ const HeroSection = () => {
           <FadeSlide className="w-full h-full lg:h-[80vh] sm:pl-64 2xl:pl-80 mb-56 sm:mb-0">
             <Image
               src={content_1}
-              alt=""
+              alt="Elegant lobby lounge interior"
               className="w-full h-120 sm:h-200 lg:h-full object-cover xl:min-h-145"
+              sizes="(min-width: 1280px) 85vw, (min-width: 640px) 1360px, 820px"
               width={2000}
               height={2000}
             />
@@ -84,8 +84,9 @@ const HeroSection = () => {
           <FadeSlide className="w-full aspect-4/3">
             <Image
               src={content_2}
-              alt=""
+              alt="Woman sipping a cocktail in a dimly lit bar"
               className="w-full h-full object-cover"
+              sizes="(min-width: 1024px) 50vw, 100vw"
               width={1000}
               height={1000}
             />
@@ -93,8 +94,9 @@ const HeroSection = () => {
           <FadeSlide className="w-full aspect-4/3">
             <Image
               src={content_3}
-              alt=""
+              alt="Woman in a lace dress reclining on a sofa"
               className="w-full h-full object-cover"
+              sizes="(min-width: 1024px) 50vw, 100vw"
               width={1000}
               height={1000}
             />
@@ -126,9 +128,7 @@ const HeroSection = () => {
             <div className="w-auto h-7 sm:h-9 2xl:h-14">
               <Image
                 src={elora}
-                alt=""
-                width={1000}
-                height={1000}
+                alt="Elora logo"
                 className="w-auto h-full object-contain"
               />
             </div>
@@ -189,8 +189,9 @@ const HeroSection = () => {
             <FadeSlide className="w-full h-full lg:h-[80vh] sm:pr-80 mb-0">
               <Image
                 src={content_4}
-                alt=""
+                alt="Woman in sunglasses resting at the edge of a pool"
                 className="w-full h-96 sm:h-200 lg:h-full object-cover xl:min-h-145 object-right sm:object-right"
+                sizes="(min-width: 1280px) 85vw, (min-width: 640px) 1360px, 650px"
                 width={2000}
                 height={2000}
               />
@@ -240,24 +241,18 @@ const HeroSection = () => {
                 <div className="flex justify-center items-center gap-7 h-6 sm:h-8 lg:h-12">
                   <Image
                     src={elora}
-                    alt=""
-                    width={1000}
-                    height={1000}
-                    className="w-full h-4 sm:h-6"
+                    alt="Elora & Eluna logo"
+                    className="w-auto h-4 sm:h-6"
                   />
                   <Image
                     src={and}
                     alt=""
-                    width={1000}
-                    height={1000}
-                    className="w-full h-full"
+                    className="w-auto h-full"
                   />
                   <Image
                     src={eluna}
                     alt=""
-                    width={1000}
-                    height={1000}
-                    className="w-full h-4 sm:h-6"
+                    className="w-auto h-4 sm:h-6"
                   />
                 </div>
               </div>

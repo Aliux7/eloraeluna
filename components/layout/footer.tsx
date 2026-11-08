@@ -26,23 +26,17 @@ const Footer = () => {
                 >
                   <Image
                     src={elora}
-                    alt=""
-                    width={1000}
-                    height={1000}
+                    alt="Elora & Eluna logo"
                     className="w-auto h-5 sm:h-6 2xl:h-8"
                   />
                   <Image
                     src={and}
                     alt=""
-                    width={1000}
-                    height={1000}
                     className="w-auto h-7 sm:h-8 "
                   />
                   <Image
                     src={eluna}
                     alt=""
-                    width={1000}
-                    height={1000}
                     className="w-auto h-5 sm:h-6 2xl:h-8 "
                   />
                 </FadeSlide>
@@ -53,7 +47,7 @@ const Footer = () => {
                 >
                   <Image
                     src={kota}
-                    alt=""
+                    alt="Kota Kasablanka"
                     className="object-contain w-full h-full"
                   />
                 </FadeSlide>
@@ -65,7 +59,7 @@ const Footer = () => {
               >
                 <Image
                   src={pakuwon_logo}
-                  alt=""
+                  alt="Pakuwon Group logo"
                   className="object-contain w-auto h-full"
                 />
               </FadeSlide>
@@ -125,7 +119,8 @@ const Footer = () => {
             >
               <Image
                 src={instagram}
-                alt=""
+                alt="Instagram"
+                sizes="24px"
                 className="w-full h-full object-contain"
               />
             </LinkPullUp>

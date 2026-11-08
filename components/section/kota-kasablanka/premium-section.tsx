@@ -31,13 +31,19 @@ const PremiumSection = () => {
             src={illustration}
             alt=""
             className="w-68 sm:w-96 md:w-130 rotate-180"
+            sizes="(min-width: 768px) 520px, (min-width: 640px) 384px, 272px"
           />
         </FadeSlide>
         <FadeSlide
           direction="right"
           className="absolute top-96 left-28 xl:left-16"
         >
-          <Image src={illustration} alt="" className="w-68 sm:w-96 md:w-130" />
+          <Image
+            src={illustration}
+            alt=""
+            className="w-68 sm:w-96 md:w-130"
+            sizes="(min-width: 768px) 520px, (min-width: 640px) 384px, 272px"
+          />
         </FadeSlide>
         <FadeSlide
           direction="right"
@@ -47,6 +53,7 @@ const PremiumSection = () => {
             src={illustration_bottom}
             alt=""
             className="w-68 sm:w-96 md:w-130"
+            sizes="(min-width: 768px) 520px, (min-width: 640px) 384px, 272px"
           />
         </FadeSlide>
       </div>
@@ -87,10 +94,11 @@ const PremiumSection = () => {
           <FadeSlide className="w-full h-full lg:h-[80vh] sm:pl-80 mb-100 sm:mb-0">
             <Image
               src={content_1}
-              alt=""
+              alt="Woman dining at a fine-dining restaurant"
               className="w-full h-90 object-[55%_50%] sm:object-center sm:h-200 lg:h-full object-cover xl:min-h-145"
               width={2000}
               height={2000}
+              sizes="(min-width: 1280px) 1600px, (min-width: 640px) 1360px, 610px"
             />
           </FadeSlide>
         </div>
@@ -98,29 +106,32 @@ const PremiumSection = () => {
           <FadeSlide className="w-full h-fit aspect-square lg:aspect-4/3">
             <Image
               src={content_2}
-              alt=""
+              alt="Luxury car parked outside a designer boutique at night"
               className="w-full h-full object-cover"
               width={1000}
               height={1000}
+              sizes="(min-width: 1280px) 45vw, (min-width: 1024px) 50vw, 150vw"
             />
           </FadeSlide>
           <FadeSlide className="w-full h-fit aspect-square lg:aspect-4/3">
             <Image
               src={content_3}
-              alt=""
+              alt="Guests in evening wear arriving at a gala"
               className="w-full h-full object-cover"
               width={1000}
               height={1000}
+              sizes="(min-width: 1280px) 45vw, (min-width: 1024px) 50vw, 150vw"
             />
           </FadeSlide>
         </div>
         <FadeSlide className="w-full ">
           <Image
             src={content_4}
-            alt=""
+            alt="Woman in a red coat and sunglasses"
             className="w-full h-full object-cover"
             width={1000}
             height={1000}
+            sizes="(min-width: 1280px) calc(121vw - 465px), 120vw"
           />
         </FadeSlide>
 
@@ -128,55 +139,61 @@ const PremiumSection = () => {
           <FadeSlide className="w-full aspect-square lg:aspect-2/1 lg:col-span-2">
             <Image
               src={mall_content_1}
-              alt=""
+              alt="Aerial rendering of Kota Kasablanka landscaped podium and retail promenade"
               className="w-full h-full object-cover"
               width={1000}
               height={1000}
+              sizes="(min-width: 1024px) 60vw, 175vw"
             />
           </FadeSlide>
           <FadeSlide className="w-full h-full">
             <Image
               src={mall_content_2}
-              alt=""
+              alt="Rendering of a Kota Kasablanka mall atrium with a sculptural skylight"
               className="w-full h-full object-cover"
               width={1000}
               height={1000}
+              sizes="(min-width: 1024px) 33vw, 110vw"
             />
           </FadeSlide>
           <FadeSlide className="w-full h-full">
             <Image
               src={mall_content_3}
-              alt=""
+              alt="Rendering of a Kota Kasablanka mall interior with a digital ceiling"
               className="w-full h-full object-cover"
               width={1000}
               height={1000}
+              sizes="(min-width: 1024px) 33vw, 110vw"
             />
           </FadeSlide>
           <FadeSlide className="w-full aspect-square lg:aspect-2/1 lg:col-span-2">
             <Image
               src={mall_content_4}
-              alt=""
+              alt="Rendering of Kota Kasablanka's green terraced retail courtyard"
               className="w-full h-full object-cover"
               width={1000}
               height={1000}
+              sizes="(min-width: 1024px) 60vw, 175vw"
             />
           </FadeSlide>
           <FadeSlide className="w-full aspect-square lg:aspect-2/1 lg:col-span-2">
             <Image
               src={mall_content_5}
-              alt=""
+              alt="Rendering of Kota Kasablanka's open-air plaza with tree-like canopies"
               className="w-full h-full object-cover"
               width={1000}
               height={1000}
+              sizes="(min-width: 1024px) 60vw, 175vw"
             />
           </FadeSlide>
           <FadeSlide className="w-full h-full">
             <Image
               src={mall_content_6}
-              alt=""
+              alt="Rendering of the Kota Kasablanka mall facade and towers"
               className="w-full h-full object-cover"
               width={1000}
               height={1000}
+              sizes="(min-width: 1024px) 33vw, 110vw"
             />
           </FadeSlide>
         </div>

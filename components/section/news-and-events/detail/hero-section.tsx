@@ -31,10 +31,11 @@ const HeroSection = ({ article }: Props) => {
       <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-linear-to-t after:from-black/40 after:to-transparent after:pointer-events-none after:select-none">
         <Image
           src={article.image}
-          alt=""
+          alt={article.title}
           width={2000}
           height={2000}
           className="w-full h-full object-cover object-top"
+          sizes="100vw"
           priority
         />
       </div>

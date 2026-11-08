@@ -1,5 +1,7 @@
 import type { StaticImageData } from "next/image";
 
+import floorPlan_2_35 from "@/app/assets/the-design/typical-floor/2-35/floor-plan.webp";
+
 import map_3BB_01 from "@/app/assets/the-design/typical-floor/2-35/01-map-3BB.webp";
 import unit_3BB_01 from "@/app/assets/the-design/typical-floor/2-35/01-room-3BB.webp";
 
@@ -36,11 +38,69 @@ import unit_2BA_12 from "@/app/assets/the-design/typical-floor/2-35/12-room-2BA.
 import map_3BA_15 from "@/app/assets/the-design/typical-floor/2-35/15-map-3BA.webp";
 import unit_3BA_15 from "@/app/assets/the-design/typical-floor/2-35/15-room-3BA.webp";
 
+import floorPlan_M1 from "@/app/assets/the-design/typical-floor/m1/floor-plan.webp";
+import map_M1_3BC1_01 from "@/app/assets/the-design/typical-floor/m1/01-map-3BC1.webp";
+import unit_M1_3BC1_01 from "@/app/assets/the-design/typical-floor/m1/01-room-3BC1.webp";
+
+import map_M1_2BA2_02 from "@/app/assets/the-design/typical-floor/m1/02-map-2BA2.webp";
+import unit_M1_2BA2_02 from "@/app/assets/the-design/typical-floor/m1/02-room-2BA2.webp";
+
+import map_M1_2BB1_03 from "@/app/assets/the-design/typical-floor/m1/03-map-2BB1.webp";
+import unit_M1_2BB1_03 from "@/app/assets/the-design/typical-floor/m1/03-room-2BB1.webp";
+
+import map_M1_2BB1_05 from "@/app/assets/the-design/typical-floor/m1/05-map-2BB1.webp";
+import unit_M1_2BB1_05 from "@/app/assets/the-design/typical-floor/m1/05-room-2BB1.webp";
+
+import map_M1_2BA1_06 from "@/app/assets/the-design/typical-floor/m1/06-map-2BA1.webp";
+import unit_M1_2BA1_06 from "@/app/assets/the-design/typical-floor/m1/06-room-2BA1.webp";
+
+import map_M1_3BA1_07 from "@/app/assets/the-design/typical-floor/m1/07-map-3BA1.webp";
+import unit_M1_3BA1_07 from "@/app/assets/the-design/typical-floor/m1/07-room-3BA1.webp";
+
+import floorPlan_M2 from "@/app/assets/the-design/typical-floor/m2/floor-plan.webp";
+import map_M2_3BC1_01 from "@/app/assets/the-design/typical-floor/m2/01-map-3BC1.webp";
+import unit_M2_3BC1_01 from "@/app/assets/the-design/typical-floor/m2/01-room-3BC1.webp";
+
+import map_M2_2BA4_02 from "@/app/assets/the-design/typical-floor/m2/02-map-2BA4.webp";
+import unit_M2_2BA4_02 from "@/app/assets/the-design/typical-floor/m2/02-room-2BA4.webp";
+
+import map_M2_2BB2_03 from "@/app/assets/the-design/typical-floor/m2/03-map-2BB2.webp";
+import unit_M2_2BB2_03 from "@/app/assets/the-design/typical-floor/m2/03-room-2BB2.webp";
+
+import map_M2_2BB2_05 from "@/app/assets/the-design/typical-floor/m2/05-map-2BB2.webp";
+import unit_M2_2BB2_05 from "@/app/assets/the-design/typical-floor/m2/05-room-2BB2.webp";
+
+import map_M2_2BA3_06 from "@/app/assets/the-design/typical-floor/m2/06-map-2BA3.webp";
+import unit_M2_2BA3_06 from "@/app/assets/the-design/typical-floor/m2/06-room-2BA3.webp";
+
+import map_M2_3BA2_07 from "@/app/assets/the-design/typical-floor/m2/07-map-3BA2.webp";
+import unit_M2_3BA2_07 from "@/app/assets/the-design/typical-floor/m2/07-room-3BA2.webp";
+
+import floorPlan_M3 from "@/app/assets/the-design/typical-floor/m3-m6/floor-plan.webp";
+import map_M3_3BC2_01 from "@/app/assets/the-design/typical-floor/m3-m6/01-map-3BC2.webp";
+import unit_M3_3BC2_01 from "@/app/assets/the-design/typical-floor/m3-m6/01-room-3BC2.webp";
+
+import map_M3_2BA5_02 from "@/app/assets/the-design/typical-floor/m3-m6/02-map-2BA5.webp";
+import unit_M3_2BA5_02 from "@/app/assets/the-design/typical-floor/m3-m6/02-room-2BA5.webp";
+
+import map_M3_2BB3_03 from "@/app/assets/the-design/typical-floor/m3-m6/03-map-2BB3.webp";
+import unit_M3_2BB3_03 from "@/app/assets/the-design/typical-floor/m3-m6/03-room-2BB3.webp";
+
+import map_M3_2BB3_05 from "@/app/assets/the-design/typical-floor/m3-m6/05-map-2BB3.webp";
+import unit_M3_2BB3_05 from "@/app/assets/the-design/typical-floor/m3-m6/05-room-2BB3.webp";
+
+import map_M3_2BA5_06 from "@/app/assets/the-design/typical-floor/m3-m6/06-map-2BA5.webp";
+import unit_M3_2BA5_06 from "@/app/assets/the-design/typical-floor/m3-m6/06-room-2BA5.webp";
+
+import map_M3_3BA3_07 from "@/app/assets/the-design/typical-floor/m3-m6/07-map-3BA3.webp";
+import unit_M3_3BA3_07 from "@/app/assets/the-design/typical-floor/m3-m6/07-room-3BA3.webp";
+
 export type Unit = {
   index: string;
   code: string;
-  grossArea: number;
-  netArea: number;
+  // Not yet provided for the mezzanine units; the area lines are hidden when absent.
+  grossArea?: number;
+  netArea?: number;
   pathMap: StaticImageData;
   pathUnit: StaticImageData;
 };
@@ -144,9 +204,127 @@ export const units: Unit[] = [
   },
 ];
 
+export const unitsM1: Unit[] = [
+  {
+    index: "01",
+    code: "3BC1",
+    pathMap: map_M1_3BC1_01,
+    pathUnit: unit_M1_3BC1_01,
+  },
+  {
+    index: "02",
+    code: "2BA2",
+    pathMap: map_M1_2BA2_02,
+    pathUnit: unit_M1_2BA2_02,
+  },
+  {
+    index: "03",
+    code: "2BB1",
+    pathMap: map_M1_2BB1_03,
+    pathUnit: unit_M1_2BB1_03,
+  },
+  {
+    index: "05",
+    code: "2BB1",
+    pathMap: map_M1_2BB1_05,
+    pathUnit: unit_M1_2BB1_05,
+  },
+  {
+    index: "06",
+    code: "2BA1",
+    pathMap: map_M1_2BA1_06,
+    pathUnit: unit_M1_2BA1_06,
+  },
+  {
+    index: "07",
+    code: "3BA1",
+    pathMap: map_M1_3BA1_07,
+    pathUnit: unit_M1_3BA1_07,
+  },
+];
+
+export const unitsM2: Unit[] = [
+  {
+    index: "01",
+    code: "3BC1",
+    pathMap: map_M2_3BC1_01,
+    pathUnit: unit_M2_3BC1_01,
+  },
+  {
+    index: "02",
+    code: "2BA4",
+    pathMap: map_M2_2BA4_02,
+    pathUnit: unit_M2_2BA4_02,
+  },
+  {
+    index: "03",
+    code: "2BB2",
+    pathMap: map_M2_2BB2_03,
+    pathUnit: unit_M2_2BB2_03,
+  },
+  {
+    index: "05",
+    code: "2BB2",
+    pathMap: map_M2_2BB2_05,
+    pathUnit: unit_M2_2BB2_05,
+  },
+  {
+    index: "06",
+    code: "2BA3",
+    pathMap: map_M2_2BA3_06,
+    pathUnit: unit_M2_2BA3_06,
+  },
+  {
+    index: "07",
+    code: "3BA2",
+    pathMap: map_M2_3BA2_07,
+    pathUnit: unit_M2_3BA2_07,
+  },
+];
+
+export const unitsM3M6: Unit[] = [
+  {
+    index: "01",
+    code: "3BC2",
+    pathMap: map_M3_3BC2_01,
+    pathUnit: unit_M3_3BC2_01,
+  },
+  {
+    index: "02",
+    code: "2BA5",
+    pathMap: map_M3_2BA5_02,
+    pathUnit: unit_M3_2BA5_02,
+  },
+  {
+    index: "03",
+    code: "2BB3",
+    pathMap: map_M3_2BB3_03,
+    pathUnit: unit_M3_2BB3_03,
+  },
+  {
+    index: "05",
+    code: "2BB3",
+    pathMap: map_M3_2BB3_05,
+    pathUnit: unit_M3_2BB3_05,
+  },
+  {
+    index: "06",
+    code: "2BA5",
+    pathMap: map_M3_2BA5_06,
+    pathUnit: unit_M3_2BA5_06,
+  },
+  {
+    index: "07",
+    code: "3BA3",
+    pathMap: map_M3_3BA3_07,
+    pathUnit: unit_M3_3BA3_07,
+  },
+];
+
 export type StructureNode = {
   id: string;
   label: string;
+  floorPlan?: StaticImageData;
   children?: StructureNode[] | Unit[];
 };
 
@@ -154,12 +332,18 @@ export const elunaStructure: StructureNode = {
   id: "eluna",
   label: "Eluna",
   children: [
-    { id: "m1", label: "M1" },
-    { id: "m2", label: "M2" },
-    { id: "m3-m6", label: "M3-M6" },
+    { id: "m1", label: "M1", floorPlan: floorPlan_M1, children: unitsM1 },
+    { id: "m2", label: "M2", floorPlan: floorPlan_M2, children: unitsM2 },
+    {
+      id: "m3-m6",
+      label: "M3-M6",
+      floorPlan: floorPlan_M3,
+      children: unitsM3M6,
+    },
     {
       id: "2-35",
       label: "2-35",
+      floorPlan: floorPlan_2_35,
       children: units,
     },
   ],

@@ -169,8 +169,9 @@ const SharedSection = () => {
         </div>
         <Image
           src={active.image}
-          alt=""
+          alt={`${active.name}, a shared facility at Elora & Eluna`}
           className="w-full h-auto object-contain"
+          sizes="100vw"
         />
       </div>
       <div className="px-5 sm:px-10 xl:px-48 space-y-8 lg:space-y-16 w-full min-h-96 flex flex-col justify-between items-center">
@@ -194,13 +195,13 @@ const SharedSection = () => {
         <div className="relative w-full">
           <Image
             src={arrow}
-            alt=""
+            alt="Scroll facilities left"
             onClick={() => scroll("left")}
             className="absolute top-1/2 -translate-y-1/2 left-0 xl:-left-16 cursor-pointer scale-70 sm:scale-100 z-20 opacity-50 hover:opacity-100"
           />
           <Image
             src={arrow}
-            alt=""
+            alt="Scroll facilities right"
             onClick={() => scroll("right")}
             className="absolute top-1/2 -translate-y-1/2 right-0 xl:-right-16 rotate-180 cursor-pointer scale-70 sm:scale-100 z-20 opacity-50 hover:opacity-100"
           />
@@ -221,6 +222,7 @@ const SharedSection = () => {
                   src={facilities.image}
                   alt=""
                   className="w-full h-full object-cover"
+                  sizes="(min-width: 1920px) 640px, (min-width: 640px) 360px, 256px"
                 />
                 <span className="absolute left-3 bottom-1 text-[#F3F0E8] text-xl">
                   {facilities.name}

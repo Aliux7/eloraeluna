@@ -12,7 +12,7 @@ const DiscoverSection = () => {
   return (
     <section
       id="discover-section"
-      className="relative bg-[#F3F0E8] min-h-screen px-5 sm:px-10 xl:px-48 pt-16 pb-32"
+      className="relative bg-[#F3F0E8] min-h-screen px-5 sm:px-10 xl:px-48 pt-16 pb-32 -mt-1 sm:mt-0"
     >
       <div className="absolute inset-0 z-0 pointer-events-none">
         <FadeSlide
@@ -23,19 +23,30 @@ const DiscoverSection = () => {
             src={illustration}
             alt=""
             className="w-72 sm:w-96 md:w-130 rotate-180"
+            sizes="(min-width: 768px) 520px, (min-width: 640px) 384px, 288px"
           />
         </FadeSlide>
         <FadeSlide
           direction="right"
           className="absolute top-130 sm:top-96 2xl:top-120 -left-28 xl:left-16"
         >
-          <Image src={illustration} alt="" className="w-72 sm:w-96 md:w-130" />
+          <Image
+            src={illustration}
+            alt=""
+            className="w-72 sm:w-96 md:w-130"
+            sizes="(min-width: 768px) 520px, (min-width: 640px) 384px, 288px"
+          />
         </FadeSlide>
         <FadeSlide
           direction="right"
           className="absolute bottom-0 -right-10 sm:-right-52 "
         >
-          <Image src={illustration_bottom} alt="" className="w-72 sm:w-96 md:w-130" />
+          <Image
+            src={illustration_bottom}
+            alt=""
+            className="w-72 sm:w-96 md:w-130"
+            sizes="(min-width: 768px) 520px, (min-width: 640px) 384px, 288px"
+          />
         </FadeSlide>
       </div>
       <div className="relative z-10">
@@ -64,10 +75,11 @@ const DiscoverSection = () => {
           <FadeSlide className="w-full h-full lg:h-[80vh] sm:pr-80 mb-96 sm:mb-0">
             <Image
               src={content_1}
-              alt=""
+              alt="Aerial view of the Kota Kasablanka superblock"
               className="w-full h-120 sm:h-200 lg:h-full object-cover xl:min-h-145"
               width={2000}
               height={2000}
+              sizes="(min-width: 1280px) 1600px, (min-width: 640px) 1360px, 820px"
             />
           </FadeSlide>
           <FadeSlide
@@ -95,19 +107,21 @@ const DiscoverSection = () => {
           <FadeSlide className="w-full aspect-4/3">
             <Image
               src={content_2}
-              alt=""
+              alt="Woman with a glass of wine at an upscale bar"
               className="w-full h-full object-cover"
               width={1000}
               height={1000}
+              sizes="(min-width: 1280px) 45vw, (min-width: 1024px) 50vw, 100vw"
             />
           </FadeSlide>
           <FadeSlide className="w-full aspect-4/3">
             <Image
               src={content_3}
-              alt=""
+              alt="Shopper carrying shopping bags outdoors"
               className="w-full h-full object-cover"
               width={1000}
               height={1000}
+              sizes="(min-width: 1280px) 45vw, (min-width: 1024px) 50vw, 100vw"
             />
           </FadeSlide>
         </div>

@@ -53,4 +53,4 @@ Images are colocated under `app/assets/<page>/…` and imported as static `next/
 ## Notes
 
 - `tsconfig.json`'s `include` array has a stray explicit entry for `components/section/news-and-events/detail/news-four-section.tsx` alongside the glob patterns — safe to leave, but likely accidental. Don't replicate the pattern.
-- `next.config.ts` is empty; there is no custom webpack, image domains, or redirects config to be aware of.
+- `next.config.ts` pins `turbopack.root` (a stray lockfile in a parent folder otherwise breaks resolution), sets image formats/sizes, and adds a one-year cache header for `/videos/*`. Files in `public/videos/` must have a content hash in their name (e.g. `hero-5c65ff3f.mp4`); a re-encoded video needs a new name.

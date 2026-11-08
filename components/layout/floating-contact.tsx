@@ -18,7 +18,7 @@ const FloatingContact = () => {
         }}
       >
         <LinkPullUp
-          href="#"
+          href="https://wa.me/6281189996968"
           className="bg-[#28CC62] size-14 md:size-16 rounded-full flex justify-center items-center hover:bg-[#1ebe5b] cursor-pointer transition-all duration-200 ease-in-out"
         >
           <svg

@@ -11,20 +11,30 @@ const DiscoverSection = () => {
   return (
     <section
       id="discover-section"
-      className="relative bg-[#464948] min-h-screen px-5 sm:px-10 xl:p-48 pt-28 sm:pt-28 pb-32"
+      className="relative bg-[#464948] min-h-screen px-5 sm:px-10 xl:p-48 pt-14 sm:pt-28 pb-32"
     >
       <div className="absolute inset-0 z-0 pointer-events-none">
         <FadeSlide
           direction="left"
           className="absolute -top-14 sm:top-20 xl:top-70 -right-24 xl:-left-20"
         >
-          <Image src={illustration} alt="" className="w-68 sm:w-96 md:w-130" />
+          <Image
+            src={illustration}
+            alt=""
+            sizes="(min-width: 768px) 520px, (min-width: 640px) 384px, 272px"
+            className="w-68 sm:w-96 md:w-130"
+          />
         </FadeSlide>
         <FadeSlide
           direction="right"
           className="absolute bottom-0 right-3 sm:right-16 "
         >
-          <Image src={illustration_bottom} alt="" className="w-68 sm:w-96 md:w-120" />
+          <Image
+            src={illustration_bottom}
+            alt=""
+            sizes="(min-width: 768px) 480px, (min-width: 640px) 384px, 272px"
+            className="w-68 sm:w-96 md:w-120"
+          />
         </FadeSlide>
       </div>
       <div className="relative z-10">
@@ -75,10 +85,11 @@ const DiscoverSection = () => {
           <FadeSlide className="w-full h-full lg:h-[80vh] sm:pl-80 mb-96 sm:mb-0">
             <Image
               src={content_1}
-              alt=""
+              alt="Shopper carrying bags at Kota Kasablanka"
               className="w-full h-120 sm:h-200 lg:h-full object-[75%_center] sm:object-center object-cover xl:min-h-145"
               width={2000}
               height={2000}
+              sizes="(min-width: 1280px) 85vw, (min-width: 1024px) 1080px, (min-width: 640px) 1360px, 820px"
             />
           </FadeSlide>
         </div>
@@ -86,19 +97,21 @@ const DiscoverSection = () => {
           <FadeSlide className="w-full aspect-4/3">
             <Image
               src={content_2}
-              alt=""
+              alt="Woman holding a cocktail in a warmly lit lounge"
               className="w-full h-full object-cover"
               width={1000}
               height={1000}
+              sizes="(min-width: 1280px) 44vw, (min-width: 1024px) 55vw, 110vw"
             />
           </FadeSlide>
           <FadeSlide className="w-full aspect-4/3">
             <Image
               src={content_3}
-              alt=""
+              alt="Man tasting wine in an intimate dining setting"
               className="w-full h-full object-cover"
               width={1000}
               height={1000}
+              sizes="(min-width: 1280px) 44vw, (min-width: 1024px) 55vw, 110vw"
             />
           </FadeSlide>
         </div>

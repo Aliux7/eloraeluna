@@ -1,29 +1,36 @@
 "use client";
 import hero_background from "@/app/assets/home/hero_background.webp";
-import Image from "next/image";
+import Image, { getImageProps } from "next/image";
 import arrow from "@/app/assets/arrow_gold.svg";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { LinkPullUp } from "@/components/animation/link-pull-up";
-import { SwipeShiftButton } from "@/components/ui/swipeable-button";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
-const HERO_VIDEO_SRC =
-  "https://firebasestorage.googleapis.com/v0/b/dupi-aad53.firebasestorage.app/o/Elora%20Eluna-Web-Y-%20D20263009_1.mp4?alt=media&token=d0eb4c5a-7efb-4e95-aef0-f299074c4da8";
+// Served from public/videos with a one-year cache (see next.config.ts). File
+// names carry a content hash, so a re-encoded video must get a new name.
+// One file for every screen: the original 1080p master, unmodified (re-encoding
+// it smaller visibly softens it on large screens). It is "fast start", so it
+// begins playing while the rest downloads.
+const HERO_VIDEO_SRC = "/videos/hero-5c65ff3f.mp4";
+
+// <video poster> can't use next/image directly; get the optimized URL instead
+// of shipping the original file.
+const {
+  props: { src: heroPosterSrc },
+} = getImageProps({ src: hero_background, alt: "", sizes: "100vw" });
 
 const HeroSection = () => {
   const [slide, setSlide] = useState(0);
   const [videoReady, setVideoReady] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  // Kick the video load as early as possible so it is ready before the user
-  // reaches the hero. We also keep the video element mounted on both slides
-  // (hidden on slide 2) so the browser never discards its buffer.
+  // Some mobile browsers ignore autoPlay until play() is called. The video
+  // stays mounted on both slides (hidden on slide 2) so its buffer is kept.
   useEffect(() => {
     const v = videoRef.current;
     if (!v) return;
     try {
-      v.load();
       const p = v.play();
       if (p && typeof p.catch === "function") p.catch(() => {});
     } catch {
@@ -38,10 +45,10 @@ const HeroSection = () => {
   return (
     <section
       id="hero-section"
-      className="relative sm:min-h-screen bg-[#464948] overflow-hidden"
+      className="relative bg-[#464948] overflow-hidden pt-14 sm:pt-18 lg:pt-0"
     >
-      {/* Slide stage — fixed height so both slides share the same frame */}
-      <div className="relative w-full h-[70vh] sm:h-screen">
+      {/* Slide stage — 16:9 like the video and images, so nothing is cropped */}
+      <div className="relative w-full aspect-video">
         {/* Slide 1: Video only (always mounted so it preloads and keeps playing) */}
         <div
           className={`absolute inset-0 z-0 transition-opacity duration-700 ease-out ${
@@ -55,8 +62,8 @@ const HeroSection = () => {
             loop
             muted
             playsInline
-            preload="auto"
-            poster={hero_background.src}
+            preload="metadata"
+            poster={heroPosterSrc}
             onCanPlay={() => setVideoReady(true)}
             onCanPlayThrough={() => setVideoReady(true)}
             className="w-full h-full object-cover object-top"
@@ -83,48 +90,45 @@ const HeroSection = () => {
               <div className="absolute inset-0 overflow-hidden overlay-hero after:content-[''] after:absolute after:inset-0 after:bg-linear-to-tr after:from-black/25 after:to-transparent after:pointer-events-none after:select-none">
                 <Image
                   src={hero_background}
-                  alt=""
+                  alt="Elora and Eluna towers rising above the South Jakarta skyline"
                   priority
                   fill
+                  sizes="100vw"
                   className="object-cover object-top"
                 />
+                {/* The title sits over bright sky; darken the left side so it stays readable. */}
+                <div className="absolute inset-0 bg-linear-to-r from-black/55 via-black/25 xl:from-black/45 xl:via-black/15 to-transparent" />
               </div>
 
-              <div className="relative z-10 h-full px-5 sm:px-10 xl:px-48 py-8 sm:py-0 w-full pb-10 lg:pb-16 flex flex-col justify-end items-start">
+              {/* Sizes and spacing scale with the width, like the 16:9 frame. Side padding clears the arrows below xl. */}
+              <div className="relative z-10 h-full px-14 sm:px-24 xl:px-48 pb-[clamp(1.25rem,3.4vw,4rem)] w-full flex flex-col justify-end items-start">
                 <WordsPullUp
                   text="THE ECHOES"
-                  className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-light 2xl:font-extralight text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
+                  className="text-[clamp(1.375rem,3.75vw,4.5rem)] leading-[1.15] font-light 2xl:font-extralight text-[#F3F0E8] tracking-widest mb-[0.2em]"
                 />
                 <WordsPullUp
                   text="OF SPLENDOR"
-                  className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-medium sm:font-bold 2xl:font-medium text-[#F3F0E8] tracking-widest ml-20 lg:ml-[10vw] xl:ml-64 mb-6 md:mb-10 xl:mb-14"
+                  className="text-[clamp(1.375rem,3.75vw,4.5rem)] leading-[1.15] font-medium sm:font-bold 2xl:font-medium text-[#F3F0E8] tracking-widest ml-[13vw] mb-[clamp(0.75rem,2.9vw,3.5rem)]"
                 />
                 <WordsPullUp
                   text="Eluna Is Where Elegance Lingers In Every Detail"
-                  className="hidden sm:block text-sm sm:text-xl 2xl:text-2xl font-normal 2xl:font-light text-[#F3F0E8]"
+                  className="hidden sm:block text-[clamp(0.8125rem,1.25vw,1.5rem)] leading-normal font-normal 2xl:font-light text-[#F3F0E8]"
                 />
                 <WordsPullUp
                   text="— A Quiet Statement Of Timeless Living For"
-                  className="hidden sm:block text-sm sm:text-xl 2xl:text-2xl font-normal 2xl:font-light text-[#F3F0E8]"
+                  className="hidden sm:block text-[clamp(0.8125rem,1.25vw,1.5rem)] leading-normal font-normal 2xl:font-light text-[#F3F0E8]"
                 />
                 <WordsPullUp
-                  text="Those Who Seek Undersstand Luxury."
-                  className="hidden sm:block text-sm sm:text-xl 2xl:text-2xl font-normal 2xl:font-light text-[#F3F0E8] mb-16"
-                />
-                <WordsPullUp
-                  text="Eluna Is Where Elegance Lingers In Every Detail — A Quiet Statement Of Timeless Living For Those Who Seek Undersstand Luxury."
-                  className="sm:hidden text-sm sm:text-xl 2xl:text-2xl font-normal 2xl:font-light text-[#F3F0E8] my-16 ml-20"
+                  text="Those Who Seek Understated Luxury."
+                  className="hidden sm:block text-[clamp(0.8125rem,1.25vw,1.5rem)] leading-normal font-normal 2xl:font-light text-[#F3F0E8] mb-[clamp(1rem,3.3vw,4rem)]"
                 />
 
                 <LinkPullUp
                   href="/the-design"
-                  className="hidden sm:flex justify-center items-center cursor-pointer font-medium capitalize text-sm sm:text-base 2xl:text-lg pt-px w-40 sm:w-47.5 2xl:w-60 h-11.25 2xl:h-14 text-[#F3F0E8] border border-[#9D7958] hover:bg-[#F3F0E8]/90 hover:text-[#9D7958] transition-all duration-200 ease-in-out"
+                  className="flex justify-center items-center cursor-pointer font-medium capitalize text-sm lg:text-base 2xl:text-lg pt-px w-40 lg:w-47.5 2xl:w-60 h-10 lg:h-11.25 2xl:h-14 text-[#F3F0E8] border border-[#9D7958] hover:bg-[#F3F0E8]/90 hover:text-[#9D7958] transition-all duration-200 ease-in-out"
                 >
                   EXPLORE NOW
                 </LinkPullUp>
-                <SwipeShiftButton href="/the-design">
-                  EXPLORE NOW
-                </SwipeShiftButton>
               </div>
             </motion.div>
           )}
@@ -135,24 +139,24 @@ const HeroSection = () => {
           type="button"
           onClick={prev}
           aria-label="Previous slide"
-          className="group z-30 absolute top-1/2 -translate-y-1/2 left-5 sm:left-10 xl:left-16 cursor-pointer p-1"
+          className="group z-30 absolute top-1/2 -translate-y-1/2 left-[clamp(0.75rem,2.9vw,3.5rem)] cursor-pointer p-2"
         >
           <Image
             src={arrow}
             alt=""
-            className="scale-60 sm:scale-90 xl:scale-100 [filter:brightness(0)_invert(1)] transition-[filter] duration-200 group-hover:filter-none"
+            className="w-[clamp(1rem,1.46vw,1.75rem)] h-auto [filter:brightness(0)_invert(1)] transition-[filter] duration-200 group-hover:filter-none"
           />
         </button>
         <button
           type="button"
           onClick={next}
           aria-label="Next slide"
-          className="group z-30 absolute top-1/2 -translate-y-1/2 right-5 sm:right-10 xl:right-16 cursor-pointer p-1"
+          className="group z-30 absolute top-1/2 -translate-y-1/2 right-[clamp(0.75rem,2.9vw,3.5rem)] cursor-pointer p-2"
         >
           <Image
             src={arrow}
             alt=""
-            className="scale-60 sm:scale-90 xl:scale-100 rotate-180 [filter:brightness(0)_invert(1)] transition-[filter] duration-200 group-hover:filter-none"
+            className="w-[clamp(1rem,1.46vw,1.75rem)] h-auto rotate-180 [filter:brightness(0)_invert(1)] transition-[filter] duration-200 group-hover:filter-none"
           />
         </button>
 

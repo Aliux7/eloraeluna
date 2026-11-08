@@ -43,15 +43,15 @@ const NewsSection = () => {
 
   return (
     <section className="relative bg-[#F3F0E8] py-26 sm:py-36 px-5 sm:px-10 xl:px-48 flex flex-col gap-10">
-      <div className="flex justify-between items-center gap-10">
-        <h1 className="text-[#464948] text-4xl sm:text-5xl lg:text-6xl font-normal tracking-widest">
+      <div className="flex justify-between items-center sm:gap-10">
+        <h2 className="text-[#464948] text-4xl sm:text-5xl lg:text-6xl font-normal tracking-widest">
           NEWS & EVENTS
-        </h1>
+        </h2>
         <div className="flex items-center gap-3">
           <div ref={ref} className="relative inline-block z-20">
             <button
               onClick={() => setOpen(!open)}
-              className="flex items-center justify-end gap-2 px-4 py-2 border border-[#B38569] text-[#464948] hover:text-black bg-[#F3F0E8] cursor-pointer"
+              className="flex items-center justify-end gap-2 px-4 py-2 border border-[#B38569] text-[#464948] hover:text-black bg-[#F3F0E8] cursor-pointer text-nowrap"
             >
               Sort: {sort === "newest" ? "Newest" : "Oldest"}
               <ChevronDown
@@ -94,8 +94,9 @@ const NewsSection = () => {
           >
             <Image
               src={news.image}
-              alt=""
+              alt={news.title}
               className="w-full h-96 lg:h-118 2xl:h-200 object-cover"
+              sizes="(min-width: 1280px) 55vw, (min-width: 768px) 50vw, 100vw"
             />
 
             <div className="absolute top-0 z-10 p-5 flex flex-col justify-between items-start h-full w-full">
@@ -119,6 +120,7 @@ const NewsSection = () => {
                   width={100}
                   height={100}
                   className="w-7"
+                  sizes="28px"
                 />
               </LinkPullUp>
             </div>

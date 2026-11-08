@@ -64,6 +64,7 @@ const PropertiesSection = () => {
                 className="w-full h-full object-cover"
                 width={1000}
                 height={1000}
+                sizes="(min-width: 1280px) 55vw, (min-width: 1024px) 60vw, 100vw"
               />
               <WordsPullUp
                 text={property.title}

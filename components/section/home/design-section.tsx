@@ -37,9 +37,9 @@ const DesignSection = () => {
               direction="up"
               className="block xl:hidden lg:w-1/2 text-[#F3F0E8] font-normal text-sm sm:text-xl text-balance mt-5 sm:mt-10 ml-20 sm:ml-0"
             >
-              An iconic development on 12.9 gectares of prime land, Kota
+              An iconic development on 12.9 hectares of prime land, Kota
               Kasablanka redefines what a modern city hub can be bold, vibrant,
-              and unforgetable.
+              and unforgettable.
             </FadeSlide>
             <LinkPullUp
               href="/the-design"
@@ -49,15 +49,16 @@ const DesignSection = () => {
             </LinkPullUp>
           </div>
           <FadeSlide className="hidden xl:block max-w-1/2 text-[#F3F0E8] font-normal text-sm sm:text-xl 2xl:font-light text-balance pl-10 ml-20 sm:ml-0">
-            An iconic development on 12.9 gectares of prime land, Kota
+            An iconic development on 12.9 hectares of prime land, Kota
             Kasablanka redefines what a modern city hub can be bold, vibrant,
-            and unforgetable.
+            and unforgettable.
           </FadeSlide>
         </div>
       </div>
       <Image
         src={full_the_design}
-        alt=""
+        alt="Architectural sketch of the tower design"
+        sizes="100vw"
         className="block inset-0 z-0 relative h-full xl:h-350 2xl:h-screen xl:w-full object-cover object-top 2xl:object-[50%_10%] opacity-70"
       />
     </section>

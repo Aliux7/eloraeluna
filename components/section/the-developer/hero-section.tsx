@@ -7,19 +7,20 @@ import { LinkPullUp } from "@/components/animation/link-pull-up";
 
 const HeroSection = () => {
   return (
-    <section id="hero-section" className="relative min-h-screen bg-[#414242]">
-      <div className="relative sm:absolute inset-0 z-0 pointer-events-none top-0 w-full pt-14 sm:pt-0 h-96 sm:h-screen overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-black/0">
+    <section id="hero-section" className="relative xl:flex xl:flex-col xl:aspect-video overflow-hidden bg-[#414242]">
+      <div className="relative xl:absolute xl:inset-0 z-0 pointer-events-none w-full aspect-video xl:aspect-auto xl:h-full mt-14 sm:mt-18 xl:mt-0 overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-black/0">
         <Image
           src={hero_background}
-          alt=""
+          alt="Kota Kasablanka by Pakuwon Group, lit up at night"
           width={2000}
           height={2000}
           className="w-full h-full object-cover object-top"
+          sizes="100vw"
           priority
         />
       </div>
-      <div className="relative z-10 px-5 sm:px-10 xl:px-48 w-full sm:min-h-screen sm:pb-10 lg:pb-16 flex flex-col justify-end items-start">
-        <div className="py-8 sm:py-0">
+      <div className="relative z-10 px-5 sm:px-10 xl:px-48 w-full xl:flex-1 xl:pt-24 xl:pb-16 flex flex-col justify-end items-start">
+        <div className="py-8 xl:py-0">
           <WordsPullUp
             text="COMMUNITIES THAT"
             className="text-xl sm:text-2xl lg:text-3xl 2xl:text-4xl font-bold 2xl:font-semibold text-[#F3F0E8] tracking-widest mb-2 lg:mb-4"
@@ -30,10 +31,10 @@ const HeroSection = () => {
           />
           <WordsPullUp
             text="CITY LIVING"
-            className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-medium 2xl:font-normal text-[#F3F0E8] tracking-widest ml-10 sm:ml-0 lg:ml-[5vw] mb-6 sm:mb-8"
+            className="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-medium 2xl:font-normal text-[#F3F0E8] tracking-widest ml-10 sm:ml-0 lg:ml-[5vw] mb-4 sm:mb-8"
           />
 
-          <FadeSlide className="max-w-2xl 2xl:max-w-3xl text-sm sm:text-lg lg:text-xl 2xl:text-2xl font-normal 2xl:font-light text-[#F3F0E8] mb-8">
+          <FadeSlide className="max-w-2xl 2xl:max-w-3xl text-sm sm:text-lg lg:text-xl 2xl:text-2xl font-normal 2xl:font-light text-[#F3F0E8] mb-5 sm:mb-8">
             Continuing to shape Indonesia's skyline, Pakuwon Group leads the
             industry with thoughtful design, cutting-edge innovation, and an
             unwavering commitment to excellence. By crafting spaces that inspire
@@ -43,11 +44,11 @@ const HeroSection = () => {
 
           <FadeSlide
             direction="up"
-            className="flex justify-start items-start gap-3 h-10 md:h-13 2xl:h-16 w-fit mb-12"
+            className="flex justify-start items-start gap-3 h-8 sm:h-10 md:h-13 2xl:h-16 w-fit mb-6 sm:mb-12"
           >
             <Image
               src={pakuwon_logo}
-              alt=""
+              alt="Pakuwon Group logo"
               className="object-contain w-full h-full"
             />
           </FadeSlide>

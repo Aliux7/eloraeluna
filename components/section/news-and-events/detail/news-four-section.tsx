@@ -29,7 +29,7 @@ const NewsFourSection = () => {
         </div>
 
         <FadeSlide className="w-full">
-          <Image src={news2} alt="" />
+          <Image src={news2} alt="Balcony lounge overlooking the city at dusk" sizes="(min-width: 1280px) calc(100vw - 384px), (min-width: 640px) calc(100vw - 80px), calc(100vw - 40px)" />
         </FadeSlide>
 
         <div className="space-y-12">
@@ -65,7 +65,7 @@ const NewsFourSection = () => {
         </div>
 
         <FadeSlide className="w-full">
-          <Image src={news3} alt="" />
+          <Image src={news3} alt="Woman relaxing at the edge of a pool" sizes="(min-width: 1280px) calc(100vw - 384px), (min-width: 640px) calc(100vw - 80px), calc(100vw - 40px)" />
         </FadeSlide>
 
         <div className="space-y-12">

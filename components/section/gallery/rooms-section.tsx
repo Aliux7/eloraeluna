@@ -15,9 +15,7 @@ import bc2_balcony_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/
 import bc2_bathroom_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/2/Main Bathroom View 1.webp";
 
 import bc2_office_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/3/Office View 1.webp";
-import bc2_office_2 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/3/Office View 2.webp";
 import bc2_office_3 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/3/Office View 3.webp";
-import bc2_office_4 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/3/Office View 4.webp";
 
 import bc2_kids_1 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/4/Kids Bedroom View 1.webp";
 import bc2_kids_2 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/4/Kids Bedroom View 2.webp";
@@ -25,7 +23,6 @@ import bc2_kids_3 from "@/app/assets/gallery/Show Unit Eluna 2BC By Metaphor/4/K
 
 import bc3_master_main from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/1/V2_Master Bedroom Main View.webp";
 import bc3_master_closet_closed from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/1/V4_Master Bedroom & Walk-In Closet Closed.webp";
-import bc3_master_closet_open from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/1/V4_Master Bedroom & Walk-In Closet Open.webp";
 import bc3_master_bathroom from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/1/V5_Master Bathroom.webp";
 
 import bc3_ldk_main from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/2/V1_Dining, Kitchen, & Living Main View.webp";
@@ -51,14 +48,13 @@ const bc2LivingDining = [
   bc2_bathroom_1,
 ];
 
-const bc2Office = [bc2_office_1, bc2_office_2, bc2_office_3, bc2_office_4];
+const bc2Office = [bc2_office_1, bc2_office_3];
 
 const bc2Kids = [bc2_kids_1, bc2_kids_2, bc2_kids_3];
 
 const bc3Master = [
   bc3_master_main,
   bc3_master_closet_closed,
-  bc3_master_closet_open,
   bc3_master_bathroom,
 ];
 
@@ -80,19 +76,21 @@ const RoomsSection = () => {
     >
       <FadeSlide
         direction="right"
-        className="absolute top-7 left-0 -translate-1/3 z-20 pointer-events-none"
+        className="absolute top-7 left-0 -translate-1/3 z-0 pointer-events-none"
       >
         <Image
           src={illustration_bottom}
           alt=""
           className="w-68 sm:w-96 md:w-120"
+          sizes="(min-width: 768px) 480px, (min-width: 640px) 384px, 272px"
         />
       </FadeSlide>
-      <div className="flex flex-col gap-5 sm:gap-10 xl:gap-16">
+      <div className="relative z-10 flex flex-col gap-5 sm:gap-10 xl:gap-16">
         <GalleryCarousel
           images={bc2LivingDining}
           label="2BC Living & Dining"
           className="w-full aspect-15/6"
+          sizes="(min-width: 1280px) calc(100vw - 384px), 100vw"
         />
 
         <div className="flex flex-col md:flex-row gap-5 sm:gap-10 xl:gap-16">
@@ -100,30 +98,33 @@ const RoomsSection = () => {
             images={bc2Office}
             label="2BC Office Room"
             className="w-full md:w-1/2 aspect-[4/3]"
+            sizes="(min-width: 1280px) calc(50vw - 224px), (min-width: 768px) 50vw, 100vw"
           />
           <GalleryCarousel
             images={bc2Kids}
             label="2BC Kids Room"
             className="w-full md:w-1/2 aspect-[4/3]"
+            sizes="(min-width: 1280px) calc(50vw - 224px), (min-width: 768px) 50vw, 100vw"
           />
         </div>
 
         <div className="relative flex flex-col md:flex-row items-stretch md:gap-4">
           <FadeSlide
             direction="right"
-            className="absolute top-0 -right-23 sm:-right-30 z-20 translate-x-1/5 -translate-y-1/5 pointer-events-none"
+            className="absolute top-0 -right-23 sm:-right-30 z-0 translate-x-1/5 -translate-y-1/5 pointer-events-none"
           >
             <Image
               src={illustration_bottom}
               alt=""
               className="w-68 sm:w-96 md:w-120 rotate-180"
+              sizes="(min-width: 768px) 480px, (min-width: 640px) 384px, 272px"
             />
           </FadeSlide>
           <GalleryCarousel
             images={bc3Master}
             label="3BC Master Bedroom"
             className="w-full md:flex-1 aspect-4/3 md:-mr-6"
-            priority
+            sizes="(min-width: 1280px) 55vw, (min-width: 1024px) 67vw, (min-width: 768px) 60vw, 100vw"
           />
           <div className="w-full md:w-2/5 lg:w-1/3 flex flex-col justify-start z-10">
             <FadeSlide className="px-5 py-6 sm:px-6 sm:py-8 xl:px-7 xl:py-10 xl:w-full xl:h-fit my-auto text-[#F3F0E8] bg-[#9D7958] font-normal 2xl:font-light text-sm sm:text-base 2xl:text-lg leading-relaxed text-balance">
@@ -139,11 +140,13 @@ const RoomsSection = () => {
             images={bc3LivingDining}
             label="3BC Living & Dining"
             className="w-full md:w-1/2 aspect-[4/3]"
+            sizes="(min-width: 1280px) calc(50vw - 224px), (min-width: 768px) 50vw, 100vw"
           />
           <GalleryCarousel
             images={bc3Kids}
             label="3BC Kids Room"
             className="w-full md:w-1/2 aspect-[4/3]"
+            sizes="(min-width: 1280px) calc(50vw - 224px), (min-width: 768px) 50vw, 100vw"
           />
         </div>
       </div>

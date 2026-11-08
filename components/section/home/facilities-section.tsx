@@ -14,7 +14,8 @@ const FacilitiesSection = () => {
       <div className="relative sm:absolute inset-0 z-0 pointer-events-none after:content-[''] after:absolute after:inset-0 after:bg-black/15">
         <Image
           src={facilities_background}
-          alt=""
+          alt="Resort-style lagoon pool surrounded by palms and loungers"
+          sizes="(min-width: 640px) 100vw, 700px"
           className="w-full h-96 sm:h-full object-cover"
         />
       </div>
@@ -23,6 +24,7 @@ const FacilitiesSection = () => {
           <Image
             src={illustration_2}
             alt=""
+            sizes="240px"
             className="h-52 w-fit object-contain"
           />
         </div>
@@ -30,6 +32,7 @@ const FacilitiesSection = () => {
           <Image
             src={illustration_2}
             alt=""
+            sizes="240px"
             className="h-52 w-fit object-contain"
           />
         </div>

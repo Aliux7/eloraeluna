@@ -14,6 +14,7 @@ const DeveloperSection = () => {
           src={developer_ornament}
           alt=""
           fill
+          sizes="(min-width: 1280px) 50vw, 100vw"
           className="object-cover opacity-70"
         />
 
@@ -25,7 +26,7 @@ const DeveloperSection = () => {
           <FadeSlide className="relative h-10 sm:h-14 2xl:h-18 justify-start items-start w-auto mb-10 sm:mb-16">
             <Image
               src={developer_logo}
-              alt=""
+              alt="Pakuwon Group logo"
               width={1000}
               height={1000}
               className="w-auto h-full self-start"
@@ -49,8 +50,9 @@ const DeveloperSection = () => {
       <div className="relative w-full xl:w-1/2 min-h-[70vh] xl:min-h-screen">
         <Image
           src={developer_background}
-          alt=""
+          alt="Kota Kasablanka superblock towers and mall at dusk"
           fill
+          sizes="(min-width: 1280px) 50vw, (min-width: 640px) 100vw, 120vw"
           className="object-cover object-[center_10%]"
         />
       </div>

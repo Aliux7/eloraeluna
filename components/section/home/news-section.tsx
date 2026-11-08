@@ -20,9 +20,9 @@ const NewsSection = () => {
   return (
     <section className="relative bg-[#F3F0E8] py-20 sm:py-36 px-5 sm:px-10 xl:px-48 flex flex-col gap-10">
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-5 sm:gap-10">
-        <h1 className="text-[#464948] text-3xl sm:text-5xl lg:text-6xl font-normal tracking-widest">
+        <h2 className="text-[#464948] text-3xl sm:text-5xl lg:text-6xl font-normal tracking-widest">
           NEWS & EVENTS
-        </h1>
+        </h2>
         <LinkPullUp
           href="/news-events"
           className="flex justify-center items-center cursor-pointer font-medium capitalize text-sm sm:text-base 2xl:text-lg pt-px w-32 sm:w-40 2xl:w-55 h-11.25 2xl:h-14 border border-[#9D7958] hover:bg-[#9D7958]/10 text-[#9D7958] hover:text-[#9D7958] transition-all duration-200 ease-in-out"
@@ -38,7 +38,8 @@ const NewsSection = () => {
           >
             <Image
               src={news.image}
-              alt=""
+              alt={news.title}
+              sizes="(min-width: 1920px) 1440px, (min-width: 1280px) 1024px, (min-width: 1024px) 840px, 700px"
               className="w-full h-96 lg:h-118 2xl:h-200 object-cover"
             />
 
@@ -59,6 +60,7 @@ const NewsSection = () => {
                   alt=""
                   width={100}
                   height={100}
+                  sizes="28px"
                   className="w-7"
                 />
               </LinkPullUp>

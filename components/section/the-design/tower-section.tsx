@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { WordsPullUp } from "@/components/animation/word-pull-up";
 import { FadeSlide } from "@/components/animation/fade-slide";
-import tower_diagram from "@/app/assets/the-design/tower_diagram.svg";
-import tower_diagram_mobile from "@/app/assets/the-design/tower_diagram_mobile.svg";
+import tower_diagram from "@/app/assets/the-design/tower_diagram.webp";
+import tower_diagram_mobile from "@/app/assets/the-design/tower_diagram_mobile.webp";
 import illustration_2 from "@/app/assets/home/illustration_2.webp";
 import illustration_bottom from "@/app/assets/home/illustration_bottom.webp";
 
@@ -13,10 +13,14 @@ const TowerSection = () => {
       className="relative bg-linear-to-b from-[#333333] to-[#464948]  min-h-screen px-5 sm:px-10 xl:px-48 py-32"
     >
       <FadeSlide className="absolute top-10 sm:top-40 lg:top-64 -right-10 lg:left-10 xl:left-16 scale-x-[-1] w-60 lg:w-72 xl:w-96 2xl:w-130">
-        <Image src={illustration_2} alt="" />
+        <Image
+          src={illustration_2}
+          alt=""
+          sizes="(min-width: 1920px) 520px, (min-width: 1280px) 384px, (min-width: 1024px) 288px, 240px"
+        />
       </FadeSlide>
       <FadeSlide className="absolute bottom-0 -right-30 xl:right-0 xl:translate-x-1/3 scale-y-[-1] scale-x-[-1] w-72 xl:w-96 2xl:w-130">
-        <Image src={illustration_bottom} alt="" />
+        <Image src={illustration_bottom} alt="" sizes="(min-width: 1920px) 520px, (min-width: 1280px) 384px, 288px" />
       </FadeSlide>
       <div className="relative z-10 gap-16 flex flex-col lg:flex-row justify-between items-start">
         <WordsPullUp
@@ -46,18 +50,18 @@ const TowerSection = () => {
         <FadeSlide className="hidden lg:block w-full">
           <Image
             src={tower_diagram}
-            alt=""
+            alt="Eluna tower section diagram showing the social deck, pet park, lobby and parking levels"
             className="w-full h-auto object-contain"
-            priority
+            sizes="(min-width: 1280px) 80vw, 100vw"
           />
         </FadeSlide>
         <div className="lg:hidden w-full flex flex-col gap-5">
           <FadeSlide className="w-[90%] mx-auto mb-8">
             <Image
               src={tower_diagram_mobile}
-              alt=""
+              alt="Eluna tower section diagram showing the social deck, pet park, lobby and parking levels"
               className="w-full h-auto object-contain"
-              priority
+              sizes="90vw"
             />
           </FadeSlide>
 
@@ -148,7 +152,7 @@ const TowerSection = () => {
             />
             <div className="flex flex-col justify-start items-start gap-1">
               <WordsPullUp
-                text="CONDOMINUM PARKING"
+                text="CONDOMINIUM PARKING"
                 className="text-[#F3F0E8] font-bold tracking-[0.1rem] text-sm"
               />
               <WordsPullUp

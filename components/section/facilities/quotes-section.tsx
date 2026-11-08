@@ -11,6 +11,7 @@ const QuotesSection = () => {
         src={qoutes_background}
         alt=""
         className="w-full sm:h-340 object-cover"
+        sizes="100vw"
       />
       <div className="absolute flex flex-col justify-center items-start gap-3">
         <FadeSlide>

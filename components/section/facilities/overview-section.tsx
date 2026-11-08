@@ -31,7 +31,7 @@ const OverviewSection = () => {
   return (
     <section
       id="overview-section"
-      className="relative bg-[#F3F0E8] min-h-screen px-5 sm:px-10 xl:px-48 py-16 lg:py-32 flex flex-col justify-between items-center gap-16"
+      className="relative bg-[#F3F0E8] min-h-screen px-5 sm:px-10 xl:px-48 py-16 lg:py-32 flex flex-col justify-between items-center gap-16 -mt-1 sm:mt-0"
     >
       <div className="flex justify-between items-start w-full">
         <div className="flex justify-start items-start">
@@ -58,7 +58,12 @@ const OverviewSection = () => {
         </div>
       </div>
       <FadeSlide className="relative w-full sm:max-w-[60vw] 2xl:max-w-[40vw] flex justify-center items-center">
-        <Image src={map} alt="" className="w-full h-full object-contain" />
+        <Image
+          src={map}
+          alt="Site plan of Eluna facilities with pools, gardens and sports court"
+          className="w-full h-full object-contain"
+          sizes="(min-width: 1920px) 40vw, (min-width: 640px) 60vw, 100vw"
+        />
       </FadeSlide>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16">
         <div>

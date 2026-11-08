@@ -25,7 +25,7 @@ const HeroSection = () => {
   return (
     <section
       id="gallery-hero"
-      className="relative bg-[#464948] flex flex-col md:flex-row items-stretch z-10 px-5 sm:px-10 xl:px-48"
+      className="relative flex flex-col md:flex-row items-stretch z-10 px-5 sm:px-10 xl:px-48"
     >
 
       <div className="w-full md:w-2/5 lg:w-1/3 flex flex-col gap-5 sm:gap-10 xl:gap-16 z-10">
@@ -50,6 +50,7 @@ const HeroSection = () => {
         images={bc2MasterBedroom}
         label="2BC Master Bedroom"
         className="w-full md:flex-1 aspect-4/3 md:aspect-auto md:-ml-6"
+        sizes="(min-width: 1280px) 55vw, (min-width: 1024px) 67vw, (min-width: 768px) 60vw, 100vw"
         priority
       />
     </section>

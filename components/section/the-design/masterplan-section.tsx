@@ -114,8 +114,9 @@ const MasterplanSection = () => {
         <FadeSlide direction="left" className="relative mt-8 w-full h-auto 2xl:w-4/5 2xl:ml-auto">
           <Image
             src={master_plan}
-            alt=""
+            alt="Kota Kasablanka masterplan site layout"
             className="w-full h-full"
+            sizes="(min-width: 1280px) 40vw, 100vw"
           />
         </FadeSlide>
       </div>
