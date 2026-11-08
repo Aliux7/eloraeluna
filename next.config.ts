@@ -8,8 +8,9 @@ const nextConfig: NextConfig = {
     root: path.join(__dirname),
   },
   images: {
-    // AVIF is typically 20–30% smaller than WebP; browsers without it get WebP.
-    formats: ["image/avif", "image/webp"],
+    // WebP only: on the VPS, creating an AVIF takes ~4.5× longer than a WebP
+    // (2.0s vs 0.45s for a full-width image) for only ~12% smaller files.
+    formats: ["image/webp"],
     // Default list tops out at 3840px; source images are capped at 2560px.
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 2560],
     // Static imports are content-hashed, so optimized copies can be cached long-term.

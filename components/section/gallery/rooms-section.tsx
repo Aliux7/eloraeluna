@@ -25,7 +25,7 @@ import bc3_master_main from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/1/V
 import bc3_master_closet_closed from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/1/V4_Master Bedroom & Walk-In Closet Closed.webp";
 import bc3_master_bathroom from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/1/V5_Master Bathroom.webp";
 
-import bc3_ldk_main from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/2/V1_Dining, Kitchen, & Living Main View.webp";
+import bc3_ldk_main from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/2/V1_Dining Kitchen and Living Main View.webp";
 import bc3_ldk_lounge from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/2/V1_LDK Lounge & Pantry.webp";
 import bc3_ldk_pantry from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/2/V2_LDK Pantry.webp";
 import bc3_foyer from "@/app/assets/gallery/Show Unit Eluna 3BC By HBA/2/V0_Foyer View.webp";
