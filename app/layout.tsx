@@ -53,7 +53,8 @@ export const metadata: Metadata = {
     },
   },
   formatDetection: { telephone: false },
-  // Icons come from app/favicon.ico, app/icon.svg, app/icon.png and app/apple-icon.png.
+  verification: { google: "otloMvPU_LWGbY8qAlzm-3umL_-0w-nfCsu5khzra-k" },
+  // Icons come from app/favicon.ico, app/icon.svg and app/apple-icon.png.
 };
 
 export const viewport: Viewport = {
