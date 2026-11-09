@@ -98,7 +98,7 @@ import unit_M3_3BA3_07 from "@/app/assets/the-design/typical-floor/m3-m6/07-room
 export type Unit = {
   index: string;
   code: string;
-  // Not yet provided for the mezzanine units; the area lines are hidden when absent.
+  // The area lines are hidden when absent.
   grossArea?: number;
   netArea?: number;
   pathMap: StaticImageData;
@@ -109,8 +109,8 @@ export const units: Unit[] = [
   {
     index: "01",
     code: "3BB",
-    grossArea: 178,
-    netArea: 149,
+    grossArea: 177,
+    netArea: 148,
     pathMap: map_3BB_01,
     pathUnit: unit_3BB_01,
   },
@@ -125,16 +125,16 @@ export const units: Unit[] = [
   {
     index: "03",
     code: "2BC",
-    grossArea: 122,
-    netArea: 102,
+    grossArea: 121,
+    netArea: 101,
     pathMap: map_2BC_03,
     pathUnit: unit_2BC_03,
   },
   {
     index: "05",
     code: "2BC",
-    grossArea: 122,
-    netArea: 102,
+    grossArea: 121,
+    netArea: 101,
     pathMap: map_2BC_05,
     pathUnit: unit_2BC_05,
   },
@@ -157,7 +157,7 @@ export const units: Unit[] = [
   {
     index: "08",
     code: "3BC",
-    grossArea: 183,
+    grossArea: 181,
     netArea: 149,
     pathMap: map_3BC_08,
     pathUnit: unit_3BC_08,
@@ -189,8 +189,8 @@ export const units: Unit[] = [
   {
     index: "12",
     code: "2BA",
-    grossArea: 89,
-    netArea: 74,
+    grossArea: 93,
+    netArea: 78,
     pathMap: map_2BA_12,
     pathUnit: unit_2BA_12,
   },
@@ -208,36 +208,48 @@ export const unitsM1: Unit[] = [
   {
     index: "01",
     code: "3BC1",
+    grossArea: 180,
+    netArea: 148,
     pathMap: map_M1_3BC1_01,
     pathUnit: unit_M1_3BC1_01,
   },
   {
     index: "02",
     code: "2BA2",
+    grossArea: 93,
+    netArea: 78,
     pathMap: map_M1_2BA2_02,
     pathUnit: unit_M1_2BA2_02,
   },
   {
     index: "03",
     code: "2BB1",
+    grossArea: 90,
+    netArea: 75,
     pathMap: map_M1_2BB1_03,
     pathUnit: unit_M1_2BB1_03,
   },
   {
     index: "05",
     code: "2BB1",
+    grossArea: 90,
+    netArea: 75,
     pathMap: map_M1_2BB1_05,
     pathUnit: unit_M1_2BB1_05,
   },
   {
     index: "06",
     code: "2BA1",
+    grossArea: 93,
+    netArea: 78,
     pathMap: map_M1_2BA1_06,
     pathUnit: unit_M1_2BA1_06,
   },
   {
     index: "07",
     code: "3BA1",
+    grossArea: 199,
+    netArea: 167,
     pathMap: map_M1_3BA1_07,
     pathUnit: unit_M1_3BA1_07,
   },
@@ -247,75 +259,99 @@ export const unitsM2: Unit[] = [
   {
     index: "01",
     code: "3BC1",
+    grossArea: 180,
+    netArea: 148,
     pathMap: map_M2_3BC1_01,
     pathUnit: unit_M2_3BC1_01,
   },
   {
     index: "02",
     code: "2BA4",
+    grossArea: 91,
+    netArea: 76,
     pathMap: map_M2_2BA4_02,
     pathUnit: unit_M2_2BA4_02,
   },
   {
     index: "03",
     code: "2BB2",
+    grossArea: 87,
+    netArea: 73,
     pathMap: map_M2_2BB2_03,
     pathUnit: unit_M2_2BB2_03,
   },
   {
     index: "05",
     code: "2BB2",
+    grossArea: 87,
+    netArea: 73,
     pathMap: map_M2_2BB2_05,
     pathUnit: unit_M2_2BB2_05,
   },
   {
     index: "06",
     code: "2BA3",
+    grossArea: 92,
+    netArea: 77,
     pathMap: map_M2_2BA3_06,
     pathUnit: unit_M2_2BA3_06,
   },
   {
     index: "07",
     code: "3BA2",
+    grossArea: 196,
+    netArea: 164,
     pathMap: map_M2_3BA2_07,
     pathUnit: unit_M2_3BA2_07,
   },
 ];
 
-export const unitsM3M6: Unit[] = [
+export const unitsM3M5: Unit[] = [
   {
     index: "01",
     code: "3BC2",
+    grossArea: 181,
+    netArea: 149,
     pathMap: map_M3_3BC2_01,
     pathUnit: unit_M3_3BC2_01,
   },
   {
     index: "02",
     code: "2BA5",
+    grossArea: 92,
+    netArea: 77,
     pathMap: map_M3_2BA5_02,
     pathUnit: unit_M3_2BA5_02,
   },
   {
     index: "03",
     code: "2BB3",
+    grossArea: 89,
+    netArea: 74,
     pathMap: map_M3_2BB3_03,
     pathUnit: unit_M3_2BB3_03,
   },
   {
     index: "05",
     code: "2BB3",
+    grossArea: 89,
+    netArea: 74,
     pathMap: map_M3_2BB3_05,
     pathUnit: unit_M3_2BB3_05,
   },
   {
     index: "06",
     code: "2BA5",
+    grossArea: 92,
+    netArea: 77,
     pathMap: map_M3_2BA5_06,
     pathUnit: unit_M3_2BA5_06,
   },
   {
     index: "07",
     code: "3BA3",
+    grossArea: 198,
+    netArea: 166,
     pathMap: map_M3_3BA3_07,
     pathUnit: unit_M3_3BA3_07,
   },
@@ -335,10 +371,10 @@ export const elunaStructure: StructureNode = {
     { id: "m1", label: "M1", floorPlan: floorPlan_M1, children: unitsM1 },
     { id: "m2", label: "M2", floorPlan: floorPlan_M2, children: unitsM2 },
     {
-      id: "m3-m6",
-      label: "M3-M6",
+      id: "m3-m5",
+      label: "M3-M5",
       floorPlan: floorPlan_M3,
-      children: unitsM3M6,
+      children: unitsM3M5,
     },
     {
       id: "2-35",

@@ -89,7 +89,7 @@ export const residenceSchema: Thing = {
   name: "Eluna Tower — Elora & Eluna, Kota Kasablanka",
   alternateName: ["Eluna", "Elora & Eluna", "Elora Eluna"],
   description:
-    "Eluna is a luxury residential tower in Kota Kasablanka Phase IV, South Jakarta, developed by Pakuwon Group. It offers 2 and 3 bedroom residences on typical floors 2–35 and mezzanine floors M1–M6, with resort-style facilities and direct access to Mall Kota Kasablanka. Its sister tower Elora is coming soon as Phase II.",
+    "Eluna is a luxury residential tower in Kota Kasablanka Phase IV, South Jakarta, developed by Pakuwon Group. It offers 2 and 3 bedroom residences on typical floors 2–35 and mezzanine floors M1–M5, with resort-style facilities and direct access to Mall Kota Kasablanka. Its sister tower Elora is coming soon as Phase II.",
   url: site.url,
   image: absoluteUrl("/opengraph-image.jpg"),
   address: address(site.marketingGallery),

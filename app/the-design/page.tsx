@@ -10,7 +10,7 @@ import TowerSection from "@/components/section/the-design/tower-section";
 export const metadata: Metadata = pageMetadata({
   title: "The Design — Masterplan, Towers & Floor Plans",
   description:
-    "Explore the 12.9 ha Kota Kasablanka masterplan, the Eluna tower, its facility floors and floor plans for 2 and 3 bedroom units on floors M1–M6 and 2–35.",
+    "Explore the 12.9 ha Kota Kasablanka masterplan, the Eluna tower, its facility floors and floor plans for 2 and 3 bedroom units on floors M1–M5 and 2–35.",
   path: "/the-design",
 });
 

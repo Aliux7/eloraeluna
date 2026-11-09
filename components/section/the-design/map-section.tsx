@@ -232,8 +232,8 @@ const MapSection = () => {
               text={`ELUNA FLOORPLAN TYPICAL ${selectedChild.label}`}
               className="hidden sm:block pr-5 sm:pr-0 mb-10 font-semibold 2xl:font-normal text-2xl md:text-3xl 2xl:text-[32px] tracking-widest text-[#F3F0E8]"
             />
-            <div className="relative flex flex-col-reverse lg:flex-row justify-between w-full h-full gap-10 sm:gap-16 xl:gap-32">
-              <div className="sm:w-100">
+            <div className="relative flex flex-col-reverse lg:flex-row justify-between w-full h-full gap-10 sm:gap-16 xl:gap-28">
+              <div className="lg:w-100">
                 {/* <div className="py-3">
                   <FadeSlide>
                     <button
@@ -241,7 +241,7 @@ const MapSection = () => {
                       className="w-full flex justify-between items-center text-left border-b border-white cursor-pointer"
                     >
                       <h3 className="text-lg 2xl:text-xl font-medium text-white tracking-widest p-1">
-                        M1 - M6
+                        M1 - M5
                       </h3>
                       <div className="mr-2 mt-1 text-xl font-light transition-transform duration-300">
                         <div
@@ -335,7 +335,7 @@ const MapSection = () => {
                       </span>
                     </h3>
                     {activeUnit.grossArea !== undefined && (
-                      <h3 className="text-[#AA7A56] text-xs sm:text-base 2xl:text-2xl">
+                      <h3 className="text-[#AA7A56] text-xs sm:text-base 2xl:text-2xl text-nowrap">
                         Semi Gross Area - {activeUnit.grossArea} M<sup>2</sup>
                       </h3>
                     )}
