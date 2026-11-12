@@ -4,6 +4,7 @@ import Header from "@/components/layout/header";
 import { League_Spartan } from "next/font/google";
 import FloatingContact from "@/components/layout/floating-contact";
 import Footer from "@/components/layout/footer";
+import ImageRetry from "@/components/layout/image-retry";
 import { JsonLd, graph, organizationSchema, websiteSchema } from "@/components/seo/json-ld";
 import { site } from "@/lib/site";
 
@@ -74,6 +75,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <FloatingContact />
+        <ImageRetry />
       </body>
     </html>
   );
