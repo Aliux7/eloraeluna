@@ -15,7 +15,7 @@ import facilities8 from "@/app/assets/facilities/lists/Facilities-08---Lagoon-Po
 import facilities9 from "@/app/assets/facilities/lists/Facilities-09---Cabana.webp";
 import facilities10 from "@/app/assets/facilities/lists/Facilities-10---Sunken-Lounge.webp";
 import facilities11 from "@/app/assets/facilities/lists/Facilities-11---BBQ-Lawn.webp";
-import facilities12 from "@/app/assets/facilities/lists/Facilities-12---Kids-Pool-&-Playgrounds.webp";
+import facilities12 from "@/app/assets/facilities/lists/Facilities-12---Kids-Pool-and-Playgrounds.webp";
 import facilities13 from "@/app/assets/facilities/lists/Facilities-13---Kids-Room.webp";
 import facilities14 from "@/app/assets/facilities/lists/Facilities-14---Gym.webp";
 import facilities15 from "@/app/assets/facilities/lists/Facilities-15---Padel-Court.webp";

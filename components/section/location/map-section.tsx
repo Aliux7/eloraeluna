@@ -13,7 +13,7 @@ import FlyOver from "@/app/assets/location/Fly_Over.svg";
 import Hospital from "@/app/assets/location/Hospital.svg";
 import Hotel from "@/app/assets/location/Hotel.svg";
 import LRT from "@/app/assets/location/LRT.svg";
-import MallShoppingCenter from "@/app/assets/location/Mall_&_Shopping_Center.svg";
+import MallShoppingCenter from "@/app/assets/location/Mall_and_Shopping_Center.svg";
 import MRT from "@/app/assets/location/MRT.svg";
 import School from "@/app/assets/location/School.svg";
 import { useRef } from "react";
