@@ -54,23 +54,19 @@ const Header = () => {
         <Image src={and} alt="" className="w-auto h-8.5" />
         <Image src={eluna} alt="" className="w-auto h-3 sm:h-4.5" />
       </div>
-      <div className="lg:h-8.5 w-auto hidden lg:block">
+      <div className="lg:h-8.5 shrink-0 hidden lg:block">
         <Image
           src={pakuwon_logo}
           alt="Pakuwon Group logo"
-          width={1000}
-          height={1000}
-          className="h-full w-full"
+          className="h-full w-auto"
         />
       </div>
-      <div className="h-6 sm:h-9 w-auto block lg:hidden">
+      <div className="size-6 sm:size-9 shrink-0 block lg:hidden">
         <Image
           src={pakuwon_mini_logo}
           alt="Pakuwon Group logo"
-          width={1000}
-          height={1000}
           sizes="36px"
-          className="h-full w-full"
+          className="size-full object-contain"
         />
       </div>
       <FullMenu open={open} onClose={() => setOpen(false)} />
